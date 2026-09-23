@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://baaaiwjrjaeti"]
+
+[ext_resource type="Script" uid="uid://i68hudjpficx" path="res://source/pause_menu/pause_menu.gd" id="1_g2srp"]
+[ext_resource type="Script" uid="uid://ctj52ol5st0sb" path="res://source/event_trigger.gd" id="2_jtk1q"]
+[ext_resource type="Script" uid="uid://crwf7wnbr427k" path="res://source/pause_menu/quit_button.gd" id="3_dkg16"]
+
+[node name="PauseCanvasLayer" type="CanvasLayer" unique_id=945801933]
+process_mode = 3
+script = ExtResource("1_g2srp")
+
+[node name="PauseMenu" type="Control" parent="." unique_id=287744993]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="PauseMenu" unique_id=874976894]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu" unique_id=2118855270]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -193.0
+offset_top = -80.0
+offset_right = 193.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="PauseMenu/VBoxContainer" unique_id=121078647]
+layout_mode = 2
+text = "Paused."
+horizontal_alignment = 1
+
+[node name="Resume" type="Button" parent="PauseMenu/VBoxContainer" unique_id=2113877830]
+layout_mode = 2
+text = "Resume"
+
+[node name="Quit" type="Button" parent="PauseMenu/VBoxContainer" unique_id=241834269]
+layout_mode = 2
+text = "Quit"
+script = ExtResource("3_dkg16")
+
+[node name="TogglePauseTrigger" type="Node" parent="." unique_id=562028054]
+process_mode = 3
+script = ExtResource("2_jtk1q")
+trigger_callbacks = Dictionary[StringName, String]({
+&"toggle_pause": "toggle_pause"
+})
+metadata/_custom_type_script = "uid://ctj52ol5st0sb"
+
+[connection signal="pressed" from="PauseMenu/VBoxContainer/Resume" to="." method="toggle_pause"]

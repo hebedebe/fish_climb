@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="NpcData" format=3 uid="uid://bh4sfx5xuxybx"]
+
+[ext_resource type="Resource" uid="uid://bate3lca2p2tc" path="res://data/npcs/glorp/glorp_dialogue.dialogue" id="1_qstc3"]
+[ext_resource type="PackedScene" uid="uid://m5hyiu6c8vw8" path="res://data/dialogue_bubbles/glorp/balloon.tscn" id="2_4te7k"]
+[ext_resource type="Texture2D" uid="uid://d3mtx32p0cxlt" path="res://data/npcs/glorp/glorp_npc.png" id="2_11nhp"]
+[ext_resource type="Script" uid="uid://bm0pw0bb20w2g" path="res://source/npc/npc_data.gd" id="3_4te7k"]
+
+[resource]
+script = ExtResource("3_4te7k")
+npc_sprite = ExtResource("2_11nhp")
+sprite_scale = Vector2(4, 4)
+sprite_texture_filter = 3
+npc_name = "glorp."
+npc_dialogue = ExtResource("1_qstc3")
+npc_dialogue_balloon = ExtResource("2_4te7k")
+metadata/_custom_type_script = "uid://bm0pw0bb20w2g"

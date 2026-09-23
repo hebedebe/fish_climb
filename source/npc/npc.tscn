@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cvnv8op7s0kyc"]
+
+[ext_resource type="Script" uid="uid://ycmo11btri04" path="res://source/npc/npc.gd" id="1_uf5pv"]
+[ext_resource type="Resource" uid="uid://bh4sfx5xuxybx" path="res://data/npcs/glorp/glorp_npc_data.tres" id="2_ub28f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_br13j"]
+radius = 209.07
+
+[node name="NPC" type="Node2D" unique_id=41797650]
+script = ExtResource("1_uf5pv")
+npc_data = ExtResource("2_ub28f")
+interaction_shape = SubResource("CircleShape2D_br13j")
+metadata/_custom_type_script = "uid://ycmo11btri04"

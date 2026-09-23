@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://qm3jgcscb63x"]
+
+[ext_resource type="Shader" uid="uid://twdnbaq64vwn" path="res://source/interactive_grass/interactive_grass.gdshader" id="1_dsqgq"]
+[ext_resource type="Script" uid="uid://cmt7h2ouqkm1u" path="res://source/interactive_grass/interactive_grass.gd" id="1_h03ex"]
+[ext_resource type="Texture2D" uid="uid://dgr6ru47s3v7x" path="res://source/interactive_grass/sea_grass.png" id="1_y1j7f"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dsqgq"]
+resource_local_to_scene = true
+shader = ExtResource("1_dsqgq")
+shader_parameter/skew = 0.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pb0qc"]
+size = Vector2(204, 472)
+
+[node name="InteractiveGrass" type="Area2D" unique_id=826898870]
+collision_layer = 2
+collision_mask = 2
+monitorable = false
+script = ExtResource("1_h03ex")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1941454308]
+material = SubResource("ShaderMaterial_dsqgq")
+position = Vector2(19, -223.9)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_y1j7f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1923035660]
+position = Vector2(-0.9999962, -183.9)
+shape = SubResource("RectangleShape2D_pb0qc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

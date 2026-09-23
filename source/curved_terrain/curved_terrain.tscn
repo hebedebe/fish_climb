@@ -1,0 +1,31 @@
+[gd_scene format=4 uid="uid://duiekr3xgtl61"]
+
+[ext_resource type="Script" uid="uid://b5go11q4fwls4" path="res://source/curved_terrain/curved_terrain.gd" id="1_6j1ap"]
+[ext_resource type="Shader" uid="uid://cadnte8s5ipk7" path="res://addons/lit/shaders/receiver/lit_receiver_fast.gdshader" id="2_lr5jd"]
+
+[sub_resource type="Curve2D" id="Curve2D_3ug24"]
+bake_interval = 200.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_je5rc"]
+shader = ExtResource("2_lr5jd")
+shader_parameter/emissive_strength = 0.0
+shader_parameter/receiver_mask = 1
+shader_parameter/self_shadow = false
+shader_parameter/self_rect_count = 0
+shader_parameter/self_rects = PackedVector4Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+shader_parameter/specular_strength = 0.5
+shader_parameter/specular_k = 32.0
+shader_parameter/has_specular_map = false
+shader_parameter/metallic_value = 0.0
+shader_parameter/roughness_value = 1.0
+shader_parameter/shadow_steps = 64
+shader_parameter/shadow_min_step = 0.2
+shader_parameter/footprint_shadow = 16.0
+shader_parameter/directional_horizontal_scale = 32.0
+
+[node name="CurvedTerrain" type="Path2D" unique_id=1290650449]
+texture_filter = 4
+curve = SubResource("Curve2D_3ug24")
+script = ExtResource("1_6j1ap")
+material_override = SubResource("ShaderMaterial_je5rc")
+bake_interval = 200.0

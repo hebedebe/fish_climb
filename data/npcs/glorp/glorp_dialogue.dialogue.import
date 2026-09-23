@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bate3lca2p2tc"
+path="res://.godot/imported/glorp_dialogue.dialogue-bb0e41042f1653520094768d7608ab48.tres"
+
+[deps]
+
+source_file="res://data/npcs/glorp/glorp_dialogue.dialogue"
+dest_files=["res://.godot/imported/glorp_dialogue.dialogue-bb0e41042f1653520094768d7608ab48.tres"]
+
+[params]
+
+defaults=true

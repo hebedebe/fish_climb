@@ -1,0 +1,842 @@
+[gd_scene format=3 uid="uid://bf4fe4aelm51o"]
+
+[ext_resource type="Texture2D" uid="uid://ciya18p0r3686" path="res://source/terrain_textures/OPOCEAN2.JPG" id="1_ukwr8"]
+[ext_resource type="Script" uid="uid://b5go11q4fwls4" path="res://source/curved_terrain/curved_terrain.gd" id="2_pb8y7"]
+[ext_resource type="Texture2D" uid="uid://bcgo2een4wlxq" path="res://source/terrain_textures/GRYDIRT2.JPG" id="3_hy0rb"]
+[ext_resource type="Texture2D" uid="uid://g4ms8cxd6sw1" path="res://source/terrain_textures/cells.jpg" id="4_mxp4k"]
+[ext_resource type="Texture2D" uid="uid://bako5rr78molg" path="res://source/terrain_textures/SD140.JPG" id="5_d7v53"]
+[ext_resource type="Texture2D" uid="uid://c07240xp5nha8" path="res://source/terrain_textures/MULCH.png" id="7_ta7ci"]
+[ext_resource type="Script" uid="uid://c24k2c2pkw5oi" path="res://source/spawner.gd" id="8_lh335"]
+[ext_resource type="Script" uid="uid://ogq6jh0v4dn7" path="res://source/interactive_grass/interactive_grass_curve.gd" id="9_hy0rb"]
+[ext_resource type="PackedScene" uid="uid://d2f2uonx5sjhi" path="res://source/player/player.tscn" id="9_u6cys"]
+[ext_resource type="Script" uid="uid://ycmo11btri04" path="res://source/npc/npc.gd" id="10_0qmeg"]
+[ext_resource type="PackedScene" uid="uid://cm6gykwt0fjxj" path="res://source/post_process/post_process.tscn" id="10_368ro"]
+[ext_resource type="Script" uid="uid://c7qtmnl2i5oeu" path="res://source/instance_curve/instance_curve.gd" id="10_ukwr8"]
+[ext_resource type="PackedScene" uid="uid://qm3jgcscb63x" path="res://source/interactive_grass/interactive_grass.tscn" id="11_pb8y7"]
+[ext_resource type="Resource" uid="uid://bh4sfx5xuxybx" path="res://data/npcs/glorp/glorp_npc_data.tres" id="11_ta7ci"]
+[ext_resource type="Resource" uid="uid://vr3k4as8m8k3" path="res://data/npcs/end of game npc/end of game.dialogue" id="12_368ro"]
+[ext_resource type="PackedScene" uid="uid://m5hyiu6c8vw8" path="res://data/dialogue_bubbles/glorp/balloon.tscn" id="13_3ca7f"]
+[ext_resource type="Texture2D" uid="uid://c2btkk5vk1hg2" path="res://Whentheimposterissus.webp" id="13_mxp4k"]
+[ext_resource type="Script" uid="uid://bm0pw0bb20w2g" path="res://source/npc/npc_data.gd" id="15_kogck"]
+[ext_resource type="PackedScene" uid="uid://wubj35i2lekd" path="res://source/props/rock/rock.tscn" id="16_ta7ci"]
+[ext_resource type="PackedScene" uid="uid://baaaiwjrjaeti" path="res://source/pause_menu/pause_menu.tscn" id="20_3ca7f"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_wjuib"]
+diffuse_texture = ExtResource("1_ukwr8")
+
+[sub_resource type="Curve2D" id="Curve2D_atrxo"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(-373.07062, -6.115912, 373.07062, 6.115912, -3293, -2774, -342.49106, -91.73868, 342.49106, 91.73868, -1581, -2405, -495.38885, 79.50686, 495.38885, -79.50686, 33, -2286, -342.49106, 12.231824, 342.49106, -12.231824, 2146, -2568, 0, 0, 0, 0, 3013, -2427, 0, 0, 0, 0, 3565, -1636, 0, 0, 0, 0, 3749, -531, 0, 0, 0, 0, 2861, 780, 0, 0, 0, 0, -379, 964, 0, 0, 0, 0, -2990, 184, 0, 0, 0, 0, -3683, -1333)
+}
+point_count = 11
+
+[sub_resource type="Curve2D" id="Curve2D_n4g7x"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(58.688625, 107.02044, -58.688625, -107.02044, -415, -613, 34.52272, -155.35225, -34.52272, 155.35225, -298, -30, -124.2818, -176.06589, 124.2818, 176.06589, -716, 688, -162.25679, 272.7295, 162.25679, -272.7295, 1152, 799, 65.59317, 224.39769, -65.59317, -224.39769, 538, 1, -6.9045444, -89.75908, 6.9045444, 89.75908, 741, -547)
+}
+point_count = 6
+
+[sub_resource type="Curve2D" id="Curve2D_ukwr8"]
+bake_interval = 150.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -4578, -4329, -67.275024, 181.64258, 67.275024, -181.64258, -2627, -4746, 820.7554, 531.4727, -820.7554, -531.4727, -3226, -5971, 0, 0, 0, 0, -2513, -6468, -497.8352, 80.730034, 497.8352, -80.730034, -1833, -6179, 0, 0, 0, 0, -1389, -6663, -242.1901, -201.82509, 242.1901, 201.82509, -246, -6717, 161.46007, -396.92267, -161.46007, 396.92267, -568, -4827, 0, 0, 0, 0, -1746, -3084, 0, 0, 0, 0, -2782, -2539)
+}
+point_count = 10
+
+[sub_resource type="Curve2D" id="Curve2D_rtcij"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 3071, -5857, -1271.5116, 420.85242, 1271.5116, -420.85242, 5070, -5777, 0, 0, 0, 0, 6688, -6840, -313.40073, -53.725838, 313.40073, 53.725838, 7941, -4445, -158.63101, 428.30374, 158.63101, -428.30374, 10098, -4794, 840.7444, 983.5123, -840.7444, -983.5123, 9527, -8537, 0, 0, 0, 0, 8639, -10536, -1110.4171, 31.726204, 1110.4171, -31.726204, 6957, -11298, -1253.185, 396.57755, 1253.185, -396.57755, 9368, -11964, 1094.5541, 1110.4171, -1094.5541, -1110.4171, 9416, -14486, 0, 0, 0, 0, 13889, -11409, 412.44064, -1729.0781, -412.44064, 1729.0781, 15936, -7268, 0, 0, 0, 0, 14032, -2398, 2766.8809, -993.92804, -2766.8809, 993.92804, 9971, -812, 0, 0, 0, 0, 4023, -1653)
+}
+point_count = 15
+
+[sub_resource type="Curve2D" id="Curve2D_kogck"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(-398.73743, 349.36993, 398.73743, -349.36993, -5426, -5546, -436.71243, -132.91248, 436.71243, 132.91248, -3368, -6049, 410.12994, -224.05246, -410.12994, 224.05246, -3442, -6530, 356.96494, 189.87497, -356.96494, -189.87497, -5485, -6648)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_hy0rb"]
+bake_interval = 500.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 4623, -3012, -370.77405, 0, 370.77405, 0, 5762, -3025, -598.4043, -9.980204, 598.4043, 9.980204, 6754, -2996, -22.784996, -53.164986, 22.784996, 53.164986, 7328, -2886)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_mxp4k"]
+bake_interval = 300.0
+_data = {
+"points": PackedVector2Array(-137.40045, -267.20587, 137.40045, 267.20587, -3164, -1062, -159.8402, -63.52181, 159.8402, 63.52181, -2756, -575, -299.6572, -134.15532, 299.6572, 134.15532, -2281, -417, -347.7474, -125.421036, 347.7474, 125.421036, -1831, -213)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_d7v53"]
+bake_interval = 300.0
+_data = {
+"points": PackedVector2Array(-531.71735, 98.56224, 531.71735, -98.56224, 1406, -4283, -165.99956, 12.968716, 165.99956, -12.968716, 2124, -4363, -189.34325, 251.59308, 189.34325, -251.59308, 2848, -4622)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_0qmeg"]
+bake_interval = 300.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -4897, -5435, -75.322296, -40.79958, 75.322296, 40.79958, -2995, -5068)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_ta7ci"]
+bake_interval = 600.0
+_data = {
+"points": PackedVector2Array(-72.49772, 20.713633, 72.49772, -20.713633, 10386, -3296, -82.85453, 24.165905, 82.85453, -24.165905, 11325, -3362, -65.59317, 41.427265, 65.59317, -41.427265, 11953, -3707, -238.20679, 255.46814, 238.20679, -255.46814, 12115, -3880)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_lh335"]
+bake_interval = 450.0
+_data = {
+"points": PackedVector2Array(-148.10248, -129.11497, 148.10248, 129.11497, 6072, -11994, -273.41995, -151.89996, 273.41995, 151.89996, 6501, -11647, -235.44496, -60.75999, 235.44496, 60.75999, 7362, -11384, 0, 0, 0, 0, 8196, -11014, -296.20496, -178.48247, 296.20496, 178.48247, 8963, -10611)
+}
+point_count = 5
+
+[sub_resource type="Curve2D" id="Curve2D_u6cys"]
+bake_interval = 300.0
+_data = {
+"points": PackedVector2Array(-433.67374, 116.758316, 433.67374, -116.758316, 875, 477, 0, 0, 0, 0, 1593, 205, -200.1571, 161.23767, 200.1571, -161.23767, 2121, -107, -250.1964, 211.27695, 250.1964, -211.27695, 2449, -379, -166.79759, 222.39679, 166.79759, -222.39679, 2994, -1019)
+}
+point_count = 5
+
+[sub_resource type="Curve2D" id="Curve2D_368ro"]
+bake_interval = 300.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2839, -6670, 0, 0, 0, 0, 3304, -6636, -40.79958, -47.07644, 40.79958, 47.07644, 3586, -6523)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_3ca7f"]
+bake_interval = 600.0
+_data = {
+"points": PackedVector2Array(-311.39496, -102.532486, 311.39496, 102.532486, 6957, -2253, -588.61237, 18.987497, 588.61237, -18.987497, 7861, -2261, 87.34248, -18.987497, -87.34248, 18.987497, 8951, -2295, 0, 0, 0, 0, 9330, -2322, -497.4724, 349.36993, 497.4724, -349.36993, 10086, -2519, 0, 0, 0, 0, 10625, -2994)
+}
+point_count = 6
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_pgbyh"]
+diffuse_texture = ExtResource("5_d7v53")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0qmeg"]
+radius = 248.6
+
+[sub_resource type="Resource" id="Resource_pb0qc"]
+script = ExtResource("15_kogck")
+npc_sprite = ExtResource("13_mxp4k")
+sprite_scale = Vector2(2, 2)
+npc_name = "jerma"
+npc_dialogue = ExtResource("12_368ro")
+npc_dialogue_balloon = ExtResource("13_3ca7f")
+metadata/_custom_type_script = "uid://bm0pw0bb20w2g"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ctgui"]
+radius = 397.73
+
+[sub_resource type="Curve2D" id="Curve2D_xag4j"]
+bake_interval = 150.0
+_data = {
+"points": PackedVector2Array(86.6777, -97.512405, -86.6777, 97.512405, 4471, -3043, -97.512405, -173.3554, 97.512405, 173.3554, 7331, -2924, 75.84299, -75.84299, -75.84299, 75.84299, 6876, -2480, 10.834712, -54.17356, -10.834712, 54.17356, 7017, -2231, -173.3554, -119.18183, 173.3554, 119.18183, 5034, -1613)
+}
+point_count = 5
+
+[sub_resource type="Curve2D" id="Curve2D_x25rp"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(613.63696, -216.73056, -613.63696, 216.73056, 2749, -1835, 491.3914, -361.99463, -491.3914, 361.99463, 1162, -642, 131.2719, 39.837296, -131.2719, -39.837296, -68, -302, 455.54767, 186.84038, -455.54767, -186.84038, -814, -754, 0, 0, 0, 0, -1673, -1255, -1023.1168, -546.06915, 1023.1168, 546.06915, -1032, -1202, -516.7001, 431.78406, 516.7001, -431.78406, 1058, -2465)
+}
+point_count = 7
+
+[sub_resource type="Curve2D" id="Curve2D_ur00s"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(134.63861, -6.9045444, -134.63861, 6.9045444, -337, -3168, -34.52272, -134.63861, 34.52272, 134.63861, -620, -2819, -103.56817, -13.809089, 103.56817, 13.809089, 87, -2488, -219.44061, -296.8068, 219.44061, 296.8068, 875, -2275, 0, 0, 0, 0, 1823, -3426, 400.8512, 385.84607, -400.8512, -385.84607, 1526, -3766, 40.728195, -143.62048, -40.728195, 143.62048, 1346, -3406, 511.20178, 7.612709, -511.20178, -7.612709, 298, -3144)
+}
+point_count = 8
+
+[sub_resource type="Curve2D" id="Curve2D_4n8tn"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(330.00275, -62.65875, -330.00275, 62.65875, -1036, -4690, -45.94975, -116.963, 45.94975, 116.963, -1458, -4394, 0, 0, 0, 0, -3276, -3331, 0, 0, 0, 0, -1684, -2967, -146.20374, -29.24075, 146.20374, 29.24075, -749, -4198, -91.8995, 41.7725, 91.8995, -41.7725, 125, -4353, 37.59525, 133.672, -37.59525, -133.672, 214, -4694, 250.635, -54.30425, -250.635, 54.30425, -652, -4782)
+}
+point_count = 8
+
+[sub_resource type="Curve2D" id="Curve2D_ly3hx"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(181.96101, -35.381306, -181.96101, 35.381306, -2649, -4844, -70.76261, -50.544724, 70.76261, 50.544724, -2447, -4475, -121.30734, 35.381306, 121.30734, -35.381306, -1957, -4343, 121.30734, 20.21789, -121.30734, -20.21789, -1654, -4753)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_wkb0e"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(30.379995, -220.25496, -30.379995, 220.25496, -5001, -5454, -110.12748, 3.7974994, 110.12748, -3.7974994, -3820, -3780, 140.50748, 121.51998, -140.50748, -121.51998, -2951, -5051)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_paa45"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(-101.08945, 298.67334, 101.08945, -298.67334, -5152, -5587, -119.46934, 27.569847, 119.46934, -27.569847, -4997, -6171, -55.139694, 18.379898, 55.139694, -18.379898, -4523, -5898, 9.189949, 41.35477, -9.189949, -41.35477, -4329, -6301, 4.5949745, 36.759796, -4.5949745, -36.759796, -4834, -6497, -82.70954, 27.569847, 82.70954, -27.569847, -4708, -6971, -41.35477, 50.54472, 41.35477, -50.54472, -4205, -6978, 50.54472, 36.759796, -50.54472, -36.759796, -4257, -7281, 64.32964, -22.974873, -64.32964, 22.974873, -5293, -7333, -13.784924, -45.949745, 13.784924, 45.949745, -6448, -4736, -91.89949, 0, 91.89949, 0, -5389, -4003, 137.84924, 170.01405, -137.84924, -170.01405, -4920, -5436)
+}
+point_count = 12
+
+[sub_resource type="Curve2D" id="Curve2D_axl34"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(-59.73467, -73.51959, 59.73467, 73.51959, -3973, -5927, -243.53365, 78.11456, 243.53365, -78.11456, -3094, -5850, 68.92462, 367.59796, -68.92462, -367.59796, -2112, -6277, 68.92462, -4.5949745, -68.92462, 4.5949745, -2879, -7090, 298.67334, -78.11456, -298.67334, 78.11456, -3449, -6773, -9.189949, -128.65929, 9.189949, 128.65929, -3900, -6638, 22.974873, -179.20401, -22.974873, 179.20401, -3509, -6267)
+}
+point_count = 7
+
+[sub_resource type="Curve2D" id="Curve2D_8hjdj"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(41.35477, -147.03918, -41.35477, 147.03918, -1928, -7251, -137.84924, -82.70954, 137.84924, 82.70954, -1303, -6130, -257.31857, 101.08943, 257.31857, -101.08943, -696, -6125, 0, 197.58391, 0, -197.58391, -7, -7122)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_werwd"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(-689.4816, 241.76628, 689.4816, -241.76628, -5189, -9578, 691.54114, 237.02051, -691.54114, -237.02051, -4600, -11159, 260.03308, -184.19011, -260.03308, 184.19011, -6501, -11263, 292.53723, -563.405, -292.53723, 563.405, -6147, -10195)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_0vv12"]
+bake_interval = 120.0
+_data = {
+"points": PackedVector2Array(38.919437, -33.35952, -38.919437, 33.35952, 778, -7481, 38.919437, -88.95872, -38.919437, 88.95872, 1112, -6944, 22.23968, -55.599197, -22.23968, 55.599197, 672, -6716, -122.31824, -66.71904, 122.31824, 66.71904, 1486, -6349, -61.15912, 77.838875, 61.15912, -77.838875, 2830, -6651, 38.919437, 77.838875, -38.919437, -77.838875, 2699, -7725, 0, 0, 0, 0, 2390, -7888)
+}
+point_count = 7
+
+[sub_resource type="Curve2D" id="Curve2D_o5yuq"]
+bake_interval = 300.0
+_data = {
+"points": PackedVector2Array(-376.08087, -107.451675, 376.08087, 107.451675, -3124, -11170, 17.908613, -340.26364, -17.908613, 340.26364, -2361, -10455, 313.40073, -268.6292, -313.40073, 268.6292, -3529, -9609, 188.04044, -232.81197, -188.04044, 232.81197, -4518, -8666, 0, 0, 0, 0, -5113, -7130, 68.12167, -433.27295, -68.12167, 433.27295, -5962, -5466, 249.09003, -458.85007, -249.09003, 458.85007, -5002, -2904, 498.18005, 288.42004, -498.18005, -288.42004, -8694, -1840, -79.60112, 820.5351, 79.60112, -820.5351, -9087, -6035, -286.5378, 376.08087, 286.5378, -376.08087, -7705, -9146, -537.2584, -116.40598, 537.2584, 116.40598, -4499, -11411)
+}
+point_count = 11
+
+[sub_resource type="Curve2D" id="Curve2D_vr6yy"]
+bake_interval = 150.0
+_data = {
+"points": PackedVector2Array(-392.21344, 259.00885, 392.21344, -259.00885, 9528, -4399, -133.20456, 37.001266, 133.20456, -37.001266, 10823, -4606, -22.20076, 96.20329, 22.20076, -96.20329, 11313, -4683, 336.57532, 44.40152, -336.57532, -44.40152, 10966, -4741, 347.8119, 296.01013, -347.8119, -296.01013, 9691, -5139)
+}
+point_count = 5
+
+[sub_resource type="Curve2D" id="Curve2D_574oa"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(612.20276, -40.365017, -612.20276, 40.365017, 1955, -13066, 329.64764, 47.09252, -329.64764, -47.09252, 286, -13140, 13.455006, -33.637512, -13.455006, 33.637512, 105, -13033, -248.9176, -215.28009, 248.9176, 215.28009, 1154, -12710)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_ra35m"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(255.46814, 680.0976, -255.46814, -680.0976, 10436, -4855, 89.75908, 82.85453, -89.75908, -82.85453, 9491, -5404, -890.6862, -155.35225, 890.6862, 155.35225, 9649, -5680, -138.09088, 214.04088, 138.09088, -214.04088, 10705, -5956)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_68kkm"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(-148.00507, 67.275024, 148.00507, -67.275024, 8499, -2219, 26.910011, 94.18504, -26.910011, -94.18504, 8781, -2663, 121.09505, 100.912544, -121.09505, -100.912544, 8081, -2898, -107.640045, 13.455006, 107.640045, -13.455006, 8108, -3093, -107.640045, -80.730034, 107.640045, 80.730034, 9689, -3080, 33.637512, -114.367546, -33.637512, 114.367546, 9272, -2723, -67.275024, -40.365017, 67.275024, 40.365017, 9380, -2232)
+}
+point_count = 7
+
+[sub_resource type="Curve2D" id="Curve2D_ec2iw"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(-329.64764, -40.365017, 329.64764, 40.365017, 13007, -8870, -47.09252, -107.640045, 47.09252, 107.640045, 13532, -8783, 201.8251, -74.00253, -201.8251, 74.00253, 13236, -8372, 80.730034, 74.00253, -80.730034, -74.00253, 11844, -8554, -201.82509, -53.820023, 201.82509, 53.820023, 11763, -9025)
+}
+point_count = 5
+
+[sub_resource type="Curve2D" id="Curve2D_x7oem"]
+bake_interval = 150.0
+_data = {
+"points": PackedVector2Array(2376.0566, 797.8747, -2376.0566, -797.8747, 14664, -13868, -333.12515, -1173.8695, 333.12515, 1173.8695, 10444, -13282, -428.30374, -586.93475, 428.30374, 586.93475, 14378.337, -9379.221, -917.7001, -943.92017, 917.7001, 943.92017, 15061, -5679, -812.82007, 170.43002, 812.82007, -170.43002, 19099, -3398, 65.55001, 865.26013, -65.55001, -865.26013, 21957, -8380, 1618.0364, 602.79785, -1618.0364, -602.79785, 19185, -11997)
+}
+point_count = 7
+
+[sub_resource type="Curve2D" id="Curve2D_ulql8"]
+bake_interval = 150.0
+_data = {
+"points": PackedVector2Array(-1748.8474, 500.39276, 1748.8474, -500.39276, 7811, -8441, -1197.4955, 121.09503, 1197.4955, -121.09503, 10599, -9428, 773.66284, 114.36755, -773.66284, -114.36755, 10296, -9718, 0, 0, 0, 0, 8359, -10572)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_pgbyh"]
+bake_interval = 200.0
+_data = {
+"points": PackedVector2Array(-49.24869, 59.098427, 49.24869, -59.098427, 4673, -2075, -787.97906, 29.549213, 787.97906, -29.549213, 9322, -2311, 60.547523, 134.55005, -60.547523, -134.55005, 10642, -3010, -33.637512, 107.640045, 33.637512, -107.640045, 10285, -3246, -154.73256, 67.275024, 154.73256, -67.275024, 11334, -3354, -222.0076, 289.28262, 222.0076, -289.28262, 12116, -3861, -187.47304, 302.84106, 187.47304, -302.84106, 12385, -7070, -196.99475, -17.908613, 196.99475, 17.908613, 13243, -7368, -340.26364, -8.954307, 340.26364, 8.954307, 13799, -8012, -634.5242, -389.3671, 634.5242, 389.3671, 15198, -8130, -187.09454, -710.7469, 187.09454, 710.7469, 13953, -2298, 216.69424, -118.19685, -216.69424, 118.19685, 13321, 594, 118.19685, 98.49738, -118.19685, -98.49738, 4831, 693)
+}
+point_count = 13
+
+[sub_resource type="Curve2D" id="Curve2D_3i7yh"]
+bake_interval = 200.0
+_data = {
+"points": PackedVector2Array(2585.2686, -1.4616699, -2585.2686, 1.4616699, 15131, -12123, 455.85562, 439.57504, -455.85562, -439.57504, 10743.38, -13295.534, 1586.3102, 555.20856, -1586.3102, -555.20856, 8144, -14852, 1971.9176, 411.71906, -1971.9176, -411.71906, 3211, -15613, -1235.1572, 205.85953, 1235.1572, -205.85953, 4083, -18754, -2552.849, -1439.5767, 2552.849, 1439.5767, 15584, -17454, 0, 0, 0, 0, 16092, -12679)
+}
+point_count = 7
+
+[sub_resource type="Curve2D" id="Curve2D_wjuib"]
+bake_interval = 300.0
+_data = {
+"points": PackedVector2Array(-634.5242, -331.68307, 634.5242, 331.68307, 4404, -10390, -455.0579, -650.0827, 455.0579, 650.0827, 5644, -9410, -205.85953, -97.512405, 205.85953, 97.512405, 7360, -3886, -151.68597, 238.36366, 151.68597, -238.36366, 10432, -4434, 1623.8049, 882.5653, -1623.8049, -882.5653, 8906, -10619, 793.1552, 245.15706, -793.1552, -245.15706, 6758, -11528, 764.3132, 86.52602, -764.3132, -86.52602, 5402, -12378, 1871.8461, 190.35722, -1871.8461, -190.35722, 3325, -13085, -14.421003, -807.5762, 14.421003, 807.5762, 496, -12755, -1153.6803, 28.842007, 1153.6803, -28.842007, 2933, -10563)
+}
+point_count = 10
+
+[sub_resource type="Curve2D" id="Curve2D_o6mel"]
+bake_interval = 200.0
+_data = {
+"points": PackedVector2Array(-525.9199, -77.86218, 525.9199, 77.86218, -822, 325, -574.54443, 324.20392, 574.54443, -324.20392, 1345, 237, 6.115912, 532.08435, -6.115912, -532.08435, 2917, -1243, 275.21603, 195.70918, -275.21603, -195.70918, 1241, -1995, -358.8817, 288.97684, 358.8817, -288.97684, 1217, -2583, 96.20329, 281.20963, -96.20329, -281.20963, 1673, -3390, 296.01013, 303.4104, -296.01013, -303.4104, 1162, -4167, -154.6653, 154.6653, 154.6653, -154.6653, 2646, -4555, 113.963905, 170.94586, -113.963905, -170.94586, 2792, -5523, -162.80557, 146.52502, 162.80557, -146.52502, 1929, -6541, -97.68335, -65.12223, 97.68335, 65.12223, 2638, -6744, -339.15512, -116.758316, 339.15512, 116.758316, 3414, -6648, -256.73987, -619.1182, 256.73987, 619.1182, 3849, -4996, 0, 0, 0, 0, 5076, -1372, 0, 0, 0, 0, 5078, 3153, 0, 0, 0, 0, -6528, 2452, 0, 0, 0, 0, -6289, -2808, -1284.3416, -373.07062, 1284.3416, 373.07062, -5018, -5344, -474.68744, -235.44496, 474.68744, 235.44496, -3554, -3607, -1189.2668, -314.13547, 1189.2668, 314.13547, -1468, -2882, 397.53427, -214.05692, -397.53427, 214.05692, -2178, -2479, 161.79367, -341.3791, -161.79367, 341.3791, -3175, -1690, -592.9935, -196.94067, 592.9935, 196.94067, -2719, -597, -299.59518, -46.01877, 299.59518, 46.01877, -1972, -293, -421.90225, -29.24075, 421.90225, 29.24075, -1179, 74)
+}
+point_count = 25
+
+[sub_resource type="Curve2D" id="Curve2D_tn76l"]
+bake_interval = 150.0
+_data = {
+"points": PackedVector2Array(-309.87277, 512.4819, 309.87277, -512.4819, -5580, -17266, -405.21823, -190.69093, 405.21823, 190.69093, -3327, -18089, -176.15079, -576.9593, 176.15079, 576.9593, -3041, -16933, -217.7452, -963.9427, 217.7452, 963.9427, -2493, -14597, 95.34547, -95.34547, -95.34547, 95.34547, -3023, -12783, 369.46368, 202.60912, -369.46368, -202.60912, -4054, -12368, 383.76553, 765.8624, -383.76553, -765.8624, -5723, -14489)
+}
+point_count = 7
+
+[sub_resource type="Curve2D" id="Curve2D_of21v"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -8730, -11192, -37.090527, 42.79676, 37.090527, -42.79676, -7790, -11170, 28.531174, 39.943645, -28.531174, -39.943645, -7812, -11458, 31.384293, 19.971823, -31.384293, -19.971823, -8345, -11458, 14.265587, 25.678057, -14.265587, -25.678057, -8360, -11732, 25.678057, 19.971823, -25.678057, -19.971823, -8759, -11739, 28.531174, 25.678057, -28.531174, -25.678057, -8804, -12058, 25.678057, -19.971823, -25.678057, 19.971823, -9388, -12021, -48.503, -51.356113, 48.503, 51.356113, -9381, -11207)
+}
+point_count = 9
+
+[sub_resource type="Curve2D" id="Curve2D_80cyg"]
+bake_interval = 200.0
+_data = {
+"points": PackedVector2Array(214.5273, 274.11823, -214.5273, -274.11823, -7346, -9073, 119.18183, 71.5091, -119.18183, -71.5091, -10445, -10587, 250.28185, 143.0182, -250.28185, -143.0182, -10767, -11922, 238.36366, -119.18183, -238.36366, 119.18183, -12054, -11910, -214.5273, -166.85457, 214.5273, 166.85457, -12614, -6999, -214.5273, 71.5091, 214.5273, -71.5091, -8347, -6463)
+}
+point_count = 6
+
+[node name="TestLevel" type="Node" unique_id=1147868162]
+
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=1690094218]
+scroll_scale = Vector2(0.6, 0.6)
+scroll_offset = Vector2(6, 0)
+repeat_size = Vector2(400, 400)
+repeat_times = 14
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3" unique_id=961844215]
+modulate = Color(0.641934, 0.641934, 0.641934, 1)
+texture_repeat = 2
+scale = Vector2(2, 2)
+texture = ExtResource("7_ta7ci")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1707690037]
+scroll_scale = Vector2(0.9, 0.9)
+scroll_offset = Vector2(6, 0)
+repeat_size = Vector2(756, 512)
+autoscroll = Vector2(5, 2)
+repeat_times = 8
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=784935603]
+modulate = Color(0.64, 0.64, 0.64, 0.5294118)
+texture_repeat = 2
+texture = SubResource("CanvasTexture_wjuib")
+
+[node name="Background" type="Node2D" parent="." unique_id=454372018]
+
+[node name="CurvedTerrain" type="Path2D" parent="Background" unique_id=804298422]
+modulate = Color(0.28319463, 0.38315237, 0.498056, 1)
+texture_filter = 4
+curve = SubResource("Curve2D_atrxo")
+script = ExtResource("2_pb8y7")
+edge_width = 0.0
+fill_texture = ExtResource("3_hy0rb")
+generate_collision = false
+visible_collision = false
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain2" type="Path2D" parent="Background" unique_id=1202189113]
+modulate = Color(0.67481464, 0.67481464, 0.6748146, 1)
+texture_filter = 4
+curve = SubResource("Curve2D_n4g7x")
+script = ExtResource("2_pb8y7")
+edge_width = 0.0
+fill_texture = ExtResource("4_mxp4k")
+generate_collision = false
+visible_collision = false
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain3" type="Path2D" parent="Background" unique_id=970427350]
+modulate = Color(0.38902062, 0.47683018, 0.56676286, 1)
+texture_filter = 4
+curve = SubResource("Curve2D_ukwr8")
+script = ExtResource("2_pb8y7")
+edge_width = 0.0
+fill_texture = ExtResource("3_hy0rb")
+generate_collision = false
+bake_interval = 150.0
+visible_collision = false
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain4" type="Path2D" parent="Background" unique_id=645654014]
+modulate = Color(0.5759011, 0.70200056, 0.76268244, 1)
+texture_filter = 4
+curve = SubResource("Curve2D_rtcij")
+script = ExtResource("2_pb8y7")
+edge_width = 0.0
+fill_texture = ExtResource("7_ta7ci")
+fill_texture_scale = Vector2(0.4, 0.4)
+generate_collision = false
+visible_collision = false
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain5" type="Path2D" parent="Background" unique_id=1299070874]
+modulate = Color(0.549953, 0.6526637, 0.7042818, 1)
+texture_filter = 4
+curve = SubResource("Curve2D_kogck")
+script = ExtResource("2_pb8y7")
+edge_width = 0.0
+fill_texture = ExtResource("3_hy0rb")
+generate_collision = false
+visible_collision = false
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="Grass" type="Node2D" parent="." unique_id=380388134]
+
+[node name="InstanceCurve" type="Path2D" parent="Grass" unique_id=1139559563]
+curve = SubResource("Curve2D_hy0rb")
+script = ExtResource("10_ukwr8")
+scene = ExtResource("11_pb8y7")
+bake_interval = 500.0
+metadata/_custom_type_script = "uid://c7qtmnl2i5oeu"
+
+[node name="GrassCurve" type="Path2D" parent="Grass" unique_id=1281514323]
+curve = SubResource("Curve2D_mxp4k")
+script = ExtResource("9_hy0rb")
+scene = ExtResource("11_pb8y7")
+metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
+
+[node name="GrassCurve2" type="Path2D" parent="Grass" unique_id=1924862979]
+curve = SubResource("Curve2D_d7v53")
+script = ExtResource("9_hy0rb")
+scene = ExtResource("11_pb8y7")
+metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
+
+[node name="GrassCurve3" type="Path2D" parent="Grass" unique_id=2032009890]
+curve = SubResource("Curve2D_0qmeg")
+script = ExtResource("9_hy0rb")
+scene = ExtResource("11_pb8y7")
+metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
+
+[node name="GrassCurve4" type="Path2D" parent="Grass" unique_id=338499821]
+curve = SubResource("Curve2D_ta7ci")
+script = ExtResource("9_hy0rb")
+scene = ExtResource("11_pb8y7")
+bake_interval = 600.0
+metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
+
+[node name="GrassCurve5" type="Path2D" parent="Grass" unique_id=1275423728]
+curve = SubResource("Curve2D_lh335")
+script = ExtResource("9_hy0rb")
+scene = ExtResource("11_pb8y7")
+bake_interval = 450.0
+metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
+
+[node name="GrassCurve6" type="Path2D" parent="Grass" unique_id=2084839169]
+curve = SubResource("Curve2D_u6cys")
+script = ExtResource("9_hy0rb")
+scene = ExtResource("11_pb8y7")
+metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
+
+[node name="GrassCurve7" type="Path2D" parent="Grass" unique_id=1537476183]
+curve = SubResource("Curve2D_368ro")
+script = ExtResource("9_hy0rb")
+scene = ExtResource("11_pb8y7")
+metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
+
+[node name="GrassCurve8" type="Path2D" parent="Grass" unique_id=3124458]
+curve = SubResource("Curve2D_3ca7f")
+script = ExtResource("9_hy0rb")
+scene = ExtResource("11_pb8y7")
+bake_interval = 600.0
+metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
+
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=1198502382]
+modulate = Color(1, 1, 1, 0.45882353)
+repeat_size = Vector2(1024, 727)
+autoscroll = Vector2(-7, 3)
+repeat_times = 6
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2" unique_id=252166512]
+modulate = Color(0.641934, 0.641934, 0.641934, 1)
+texture_repeat = 2
+texture = SubResource("CanvasTexture_pgbyh")
+
+[node name="Npcs" type="Node2D" parent="." unique_id=657659378]
+
+[node name="glorp" type="Node2D" parent="Npcs" unique_id=976422148]
+position = Vector2(547, -3322)
+script = ExtResource("10_0qmeg")
+npc_data = ExtResource("11_ta7ci")
+interaction_shape = SubResource("CircleShape2D_0qmeg")
+metadata/_custom_type_script = "uid://ycmo11btri04"
+
+[node name="EndOfGame" type="Node2D" parent="Npcs" unique_id=1434383262]
+position = Vector2(-11439, -12372)
+script = ExtResource("10_0qmeg")
+npc_data = SubResource("Resource_pb0qc")
+interaction_shape = SubResource("CircleShape2D_ctgui")
+metadata/_custom_type_script = "uid://ycmo11btri04"
+
+[node name="Spawner" type="Node2D" parent="." unique_id=924794710]
+position = Vector2(114, 116)
+script = ExtResource("8_lh335")
+scene_to_spawn = ExtResource("9_u6cys")
+metadata/_custom_type_script = "uid://c24k2c2pkw5oi"
+
+[node name="Parallax2D4" type="Parallax2D" parent="." unique_id=1407528033]
+modulate = Color(1, 1, 1, 0.45882353)
+scroll_scale = Vector2(1.02, 1.02)
+repeat_size = Vector2(1024, 727)
+autoscroll = Vector2(-7, 3)
+repeat_times = 6
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4" unique_id=597571623]
+modulate = Color(1, 1, 1, 0.34509805)
+texture_repeat = 2
+texture = SubResource("CanvasTexture_pgbyh")
+
+[node name="Level" type="Node2D" parent="." unique_id=280688644]
+
+[node name="Rock" parent="Level" unique_id=640060634 instance=ExtResource("16_ta7ci")]
+position = Vector2(-10467, -10672)
+
+[node name="Rock2" parent="Level" unique_id=1420708160 instance=ExtResource("16_ta7ci")]
+position = Vector2(-9806, -10250)
+
+[node name="Rock3" parent="Level" unique_id=1054101782 instance=ExtResource("16_ta7ci")]
+position = Vector2(-9115, -9993)
+
+[node name="Rock4" parent="Level" unique_id=93741914 instance=ExtResource("16_ta7ci")]
+position = Vector2(-8424, -9644)
+
+[node name="Rock5" parent="Level" unique_id=1669988160 instance=ExtResource("16_ta7ci")]
+position = Vector2(-7654, -9345)
+
+[node name="Rock6" parent="Level" unique_id=765575699 instance=ExtResource("16_ta7ci")]
+position = Vector2(-9464, -11192)
+
+[node name="Rock7" parent="Level" unique_id=1112409120 instance=ExtResource("16_ta7ci")]
+position = Vector2(-10730, -11767)
+
+[node name="CurvedTerrain13" type="Path2D" parent="Level" unique_id=1025252872]
+texture_filter = 4
+curve = SubResource("Curve2D_xag4j")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("4_mxp4k")
+bake_interval = 150.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain2" type="Path2D" parent="Level" unique_id=34913062]
+texture_filter = 4
+position = Vector2(77, 108)
+curve = SubResource("Curve2D_x25rp")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("4_mxp4k")
+visible_collision = false
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain3" type="Path2D" parent="Level" unique_id=2001613194]
+texture_filter = 4
+position = Vector2(283, -16)
+curve = SubResource("Curve2D_ur00s")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("4_mxp4k")
+visible_collision = false
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain4" type="Path2D" parent="Level" unique_id=474500437]
+texture_filter = 4
+position = Vector2(121, 130)
+curve = SubResource("Curve2D_4n8tn")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("3_hy0rb")
+visible_collision = false
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain5" type="Path2D" parent="Level" unique_id=112629446]
+texture_filter = 4
+curve = SubResource("Curve2D_ly3hx")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("3_hy0rb")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain6" type="Path2D" parent="Level" unique_id=1929418860]
+texture_filter = 4
+curve = SubResource("Curve2D_wkb0e")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("7_ta7ci")
+fill_texture_scale = Vector2(0.4, 0.4)
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain7" type="Path2D" parent="Level" unique_id=1707136756]
+texture_filter = 4
+curve = SubResource("Curve2D_paa45")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("3_hy0rb")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain8" type="Path2D" parent="Level" unique_id=257689536]
+texture_filter = 4
+curve = SubResource("Curve2D_axl34")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("3_hy0rb")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain9" type="Path2D" parent="Level" unique_id=89483601]
+texture_filter = 4
+curve = SubResource("Curve2D_8hjdj")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("3_hy0rb")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain24" type="Path2D" parent="Level" unique_id=161349149]
+texture_filter = 4
+curve = SubResource("Curve2D_werwd")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("3_hy0rb")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain10" type="Path2D" parent="Level" unique_id=2017458858]
+texture_filter = 4
+curve = SubResource("Curve2D_0vv12")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("3_hy0rb")
+bake_interval = 120.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain11" type="Path2D" parent="Level" unique_id=535777028]
+texture_filter = 4
+position = Vector2(0, 28)
+curve = SubResource("Curve2D_o5yuq")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("7_ta7ci")
+fill_texture_scale = Vector2(0.4, 0.4)
+bake_interval = 300.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain16" type="Path2D" parent="Level" unique_id=1263150035]
+texture_filter = 4
+curve = SubResource("Curve2D_vr6yy")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("4_mxp4k")
+bake_interval = 150.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain22" type="Path2D" parent="Level" unique_id=31511788]
+texture_filter = 4
+curve = SubResource("Curve2D_574oa")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("3_hy0rb")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain17" type="Path2D" parent="Level" unique_id=785535272]
+texture_filter = 4
+position = Vector2(1999, -453)
+curve = SubResource("Curve2D_ra35m")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("4_mxp4k")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain15" type="Path2D" parent="Level" unique_id=18946431]
+texture_filter = 4
+curve = SubResource("Curve2D_68kkm")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("3_hy0rb")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain19" type="Path2D" parent="Level" unique_id=714590948]
+texture_filter = 4
+curve = SubResource("Curve2D_ec2iw")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("3_hy0rb")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain18" type="Path2D" parent="Level" unique_id=1133387938]
+texture_filter = 4
+curve = SubResource("Curve2D_x7oem")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("3_hy0rb")
+bake_interval = 150.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain20" type="Path2D" parent="Level" unique_id=880334308]
+texture_filter = 4
+curve = SubResource("Curve2D_ulql8")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("3_hy0rb")
+bake_interval = 150.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain14" type="Path2D" parent="Level" unique_id=1983317495]
+texture_filter = 4
+curve = SubResource("Curve2D_pgbyh")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("7_ta7ci")
+fill_texture_scale = Vector2(0.4, 0.4)
+bake_interval = 200.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain21" type="Path2D" parent="Level" unique_id=982828522]
+texture_filter = 4
+curve = SubResource("Curve2D_3i7yh")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("7_ta7ci")
+fill_texture_scale = Vector2(0.4, 0.4)
+bake_interval = 200.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain12" type="Path2D" parent="Level" unique_id=1096221640]
+texture_filter = 4
+curve = SubResource("Curve2D_wjuib")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("7_ta7ci")
+fill_texture_scale = Vector2(0.4, 0.4)
+bake_interval = 300.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain" type="Path2D" parent="Level" unique_id=1555587327]
+texture_filter = 4
+position = Vector2(105, 68)
+curve = SubResource("Curve2D_o6mel")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("7_ta7ci")
+fill_texture_scale = Vector2(0.4, 0.4)
+bake_interval = 200.0
+visible_collision = false
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain23" type="Path2D" parent="Level" unique_id=1638364868]
+texture_filter = 4
+position = Vector2(-67, -9)
+curve = SubResource("Curve2D_tn76l")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("7_ta7ci")
+fill_texture_scale = Vector2(0.4, 0.4)
+bake_interval = 150.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain25" type="Path2D" parent="Level" unique_id=1717303497]
+texture_filter = 4
+curve = SubResource("Curve2D_of21v")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("3_hy0rb")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain26" type="Path2D" parent="Level" unique_id=1746834857]
+texture_filter = 4
+curve = SubResource("Curve2D_80cyg")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("7_ta7ci")
+bake_interval = 200.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="PostProcess" parent="." unique_id=1121221467 instance=ExtResource("10_368ro")]
+
+[node name="PauseCanvasLayer" parent="." unique_id=945801933 instance=ExtResource("20_3ca7f")]
+
+[connection signal="body_entered" from="Grass/InstanceCurve/InteractiveGrass" to="Grass/InstanceCurve/InteractiveGrass" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/InstanceCurve/@Area2D@23062" to="Grass/InstanceCurve/@Area2D@23062" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/InstanceCurve/@Area2D@23063" to="Grass/InstanceCurve/@Area2D@23063" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/InstanceCurve/@Area2D@23064" to="Grass/InstanceCurve/@Area2D@23064" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/InstanceCurve/@Area2D@23065" to="Grass/InstanceCurve/@Area2D@23065" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/InstanceCurve/@Area2D@23066" to="Grass/InstanceCurve/@Area2D@23066" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/InstanceCurve/@Area2D@23067" to="Grass/InstanceCurve/@Area2D@23067" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/InstanceCurve/@Area2D@23068" to="Grass/InstanceCurve/@Area2D@23068" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/InstanceCurve/@Area2D@23069" to="Grass/InstanceCurve/@Area2D@23069" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/InstanceCurve/@Area2D@23070" to="Grass/InstanceCurve/@Area2D@23070" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve/InteractiveGrass" to="Grass/GrassCurve/InteractiveGrass" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve/@Area2D@23079" to="Grass/GrassCurve/@Area2D@23079" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve/@Area2D@23080" to="Grass/GrassCurve/@Area2D@23080" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve/@Area2D@23081" to="Grass/GrassCurve/@Area2D@23081" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve/@Area2D@23082" to="Grass/GrassCurve/@Area2D@23082" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve/@Area2D@23083" to="Grass/GrassCurve/@Area2D@23083" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve/@Area2D@23084" to="Grass/GrassCurve/@Area2D@23084" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve/@Area2D@23085" to="Grass/GrassCurve/@Area2D@23085" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve/@Area2D@23086" to="Grass/GrassCurve/@Area2D@23086" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve2/InteractiveGrass" to="Grass/GrassCurve2/InteractiveGrass" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve2/@Area2D@23095" to="Grass/GrassCurve2/@Area2D@23095" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve2/@Area2D@23096" to="Grass/GrassCurve2/@Area2D@23096" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve2/@Area2D@23097" to="Grass/GrassCurve2/@Area2D@23097" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve2/@Area2D@23098" to="Grass/GrassCurve2/@Area2D@23098" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve2/@Area2D@23099" to="Grass/GrassCurve2/@Area2D@23099" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve2/@Area2D@23100" to="Grass/GrassCurve2/@Area2D@23100" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve2/@Area2D@23101" to="Grass/GrassCurve2/@Area2D@23101" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve2/@Area2D@23102" to="Grass/GrassCurve2/@Area2D@23102" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve3/InteractiveGrass" to="Grass/GrassCurve3/InteractiveGrass" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve3/@Area2D@23114" to="Grass/GrassCurve3/@Area2D@23114" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve3/@Area2D@23115" to="Grass/GrassCurve3/@Area2D@23115" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve3/@Area2D@23116" to="Grass/GrassCurve3/@Area2D@23116" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve3/@Area2D@23117" to="Grass/GrassCurve3/@Area2D@23117" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve3/@Area2D@23118" to="Grass/GrassCurve3/@Area2D@23118" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve3/@Area2D@23119" to="Grass/GrassCurve3/@Area2D@23119" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve3/@Area2D@23120" to="Grass/GrassCurve3/@Area2D@23120" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve3/@Area2D@23121" to="Grass/GrassCurve3/@Area2D@23121" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve3/@Area2D@23122" to="Grass/GrassCurve3/@Area2D@23122" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve3/@Area2D@23123" to="Grass/GrassCurve3/@Area2D@23123" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve3/@Area2D@23124" to="Grass/GrassCurve3/@Area2D@23124" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve4/InteractiveGrass" to="Grass/GrassCurve4/InteractiveGrass" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve4/@Area2D@23130" to="Grass/GrassCurve4/@Area2D@23130" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve4/@Area2D@23131" to="Grass/GrassCurve4/@Area2D@23131" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve4/@Area2D@23132" to="Grass/GrassCurve4/@Area2D@23132" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve4/@Area2D@23133" to="Grass/GrassCurve4/@Area2D@23133" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve4/@Area2D@23134" to="Grass/GrassCurve4/@Area2D@23134" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve5/InteractiveGrass" to="Grass/GrassCurve5/InteractiveGrass" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve5/@Area2D@23146" to="Grass/GrassCurve5/@Area2D@23146" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve5/@Area2D@23147" to="Grass/GrassCurve5/@Area2D@23147" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve5/@Area2D@23148" to="Grass/GrassCurve5/@Area2D@23148" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve5/@Area2D@23149" to="Grass/GrassCurve5/@Area2D@23149" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve5/@Area2D@23150" to="Grass/GrassCurve5/@Area2D@23150" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve5/@Area2D@23151" to="Grass/GrassCurve5/@Area2D@23151" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve5/@Area2D@23152" to="Grass/GrassCurve5/@Area2D@23152" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve5/@Area2D@23153" to="Grass/GrassCurve5/@Area2D@23153" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve5/@Area2D@23154" to="Grass/GrassCurve5/@Area2D@23154" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve5/@Area2D@23155" to="Grass/GrassCurve5/@Area2D@23155" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve5/@Area2D@23156" to="Grass/GrassCurve5/@Area2D@23156" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve6/InteractiveGrass" to="Grass/GrassCurve6/InteractiveGrass" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve6/@Area2D@23170" to="Grass/GrassCurve6/@Area2D@23170" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve6/@Area2D@23171" to="Grass/GrassCurve6/@Area2D@23171" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve6/@Area2D@23172" to="Grass/GrassCurve6/@Area2D@23172" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve6/@Area2D@23173" to="Grass/GrassCurve6/@Area2D@23173" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve6/@Area2D@23174" to="Grass/GrassCurve6/@Area2D@23174" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve6/@Area2D@23175" to="Grass/GrassCurve6/@Area2D@23175" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve6/@Area2D@23176" to="Grass/GrassCurve6/@Area2D@23176" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve6/@Area2D@23177" to="Grass/GrassCurve6/@Area2D@23177" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve6/@Area2D@23178" to="Grass/GrassCurve6/@Area2D@23178" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve6/@Area2D@23179" to="Grass/GrassCurve6/@Area2D@23179" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve6/@Area2D@23180" to="Grass/GrassCurve6/@Area2D@23180" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve6/@Area2D@23181" to="Grass/GrassCurve6/@Area2D@23181" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve6/@Area2D@23182" to="Grass/GrassCurve6/@Area2D@23182" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve7/InteractiveGrass" to="Grass/GrassCurve7/InteractiveGrass" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve7/@Area2D@23187" to="Grass/GrassCurve7/@Area2D@23187" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve7/@Area2D@23188" to="Grass/GrassCurve7/@Area2D@23188" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve7/@Area2D@23189" to="Grass/GrassCurve7/@Area2D@23189" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve7/@Area2D@23190" to="Grass/GrassCurve7/@Area2D@23190" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve8/InteractiveGrass" to="Grass/GrassCurve8/InteractiveGrass" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve8/@Area2D@23202" to="Grass/GrassCurve8/@Area2D@23202" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve8/@Area2D@23203" to="Grass/GrassCurve8/@Area2D@23203" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve8/@Area2D@23204" to="Grass/GrassCurve8/@Area2D@23204" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve8/@Area2D@23205" to="Grass/GrassCurve8/@Area2D@23205" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve8/@Area2D@23206" to="Grass/GrassCurve8/@Area2D@23206" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve8/@Area2D@23207" to="Grass/GrassCurve8/@Area2D@23207" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve8/@Area2D@23208" to="Grass/GrassCurve8/@Area2D@23208" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve8/@Area2D@23209" to="Grass/GrassCurve8/@Area2D@23209" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve8/@Area2D@23210" to="Grass/GrassCurve8/@Area2D@23210" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve8/@Area2D@23211" to="Grass/GrassCurve8/@Area2D@23211" method="_on_body_entered"]
+[connection signal="body_entered" from="Grass/GrassCurve8/@Area2D@23212" to="Grass/GrassCurve8/@Area2D@23212" method="_on_body_entered"]

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://5htp8srxetmt"]
+
+[ext_resource type="Script" uid="uid://dka57amjtl42m" path="res://source/player/fish_softbody_node.gd" id="1_5vljk"]
+
+[node name="FishSoftbodyNode" type="RigidBody2D" unique_id=266591616]
+physics_interpolation_mode = 1
+contact_monitor = true
+max_contacts_reported = 3
+script = ExtResource("1_5vljk")
+impulse_sound_threshold = 200.0

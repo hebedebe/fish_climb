@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://vr3k4as8m8k3"
+path="res://.godot/imported/end of game.dialogue-11d65408e0bac44c943fe9f1bd575e81.tres"
+
+[deps]
+
+source_file="res://data/npcs/end of game npc/end of game.dialogue"
+dest_files=["res://.godot/imported/end of game.dialogue-11d65408e0bac44c943fe9f1bd575e81.tres"]
+
+[params]
+
+defaults=true

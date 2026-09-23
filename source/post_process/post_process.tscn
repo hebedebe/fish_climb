@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cm6gykwt0fjxj"]
+
+[ext_resource type="Script" uid="uid://ccbjshx4suvn0" path="res://source/post_process/post_process_layer.gd" id="1_52rho"]
+[ext_resource type="Shader" uid="uid://d034xpw4j14ra" path="res://source/post_process/vignette.gdshader" id="2_6v2vx"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_52rho"]
+shader = ExtResource("2_6v2vx")
+shader_parameter/alpha = 0.3
+shader_parameter/inner_radius = 0.505
+shader_parameter/outer_radius = 1.0
+
+[node name="PostProcess" type="Node" unique_id=1121221467]
+
+[node name="Vignette" type="CanvasLayer" parent="." unique_id=1507453920]
+script = ExtResource("1_52rho")
+material = SubResource("ShaderMaterial_52rho")
+metadata/_custom_type_script = "uid://ccbjshx4suvn0"
