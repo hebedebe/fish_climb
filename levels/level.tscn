@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://qm3jgcscb63x" path="res://source/interactive_grass/interactive_grass.tscn" id="11_pb8y7"]
 [ext_resource type="Resource" uid="uid://bh4sfx5xuxybx" path="res://data/npcs/glorp/glorp_npc_data.tres" id="11_ta7ci"]
 [ext_resource type="Resource" uid="uid://vr3k4as8m8k3" path="res://data/npcs/end of game npc/end of game.dialogue" id="12_368ro"]
+[ext_resource type="Resource" uid="uid://cjjy5f7ldfyyc" path="res://data/npcs/fish_head/fish_head.tres" id="12_574oa"]
 [ext_resource type="PackedScene" uid="uid://m5hyiu6c8vw8" path="res://data/dialogue_bubbles/glorp/balloon.tscn" id="13_3ca7f"]
 [ext_resource type="Texture2D" uid="uid://c2btkk5vk1hg2" path="res://Whentheimposterissus.webp" id="13_mxp4k"]
 [ext_resource type="Script" uid="uid://bm0pw0bb20w2g" path="res://source/npc/npc_data.gd" id="15_kogck"]
@@ -123,20 +124,22 @@ _data = {
 }
 point_count = 6
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_pgbyh"]
-diffuse_texture = ExtResource("5_d7v53")
-
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_werwd"]
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_574oa"]
 noise = SubResource("FastNoiseLite_werwd")
 seamless = true
 
+[sub_resource type="Gradient" id="Gradient_kogck"]
+
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_tn76l"]
+frequency = 0.0004
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_kogck"]
 noise = SubResource("FastNoiseLite_tn76l")
+color_ramp = SubResource("Gradient_kogck")
 seamless = true
+seamless_blend_skirt = 0.307
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3ca7f"]
 shader = ExtResource("10_kogck")
@@ -164,6 +167,9 @@ width = 1
 [sub_resource type="CircleShape2D" id="CircleShape2D_0qmeg"]
 radius = 248.6
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_574oa"]
+radius = 397.37
+
 [sub_resource type="Resource" id="Resource_pb0qc"]
 script = ExtResource("15_kogck")
 npc_sprite = ExtResource("13_mxp4k")
@@ -175,6 +181,9 @@ metadata/_custom_type_script = "uid://bm0pw0bb20w2g"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ctgui"]
 radius = 397.73
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_pgbyh"]
+diffuse_texture = ExtResource("5_d7v53")
 
 [sub_resource type="Curve2D" id="Curve2D_xag4j"]
 bake_interval = 150.0
@@ -358,6 +367,13 @@ _data = {
 }
 point_count = 6
 
+[sub_resource type="Curve2D" id="Curve2D_mca5t"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(-107.17947, -1.9487176, 107.17947, 1.9487176, 91, 678, -75.999985, 42.871788, 75.999985, -42.871788, 891, 662, 5.846153, 35.076916, -5.846153, -35.076916, 973, 465, 105.23075, 21.435894, -105.23075, -21.435894, 819, 395, 64.30768, -3.8974352, -64.30768, 3.8974352, 560, 443, 62.358963, 1.9487176, -62.358963, -1.9487176, 369, 422, 140.30766, 7.7948704, -140.30766, -7.7948704, 103, 433, 38.97435, 7.7948704, -38.97435, -7.7948704, -313, 394, 75.999985, -3.8974352, -75.999985, 3.8974352, -590, 323, 17.538458, -44.820503, -17.538458, 44.820503, -801, 414, -68.20512, -25.333328, 68.20512, 25.333328, -616, 578, -114.974335, -9.7435875, 114.974335, 9.7435875, 78, 677)
+}
+point_count = 12
+
 [node name="TestLevel" type="Node" unique_id=1147868162]
 
 [node name="Parallax2D3" type="Parallax2D" parent="." unique_id=1690094218]
@@ -505,21 +521,15 @@ metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
 [node name="Parallax2D2" type="Parallax2D" parent="." unique_id=1198502382]
 modulate = Color(1, 1, 1, 0.45882353)
-repeat_size = Vector2(1024, 727)
+repeat_size = Vector2(1024, 1024)
 autoscroll = Vector2(-7, 3)
 repeat_times = 6
-
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2" unique_id=252166512]
-visible = false
-modulate = Color(0.641934, 0.641934, 0.641934, 1)
-texture_repeat = 2
-texture = SubResource("CanvasTexture_pgbyh")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Parallax2D2" unique_id=1092604663]
 modulate = Color(0.641934, 0.641934, 0.641934, 1)
 texture_repeat = 2
 material = SubResource("ShaderMaterial_3ca7f")
-scale = Vector2(1024, 727)
+scale = Vector2(1024, 1024)
 texture = SubResource("GradientTexture1D_kogck")
 
 [node name="Npcs" type="Node2D" parent="." unique_id=657659378]
@@ -531,6 +541,13 @@ npc_data = ExtResource("11_ta7ci")
 interaction_shape = SubResource("CircleShape2D_0qmeg")
 metadata/_custom_type_script = "uid://ycmo11btri04"
 
+[node name="fish_head" type="Node2D" parent="Npcs" unique_id=1492262079]
+position = Vector2(-962, -7327)
+script = ExtResource("10_0qmeg")
+npc_data = ExtResource("12_574oa")
+interaction_shape = SubResource("CircleShape2D_574oa")
+metadata/_custom_type_script = "uid://ycmo11btri04"
+
 [node name="EndOfGame" type="Node2D" parent="Npcs" unique_id=1434383262]
 position = Vector2(-11439, -12372)
 script = ExtResource("10_0qmeg")
@@ -539,7 +556,7 @@ interaction_shape = SubResource("CircleShape2D_ctgui")
 metadata/_custom_type_script = "uid://ycmo11btri04"
 
 [node name="Spawner" type="Node2D" parent="." unique_id=924794710]
-position = Vector2(114, 116)
+position = Vector2(-1491, -7527)
 script = ExtResource("8_lh335")
 scene_to_spawn = ExtResource("9_u6cys")
 metadata/_custom_type_script = "uid://c24k2c2pkw5oi"
@@ -789,6 +806,13 @@ curve = SubResource("Curve2D_80cyg")
 script = ExtResource("2_pb8y7")
 fill_texture = ExtResource("7_ta7ci")
 bake_interval = 200.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain27" type="Path2D" parent="Level" unique_id=173743215]
+texture_filter = 4
+curve = SubResource("Curve2D_mca5t")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("4_mxp4k")
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="PostProcess" parent="." unique_id=1121221467 instance=ExtResource("10_368ro")]

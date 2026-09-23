@@ -74,7 +74,7 @@ metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=656171891]
 top_level = true
 position = Vector2(-2, -205)
-offset = Vector2(0.7568847, -1.8362545)
+offset = Vector2(-0.1438641, 2.5271478)
 zoom = Vector2(0.3, 0.3)
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=1337692131]
@@ -95,48 +95,57 @@ position = Vector2(341, 90)
 script = ExtResource("4_ssngx")
 player_body = NodePath("..")
 
-[node name="SlapSound" type="AudioStreamPlayer2D" parent="PlayerBody/PlayerCenter" unique_id=965572218]
+[node name="Sounds" type="Node2D" parent="PlayerBody/PlayerCenter" unique_id=759196846]
+
+[node name="SlapSound" type="AudioStreamPlayer2D" parent="PlayerBody/PlayerCenter/Sounds" unique_id=965572218]
+position = Vector2(-2, -5)
 stream = SubResource("AudioStreamRandomizer_4eph7")
 bus = &"SFX"
 script = ExtResource("6_fhjrr")
 delay = 0.3
 
-[node name="EventTrigger" type="Node" parent="PlayerBody/PlayerCenter/SlapSound" unique_id=1436178706]
+[node name="EventTrigger" type="Node" parent="PlayerBody/PlayerCenter/Sounds/SlapSound" unique_id=1436178706]
 script = ExtResource("6_q3bky")
 trigger_callbacks = Dictionary[StringName, String]({
 &"FishSlapSound": "start"
 })
 
-[node name="InteractorArea2D" type="Area2D" parent="PlayerBody/PlayerCenter" unique_id=582960548]
-script = ExtResource("12_72fmy")
-metadata/_custom_type_script = "uid://dve0c2jexg740"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerBody/PlayerCenter/InteractorArea2D" unique_id=735242355]
-shape = SubResource("CircleShape2D_fhjrr")
-
-[node name="InteractionIndicator" type="Sprite2D" parent="PlayerBody/PlayerCenter" unique_id=315381982 node_paths=PackedStringArray("interactor_area")]
-position = Vector2(0, -200)
-texture = ExtResource("13_li2ga")
-script = ExtResource("14_f4mop")
-interactor_area = NodePath("../InteractorArea2D")
-
-[node name="FlipLeftIndicator" type="Sprite2D" parent="PlayerBody/PlayerCenter" unique_id=799094001 node_paths=PackedStringArray("player")]
-position = Vector2(-152, -144)
-texture = ExtResource("15_8va7w")
-flip_h = true
-script = ExtResource("15_a0os5")
-player = NodePath("../../..")
-
-[node name="FlipRightIndicator" type="Sprite2D" parent="PlayerBody/PlayerCenter" unique_id=538540361 node_paths=PackedStringArray("player")]
-position = Vector2(152, -144)
-texture = ExtResource("15_8va7w")
-script = ExtResource("15_a0os5")
-player = NodePath("../../..")
-flip_direction = 1
-
-[node name="ChargingSound" type="AudioStreamPlayer2D" parent="PlayerBody/PlayerCenter" unique_id=1017745043 node_paths=PackedStringArray("player")]
+[node name="ChargingSound" type="AudioStreamPlayer2D" parent="PlayerBody/PlayerCenter/Sounds" unique_id=1017745043 node_paths=PackedStringArray("player")]
+position = Vector2(-2, -5)
 stream = ExtResource("17_v5tg1")
 volume_db = -15.0
 bus = &"SFX"
 script = ExtResource("17_w1lkv")
-player = NodePath("../../..")
+player = NodePath("../../../..")
+
+[node name="Areas" type="Node2D" parent="PlayerBody/PlayerCenter" unique_id=1707986319]
+
+[node name="InteractorArea2D" type="Area2D" parent="PlayerBody/PlayerCenter/Areas" unique_id=582960548]
+script = ExtResource("12_72fmy")
+metadata/_custom_type_script = "uid://dve0c2jexg740"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerBody/PlayerCenter/Areas/InteractorArea2D" unique_id=735242355]
+shape = SubResource("CircleShape2D_fhjrr")
+debug_color = Color(0.664797, 0.5125394, 0, 0.41960785)
+
+[node name="Indicators" type="Node2D" parent="PlayerBody/PlayerCenter" unique_id=852711488]
+
+[node name="InteractionIndicator" type="Sprite2D" parent="PlayerBody/PlayerCenter/Indicators" unique_id=315381982 node_paths=PackedStringArray("interactor_area")]
+position = Vector2(0, -200)
+texture = ExtResource("13_li2ga")
+script = ExtResource("14_f4mop")
+interactor_area = NodePath("../../Areas/InteractorArea2D")
+
+[node name="FlipLeftIndicator" type="Sprite2D" parent="PlayerBody/PlayerCenter/Indicators" unique_id=799094001 node_paths=PackedStringArray("player")]
+position = Vector2(-152, -144)
+texture = ExtResource("15_8va7w")
+flip_h = true
+script = ExtResource("15_a0os5")
+player = NodePath("../../../..")
+
+[node name="FlipRightIndicator" type="Sprite2D" parent="PlayerBody/PlayerCenter/Indicators" unique_id=538540361 node_paths=PackedStringArray("player")]
+position = Vector2(152, -144)
+texture = ExtResource("15_8va7w")
+script = ExtResource("15_a0os5")
+player = NodePath("../../../..")
+flip_direction = 1

@@ -18,7 +18,7 @@ class_name NpcData extends Resource
 		sprite_rotation = value
 		emit_changed()
 		
-@export var sprite_scale: Vector2 = Vector2.ONE:
+@export_custom(PROPERTY_HINT_LINK, "") var sprite_scale: Vector2 = Vector2.ONE:
 	set(value):
 		sprite_scale = value
 		emit_changed()

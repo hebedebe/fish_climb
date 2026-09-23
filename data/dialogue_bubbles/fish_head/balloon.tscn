@@ -1,23 +1,24 @@
-[gd_scene format=3 uid="uid://m5hyiu6c8vw8"]
+[gd_scene format=3 uid="uid://d1a8arqjoqawr"]
 
-[ext_resource type="Script" uid="uid://6f2wgyfs7vl" path="res://data/dialogue_bubbles/default/balloon.gd" id="1_dr13p"]
-[ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/nodes/dialogue_label/dialogue_label.tscn" id="2_77nsx"]
-[ext_resource type="StyleBox" uid="uid://bbxpd3r5k3gni" path="res://data/dialogue_bubbles/glorp/glorp_style_box.tres" id="2_obwhd"]
-[ext_resource type="FontFile" uid="uid://bhh5jft880x35" path="res://data/dialogue_bubbles/glorp/ComicRelief-Regular.ttf" id="3_m0wwa"]
-[ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/nodes/responses_menu/dialogue_responses_menu.gd" id="3_obwhd"]
+[ext_resource type="Script" uid="uid://6f2wgyfs7vl" path="res://data/dialogue_bubbles/default/balloon.gd" id="1_le01d"]
+[ext_resource type="FontFile" uid="uid://c17x6556nu58s" path="res://data/dialogue_bubbles/fish_head/Subway-Black.ttf" id="2_4pq3c"]
+[ext_resource type="StyleBox" uid="uid://dfdvxd2cx14mq" path="res://data/dialogue_bubbles/fish_head/fish_head_style_box.tres" id="2_le01d"]
+[ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/nodes/dialogue_label/dialogue_label.tscn" id="4_ssxt4"]
+[ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/nodes/responses_menu/dialogue_responses_menu.gd" id="5_qbsb6"]
 
-[sub_resource type="Theme" id="Theme_qq3yp"]
-default_font = ExtResource("3_m0wwa")
+[sub_resource type="Theme" id="Theme_bmwy1"]
+default_font = ExtResource("2_4pq3c")
 default_font_size = 20
-Button/styles/disabled = ExtResource("2_obwhd")
-Button/styles/focus = ExtResource("2_obwhd")
-Button/styles/hover = ExtResource("2_obwhd")
-Button/styles/normal = ExtResource("2_obwhd")
+Button/fonts/font = ExtResource("2_4pq3c")
+Button/styles/disabled = ExtResource("2_le01d")
+Button/styles/focus = ExtResource("2_le01d")
+Button/styles/hover = ExtResource("2_le01d")
+Button/styles/normal = ExtResource("2_le01d")
 MarginContainer/constants/margin_bottom = 15
 MarginContainer/constants/margin_left = 30
 MarginContainer/constants/margin_right = 30
 MarginContainer/constants/margin_top = 15
-PanelContainer/styles/panel = ExtResource("2_obwhd")
+PanelContainer/styles/panel = ExtResource("2_le01d")
 
 [sub_resource type="Animation" id="Animation_nlsx6"]
 length = 0.001
@@ -57,7 +58,7 @@ _data = {
 
 [node name="ExampleBalloon" type="CanvasLayer" unique_id=38036521]
 layer = 100
-script = ExtResource("1_dr13p")
+script = ExtResource("1_le01d")
 
 [node name="Balloon" type="Control" parent="." unique_id=154399927]
 unique_name_in_owner = true
@@ -67,7 +68,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = SubResource("Theme_qq3yp")
+theme = SubResource("Theme_bmwy1")
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon" unique_id=1302081376]
 layout_mode = 1
@@ -104,7 +105,7 @@ text = "Character"
 fit_content = true
 scroll_active = false
 
-[node name="DialogueLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1301798052 instance=ExtResource("2_77nsx")]
+[node name="DialogueLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1301798052 instance=ExtResource("4_ssxt4")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
@@ -137,7 +138,7 @@ layout_mode = 2
 size_flags_vertical = 8
 theme_override_constants/separation = 2
 alignment = 1
-script = ExtResource("3_obwhd")
+script = ExtResource("5_qbsb6")
 response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/CenterContainer/ResponsesMenu" unique_id=1446810977]

@@ -1,6 +1,8 @@
 @warning_ignore("missing_tool")
 class_name PlayerBody extends SoftBody2D
 
+signal completed_flip ## player flipped 180 degrees
+
 enum FlipDirection {
 	LEFT,
 	RIGHT,

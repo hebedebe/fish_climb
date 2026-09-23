@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bkm4ejyyno4i8"
+path="res://.godot/imported/fish_head_dialogue.dialogue-7bf1dbd3d7263b108447726ef73483ff.tres"
+
+[deps]
+
+source_file="res://data/npcs/fish_head/fish_head_dialogue.dialogue"
+dest_files=["res://.godot/imported/fish_head_dialogue.dialogue-7bf1dbd3d7263b108447726ef73483ff.tres"]
+
+[params]
+
+defaults=true
