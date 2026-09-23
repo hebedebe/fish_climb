@@ -74,7 +74,7 @@ metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=656171891]
 top_level = true
 position = Vector2(-2, -205)
-offset = Vector2(0.5984779, 1.4051783)
+offset = Vector2(0.7568847, -1.8362545)
 zoom = Vector2(0.3, 0.3)
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=1337692131]
@@ -97,6 +97,7 @@ player_body = NodePath("..")
 
 [node name="SlapSound" type="AudioStreamPlayer2D" parent="PlayerBody/PlayerCenter" unique_id=965572218]
 stream = SubResource("AudioStreamRandomizer_4eph7")
+bus = &"SFX"
 script = ExtResource("6_fhjrr")
 delay = 0.3
 
@@ -136,5 +137,6 @@ flip_direction = 1
 [node name="ChargingSound" type="AudioStreamPlayer2D" parent="PlayerBody/PlayerCenter" unique_id=1017745043 node_paths=PackedStringArray("player")]
 stream = ExtResource("17_v5tg1")
 volume_db = -15.0
+bus = &"SFX"
 script = ExtResource("17_w1lkv")
 player = NodePath("../../..")

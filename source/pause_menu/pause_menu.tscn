@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://baaaiwjrjaeti"]
 
 [ext_resource type="Script" uid="uid://i68hudjpficx" path="res://source/pause_menu/pause_menu.gd" id="1_g2srp"]
+[ext_resource type="Theme" uid="uid://7fikpqm7uett" path="res://source/pause_menu/pause_menu_theme.tres" id="2_fuwgk"]
 [ext_resource type="Script" uid="uid://ctj52ol5st0sb" path="res://source/event_trigger.gd" id="2_jtk1q"]
 [ext_resource type="Script" uid="uid://crwf7wnbr427k" path="res://source/pause_menu/quit_button.gd" id="3_dkg16"]
+[ext_resource type="Script" uid="uid://bcbsc627eevsr" path="res://source/pause_menu/sound_slider.gd" id="3_pmjhf"]
 
 [node name="PauseCanvasLayer" type="CanvasLayer" unique_id=945801933]
 process_mode = 3
@@ -23,6 +25,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_fuwgk")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu" unique_id=2118855270]
 layout_mode = 1
@@ -37,18 +40,42 @@ offset_right = 193.0
 offset_bottom = 80.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_fuwgk")
 
 [node name="Label" type="Label" parent="PauseMenu/VBoxContainer" unique_id=121078647]
 layout_mode = 2
+theme = ExtResource("2_fuwgk")
 text = "Paused."
 horizontal_alignment = 1
 
 [node name="Resume" type="Button" parent="PauseMenu/VBoxContainer" unique_id=2113877830]
 layout_mode = 2
+theme = ExtResource("2_fuwgk")
 text = "Resume"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PauseMenu/VBoxContainer" unique_id=287235150]
+layout_mode = 2
+theme = ExtResource("2_fuwgk")
+
+[node name="Label" type="Label" parent="PauseMenu/VBoxContainer/HBoxContainer" unique_id=286913045]
+layout_mode = 2
+theme = ExtResource("2_fuwgk")
+text = "SFX Volume"
+
+[node name="HSlider" type="HSlider" parent="PauseMenu/VBoxContainer/HBoxContainer" unique_id=1846871681]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = ExtResource("2_fuwgk")
+max_value = 1.0
+step = 0.1
+value = 1.0
+script = ExtResource("3_pmjhf")
+target_bus = &"SFX"
 
 [node name="Quit" type="Button" parent="PauseMenu/VBoxContainer" unique_id=241834269]
 layout_mode = 2
+theme = ExtResource("2_fuwgk")
 text = "Quit"
 script = ExtResource("3_dkg16")
 

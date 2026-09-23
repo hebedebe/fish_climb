@@ -1,0 +1,8 @@
+[gd_resource type="Theme" format=3 uid="uid://7fikpqm7uett"]
+
+[ext_resource type="FontFile" uid="uid://bhh5jft880x35" path="res://data/dialogue_bubbles/glorp/ComicRelief-Regular.ttf" id="1_gl7oa"]
+[ext_resource type="FontFile" uid="uid://hcwja38inhva" path="res://data/dialogue_bubbles/glorp/ComicRelief-Bold.ttf" id="2_e4xhx"]
+
+[resource]
+Button/fonts/font = ExtResource("1_gl7oa")
+Label/fonts/font = ExtResource("2_e4xhx")
