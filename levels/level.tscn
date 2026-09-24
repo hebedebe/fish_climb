@@ -62,6 +62,13 @@ _data = {
 }
 point_count = 4
 
+[sub_resource type="Curve2D" id="Curve2D_dcgl2"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(-269.10013, 562.6639, 269.10013, -562.6639, -12792, -11699, -391.41837, 318.02744, 391.41837, -318.02744, -12039, -12689, -397.53427, 97.85459, 397.53427, -97.85459, -11009, -13253, -366.9547, 159.01372, 366.9547, -159.01372, -10305, -13404, -269.10013, 171.24553, 269.10013, -171.24553, -9146, -14043, -293.56378, 171.24553, 293.56378, -171.24553, -7976, -14726, -348.607, 183.47736, 348.607, -183.47736, -7087, -15246, -73.390945, 256.86832, 73.390945, -256.86832, -6181, -16219, -183.47736, 159.01372, 183.47736, -159.01372, -6925, -16806, -446.46158, -30.57956, 446.46158, 30.57956, -5462, -17283, 0, 0, 0, 0, -4834, -13968, -477.04114, -1125.3278, 477.04114, 1125.3278, -5527, -10869, 0, 0, 0, 0, -8095, -8106)
+}
+point_count = 13
+
 [sub_resource type="Curve2D" id="Curve2D_hy0rb"]
 bake_interval = 500.0
 _data = {
@@ -481,6 +488,16 @@ generate_collision = false
 visible_collision = false
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
+[node name="CurvedTerrain6" type="Path2D" parent="Background" unique_id=956878646]
+modulate = Color(0.549953, 0.6526637, 0.7042818, 1)
+texture_filter = 4
+curve = SubResource("Curve2D_dcgl2")
+script = ExtResource("2_pb8y7")
+edge_width = 0.0
+fill_texture = ExtResource("3_hy0rb")
+generate_collision = false
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
 [node name="Grass" type="Node2D" parent="." unique_id=380388134]
 
 [node name="InstanceCurve" type="Path2D" parent="Grass" unique_id=1139559563]
@@ -585,14 +602,14 @@ interaction_shape = SubResource("CircleShape2D_574oa")
 metadata/_custom_type_script = "uid://ycmo11btri04"
 
 [node name="EndOfGame" type="Node2D" parent="Npcs" unique_id=1434383262]
-position = Vector2(-11439, -12372)
+position = Vector2(-3926, -18429)
 script = ExtResource("10_0qmeg")
 npc_data = SubResource("Resource_pb0qc")
 interaction_shape = SubResource("CircleShape2D_ctgui")
 metadata/_custom_type_script = "uid://ycmo11btri04"
 
 [node name="Spawner" type="Node2D" parent="." unique_id=924794710]
-position = Vector2(91, 59)
+position = Vector2(52, 137)
 script = ExtResource("8_lh335")
 scene_to_spawn = ExtResource("9_u6cys")
 metadata/_custom_type_script = "uid://c24k2c2pkw5oi"
