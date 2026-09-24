@@ -14,5 +14,5 @@ func get_version(features: PackedStringArray, is_debug: bool, path: String, flag
 	return Utilities.dot_separated_string(
 		get_git_branch_name(),
 		get_git_commit_count(),
-		get_git_commit_ahead_branch_count("main")
+		get_git_commit_ahead_branch_count("main") 
 	)
