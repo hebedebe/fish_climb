@@ -402,7 +402,7 @@ point_count = 12
 scroll_scale = Vector2(0.6, 0.6)
 scroll_offset = Vector2(6, 0)
 repeat_size = Vector2(400, 400)
-repeat_times = 14
+repeat_times = 20
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D3" unique_id=961844215]
 modulate = Color(0.641934, 0.641934, 0.641934, 1)
@@ -559,7 +559,7 @@ metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 modulate = Color(1, 1, 1, 0.45882353)
 repeat_size = Vector2(1024, 1024)
 autoscroll = Vector2(-7, 3)
-repeat_times = 6
+repeat_times = 8
 
 [node name="Sprite2D2" type="Sprite2D" parent="Parallax2D2" unique_id=1092604663]
 modulate = Color(0.641934, 0.641934, 0.641934, 1)
@@ -602,7 +602,7 @@ modulate = Color(1, 1, 1, 0.45882353)
 scroll_scale = Vector2(1.02, 1.02)
 repeat_size = Vector2(1024, 727)
 autoscroll = Vector2(-7, 3)
-repeat_times = 6
+repeat_times = 8
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D4" unique_id=597571623]
 modulate = Color(1, 1, 1, 0.34509805)
