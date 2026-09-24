@@ -74,7 +74,7 @@ metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=656171891]
 top_level = true
 position = Vector2(-2, -205)
-offset = Vector2(-0.1438641, 2.5271478)
+offset = Vector2(0.27813655, 0.4409173)
 zoom = Vector2(0.3, 0.3)
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=1337692131]

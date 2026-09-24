@@ -1,5 +1,5 @@
 @tool
-@icon("uid://dhaoeyolqjg8x")
+@icon("uid://ctl1v20tk17cd")
 class_name Npc extends Node2D
 
 @export var npc_data: NpcData:

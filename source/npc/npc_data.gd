@@ -1,5 +1,5 @@
 @tool
-@icon("uid://fym6ercmrlns")
+@icon("uid://c1fq177vrg3cb")
 class_name NpcData extends Resource
 
 @export_group("Sprite")

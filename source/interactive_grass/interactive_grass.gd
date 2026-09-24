@@ -7,6 +7,9 @@ extends Area2D
 @export var bend_grass_animation_speed: float = 0.3
 @export var grass_return_animation_speed: float = 5.0
 
+func _ready() -> void:
+	body_entered.connect(_on_body_entered)
+
 func _on_body_entered(body: Node2D) -> void:
 	if body is RigidBody2D:
 		var direction = global_position.direction_to(body.global_position)

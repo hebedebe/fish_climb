@@ -1,4 +1,4 @@
-@icon("uid://oi4y7hak3gp7")
+@icon("uid://cpkbt8vxhxfjc")
 class_name Player extends Node2D
 
 @export var player_body: PlayerBody

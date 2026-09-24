@@ -91,12 +91,14 @@ func _generate_terrain() -> void:
 	
 	if points.size() > 1:
 		points.append(points[0])
-		
-	polygon2d.polygon = points
-	update_fill()
 	
-	line2d.points = points
-	update_edge()
+	if polygon2d:
+		polygon2d.polygon = points
+		update_fill()
+	
+	if line2d:
+		line2d.points = points
+		update_edge()
 	
 	if collider_points.size() > 2 and generate_collision:
 		collision_polygon2d.polygon = collider_points
