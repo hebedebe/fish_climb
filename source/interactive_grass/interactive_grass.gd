@@ -15,8 +15,8 @@ func _ready() -> void:
 	cull_checker = VisibleOnScreenEnabler2D.new()
 	add_child(cull_checker)
 	cull_checker.enable_node_path = ".."
-	cull_checker.screen_entered.connect(print.bind("screen entered"))
-	cull_checker.screen_exited.connect(print.bind("screen exited"))
+	#cull_checker.screen_entered.connect(print.bind("screen entered"))
+	#cull_checker.screen_exited.connect(print.bind("screen exited"))
 
 func _on_body_entered(body: Node2D) -> void:
 	if body is RigidBody2D:

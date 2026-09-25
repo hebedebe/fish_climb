@@ -17,7 +17,8 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	set_visibility(player.charging and player.flip_direction == flip_direction and player.get_charge_factor() > charge_visibility_threshold)
-	self_modulate = Color.WHITE.lerp(Color.RED, player.get_charge_factor())
+	#self_modulate = Color.WHITE.lerp(Color.RED, player.get_charge_factor())
+	(material as ShaderMaterial).set_shader_parameter("threshold", player.get_charge_factor())
 	if player.get_charge_factor() >= 1:
 		var time := Time.get_ticks_msec() * shake_frequency
 		offset = Vector2(

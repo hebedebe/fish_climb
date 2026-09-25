@@ -154,6 +154,10 @@ theme = ExtResource("2_fuwgk")
 text = "Quit"
 horizontal_alignment = 1
 
+[node name="PauseMenuShowSound" type="AudioStreamPlayer" parent="PauseMenu" unique_id=571232195]
+
+[node name="PauseMenuHideSound" type="AudioStreamPlayer" parent="PauseMenu" unique_id=780896203]
+
 [node name="TogglePauseTrigger" type="Node" parent="." unique_id=562028054]
 process_mode = 3
 script = ExtResource("2_jtk1q")
@@ -162,4 +166,6 @@ trigger_callbacks = Dictionary[StringName, String]({
 })
 metadata/_custom_type_script = "uid://ctj52ol5st0sb"
 
+[connection signal="hidden" from="." to="PauseMenu/PauseMenuHideSound" method="play"]
+[connection signal="shown" from="." to="PauseMenu/PauseMenuShowSound" method="play"]
 [connection signal="pressed" from="PauseMenu/Panel2/VBoxContainer/Resume" to="." method="toggle_pause"]

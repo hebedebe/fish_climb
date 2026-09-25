@@ -4,6 +4,7 @@
 
 [node name="FishSoftbodyNode" type="RigidBody2D" unique_id=266591616]
 physics_interpolation_mode = 1
+continuous_cd = 2
 contact_monitor = true
 max_contacts_reported = 3
 script = ExtResource("1_5vljk")

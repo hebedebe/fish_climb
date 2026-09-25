@@ -1,7 +1,9 @@
 extends CanvasLayer
 
-@onready var pause_menu: Control = $PauseMenu
+signal shown
+signal hidden
 
+@onready var pause_menu: Control = $PauseMenu
 
 func _ready() -> void:
 	update_pause_menu_visibility()
@@ -15,4 +17,10 @@ func toggle_pause() -> void:
 	update_pause_menu_visibility()
 	
 func update_pause_menu_visibility() -> void:
-	pause_menu.visible = get_tree().paused
+	var tree_paused: bool = get_tree().paused
+	if tree_paused != pause_menu.visible:
+		if tree_paused:
+			shown.emit()
+		else:
+			hidden.emit()
+	pause_menu.visible = tree_paused
