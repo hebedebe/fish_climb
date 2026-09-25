@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://wubj35i2lekd" path="res://source/props/rock/rock.tscn" id="16_ta7ci"]
 [ext_resource type="PackedScene" uid="uid://baaaiwjrjaeti" path="res://source/pause_menu/pause_menu.tscn" id="20_3ca7f"]
 [ext_resource type="Script" uid="uid://csyr1bfucvmvk" path="res://source/build_overlay/version_number_label.gd" id="23_tn76l"]
+[ext_resource type="Script" uid="uid://mir3qg4jicfq" path="res://source/debugging/fps_label.gd" id="24_werwd"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_wjuib"]
 diffuse_texture = ExtResource("1_ukwr8")
@@ -944,8 +945,18 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="BuildOverlay" type="CanvasLayer" parent="." unique_id=1263373585]
 
-[node name="VersionNumber" type="Label" parent="BuildOverlay" unique_id=324590164]
+[node name="Control" type="Control" parent="BuildOverlay" unique_id=1170340916]
 modulate = Color(1, 1, 1, 0.5372549)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VersionNumber" type="Label" parent="BuildOverlay/Control" unique_id=324590164]
+layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
@@ -954,3 +965,10 @@ offset_right = 81.0
 grow_vertical = 0
 text = "Build 0.2.1"
 script = ExtResource("23_tn76l")
+
+[node name="FPSLabel" type="Label" parent="BuildOverlay/Control" unique_id=594462935]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("24_werwd")
+metadata/_custom_type_script = "uid://mir3qg4jicfq"
