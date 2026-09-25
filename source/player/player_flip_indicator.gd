@@ -40,7 +40,7 @@ func appear() -> void:
 	tween.set_trans(Tween.TRANS_LINEAR)
 	tween.tween_property(self, "scale", Vector2.ONE, animation_time)
 	tween.play()
-	print("appear")
+	#print("appear")
 	
 func disappear() -> void:
 	var tween = create_tween()
@@ -48,4 +48,4 @@ func disappear() -> void:
 	tween.set_trans(Tween.TRANS_LINEAR)
 	tween.tween_property(self, "scale", Vector2.ZERO, animation_time)
 	tween.play()
-	print("disappear")
+	#print("disappear")

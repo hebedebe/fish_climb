@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://culd8bumanrvv" path="res://source/player/player.gd" id="1_52atr"]
 [ext_resource type="PackedScene" uid="uid://dxix4kq8nmpm7" path="res://source/player/player_body.tscn" id="2_rp4kk"]
-[ext_resource type="Script" uid="uid://bgwmhld67x7bu" path="res://source/player/player_center.gd" id="4_ssngx"]
 [ext_resource type="AudioStream" uid="uid://bf4xk61uuey88" path="res://source/player/fish_slap.mp3" id="5_bphl4"]
 [ext_resource type="Script" uid="uid://cs82iu1vomx41" path="res://source/sound_with_delay.gd" id="6_fhjrr"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="6_jo3qi"]
@@ -26,18 +25,15 @@ script = ExtResource("7_ka6av")
 script = ExtResource("8_5ffni")
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
-[sub_resource type="Animation" id="Animation_favdl"]
-length = 0.001
+[sub_resource type="GDScript" id="GDScript_w1lkv"]
+script/source = "extends Node2D
 
-[sub_resource type="Animation" id="Animation_asuwg"]
-resource_name = "flip"
-length = 0.46666667
+@export var player_body: PlayerBody
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_y2357"]
-_data = {
-&"RESET": SubResource("Animation_favdl"),
-&"flip": SubResource("Animation_asuwg")
-}
+func _process(_delta: float) -> void:
+	global_position = player_body.get_center_global_position()
+	pass
+"
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_4eph7"]
 random_pitch = 1.0594631
@@ -74,7 +70,7 @@ metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=656171891]
 top_level = true
 position = Vector2(-2, -205)
-offset = Vector2(0.27813655, 0.4409173)
+offset = Vector2(-0.94264686, -0.68697244)
 zoom = Vector2(0.3, 0.3)
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=1337692131]
@@ -83,16 +79,13 @@ process_physics_priority = 300
 script = ExtResource("9_bypms")
 metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1804942381]
-libraries/ = SubResource("AnimationLibrary_y2357")
-
 [node name="PlayerBody" parent="." unique_id=1218513241 instance=ExtResource("2_rp4kk")]
 position = Vector2(-343, -95)
 script = ExtResource("7_fhjrr")
 
 [node name="PlayerCenter" type="Node2D" parent="PlayerBody" unique_id=121034645 node_paths=PackedStringArray("player_body")]
 position = Vector2(341, 90)
-script = ExtResource("4_ssngx")
+script = SubResource("GDScript_w1lkv")
 player_body = NodePath("..")
 
 [node name="Sounds" type="Node2D" parent="PlayerBody/PlayerCenter" unique_id=759196846]
