@@ -2,7 +2,168 @@
 
 [ext_resource type="FontFile" uid="uid://bhh5jft880x35" path="res://data/dialogue_bubbles/glorp/ComicRelief-Regular.ttf" id="1_gl7oa"]
 [ext_resource type="FontFile" uid="uid://hcwja38inhva" path="res://data/dialogue_bubbles/glorp/ComicRelief-Bold.ttf" id="2_e4xhx"]
+[ext_resource type="Script" uid="uid://cjmmhbp1b5312" path="res://addons/StyleboxFancy/StyleBorder.gd" id="2_h80ay"]
+[ext_resource type="Script" uid="uid://bkl6g25jwb47h" path="res://addons/StyleboxFancy/StyleBoxFancy.gd" id="3_6o16e"]
+[ext_resource type="Texture2D" uid="uid://cy4ohbighomfp" path="res://data/dialogue_bubbles/rock/CONCGRAY.JPG" id="4_dora2"]
+[ext_resource type="Texture2D" uid="uid://g4ms8cxd6sw1" path="res://source/terrain_textures/cells.jpg" id="5_6o16e"]
+
+[sub_resource type="StyleBox" id="StyleBox_nsejh"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("3_6o16e")
+color = Color(0.6841872, 0.6313363, 0.592991, 1)
+texture = ExtResource("4_dora2")
+texture_stretch_mode = 1
+texture_repeat = 2
+corner_radius_top_left = 19
+corner_radius_top_right = 19
+corner_radius_bottom_right = 19
+corner_radius_bottom_left = 19
+corner_curvature_top_left = 1.4649999999999999
+corner_curvature_top_right = 1.4649999999999999
+corner_curvature_bottom_right = 1.4649999999999999
+corner_curvature_bottom_left = 1.4649999999999999
+shadow_enabled = true
+shadow_color = Color(0.14285019, 3.080368e-06, 0.6665118, 0.6)
+shadow_offset = Vector2(2, 2)
+shadow_spread = Vector2(2, 2)
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="StyleBox" id="StyleBox_n0r4j"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("3_6o16e")
+color = Color(0.88463324, 0.86004627, 0.84130406, 1)
+texture = ExtResource("4_dora2")
+texture_stretch_mode = 1
+texture_repeat = 2
+corner_radius_top_left = 19
+corner_radius_top_right = 19
+corner_radius_bottom_right = 19
+corner_radius_bottom_left = 19
+corner_curvature_top_left = 1.4649999999999999
+corner_curvature_top_right = 1.4649999999999999
+corner_curvature_bottom_right = 1.4649999999999999
+corner_curvature_bottom_left = 1.4649999999999999
+shadow_enabled = true
+shadow_offset = Vector2(2, 2)
+shadow_spread = Vector2(2, 2)
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="StyleBox" id="StyleBox_hlr7p"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("3_6o16e")
+color = Color(0.6841872, 0.6313363, 0.592991, 1)
+texture = ExtResource("4_dora2")
+texture_stretch_mode = 1
+texture_repeat = 2
+corner_radius_top_left = 19
+corner_radius_top_right = 19
+corner_radius_bottom_right = 19
+corner_radius_bottom_left = 19
+corner_curvature_top_left = 1.4649999999999999
+corner_curvature_top_right = 1.4649999999999999
+corner_curvature_bottom_right = 1.4649999999999999
+corner_curvature_bottom_left = 1.4649999999999999
+shadow_enabled = true
+shadow_offset = Vector2(2, 2)
+shadow_spread = Vector2(2, 2)
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="StyleBox" id="StyleBox_fcfi7"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("3_6o16e")
+color = Color(0.5057953, 0.45626783, 0.4180015, 1)
+texture = ExtResource("4_dora2")
+texture_stretch_mode = 1
+texture_repeat = 2
+corner_radius_top_left = 19
+corner_radius_top_right = 19
+corner_radius_bottom_right = 19
+corner_radius_bottom_left = 19
+corner_curvature_top_left = 1.4649999999999999
+corner_curvature_top_right = 1.4649999999999999
+corner_curvature_bottom_right = 1.4649999999999999
+corner_curvature_bottom_left = 1.4649999999999999
+shadow_enabled = true
+shadow_offset = Vector2(2, 2)
+shadow_spread = Vector2(2, 2)
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="StyleBox" id="StyleBox_h80ay"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("3_6o16e")
+color = Color(0.6841872, 0.6313363, 0.592991, 1)
+texture = ExtResource("5_6o16e")
+texture_stretch_mode = 1
+texture_repeat = 2
+corner_radius_top_left = 19
+corner_radius_top_right = 19
+corner_radius_bottom_right = 19
+corner_radius_bottom_left = 19
+corner_curvature_top_left = 1.4649999999999999
+corner_curvature_top_right = 1.4649999999999999
+corner_curvature_bottom_right = 1.4649999999999999
+corner_curvature_bottom_left = 1.4649999999999999
+shadow_enabled = true
+shadow_offset = Vector2(2, 2)
+shadow_spread = Vector2(2, 2)
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="StyleBox" id="StyleBox_6o16e"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("3_6o16e")
+color = Color(0.7645198, 0.72026134, 0.6863284, 1)
+texture = ExtResource("5_6o16e")
+texture_stretch_mode = 1
+texture_repeat = 2
+corner_radius_top_left = 19
+corner_radius_top_right = 19
+corner_radius_bottom_right = 19
+corner_radius_bottom_left = 19
+corner_curvature_top_left = 1.4649999999999999
+corner_curvature_top_right = 1.4649999999999999
+corner_curvature_bottom_right = 1.4649999999999999
+corner_curvature_bottom_left = 1.4649999999999999
+shadow_enabled = true
+shadow_offset = Vector2(2, 2)
+shadow_spread = Vector2(2, 2)
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
 
 [resource]
 Button/fonts/font = ExtResource("1_gl7oa")
+Button/styles/focus = SubResource("StyleBox_nsejh")
+Button/styles/hover = SubResource("StyleBox_n0r4j")
+Button/styles/normal = SubResource("StyleBox_hlr7p")
+Button/styles/pressed = SubResource("StyleBox_fcfi7")
+HSlider/styles/grabber_area = SubResource("StyleBox_h80ay")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBox_6o16e")
 Label/fonts/font = ExtResource("2_e4xhx")
