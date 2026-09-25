@@ -1,10 +1,37 @@
-[gd_scene format=3 uid="uid://baaaiwjrjaeti"]
+[gd_scene format=4 uid="uid://baaaiwjrjaeti"]
 
 [ext_resource type="Script" uid="uid://i68hudjpficx" path="res://source/pause_menu/pause_menu.gd" id="1_g2srp"]
 [ext_resource type="Theme" uid="uid://7fikpqm7uett" path="res://source/pause_menu/pause_menu_theme.tres" id="2_fuwgk"]
 [ext_resource type="Script" uid="uid://ctj52ol5st0sb" path="res://source/event_trigger.gd" id="2_jtk1q"]
 [ext_resource type="Script" uid="uid://crwf7wnbr427k" path="res://source/pause_menu/quit_button.gd" id="3_dkg16"]
+[ext_resource type="Script" uid="uid://cjmmhbp1b5312" path="res://addons/StyleboxFancy/StyleBorder.gd" id="3_itf5k"]
 [ext_resource type="Script" uid="uid://bcbsc627eevsr" path="res://source/pause_menu/sound_slider.gd" id="3_pmjhf"]
+[ext_resource type="Script" uid="uid://bkl6g25jwb47h" path="res://addons/StyleboxFancy/StyleBoxFancy.gd" id="4_lxr6y"]
+[ext_resource type="Texture2D" uid="uid://spt6hes383ke" path="res://data/dialogue_bubbles/fish_head/SD132.JPG" id="5_elatv"]
+[ext_resource type="Script" uid="uid://dmtv6vw6acjpk" path="res://source/button_effect_manager.gd" id="6_lxr6y"]
+[ext_resource type="AudioStream" uid="uid://bf4xk61uuey88" path="res://source/player/fish_slap.mp3" id="8_atvq0"]
+
+[sub_resource type="StyleBox" id="StyleBox_dkg16"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("4_lxr6y")
+color = Color(0.62152386, 0.62152386, 0.6215238, 1)
+texture = ExtResource("5_elatv")
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_enabled = true
+shadow_offset = Vector2(2, 2)
+shadow_spread = Vector2(2, 2)
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="AudioStreamMP3" id="AudioStreamMP3_elatv"]
+data = PackedByteArray("//OEZAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAJAAAIEAAnJycnJycnJycnJ1tbW1tbW1tbW1tbfHx8fHx8fHx8fHyWlpaWlpaWlpaWlrGxsbGxsbGxsbGxy8vLy8vLy8vLy8vl5eXl5eXl5eXl5fz8/Pz8/Pz8/Pz8//////////////8AAABQTEFNRTQuMCAABHgAAAAAAAAAADUIJAQgLQAB4AAACBCZHvT4AAAAAAAAAAAAAAAAAAAA//OkZAAF+AE5j6AAAAAAA0gBQAAAAAAKlCALYna/v8EAfL4Jv4f5Q4XggfUCH/iN//4Y5Q53bPygIOKHP5d//4P///B96sqZu4O4AAAUkzOKRbVkmROGYQIIbFy1TDqDAzXFOQoejLxtlGFjYCNagahUeHBWsKOl+zAyz1uzuaGtF5UKW3BpMBMwgMw4xSI2hgyYPOGIGHH4YQRXRTUUSQAxdHhKovw4Y2ATEL2ww7RaCO3JyAGmByAKhwgmAgizGJt2j4MIP+1aM3IJed84DceJNLYPGFB2n6pnSvz5ITHhLeNZilPKn4jcUqv3PuQ/EcchxFN1HEBi/3JvZ2a0MvUw+LUnI8xCzjWijuVae9DEORJnEOMCQGQGsx25+L2K//PEZNsqXhdtj8zpkAAAA0gBgAAAXkqSWe+5ypdsVc+v5ZuSqlvy/KWXKSxK5eyiEt6pmyd/4efhlDLLrcFNJTB0/NQ3LsZmm+lprUSj0jwmr/Yflcvt/yzblFNKJZYlHL9js//4SJrECUlm3UfyyoJB0Px2flknjF7v/dcKC4rKqGd5ljWpquO8q1W6/M26tgAnWrft8xCRMzCrqKc5VtEnKrYj59AZlM+li3liH87qTMiJEyRUXKGXRjwEGAHooUR6IKkRYhxFZkTzsaJqMWpFwc4fy4TaJmgkXW0zIusYGx8ul1mcui5UWRQSdSzQ2SplqeUZoodIvGJaK5YJk+mbKMlnkzpqRVFSKJdUTxgKFJIvGZODrIiYnjUpE0kQIpF42JmbIlFTOYG7VmJcXMjZJFIxNUEZkpBJI2qUsvGzlgssbIGSSLrRWhmJsktFjqtklqu0yzpdZFanMs4Zl1FmU/zFaRkbVpTFGv2bu6wDSJilqzTIlJNtjKqOU0d2//OUZPMb0gtjj+fIAAAAA0gBwAAAkjUPU8hcJ+vypo12rLdXcdV2Uw4yqNS92YbS0PvAjQFTAgh6lMiUfXw6Mj6zK2uwLkNgytsR0ffn1Oj5ty9ce7RBNSUnU21bXrHW0XMt8X/bErRQ9AVOKuSsFHLDQdqsg1IBtThzQ8FINTY2sVgWlnmLFYWDpblmv9V/aVSLlVrkmVgWla7xWZUVTJuPZ1hoKtYldeJNqGZiVHFCw1VhG/4cl4KayabG1ZqYmacAKVOzf7+RTXiZvLjdZvGYYd/IsIllpCOxDNS7bkYYTw02swyFCIgzx9DkIC23//OEZO8XhgdFe2GImIAAA0gAAAAAa8D7q3Lsrv1KTXg0sVyvRcxbLa7WWXHp1mjRKLhq5LVrVghRJh+xo6WsuVrlmSTGcomox5MUZNpdnXC96FMKhAWE19lDCiw5AVHqbehWbapzEDdWYkwWGjjlFTakiwhBsMFoOHh0LTtasLN/AdHmq3GprNzH//Nfx7ZyktnBI8AuImxEoGlYdWeEAAkaj+Y1Y4Mlj2TqiK8kSzyjI8Ux2NtMp43zlCxYTMJQ//OEZN0W+dsxjz2ImgAAA0gAAAAAdh/gLQdRvrmK8gZgnUoE0CzfQkBHQICdWJQ0T/wybYWjONfWVRkoGRGp9yb0kbTcJ77jm//3KWyedBdFUvu1vvPlQKPDw9EQE5qJPSPJwJIyaSe/blcINTqR1Xqb7yP2DeKyXhCYdxYrr3e30BRttAAkjJ8R8vISHF0Aj2b25/KllF9y6lKyOTpiioXabZjMKFEmBxVxGGTN1kV6h1KjrmF9Z7aPrWiEGxFZ//OEZNASPWspjx3pWAAAA0gAAAAAhqedP3yGJdSe2efhKgRs1tfL9zdM5VlJpFm3rML1EL2HyyWLwZXv/cXezWjLhALB4RiQu8xfP7nfLoNOzpe1Hz1IjNlF51dyFg/vNLzSk3/3JmmNsr31AAAG9dUIiYeFAEs013+/XY6rBQFYBNVoCApCjQWFO28Fl1BVrLptHyGpJaP06YD59I+ZnKDF9rQn0bNa0YldR9G3UBJmKUKAgJc8Ma7NThhQETs0//OEZOkTJXklLwsMWAAAA0gAAAAAAm1KMcZvh9ZjqlG2Am14GAi1UBJgJtjqrscZv/2bUBYGwmwWEcNiuOhYioXDoqIaFYmhSY4FyOCsTQrj5uPl66Xj5uPlxcNVTEFNRTQuMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//N0ZPoSyU8tjw3jaoAAA0gAAAAAVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//MUZPYAAAH+AAAAAAAAA0gAAAAAVVVV")
 
 [node name="PauseCanvasLayer" type="CanvasLayer" unique_id=945801933]
 process_mode = 3
@@ -27,42 +54,72 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_fuwgk")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu" unique_id=2118855270]
+[node name="Panel2" type="Panel" parent="PauseMenu" unique_id=565647339]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -193.0
-offset_top = -80.0
-offset_right = 193.0
-offset_bottom = 80.0
+offset_left = -187.0
+offset_top = -61.0
+offset_right = 187.0
+offset_bottom = 61.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_fuwgk")
+theme_override_styles/panel = SubResource("StyleBox_dkg16")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/Panel2" unique_id=2118855270]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 9.0
+offset_right = -9.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_fuwgk")
 
-[node name="Label" type="Label" parent="PauseMenu/VBoxContainer" unique_id=121078647]
+[node name="Label" type="Label" parent="PauseMenu/Panel2/VBoxContainer" unique_id=121078647]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 text = "Paused."
 horizontal_alignment = 1
 
-[node name="Resume" type="Button" parent="PauseMenu/VBoxContainer" unique_id=2113877830]
+[node name="Resume" type="Button" parent="PauseMenu/Panel2/VBoxContainer" unique_id=2113877830]
 layout_mode = 2
+theme = ExtResource("2_fuwgk")
+text = " "
+
+[node name="ButtonEffectManager" type="Node" parent="PauseMenu/Panel2/VBoxContainer/Resume" unique_id=2036537857]
+script = ExtResource("6_lxr6y")
+hover_sound = SubResource("AudioStreamMP3_elatv")
+hover_sound_volume = -20.0
+pressed_sound = ExtResource("8_atvq0")
+metadata/_custom_type_script = "uid://dmtv6vw6acjpk"
+
+[node name="Label" type="Label" parent="PauseMenu/Panel2/VBoxContainer/Resume" unique_id=717107479]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 theme = ExtResource("2_fuwgk")
 text = "Resume"
+horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="PauseMenu/VBoxContainer" unique_id=287235150]
+[node name="HBoxContainer" type="HBoxContainer" parent="PauseMenu/Panel2/VBoxContainer" unique_id=287235150]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 
-[node name="Label" type="Label" parent="PauseMenu/VBoxContainer/HBoxContainer" unique_id=286913045]
+[node name="Label" type="Label" parent="PauseMenu/Panel2/VBoxContainer/HBoxContainer" unique_id=286913045]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 text = "SFX Volume"
 
-[node name="HSlider" type="HSlider" parent="PauseMenu/VBoxContainer/HBoxContainer" unique_id=1846871681]
+[node name="HSlider" type="HSlider" parent="PauseMenu/Panel2/VBoxContainer/HBoxContainer" unique_id=1846871681]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
@@ -73,11 +130,29 @@ value = 1.0
 script = ExtResource("3_pmjhf")
 target_bus = &"SFX"
 
-[node name="Quit" type="Button" parent="PauseMenu/VBoxContainer" unique_id=241834269]
+[node name="Quit" type="Button" parent="PauseMenu/Panel2/VBoxContainer" unique_id=241834269]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
-text = "Quit"
+text = " "
 script = ExtResource("3_dkg16")
+
+[node name="ButtonEffectManager" type="Node" parent="PauseMenu/Panel2/VBoxContainer/Quit" unique_id=181807875]
+script = ExtResource("6_lxr6y")
+hover_sound = SubResource("AudioStreamMP3_elatv")
+hover_sound_volume = -20.0
+pressed_sound = ExtResource("8_atvq0")
+metadata/_custom_type_script = "uid://dmtv6vw6acjpk"
+
+[node name="Label" type="Label" parent="PauseMenu/Panel2/VBoxContainer/Quit" unique_id=174215825]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_fuwgk")
+text = "Quit"
+horizontal_alignment = 1
 
 [node name="TogglePauseTrigger" type="Node" parent="." unique_id=562028054]
 process_mode = 3
@@ -87,4 +162,4 @@ trigger_callbacks = Dictionary[StringName, String]({
 })
 metadata/_custom_type_script = "uid://ctj52ol5st0sb"
 
-[connection signal="pressed" from="PauseMenu/VBoxContainer/Resume" to="." method="toggle_pause"]
+[connection signal="pressed" from="PauseMenu/Panel2/VBoxContainer/Resume" to="." method="toggle_pause"]
