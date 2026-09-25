@@ -683,7 +683,7 @@ interaction_shape = SubResource("CircleShape2D_ynad1")
 metadata/_custom_type_script = "uid://ycmo11btri04"
 
 [node name="Spawner" type="Node2D" parent="." unique_id=924794710]
-position = Vector2(971, -13601)
+position = Vector2(-33, 106)
 script = ExtResource("8_lh335")
 scene_to_spawn = ExtResource("9_u6cys")
 metadata/_custom_type_script = "uid://c24k2c2pkw5oi"
