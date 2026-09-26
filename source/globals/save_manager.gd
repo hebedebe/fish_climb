@@ -38,3 +38,9 @@ func load_game() -> void:
 
 func clear_save() -> void:
 	DOT_save.delete_data()
+
+func bind_save_function(function: Callable) -> void:
+	DOT_save.data_is_saving.connect(function)
+	
+func bind_load_function(function: Callable) -> void:
+	DOT_save.data_is_loading.connect(function)

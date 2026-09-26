@@ -23,6 +23,7 @@
 [ext_resource type="Resource" uid="uid://dci5sou0qxjpg" path="res://data/npcs/pickaxe/pickaxe.tres" id="17_of21v"]
 [ext_resource type="PackedScene" uid="uid://baaaiwjrjaeti" path="res://source/pause_menu/pause_menu.tscn" id="20_3ca7f"]
 [ext_resource type="Script" uid="uid://csyr1bfucvmvk" path="res://source/build_overlay/version_number_label.gd" id="23_tn76l"]
+[ext_resource type="PackedScene" uid="uid://veqesipi4ps2" path="res://source/gameplay_overlay/game_overlay.tscn" id="24_of21v"]
 [ext_resource type="Script" uid="uid://mir3qg4jicfq" path="res://source/debugging/fps_label.gd" id="24_werwd"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_wjuib"]
@@ -1045,6 +1046,8 @@ offset_right = 40.0
 offset_bottom = 23.0
 script = ExtResource("24_werwd")
 metadata/_custom_type_script = "uid://mir3qg4jicfq"
+
+[node name="GameOverlay" parent="." unique_id=657389411 instance=ExtResource("24_of21v")]
 
 [node name="Player" parent="." unique_id=1896629207 instance=ExtResource("9_u6cys")]
 position = Vector2(34, 126)
