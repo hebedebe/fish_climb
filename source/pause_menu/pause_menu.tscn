@@ -43,6 +43,7 @@ shader_parameter/tiling = Vector2(1, 1)
 shader_parameter/offSetSpeed = Vector2(0.1, 0.1)
 shader_parameter/backGroundDirX = 0.01
 shader_parameter/backGroundDirY = 0.01
+shader_parameter/backgroundOffset = Vector2(-0.005, -0.005)
 
 [sub_resource type="StyleBox" id="StyleBox_dkg16"]
 resource_local_to_scene = false

@@ -21,6 +21,7 @@ uniform vec2 offSetSpeed = vec2(.1);
 group_uniforms BG_distortion;
 uniform float backGroundDirX : hint_range(-0.1, 0.1) = 0.01;
 uniform float backGroundDirY : hint_range(-0.1, 0.1) = 0.01;
+uniform vec2 backgroundOffset;
 
 
 
@@ -42,8 +43,8 @@ void fragment() {
 	color.rgb += intensity * vec3(WDBrightness);
 	
 	vec2 backGroundUV = SCREEN_UV;
-	backGroundUV.x += noiseValue * backGroundDirX;
-	backGroundUV.y += noiseValue * backGroundDirY;
+	backGroundUV.x += noiseValue * backGroundDirX + backgroundOffset.x;
+	backGroundUV.y += noiseValue * backGroundDirY + backgroundOffset.y;
 
 
 	color = mix(texture(SCREEN_TEXTURE, backGroundUV),color, 0.2);
