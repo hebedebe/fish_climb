@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Fish Climb"
-config/version="main.25.0"
+config/version="main.27.0"
 run/main_scene="uid://bf4fe4aelm51o"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="uid://cxwvbsaib3hsw"
@@ -23,8 +23,8 @@ buses/default_bus_layout="uid://boc3jgv48irlo"
 [autoload]
 
 PhantomCameraManager="*uid://duq6jhf6unyis"
-GameplayEvents="*uid://fw7nxsnta1ei"
 DialogueManager="*uid://c3rodes2l3gxb"
+GameplayEvents="*uid://fw7nxsnta1ei"
 
 [debug]
 
