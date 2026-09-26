@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://i68hudjpficx" path="res://source/pause_menu/pause_menu.gd" id="1_g2srp"]
 [ext_resource type="Theme" uid="uid://7fikpqm7uett" path="res://source/pause_menu/pause_menu_theme.tres" id="2_fuwgk"]
+[ext_resource type="Shader" uid="uid://cis7hl82hoo7r" path="res://source/shaders/water.gdshader" id="2_jkalf"]
 [ext_resource type="Script" uid="uid://ctj52ol5st0sb" path="res://source/event_trigger.gd" id="2_jtk1q"]
 [ext_resource type="Script" uid="uid://crwf7wnbr427k" path="res://source/pause_menu/quit_button.gd" id="3_dkg16"]
 [ext_resource type="Script" uid="uid://cjmmhbp1b5312" path="res://addons/StyleboxFancy/StyleBorder.gd" id="3_itf5k"]
@@ -9,7 +10,37 @@
 [ext_resource type="Script" uid="uid://bkl6g25jwb47h" path="res://addons/StyleboxFancy/StyleBoxFancy.gd" id="4_lxr6y"]
 [ext_resource type="Texture2D" uid="uid://spt6hes383ke" path="res://data/dialogue_bubbles/fish_head/SD132.JPG" id="5_elatv"]
 [ext_resource type="Script" uid="uid://dmtv6vw6acjpk" path="res://source/button_effect_manager.gd" id="6_lxr6y"]
+[ext_resource type="Script" uid="uid://dku0u3p6r0e0h" path="res://source/pause_menu/panel.gd" id="7_atvq0"]
 [ext_resource type="AudioStream" uid="uid://bf4xk61uuey88" path="res://source/player/fish_slap.mp3" id="8_atvq0"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_h3lid"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_atvq0"]
+noise = SubResource("FastNoiseLite_h3lid")
+seamless = true
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_hvmt2"]
+frequency = 0.0026
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_0xran"]
+noise = SubResource("FastNoiseLite_hvmt2")
+seamless = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_elatv"]
+shader = ExtResource("2_jkalf")
+shader_parameter/waterNoise = SubResource("NoiseTexture2D_0xran")
+shader_parameter/waterDistortionNoise = SubResource("NoiseTexture2D_atvq0")
+shader_parameter/waterColor = Color(0.117, 0.27, 0.58, 1)
+shader_parameter/colorCorection = 0.35
+shader_parameter/distortionForce = 0.01
+shader_parameter/WDBrightness = 1.5
+shader_parameter/WDFreq = 0.6
+shader_parameter/WDSize = 0.9
+shader_parameter/WDSpeed = 4.0
+shader_parameter/tiling = Vector2(1, 1)
+shader_parameter/offSetSpeed = Vector2(0.1, 0.1)
+shader_parameter/backGroundDirX = 0.01
+shader_parameter/backGroundDirY = 0.01
 
 [sub_resource type="StyleBox" id="StyleBox_dkg16"]
 resource_local_to_scene = false
@@ -44,15 +75,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+offset_transform_scale = Vector2(0, 0)
 
-[node name="Panel" type="Panel" parent="PauseMenu" unique_id=874976894]
+[node name="Water" type="ColorRect" parent="PauseMenu" unique_id=485596062]
+material = SubResource("ShaderMaterial_elatv")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_fuwgk")
 
 [node name="Panel2" type="Panel" parent="PauseMenu" unique_id=565647339]
 layout_mode = 1
@@ -67,8 +99,11 @@ offset_right = 187.0
 offset_bottom = 61.0
 grow_horizontal = 2
 grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0, 0)
 theme = ExtResource("2_fuwgk")
 theme_override_styles/panel = SubResource("StyleBox_dkg16")
+script = ExtResource("7_atvq0")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/Panel2" unique_id=2118855270]
 layout_mode = 1
@@ -167,5 +202,6 @@ trigger_callbacks = Dictionary[StringName, String]({
 metadata/_custom_type_script = "uid://ctj52ol5st0sb"
 
 [connection signal="hidden" from="." to="PauseMenu/PauseMenuHideSound" method="play"]
+[connection signal="shown" from="." to="PauseMenu/Panel2" method="appear"]
 [connection signal="shown" from="." to="PauseMenu/PauseMenuShowSound" method="play"]
 [connection signal="pressed" from="PauseMenu/Panel2/VBoxContainer/Resume" to="." method="toggle_pause"]
