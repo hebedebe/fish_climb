@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://dmtv6vw6acjpk" path="res://source/button_effect_manager.gd" id="6_lxr6y"]
 [ext_resource type="Script" uid="uid://dku0u3p6r0e0h" path="res://source/pause_menu/panel.gd" id="7_atvq0"]
 [ext_resource type="AudioStream" uid="uid://bf4xk61uuey88" path="res://source/player/fish_slap.mp3" id="8_atvq0"]
+[ext_resource type="Script" uid="uid://nph4hph7elpv" path="res://source/pause_menu/squish_button.gd" id="8_h3lid"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_h3lid"]
 
@@ -126,6 +127,7 @@ horizontal_alignment = 1
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 text = " "
+script = ExtResource("8_h3lid")
 
 [node name="ButtonEffectManager" type="Node" parent="PauseMenu/Panel2/VBoxContainer/Resume" unique_id=2036537857]
 script = ExtResource("6_lxr6y")
