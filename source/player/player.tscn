@@ -75,7 +75,7 @@ flip_charge_time = 0.5
 
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=1227209948 node_paths=PackedStringArray("follow_target")]
 top_level = true
-position = Vector2(-2, -205)
+position = Vector2(0, -200)
 script = ExtResource("6_jo3qi")
 follow_mode = 5
 follow_target = NodePath("../PlayerBody/PlayerCenter")
@@ -92,8 +92,8 @@ metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=656171891]
 top_level = true
-position = Vector2(-2, -205)
-offset = Vector2(0.26976213, -2.567754)
+position = Vector2(0, -200)
+offset = Vector2(1.0152239, -0.95575345)
 zoom = Vector2(0.3, 0.3)
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=1337692131]
@@ -107,14 +107,13 @@ position = Vector2(-343, -95)
 script = ExtResource("7_fhjrr")
 
 [node name="PlayerCenter" type="Node2D" parent="PlayerBody" unique_id=121034645 node_paths=PackedStringArray("player_body")]
-position = Vector2(341, 90)
+position = Vector2(343, 95)
 script = SubResource("GDScript_w1lkv")
 player_body = NodePath("..")
 
 [node name="Sounds" type="Node2D" parent="PlayerBody/PlayerCenter" unique_id=759196846]
 
 [node name="SlapSound" type="AudioStreamPlayer2D" parent="PlayerBody/PlayerCenter/Sounds" unique_id=965572218]
-position = Vector2(-2, -5)
 stream = SubResource("AudioStreamRandomizer_4eph7")
 bus = &"SFX"
 script = ExtResource("6_fhjrr")
@@ -127,7 +126,6 @@ trigger_callbacks = Dictionary[StringName, String]({
 })
 
 [node name="ChargingSound" type="AudioStreamPlayer2D" parent="PlayerBody/PlayerCenter/Sounds" unique_id=1017745043 node_paths=PackedStringArray("player")]
-position = Vector2(-2, -5)
 stream = ExtResource("17_v5tg1")
 volume_db = -15.0
 bus = &"SFX"

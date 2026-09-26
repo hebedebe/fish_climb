@@ -9,7 +9,7 @@ func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 		var impulse := state.get_contact_impulse(i)
 		total_impulse += impulse
 
-	# this will be the total amount of impact (in any direction) applied this physics frame
+	# this will be the total amount of impact (in any direction) applied thiss physics frame
 	var impulse_length := total_impulse.length()
 
 	if impulse_length > impulse_sound_threshold:
