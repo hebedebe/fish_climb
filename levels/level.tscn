@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://g4ms8cxd6sw1" path="res://source/terrain_textures/cells.jpg" id="4_mxp4k"]
 [ext_resource type="Texture2D" uid="uid://bako5rr78molg" path="res://source/terrain_textures/SD140.JPG" id="5_d7v53"]
 [ext_resource type="Texture2D" uid="uid://c07240xp5nha8" path="res://source/terrain_textures/MULCH.png" id="7_ta7ci"]
-[ext_resource type="Script" uid="uid://c24k2c2pkw5oi" path="res://source/spawner.gd" id="8_lh335"]
 [ext_resource type="Script" uid="uid://ogq6jh0v4dn7" path="res://source/interactive_grass/interactive_grass_curve.gd" id="9_hy0rb"]
 [ext_resource type="PackedScene" uid="uid://d2f2uonx5sjhi" path="res://source/player/player.tscn" id="9_u6cys"]
 [ext_resource type="Script" uid="uid://ycmo11btri04" path="res://source/npc/npc.gd" id="10_0qmeg"]
@@ -683,12 +682,6 @@ npc_data = ExtResource("17_of21v")
 interaction_shape = SubResource("CircleShape2D_ynad1")
 metadata/_custom_type_script = "uid://ycmo11btri04"
 
-[node name="Spawner" type="Node2D" parent="." unique_id=924794710]
-position = Vector2(-5674, -11997)
-script = ExtResource("8_lh335")
-scene_to_spawn = ExtResource("9_u6cys")
-metadata/_custom_type_script = "uid://c24k2c2pkw5oi"
-
 [node name="Parallax2D4" type="Parallax2D" parent="." unique_id=1407528033]
 modulate = Color(1, 1, 1, 0.45882353)
 scroll_scale = Vector2(1.02, 1.02)
@@ -1052,3 +1045,6 @@ offset_right = 40.0
 offset_bottom = 23.0
 script = ExtResource("24_werwd")
 metadata/_custom_type_script = "uid://mir3qg4jicfq"
+
+[node name="Player" parent="." unique_id=1896629207 instance=ExtResource("9_u6cys")]
+position = Vector2(34, 126)

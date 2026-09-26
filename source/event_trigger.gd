@@ -19,5 +19,5 @@ func handle_event(event_name: StringName) -> void:
 		else:
 			print("Invalid path to callable in parent")
 
-func add_callback(broadcast_name: String, method_name: String) -> void:
+func add_callback(broadcast_name: StringName, method_name: String) -> void:
 	trigger_callbacks[broadcast_name] = method_name
