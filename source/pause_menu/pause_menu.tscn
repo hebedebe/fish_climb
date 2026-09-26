@@ -13,6 +13,7 @@
 [ext_resource type="Script" uid="uid://dku0u3p6r0e0h" path="res://source/pause_menu/panel.gd" id="7_atvq0"]
 [ext_resource type="AudioStream" uid="uid://bf4xk61uuey88" path="res://source/player/fish_slap.mp3" id="8_atvq0"]
 [ext_resource type="Script" uid="uid://nph4hph7elpv" path="res://source/pause_menu/squish_button.gd" id="8_h3lid"]
+[ext_resource type="AudioStream" uid="uid://3pfmhmdckqi2" path="res://source/pause_menu/slider_tick.mp3" id="12_0xran"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_h3lid"]
 
@@ -67,6 +68,7 @@ data = PackedByteArray("//OEZAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAJAAAIEAAnJycn
 
 [node name="PauseCanvasLayer" type="CanvasLayer" unique_id=945801933]
 process_mode = 3
+layer = 99
 script = ExtResource("1_g2srp")
 
 [node name="PauseMenu" type="Control" parent="." unique_id=287744993]
@@ -88,6 +90,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Panel2" type="Panel" parent="PauseMenu" unique_id=565647339]
+propagate_maximum_size = true
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -95,13 +98,12 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -187.0
-offset_top = -61.0
+offset_top = -98.0
 offset_right = 187.0
-offset_bottom = 61.0
+offset_bottom = 98.0
 grow_horizontal = 2
 grow_vertical = 2
 offset_transform_enabled = true
-offset_transform_scale = Vector2(0, 0)
 theme = ExtResource("2_fuwgk")
 theme_override_styles/panel = SubResource("StyleBox_dkg16")
 script = ExtResource("7_atvq0")
@@ -147,16 +149,38 @@ theme = ExtResource("2_fuwgk")
 text = "Resume"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="PauseMenu/Panel2/VBoxContainer" unique_id=287235150]
+[node name="MasterVolume" type="HBoxContainer" parent="PauseMenu/Panel2/VBoxContainer" unique_id=347308132]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 
-[node name="Label" type="Label" parent="PauseMenu/Panel2/VBoxContainer/HBoxContainer" unique_id=286913045]
+[node name="Label" type="Label" parent="PauseMenu/Panel2/VBoxContainer/MasterVolume" unique_id=1254770908]
+layout_mode = 2
+theme = ExtResource("2_fuwgk")
+text = "Master Volume"
+
+[node name="HSlider" type="HSlider" parent="PauseMenu/Panel2/VBoxContainer/MasterVolume" unique_id=261197150]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = ExtResource("2_fuwgk")
+max_value = 1.0
+step = 0.1
+value = 1.0
+script = ExtResource("3_pmjhf")
+target_bus = &"Master"
+tick_sound = ExtResource("12_0xran")
+tick_volume = -15.0
+
+[node name="SFXVolume" type="HBoxContainer" parent="PauseMenu/Panel2/VBoxContainer" unique_id=287235150]
+layout_mode = 2
+theme = ExtResource("2_fuwgk")
+
+[node name="Label" type="Label" parent="PauseMenu/Panel2/VBoxContainer/SFXVolume" unique_id=286913045]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 text = "SFX Volume"
 
-[node name="HSlider" type="HSlider" parent="PauseMenu/Panel2/VBoxContainer/HBoxContainer" unique_id=1846871681]
+[node name="HSlider" type="HSlider" parent="PauseMenu/Panel2/VBoxContainer/SFXVolume" unique_id=1846871681]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
@@ -166,6 +190,52 @@ step = 0.1
 value = 1.0
 script = ExtResource("3_pmjhf")
 target_bus = &"SFX"
+tick_sound = ExtResource("12_0xran")
+tick_volume = -15.0
+
+[node name="UIVolume" type="HBoxContainer" parent="PauseMenu/Panel2/VBoxContainer" unique_id=1109030797]
+layout_mode = 2
+theme = ExtResource("2_fuwgk")
+
+[node name="Label" type="Label" parent="PauseMenu/Panel2/VBoxContainer/UIVolume" unique_id=1460167933]
+layout_mode = 2
+theme = ExtResource("2_fuwgk")
+text = "UI Volume"
+
+[node name="HSlider" type="HSlider" parent="PauseMenu/Panel2/VBoxContainer/UIVolume" unique_id=540830630]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = ExtResource("2_fuwgk")
+max_value = 1.0
+step = 0.1
+value = 1.0
+script = ExtResource("3_pmjhf")
+target_bus = &"UI"
+tick_sound = ExtResource("12_0xran")
+tick_volume = -15.0
+
+[node name="MusicVolume" type="HBoxContainer" parent="PauseMenu/Panel2/VBoxContainer" unique_id=1042172978]
+layout_mode = 2
+theme = ExtResource("2_fuwgk")
+
+[node name="Label" type="Label" parent="PauseMenu/Panel2/VBoxContainer/MusicVolume" unique_id=1020622869]
+layout_mode = 2
+theme = ExtResource("2_fuwgk")
+text = "Music Volume"
+
+[node name="HSlider" type="HSlider" parent="PauseMenu/Panel2/VBoxContainer/MusicVolume" unique_id=1646205583]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = ExtResource("2_fuwgk")
+max_value = 1.0
+step = 0.1
+value = 1.0
+script = ExtResource("3_pmjhf")
+target_bus = &"Music"
+tick_sound = ExtResource("12_0xran")
+tick_volume = -15.0
 
 [node name="Quit" type="Button" parent="PauseMenu/Panel2/VBoxContainer" unique_id=241834269]
 layout_mode = 2
@@ -192,8 +262,10 @@ text = "Quit"
 horizontal_alignment = 1
 
 [node name="PauseMenuShowSound" type="AudioStreamPlayer" parent="PauseMenu" unique_id=571232195]
+bus = &"UI"
 
 [node name="PauseMenuHideSound" type="AudioStreamPlayer" parent="PauseMenu" unique_id=780896203]
+bus = &"UI"
 
 [node name="TogglePauseTrigger" type="Node" parent="." unique_id=562028054]
 process_mode = 3

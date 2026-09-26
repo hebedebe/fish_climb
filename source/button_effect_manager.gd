@@ -31,12 +31,12 @@ func _ready() -> void:
 	assert(owning_button != null, "ButtonEffectManager must be placed as a child of an owning button")
 	
 	hover_sound_player = AudioStreamPlayer.new()
-	hover_sound_player.bus = "SFX"
+	hover_sound_player.bus = &"UI"
 	owning_button.mouse_entered.connect(hover_sound_player.play)
 	add_child(hover_sound_player)
 	
 	pressed_sound_player = AudioStreamPlayer.new()
-	pressed_sound_player.bus = "SFX"
+	pressed_sound_player.bus = &"UI"
 	owning_button.pressed.connect(pressed_sound_player.play)
 	add_child(pressed_sound_player)
 	

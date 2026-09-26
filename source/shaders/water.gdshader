@@ -1,7 +1,7 @@
 
 shader_type canvas_item;
 
-uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, repeat_enable, filter_nearest;
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_nearest;
 
 group_uniforms water;
 uniform sampler2D waterNoise : repeat_enable, filter_nearest;
