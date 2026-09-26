@@ -14,7 +14,6 @@
 [ext_resource type="AudioStream" uid="uid://bf4xk61uuey88" path="res://source/player/fish_slap.mp3" id="8_atvq0"]
 [ext_resource type="Script" uid="uid://nph4hph7elpv" path="res://source/pause_menu/squish_button.gd" id="8_h3lid"]
 [ext_resource type="AudioStream" uid="uid://3pfmhmdckqi2" path="res://source/pause_menu/slider_tick.mp3" id="12_0xran"]
-[ext_resource type="Script" uid="uid://de3kf20mnsdl8" path="res://source/event_broadcaster.gd" id="14_hvmt2"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_h3lid"]
 
@@ -67,6 +66,15 @@ metadata/_custom_type_script = "uid://bkl6g25jwb47h"
 
 [sub_resource type="AudioStreamMP3" id="AudioStreamMP3_elatv"]
 data = PackedByteArray("//OEZAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAJAAAIEAAnJycnJycnJycnJ1tbW1tbW1tbW1tbfHx8fHx8fHx8fHyWlpaWlpaWlpaWlrGxsbGxsbGxsbGxy8vLy8vLy8vLy8vl5eXl5eXl5eXl5fz8/Pz8/Pz8/Pz8//////////////8AAABQTEFNRTQuMCAABHgAAAAAAAAAADUIJAQgLQAB4AAACBCZHvT4AAAAAAAAAAAAAAAAAAAA//OkZAAF+AE5j6AAAAAAA0gBQAAAAAAKlCALYna/v8EAfL4Jv4f5Q4XggfUCH/iN//4Y5Q53bPygIOKHP5d//4P///B96sqZu4O4AAAUkzOKRbVkmROGYQIIbFy1TDqDAzXFOQoejLxtlGFjYCNagahUeHBWsKOl+zAyz1uzuaGtF5UKW3BpMBMwgMw4xSI2hgyYPOGIGHH4YQRXRTUUSQAxdHhKovw4Y2ATEL2ww7RaCO3JyAGmByAKhwgmAgizGJt2j4MIP+1aM3IJed84DceJNLYPGFB2n6pnSvz5ITHhLeNZilPKn4jcUqv3PuQ/EcchxFN1HEBi/3JvZ2a0MvUw+LUnI8xCzjWijuVae9DEORJnEOMCQGQGsx25+L2K//PEZNsqXhdtj8zpkAAAA0gBgAAAXkqSWe+5ypdsVc+v5ZuSqlvy/KWXKSxK5eyiEt6pmyd/4efhlDLLrcFNJTB0/NQ3LsZmm+lprUSj0jwmr/Yflcvt/yzblFNKJZYlHL9js//4SJrECUlm3UfyyoJB0Px2flknjF7v/dcKC4rKqGd5ljWpquO8q1W6/M26tgAnWrft8xCRMzCrqKc5VtEnKrYj59AZlM+li3liH87qTMiJEyRUXKGXRjwEGAHooUR6IKkRYhxFZkTzsaJqMWpFwc4fy4TaJmgkXW0zIusYGx8ul1mcui5UWRQSdSzQ2SplqeUZoodIvGJaK5YJk+mbKMlnkzpqRVFSKJdUTxgKFJIvGZODrIiYnjUpE0kQIpF42JmbIlFTOYG7VmJcXMjZJFIxNUEZkpBJI2qUsvGzlgssbIGSSLrRWhmJsktFjqtklqu0yzpdZFanMs4Zl1FmU/zFaRkbVpTFGv2bu6wDSJilqzTIlJNtjKqOU0d2//OUZPMb0gtjj+fIAAAAA0gBwAAAkjUPU8hcJ+vypo12rLdXcdV2Uw4yqNS92YbS0PvAjQFTAgh6lMiUfXw6Mj6zK2uwLkNgytsR0ffn1Oj5ty9ce7RBNSUnU21bXrHW0XMt8X/bErRQ9AVOKuSsFHLDQdqsg1IBtThzQ8FINTY2sVgWlnmLFYWDpblmv9V/aVSLlVrkmVgWla7xWZUVTJuPZ1hoKtYldeJNqGZiVHFCw1VhG/4cl4KayabG1ZqYmacAKVOzf7+RTXiZvLjdZvGYYd/IsIllpCOxDNS7bkYYTw02swyFCIgzx9DkIC23//OEZO8XhgdFe2GImIAAA0gAAAAAa8D7q3Lsrv1KTXg0sVyvRcxbLa7WWXHp1mjRKLhq5LVrVghRJh+xo6WsuVrlmSTGcomox5MUZNpdnXC96FMKhAWE19lDCiw5AVHqbehWbapzEDdWYkwWGjjlFTakiwhBsMFoOHh0LTtasLN/AdHmq3GprNzH//Nfx7ZyktnBI8AuImxEoGlYdWeEAAkaj+Y1Y4Mlj2TqiK8kSzyjI8Ux2NtMp43zlCxYTMJQ//OEZN0W+dsxjz2ImgAAA0gAAAAAdh/gLQdRvrmK8gZgnUoE0CzfQkBHQICdWJQ0T/wybYWjONfWVRkoGRGp9yb0kbTcJ77jm//3KWyedBdFUvu1vvPlQKPDw9EQE5qJPSPJwJIyaSe/blcINTqR1Xqb7yP2DeKyXhCYdxYrr3e30BRttAAkjJ8R8vISHF0Aj2b25/KllF9y6lKyOTpiioXabZjMKFEmBxVxGGTN1kV6h1KjrmF9Z7aPrWiEGxFZ//OEZNASPWspjx3pWAAAA0gAAAAAhqedP3yGJdSe2efhKgRs1tfL9zdM5VlJpFm3rML1EL2HyyWLwZXv/cXezWjLhALB4RiQu8xfP7nfLoNOzpe1Hz1IjNlF51dyFg/vNLzSk3/3JmmNsr31AAAG9dUIiYeFAEs013+/XY6rBQFYBNVoCApCjQWFO28Fl1BVrLptHyGpJaP06YD59I+ZnKDF9rQn0bNa0YldR9G3UBJmKUKAgJc8Ma7NThhQETs0//OEZOkTJXklLwsMWAAAA0gAAAAAAm1KMcZvh9ZjqlG2Am14GAi1UBJgJtjqrscZv/2bUBYGwmwWEcNiuOhYioXDoqIaFYmhSY4FyOCsTQrj5uPl66Xj5uPlxcNVTEFNRTQuMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//N0ZPoSyU8tjw3jaoAAA0gAAAAAVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//MUZPYAAAH+AAAAAAAAA0gAAAAAVVVV")
+
+[sub_resource type="GDScript" id="GDScript_0xran"]
+script/source = "extends SquishButton
+
+
+func _on_pressed() -> void:
+	SaveManager.clear_save()
+	get_tree().reload_current_scene()
+"
 
 [node name="PauseCanvasLayer" type="CanvasLayer" unique_id=945801933]
 process_mode = 3
@@ -263,56 +271,24 @@ theme = ExtResource("2_fuwgk")
 text = "Quit"
 horizontal_alignment = 1
 
-[node name="SavePanel" type="Panel" parent="PauseMenu" unique_id=44130759]
-propagate_maximum_size = true
+[node name="ResetSaveButton" type="Button" parent="PauseMenu" unique_id=1085077099]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -445.0
-offset_top = -46.0
-offset_right = -237.0
-offset_bottom = 46.0
-grow_horizontal = 2
-grow_vertical = 2
-offset_transform_enabled = true
-theme = ExtResource("2_fuwgk")
-theme_override_styles/panel = SubResource("StyleBox_dkg16")
-script = ExtResource("7_atvq0")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/SavePanel" unique_id=2076678784]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 9.0
-offset_right = -9.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = ExtResource("2_fuwgk")
-
-[node name="Label" type="Label" parent="PauseMenu/SavePanel/VBoxContainer" unique_id=366859432]
-layout_mode = 2
-theme = ExtResource("2_fuwgk")
-text = "Saving"
-horizontal_alignment = 1
-
-[node name="Save" type="Button" parent="PauseMenu/SavePanel/VBoxContainer" unique_id=2086708859]
-layout_mode = 2
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 357.0
+offset_bottom = 30.0
 theme = ExtResource("2_fuwgk")
 text = " "
-script = ExtResource("8_h3lid")
+script = SubResource("GDScript_0xran")
 
-[node name="ButtonEffectManager" type="Node" parent="PauseMenu/SavePanel/VBoxContainer/Save" unique_id=354187250]
+[node name="ButtonEffectManager" type="Node" parent="PauseMenu/ResetSaveButton" unique_id=1170657419]
 script = ExtResource("6_lxr6y")
 hover_sound = SubResource("AudioStreamMP3_elatv")
 hover_sound_volume = -20.0
 pressed_sound = ExtResource("8_atvq0")
 metadata/_custom_type_script = "uid://dmtv6vw6acjpk"
 
-[node name="Label" type="Label" parent="PauseMenu/SavePanel/VBoxContainer/Save" unique_id=836739379]
+[node name="Label" type="Label" parent="PauseMenu/ResetSaveButton" unique_id=1811782631]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -320,42 +296,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_fuwgk")
-text = "Save"
+text = "Reset Save (THIS CANNOT BE UNDONE)"
 horizontal_alignment = 1
-
-[node name="EventBroadcaster" type="Node" parent="PauseMenu/SavePanel/VBoxContainer/Save" unique_id=2110752471]
-script = ExtResource("14_hvmt2")
-broadcast_string = &"save_game"
-metadata/_custom_type_script = "uid://de3kf20mnsdl8"
-
-[node name="Load" type="Button" parent="PauseMenu/SavePanel/VBoxContainer" unique_id=166683663]
-layout_mode = 2
-theme = ExtResource("2_fuwgk")
-text = " "
-script = ExtResource("8_h3lid")
-
-[node name="ButtonEffectManager" type="Node" parent="PauseMenu/SavePanel/VBoxContainer/Load" unique_id=21544266]
-script = ExtResource("6_lxr6y")
-hover_sound = SubResource("AudioStreamMP3_elatv")
-hover_sound_volume = -20.0
-pressed_sound = ExtResource("8_atvq0")
-metadata/_custom_type_script = "uid://dmtv6vw6acjpk"
-
-[node name="Label" type="Label" parent="PauseMenu/SavePanel/VBoxContainer/Load" unique_id=870052116]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = ExtResource("2_fuwgk")
-text = "Load"
-horizontal_alignment = 1
-
-[node name="EventBroadcaster" type="Node" parent="PauseMenu/SavePanel/VBoxContainer/Load" unique_id=195591793]
-script = ExtResource("14_hvmt2")
-broadcast_string = &"load_game"
-metadata/_custom_type_script = "uid://de3kf20mnsdl8"
 
 [node name="PauseMenuShowSound" type="AudioStreamPlayer" parent="PauseMenu" unique_id=571232195]
 bus = &"UI"
@@ -374,7 +316,5 @@ metadata/_custom_type_script = "uid://ctj52ol5st0sb"
 [connection signal="hidden" from="." to="PauseMenu/PauseMenuHideSound" method="play"]
 [connection signal="shown" from="." to="PauseMenu/PausePanel" method="appear"]
 [connection signal="shown" from="." to="PauseMenu/PauseMenuShowSound" method="play"]
-[connection signal="shown" from="." to="PauseMenu/SavePanel" method="appear"]
 [connection signal="pressed" from="PauseMenu/PausePanel/VBoxContainer/Resume" to="." method="toggle_pause"]
-[connection signal="pressed" from="PauseMenu/SavePanel/VBoxContainer/Save" to="PauseMenu/SavePanel/VBoxContainer/Save/EventBroadcaster" method="broadcast"]
-[connection signal="pressed" from="PauseMenu/SavePanel/VBoxContainer/Load" to="PauseMenu/SavePanel/VBoxContainer/Load/EventBroadcaster" method="broadcast"]
+[connection signal="pressed" from="PauseMenu/ResetSaveButton" to="PauseMenu/ResetSaveButton" method="_on_pressed"]
