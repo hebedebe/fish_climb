@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Fish Climb"
-config/version="main.31.0"
+config/version="main.33.0"
 run/main_scene="uid://bf4fe4aelm51o"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="uid://cxwvbsaib3hsw"
@@ -95,7 +95,6 @@ locale/translations_pot_files=PackedStringArray("res://data/npcs/glorp/glorp_dia
 
 [physics]
 
-2d/run_on_separate_thread=true
 3d/physics_engine="Jolt Physics"
 
 [rendering]

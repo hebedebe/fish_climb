@@ -10,10 +10,10 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	timer += delta
-	var min = floor(timer / 60.0)
-	var sec = floori(timer) % 60
-	var msec = timer - floor(timer)
-	text = "%02d:%02d.%0d" % [min, sec, msec*1000]
+	var minutes = floor(timer / 60.0)
+	var seconds = floori(timer) % 60
+	var milliseconds = timer - floor(timer)
+	text = "%02d:%02d.%0d" % [minutes, seconds, milliseconds*1000]
 
 func save_timer() -> void:
 	DOT_save.set_value_data("timer", timer)

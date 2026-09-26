@@ -14,6 +14,7 @@
 [ext_resource type="AudioStream" uid="uid://bf4xk61uuey88" path="res://source/player/fish_slap.mp3" id="8_atvq0"]
 [ext_resource type="Script" uid="uid://nph4hph7elpv" path="res://source/pause_menu/squish_button.gd" id="8_h3lid"]
 [ext_resource type="AudioStream" uid="uid://3pfmhmdckqi2" path="res://source/pause_menu/slider_tick.mp3" id="12_0xran"]
+[ext_resource type="Script" uid="uid://d0omsjfrqemt7" path="res://source/pause_menu/color_picker_button.gd" id="14_hvmt2"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_h3lid"]
 
@@ -299,6 +300,64 @@ theme = ExtResource("2_fuwgk")
 text = "Reset Save (THIS CANNOT BE UNDONE)"
 horizontal_alignment = 1
 
+[node name="CustomisationPanel" type="Panel" parent="PauseMenu" unique_id=1758351434]
+propagate_maximum_size = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 223.0
+offset_top = -30.0
+offset_right = 529.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+theme = ExtResource("2_fuwgk")
+theme_override_styles/panel = SubResource("StyleBox_dkg16")
+script = ExtResource("7_atvq0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/CustomisationPanel" unique_id=1576529292]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="PauseMenu/CustomisationPanel/VBoxContainer" unique_id=1983850593]
+layout_mode = 2
+text = "Customisation"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PauseMenu/CustomisationPanel/VBoxContainer" unique_id=856063224]
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="PauseMenu/CustomisationPanel/VBoxContainer/HBoxContainer" unique_id=1181451188]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PauseMenu/CustomisationPanel/VBoxContainer/HBoxContainer" unique_id=1388926310]
+layout_mode = 2
+text = "Fish Tint"
+vertical_alignment = 1
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="PauseMenu/CustomisationPanel/VBoxContainer/HBoxContainer" unique_id=942190361]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(1, 1, 1, 1)
+edit_alpha = false
+edit_intensity = false
+script = ExtResource("14_hvmt2")
+
+[node name="Spacer2" type="Control" parent="PauseMenu/CustomisationPanel/VBoxContainer/HBoxContainer" unique_id=938691321]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
 [node name="PauseMenuShowSound" type="AudioStreamPlayer" parent="PauseMenu" unique_id=571232195]
 bus = &"UI"
 
@@ -315,6 +374,7 @@ metadata/_custom_type_script = "uid://ctj52ol5st0sb"
 
 [connection signal="hidden" from="." to="PauseMenu/PauseMenuHideSound" method="play"]
 [connection signal="shown" from="." to="PauseMenu/PausePanel" method="appear"]
+[connection signal="shown" from="." to="PauseMenu/CustomisationPanel" method="appear"]
 [connection signal="shown" from="." to="PauseMenu/PauseMenuShowSound" method="play"]
 [connection signal="pressed" from="PauseMenu/PausePanel/VBoxContainer/Resume" to="." method="toggle_pause"]
 [connection signal="pressed" from="PauseMenu/ResetSaveButton" to="PauseMenu/ResetSaveButton" method="_on_pressed"]
