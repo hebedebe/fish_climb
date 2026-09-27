@@ -66,7 +66,6 @@ func _get_configuration_warnings():
 		if vertex_interval == value:
 			return
 		vertex_interval = value
-		radius = value - value * 0.05
 		margin_offset_edge = value / 5
 		create_softbody2d()
 	get:
@@ -293,45 +292,28 @@ const MAX_REGIONS := 400
 
 #region Shape
 
+enum ShapeType {
+	Circle,
+	Rectangle
+}
+
 ## Properties that change every shape created for this softbody.
 @export_group("Shape")
 ## Sets the [member Shape2D size].
-@export_range(2, 50, 0.1, "or_greater") var radius := 20 :
-	set (value):
-		if radius == value:
-			return
-		radius = value
-		for body in get_rigid_bodies():
-			var shape = body.shape
-			if shape_type == "Circle":
-				shape.shape.radius = radius / 2.0
-			elif shape_type == "Rectangle":
-				shape.shape.size = Vector2(radius, radius)
-			else:
-				push_error("Wrong shape used for shape_type. " + shape_type)
-	get:
-		return radius
 
 ## What kind of shape to create for each rigidbody.
-@export_enum("Circle", "Rectangle") var shape_type:= "Rectangle" :
+@export var shape_2d: Shape2D:
 	set (value):
-		if shape_type == value:
+		if shape_2d == value:
 			return
-		shape_type = value
+		shape_2d = value
 		for body in get_rigid_bodies():
-			var shape = body.shape
-			if shape_type == "Circle":
-				shape.shape = CircleShape2D.new()
-				shape.shape.resource_local_to_scene = true
-				shape.shape.radius = radius / 2.0
-			elif shape_type == "Rectangle":
-				shape.shape = RectangleShape2D.new()
-				shape.shape.resource_local_to_scene = true
-				shape.shape.size = Vector2(radius, radius)
+			if shape_2d:
+				body.shape.shape = shape_2d
 			else:
-				push_error("Wrong shape used for shape_type")
+				push_error("Shape is null")
 	get:
-		return shape_type
+		return shape_2d
 
 ## Offset from edge of the polygon inwards when creating shapes.
 @export_range(-50, 50, 0.1, "or_greater") var margin_offset_edge := 0.0:
@@ -915,19 +897,9 @@ func _add_rigid_body_for_bones(skeleton: Skeleton2D) -> Array[RigidBody2D]:
 	var rigidbodies : Array[RigidBody2D] = []
 	var polygon_limits = _calculate_polygon_limits()
 	var follow = _get_node_to_follow(bones)
-	var shape: Shape2D
-	if shape_type == "Circle":
-		shape = CircleShape2D.new()
-		shape.radius = (radius / 2.0) * scale.x
-	elif shape_type == "Rectangle":
-		shape = RectangleShape2D.new()
-		shape.size = Vector2(radius, radius) * scale
-	else:
-		push_error("Wrong shape used for shape_type")
-	shape.resource_local_to_scene = true
 	var idx := 0
 	for bone in bones:
-		var rigid_body = _create_rigid_body(skeleton, bone, mass, bone == follow, shape)
+		var rigid_body = _create_rigid_body(skeleton, bone, mass, bone == follow, shape_2d)
 		rigid_body.set_meta("idx", idx)
 		idx += 1
 		rigid_body.set_meta("bone_name", bone.name)
@@ -942,8 +914,8 @@ func _create_rigid_body(skeleton: Skeleton2D, bone: Bone2D, mass, is_center: boo
 		rigid_body = RigidBody2D.new()
 	rigid_body.name = bone.name
 	var collision_shape = CollisionShape2D.new()
-	collision_shape.shape = shape
-	collision_shape.name = shape_type + "Shape2D"
+	collision_shape.shape = shape_2d
+	#collision_shape.name = shape_2d + "Shape2D"
 	collision_shape.visible = show_shapes
 	rigid_body.mass = mass
 	rigid_body.can_sleep = can_sleep
@@ -1026,7 +998,7 @@ func _generate_joints(rigid_bodies: Array[RigidBody2D], connected_bones: Array):
 			if Engine.is_editor_hint():
 				joint.set_owner(get_tree().get_edited_scene_root())
 			var middle = node_b.global_position - node_a.global_position
-			middle = middle.normalized() * radius / 2.0
+			middle = middle.normalized() * shape_2d.get_rect().size.length() / 2.0
 			joint.global_position = node_a.global_position + middle
 			#joint.global_position = node_a.global_position
 	var skeleton_node: Skeleton2D = get_node_or_null(skeleton)
