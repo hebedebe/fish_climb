@@ -2,10 +2,11 @@
 
 [ext_resource type="Script" uid="uid://dka57amjtl42m" path="res://source/player/fish_softbody_node.gd" id="1_5vljk"]
 
-[node name="FishSoftbodyNode" type="RigidBody2D" unique_id=266591616]
+[node name="FishSoftbodyNode" type="RigidBody2D" unique_id=1243274414]
 physics_interpolation_mode = 1
 continuous_cd = 1
 contact_monitor = true
 max_contacts_reported = 1
 script = ExtResource("1_5vljk")
-impulse_sound_threshold = 150.0
+impulse_sound_threshold = 200.0
+metadata/_custom_type_script = "uid://unwhnooi7g2c"
