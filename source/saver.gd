@@ -1,3 +1,4 @@
+@tool
 @icon("res://addons/at-icons/node/floppy_disk.svg")
 class_name Saver extends Node
 
@@ -5,10 +6,21 @@ enum SaveName {
 	OwnerName,
 	OwnerPath,
 	SaverName,
-	SaverPath
+	SaverPath,
+	Custom,
 }
 
-@export var save_name_mode: SaveName
+@export_group("Save Settings")
+@export var save_name_mode: SaveName:
+	get:
+		if custom_save_name.is_empty():
+			if save_name_mode == SaveName.Custom:
+				save_name_mode = SaveName.OwnerName
+			return save_name_mode
+		else:
+			return SaveName.Custom
+
+@export var custom_save_name: StringName ##a custom path to save the data to - setting this will override save_name_mode
 @export var properties_to_save: Array[StringName]
 
 func _ready() -> void:
@@ -28,6 +40,8 @@ func get_save_name() -> String:
 			return name
 		SaveName.SaverPath:
 			return get_path()
+		SaveName.Custom:
+			return custom_save_name
 	printerr("Could not get save name")
 	return ""
 
