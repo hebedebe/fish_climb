@@ -11,6 +11,10 @@ enum SaveName {
 }
 
 @export_group("Save Settings")
+
+@export var save_enabled: bool = true
+@export var load_enabled: bool = true
+
 @export var save_name_mode: SaveName:
 	get:
 		if custom_save_name.is_empty():
@@ -50,17 +54,17 @@ func get_save_name() -> String:
 	printerr("Could not get save name")
 	return ""
 
-func save_path(property_name: String) -> String:
+func get_save_path(property_name: String) -> String:
 	return get_save_name() + "." + property_name
 
 func save_value(property_name: String) -> void:
-	var path = save_path(property_name)
+	var path = get_save_path(property_name)
 	if print_on_load:
 		print("Saving data to ", path)
 	DOT_save.set_value_data(path, owner.get(property_name))
 	
 func load_value(property_name: String) -> void:
-	var path = save_path(property_name)
+	var path = get_save_path(property_name)
 	if print_on_load:
 		print("Loading data from ", path)
 	var value = DOT_save.get_value_data(path)
@@ -68,10 +72,13 @@ func load_value(property_name: String) -> void:
 		owner.set(property_name, value)
 
 func save_data() -> void:
-	#print("Saving data for ", name)
+	if not save_enabled:
+		return
 	for property in properties_to_save:
 		save_value(property)
 	
 func load_data() -> void:
+	if not load_enabled:
+		return
 	for property in properties_to_save:
 		load_value(property)

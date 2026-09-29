@@ -14,7 +14,6 @@ var flip_direction: PlayerBody.FlipDirection
 func _process(delta: float) -> void:
 	if charging:
 		charge = clamp(charge + flip_strength * delta/flip_charge_time, 0, flip_strength)
-		#print(charge)
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("flip_left"):
