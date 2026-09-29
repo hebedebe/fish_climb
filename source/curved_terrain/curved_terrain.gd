@@ -3,6 +3,8 @@
 class_name CurvedTerrain
 extends Path2D
 
+@export_tool_button("Update Node Location") var _update_node_location_action = update_node_location
+
 @export_group("Visuals")
 @export var edge_texture: Texture2D:
 	set(value): 
@@ -127,3 +129,19 @@ func update_edge():
 func update_curve():
 	if curve and curve.bake_interval != bake_interval:
 		curve.bake_interval = bake_interval
+
+func get_average_point_location() -> Vector2:
+	var point_total: Vector2 = Vector2.ZERO
+	for idx in curve.point_count:
+		point_total += curve.sample(idx, 0)
+	var point_average: Vector2 = point_total / curve.point_count
+	return point_average
+
+func update_node_location() -> void:
+	var points_average := get_average_point_location()
+	print(points_average)
+	position += points_average
+	
+	for idx in curve.point_count:
+		curve.set_point_position(idx, curve.get_closest_point(curve.sample(idx,0)) - points_average)
+	

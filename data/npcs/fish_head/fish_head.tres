@@ -4,7 +4,6 @@
 [ext_resource type="Resource" uid="uid://bkm4ejyyno4i8" path="res://data/npcs/fish_head/fish_head_dialogue.dialogue" id="1_8rme1"]
 [ext_resource type="Texture2D" uid="uid://drdv4yn5mukbb" path="res://data/npcs/fish_head/fish_head.png" id="3_q4r3k"]
 [ext_resource type="Script" uid="uid://bm0pw0bb20w2g" path="res://source/npc/npc_data.gd" id="4_dnmlq"]
-[ext_resource type="AudioStream" uid="uid://7xiyoahp3rkd" path="res://data/npcs/fish_head/bubbles.mp3" id="5_q4r3k"]
 
 [resource]
 script = ExtResource("4_dnmlq")
@@ -16,6 +15,5 @@ sprite_texture_filter = 3
 npc_name = "fish head"
 npc_dialogue = ExtResource("1_8rme1")
 npc_dialogue_balloon = ExtResource("1_3udrl")
-talk_sound = ExtResource("5_q4r3k")
 talk_volume = null
 metadata/_custom_type_script = "uid://bm0pw0bb20w2g"
