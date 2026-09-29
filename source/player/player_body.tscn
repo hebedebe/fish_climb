@@ -8,6 +8,7 @@
 diffuse_texture = ExtResource("1_rji8l")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4x6j0"]
+custom_solver_bias = 1.0
 radius = 20.0
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_1lhgo"]
@@ -335,7 +336,7 @@ metadata/_local_pose_override_enabled_ = true
 [node name="Bone-1" type="Bone2D" parent="Skeleton2D" unique_id=317932190]
 position = Vector2(42.084393, 98)
 rotation = -0.4664877
-scale = Vector2(0.9999998, 0.9999998)
+scale = Vector2(0.9999997, 0.9999997)
 rest = Transform2D(0.8931534, -0.44975203, 0.44975203, 0.8931534, 42.084393, 98)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -376,7 +377,7 @@ metadata/_local_pose_override_enabled_ = true
 [node name="Bone-4" type="Bone2D" parent="Skeleton2D" unique_id=2014249662]
 position = Vector2(85.44725, 109.9091)
 rotation = -1.5371531
-scale = Vector2(0.9999998, 0.9999998)
+scale = Vector2(0.9999997, 0.9999997)
 rest = Transform2D(0.033636857, -0.9994341, 0.9994341, 0.033636857, 85.44725, 109.9091)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -390,7 +391,7 @@ metadata/_local_pose_override_enabled_ = true
 [node name="Bone-5" type="Bone2D" parent="Skeleton2D" unique_id=510927111]
 position = Vector2(214.18692, 51.228313)
 rotation = 1.5232756
-scale = Vector2(0.9999998, 0.9999998)
+scale = Vector2(0.9999997, 0.9999997)
 rest = Transform2D(0.04750283, 0.9988711, -0.9988711, 0.04750283, 214.18692, 51.228313)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -520,8 +521,8 @@ metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-15" type="Bone2D" parent="Skeleton2D" unique_id=1554287769]
 position = Vector2(303.1089, 154)
-rotation = -0.5901178
-scale = Vector2(0.9999998, 0.9999998)
+rotation = -0.59011775
+scale = Vector2(0.99999976, 0.99999976)
 rest = Transform2D(0.8308751, -0.5564589, 0.5564589, 0.8308751, 303.1089, 154)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -652,7 +653,7 @@ metadata/_local_pose_override_enabled_ = true
 [node name="Bone-25" type="Bone2D" parent="Skeleton2D" unique_id=1008867593]
 position = Vector2(476.8899, 52.26278)
 rotation = 2.66349
-scale = Vector2(0.9999998, 0.9999998)
+scale = Vector2(0.9999997, 0.9999997)
 rest = Transform2D(-0.8878695, 0.46009535, -0.46009535, -0.8878695, 476.8899, 52.26278)
 auto_calculate_length_and_angle = false
 length = 50.0
