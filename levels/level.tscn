@@ -222,6 +222,7 @@ sprite_scale = Vector2(2, 2)
 npc_name = "jerma"
 npc_dialogue = ExtResource("12_368ro")
 npc_dialogue_balloon = ExtResource("13_3ca7f")
+talk_volume = null
 metadata/_custom_type_script = "uid://bm0pw0bb20w2g"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ctgui"]

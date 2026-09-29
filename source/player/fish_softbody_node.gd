@@ -1,6 +1,17 @@
+@tool
 extends RigidBody2D
 
 @export var impulse_sound_threshold: float = 10.0
+
+var temp_collision_shape: CollisionShape2D
+
+func _ready() -> void:
+	if Engine.is_editor_hint(): # remove annoying warning
+		temp_collision_shape = CollisionShape2D.new()
+		add_child(temp_collision_shape)
+	else:
+		if temp_collision_shape:
+			printerr("Softbody node failed temp shape cleanup")
 
 func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 	var contact_count = state.get_contact_count()

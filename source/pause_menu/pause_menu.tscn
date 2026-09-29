@@ -10,7 +10,7 @@
 [ext_resource type="Script" uid="uid://bkl6g25jwb47h" path="res://addons/StyleboxFancy/StyleBoxFancy.gd" id="4_lxr6y"]
 [ext_resource type="Texture2D" uid="uid://spt6hes383ke" path="res://data/dialogue_bubbles/fish_head/SD132.JPG" id="5_elatv"]
 [ext_resource type="Script" uid="uid://dmtv6vw6acjpk" path="res://source/button_effect_manager.gd" id="6_lxr6y"]
-[ext_resource type="Script" uid="uid://dku0u3p6r0e0h" path="res://source/pause_menu/panel.gd" id="7_atvq0"]
+[ext_resource type="Script" uid="uid://dku0u3p6r0e0h" path="res://source/pause_menu/appearing_panel.gd" id="7_atvq0"]
 [ext_resource type="AudioStream" uid="uid://bf4xk61uuey88" path="res://source/player/fish_slap.mp3" id="8_atvq0"]
 [ext_resource type="Script" uid="uid://nph4hph7elpv" path="res://source/pause_menu/squish_button.gd" id="8_h3lid"]
 [ext_resource type="AudioStream" uid="uid://3pfmhmdckqi2" path="res://source/pause_menu/slider_tick.mp3" id="12_0xran"]

@@ -28,10 +28,6 @@ GameplayEvents="*uid://fw7nxsnta1ei"
 SaveManager="*uid://v8vnx2catin4"
 DOT_save="*uid://ctt30dnwyf7w6"
 
-[debug]
-
-settings/stdout/print_gpu_profile=true
-
 [dialogue_manager]
 
 runtime/balloon_path="res://data/dialogue_bubbles/default/balloon.tscn"
@@ -40,7 +36,6 @@ runtime/balloon_path="res://data/dialogue_bubbles/default/balloon.tscn"
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
-window/vsync/vsync_mode=0
 
 [editor_plugins]
 
