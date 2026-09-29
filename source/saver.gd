@@ -25,10 +25,11 @@ enum SaveName {
 
 func _ready() -> void:
 	if not owner:
-		printerr("Saver must have an owning node")
+		printerr("Saver (%s) must have an owning node" % name)
 	
-	DOT_save.data_is_saving.connect(save_data)
-	DOT_save.data_is_loading.connect(load_data)
+	if not Engine.is_editor_hint():
+		DOT_save.data_is_saving.connect(save_data)
+		DOT_save.data_is_loading.connect(load_data)
 
 func get_save_name() -> String:
 	match save_name_mode:
