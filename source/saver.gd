@@ -51,7 +51,7 @@ func get_save_name() -> String:
 			return get_path()
 		SaveName.Custom:
 			return custom_save_name
-	printerr("Could not get save name")
+	printerr("Could not get save name (%s)" % self)
 	return ""
 
 func get_save_path(property_name: String) -> String:
