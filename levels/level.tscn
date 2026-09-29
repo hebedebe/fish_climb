@@ -403,11 +403,11 @@ _data = {
 point_count = 25
 
 [sub_resource type="Curve2D" id="Curve2D_tn76l"]
-bake_interval = 200.0
+bake_interval = 150.0
 _data = {
-"points": PackedVector2Array(-309.87277, 512.4819, 309.87277, -512.4819, -5580, -17266, -405.21823, -190.69093, 405.21823, 190.69093, -3327, -18089, -176.15079, -576.9593, 176.15079, 576.9593, -3041, -16933, -217.7452, -963.9427, 217.7452, 963.9427, -3249, -14548, 95.34547, -95.34547, -95.34547, 95.34547, -3023, -12783, 369.46368, 202.60912, -369.46368, -202.60912, -4054, -12368, 383.76553, 765.8624, -383.76553, -765.8624, -5723, -14489)
+"points": PackedVector2Array(-309.87277, 29.32483, 309.87277, -29.32483, -6468, -14973, -324.14334, -6.115912, 324.14334, 6.115912, -5754, -15445, -220.17284, 103.970505, 220.17284, -103.970505, -4875, -15330, -543.11456, -3.5459137, 543.11456, 3.5459137, -4324, -15897, -120.25536, 14.14769, 120.25536, -14.14769, -3270, -16104, -109.12819, 60.410244, 109.12819, -60.410244, -2541, -16124, -72.102554, 66.2564, 72.102554, -66.2564, -2452, -16468, -95.48716, 21.435894, 95.48716, -21.435894, -2048, -16734, 0, 0, 0, 0, -1635, -16695, -176.15079, -576.9593, 176.15079, 576.9593, -2285, -15700, -217.7452, -963.9427, 217.7452, 963.9427, -3249, -14548, 95.34547, -95.34547, -95.34547, 95.34547, -3023, -12783, 369.46368, 202.60912, -369.46368, -202.60912, -4054, -12368, 383.76553, 765.8624, -383.76553, -765.8624, -8498, -14666)
 }
-point_count = 7
+point_count = 14
 
 [sub_resource type="Curve2D" id="Curve2D_80cyg"]
 bake_interval = 200.0
@@ -676,7 +676,7 @@ npc_data = SubResource("Resource_pb0qc")
 interaction_shape = SubResource("CircleShape2D_ctgui")
 metadata/_custom_type_script = "uid://ycmo11btri04"
 
-[node name="Npc" type="Node2D" parent="Npcs" unique_id=661636215]
+[node name="Pickaxe" type="Node2D" parent="Npcs" unique_id=661636215]
 position = Vector2(-2413, -9984)
 script = ExtResource("10_0qmeg")
 npc_data = ExtResource("17_of21v")
@@ -735,30 +735,6 @@ position = Vector2(-9443, -14020)
 
 [node name="Rock12" parent="Level" unique_id=88673991 instance=ExtResource("16_ta7ci")]
 position = Vector2(-9031, -14248)
-
-[node name="Rock13" parent="Level" unique_id=2094385252 instance=ExtResource("16_ta7ci")]
-position = Vector2(-8110, -14703)
-
-[node name="Rock14" parent="Level" unique_id=944145994 instance=ExtResource("16_ta7ci")]
-position = Vector2(-7189, -15191)
-
-[node name="Rock15" parent="Level" unique_id=1483599063 instance=ExtResource("16_ta7ci")]
-position = Vector2(-6853, -15321)
-
-[node name="Rock16" parent="Level" unique_id=1281701947 instance=ExtResource("16_ta7ci")]
-position = Vector2(-6311, -15722)
-
-[node name="Rock17" parent="Level" unique_id=1920657577 instance=ExtResource("16_ta7ci")]
-position = Vector2(-6051, -15950)
-
-[node name="Rock18" parent="Level" unique_id=1845476893 instance=ExtResource("16_ta7ci")]
-position = Vector2(-6831, -16784)
-
-[node name="Rock19" parent="Level" unique_id=618537843 instance=ExtResource("16_ta7ci")]
-position = Vector2(-5650, -17239)
-
-[node name="Rock20" parent="Level" unique_id=1650598223 instance=ExtResource("16_ta7ci")]
-position = Vector2(-5032, -17705)
 
 [node name="Rock7" parent="Level" unique_id=1112409120 instance=ExtResource("16_ta7ci")]
 position = Vector2(-10730, -11767)
@@ -971,7 +947,7 @@ curve = SubResource("Curve2D_tn76l")
 script = ExtResource("2_pb8y7")
 fill_texture = ExtResource("7_ta7ci")
 fill_texture_scale = Vector2(0.4, 0.4)
-bake_interval = 200.0
+bake_interval = 150.0
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="CurvedTerrain26" type="Path2D" parent="Level" unique_id=1746834857]
@@ -1050,4 +1026,4 @@ metadata/_custom_type_script = "uid://mir3qg4jicfq"
 [node name="GameOverlay" parent="." unique_id=657389411 instance=ExtResource("24_of21v")]
 
 [node name="Player" parent="." unique_id=1896629207 instance=ExtResource("9_u6cys")]
-position = Vector2(34, 126)
+position = Vector2(8, 86)

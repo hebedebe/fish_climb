@@ -31,12 +31,14 @@ func load_value(property_name: String) -> void:
 		set(property_name, value)
 
 func save_data() -> void:
+	#print("Saving data for ", name)
 	save_value("position")
 	save_value("rotation")
 	save_value("linear_velocity")
 	save_value("angular_velocity")
 	
 func load_data() -> void:
+	#print("Loading data for ", name)
 	load_value("position")
 	load_value("rotation")
 	load_value("linear_velocity")
