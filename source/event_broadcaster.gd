@@ -1,3 +1,4 @@
+@icon("res://addons/at-icons/node/emitter.svg")
 class_name EventBroadcaster extends Node
 
 @export var broadcast_string: StringName

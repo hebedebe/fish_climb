@@ -1,5 +1,5 @@
 @tool
-@icon("uid://ctl1v20tk17cd")
+@icon("res://addons/at-icons/node2d/human.svg")
 class_name Npc extends Node2D
 
 @export var npc_data: NpcData:

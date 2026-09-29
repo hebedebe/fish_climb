@@ -1,3 +1,4 @@
+@icon("res://addons/at-icons/node2d/grass.svg")
 class_name InteractiveGrass
 extends Area2D
 

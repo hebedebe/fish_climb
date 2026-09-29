@@ -27,7 +27,8 @@ script = ExtResource("8_5ffni")
 metadata/_custom_type_script = "uid://dimvdouy8g0sv"
 
 [sub_resource type="GDScript" id="GDScript_w1lkv"]
-script/source = "extends Node2D
+script/source = "@icon(\"res://addons/at-icons/node2d/location.svg\")
+extends Node2D
 
 @export var player_body: PlayerBody
 
@@ -87,14 +88,16 @@ follow_damping = true
 lookahead_acceleration = 0.4
 dead_zone_width = 0.15
 dead_zone_height = 0.15
+draw_limits = true
 noise = SubResource("Resource_4eph7")
 metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=656171891]
 top_level = true
 position = Vector2(0, -200)
-offset = Vector2(0.24438706, 0.37165675)
+offset = Vector2(1.1091774, 1.6453933)
 zoom = Vector2(0.3, 0.3)
+editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=1337692131]
 process_priority = 300

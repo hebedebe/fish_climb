@@ -1,4 +1,5 @@
 @tool
+@icon("res://addons/at-icons/node2d/grass.svg")
 ## Instance curve with defaults
 class_name GrassCurve extends InstanceCurve
 

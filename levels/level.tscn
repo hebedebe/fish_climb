@@ -11,7 +11,6 @@
 [ext_resource type="Script" uid="uid://ycmo11btri04" path="res://source/npc/npc.gd" id="10_0qmeg"]
 [ext_resource type="PackedScene" uid="uid://cm6gykwt0fjxj" path="res://source/post_process/post_process.tscn" id="10_368ro"]
 [ext_resource type="Shader" uid="uid://cis7hl82hoo7r" path="res://source/shaders/water.gdshader" id="10_kogck"]
-[ext_resource type="Script" uid="uid://c7qtmnl2i5oeu" path="res://source/instance_curve/instance_curve.gd" id="10_ukwr8"]
 [ext_resource type="PackedScene" uid="uid://qm3jgcscb63x" path="res://source/interactive_grass/interactive_grass.tscn" id="11_pb8y7"]
 [ext_resource type="Resource" uid="uid://bh4sfx5xuxybx" path="res://data/npcs/glorp/glorp_npc_data.tres" id="11_ta7ci"]
 [ext_resource type="Resource" uid="uid://vr3k4as8m8k3" path="res://data/npcs/end of game npc/end of game.dialogue" id="12_368ro"]
@@ -568,12 +567,12 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="Grass" type="Node2D" parent="." unique_id=380388134]
 
-[node name="InstanceCurve" type="Path2D" parent="Grass" unique_id=1139559563]
+[node name="InstanceCurve" type="Path2D" parent="Grass" unique_id=2144010310]
 curve = SubResource("Curve2D_hy0rb")
-script = ExtResource("10_ukwr8")
+script = ExtResource("9_hy0rb")
 scene = ExtResource("11_pb8y7")
 bake_interval = 500.0
-metadata/_custom_type_script = "uid://c7qtmnl2i5oeu"
+metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
 [node name="GrassCurve" type="Path2D" parent="Grass" unique_id=1281514323]
 curve = SubResource("Curve2D_mxp4k")

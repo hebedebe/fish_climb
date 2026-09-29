@@ -1,3 +1,4 @@
+@icon("res://addons/at-icons/node2d/itinerary.svg")
 @tool
 class_name CurvedTerrain
 extends Path2D
