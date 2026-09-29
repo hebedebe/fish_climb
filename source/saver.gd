@@ -23,6 +23,10 @@ enum SaveName {
 @export var custom_save_name: StringName ##a custom path to save the data to - setting this will override save_name_mode
 @export var properties_to_save: Array[StringName]
 
+@export_group("Debugging")
+@export var print_on_save: bool = false
+@export var print_on_load: bool = false
+
 func _ready() -> void:
 	if not owner:
 		printerr("Saver (%s) must have an owning node" % name)
@@ -50,10 +54,16 @@ func save_path(property_name: String) -> String:
 	return get_save_name() + "." + property_name
 
 func save_value(property_name: String) -> void:
-	DOT_save.set_value_data(save_path(property_name), owner.get(property_name))
+	var path = save_path(property_name)
+	if print_on_load:
+		print("Saving data to ", path)
+	DOT_save.set_value_data(path, owner.get(property_name))
 	
 func load_value(property_name: String) -> void:
-	var value = DOT_save.get_value_data(save_path(property_name))
+	var path = save_path(property_name)
+	if print_on_load:
+		print("Loading data from ", path)
+	var value = DOT_save.get_value_data(path)
 	if value:
 		owner.set(property_name, value)
 
