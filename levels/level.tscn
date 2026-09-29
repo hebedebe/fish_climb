@@ -981,7 +981,7 @@ script = ExtResource("2_pb8y7")
 fill_texture = ExtResource("4_mxp4k")
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
-[node name="CurvedTerrain25" type="Path2D" parent="Level/CurvedTerrain29" unique_id=1717303497]
+[node name="CurvedTerrain25" type="Path2D" parent="Level" unique_id=1717303497]
 texture_filter = 4
 curve = SubResource("Curve2D_of21v")
 script = ExtResource("2_pb8y7")
