@@ -1,17 +1,22 @@
 extends ColorPickerButton
 
 func _ready() -> void:
-	get_picker().can_add_swatches = false
-	get_picker().edit_alpha = false
-	get_picker().edit_intensity = false
-	get_picker().presets_visible = false
-	get_picker().hex_visible = false
-	get_picker().sampler_visible = false
-	get_picker().sliders_visible = false
-	get_picker().color_modes_visible = false
-	get_picker().picker_shape = ColorPicker.SHAPE_VHS_CIRCLE
+	var picker := get_picker()
+	if not picker:
+		printerr("Could not get picker")
+		return
+		
+	picker.can_add_swatches = false
+	picker.edit_alpha = false
+	picker.edit_intensity = false
+	picker.presets_visible = false
+	picker.hex_visible = false
+	picker.sampler_visible = false
+	picker.sliders_visible = false
+	picker.color_modes_visible = false
+	picker.picker_shape = ColorPicker.SHAPE_VHS_CIRCLE
 	
-	get_picker().color_changed.connect(update_fish_colour.unbind(1))
+	color_changed.connect(update_fish_colour.unbind(1))
 	
 	SaveManager.bind_save_function(save_game)
 	SaveManager.bind_load_function(load_game)
