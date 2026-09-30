@@ -1,5 +1,5 @@
 @tool
-extends RapierRigidBody2D
+extends RigidBody2D
 
 @export var impulse_sound_threshold: float = 10.0
 

@@ -974,9 +974,9 @@ func _generate_joints(rigid_bodies: Array[RigidBody2D], connected_bones: Array):
 			connected_nodes[idx_a].append(node_b)
 			var joint: Joint2D
 			if joint_type == "pin":
-				var pin_joint := RapierPinJoint2D.new()
+				var pin_joint := PinJoint2D.new()
 				pin_joint.physics_interpolation_mode = Node.PHYSICS_INTERPOLATION_MODE_ON
-				pin_joint.joint_type = 0
+				#pin_joint.joint_type = 0
 				pin_joint.softness = softness
 				#pin_joint.motor_position_stiffness = 10.0
 				#pin_joint.motor_position_damping = 1.0
@@ -986,8 +986,8 @@ func _generate_joints(rigid_bodies: Array[RigidBody2D], connected_bones: Array):
 				pin_joint.angular_limit_upper = angular_limit_upper
 				joint = pin_joint
 			else:
-				var spring_joint := RapierDampedSpringJoint2D.new()
-				spring_joint.joint_type = 0
+				var spring_joint := DampedSpringJoint2D.new()
+				#spring_joint.joint_type = 0
 				spring_joint.stiffness = stiffness
 				var joint_distance := (node_a.global_position - node_b.global_position).length()
 				spring_joint.set_meta("joint_distance", joint_distance)
