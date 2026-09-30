@@ -42,7 +42,7 @@ window/vsync/vsync_mode=0
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/AutoExportVersion/plugin.cfg", "res://addons/FileAccessWeb/plugin.cfg", "res://addons/StyleboxFancy/plugin.cfg", "res://addons/at-icons/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/dot_save_manager/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/ropesim/plugin.cfg", "res://addons/softbody2d/plugin.cfg")
+enabled=PackedStringArray("res://addons/AutoExportVersion/plugin.cfg", "res://addons/FileAccessWeb/plugin.cfg", "res://addons/StyleboxFancy/plugin.cfg", "res://addons/at-icons/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/dot_save_manager/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/softbody2d/plugin.cfg")
 
 [file_customization]
 
@@ -97,7 +97,7 @@ skip_dialogue={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://data/npcs/glorp/glorp_dialogue.dialogue", "res://data/npcs/pickaxe/pickaxe_dialogue.dialogue", "res://data/npcs/end of game npc/end of game.dialogue", "res://data/npcs/fish_head/fish_head_dialogue.dialogue")
+locale/translations_pot_files=PackedStringArray("res://data/npcs/glorp/glorp_dialogue.dialogue", "res://data/npcs/pickaxe/pickaxe_dialogue.dialogue", "res://data/npcs/end of game npc/end of game.dialogue", "res://data/npcs/fish_head/fish_head_dialogue.dialogue", "res://data/npcs/plato/plato_dialogue.dialogue")
 
 [physics]
 

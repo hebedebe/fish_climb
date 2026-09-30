@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dbeowv3patxaa"
+path="res://.godot/imported/plato_dialogue.dialogue-9a49ce2fcefa4ff701f5a5b58eca98fb.tres"
+
+[deps]
+
+source_file="res://data/npcs/plato/plato_dialogue.dialogue"
+dest_files=["res://.godot/imported/plato_dialogue.dialogue-9a49ce2fcefa4ff701f5a5b58eca98fb.tres"]
+
+[params]
+
+defaults=true

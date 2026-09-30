@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="NpcData" format=3 uid="uid://kt7rdyakcwk2"]
+
+[ext_resource type="Resource" uid="uid://dbeowv3patxaa" path="res://data/npcs/plato/plato_dialogue.dialogue" id="1_wbeq2"]
+[ext_resource type="PackedScene" uid="uid://bddjr2ug0dowq" path="res://data/dialogue_bubbles/rock/balloon.tscn" id="2_c0f1q"]
+[ext_resource type="Texture2D" uid="uid://dsu6j42dcbtni" path="res://data/npcs/plato/plato.png" id="3_c0f1q"]
+[ext_resource type="Script" uid="uid://bm0pw0bb20w2g" path="res://source/npc/npc_data.gd" id="4_f4bi7"]
+
+[resource]
+script = ExtResource("4_f4bi7")
+npc_sprite = ExtResource("3_c0f1q")
+sprite_position = Vector2(0, -120)
+sprite_rotation = 0.135
+sprite_scale = Vector2(0.4, 0.4)
+sprite_texture_filter = 3
+npc_name = "plato"
+npc_dialogue = ExtResource("1_wbeq2")
+npc_dialogue_balloon = ExtResource("2_c0f1q")
+metadata/_custom_type_script = "uid://bm0pw0bb20w2g"

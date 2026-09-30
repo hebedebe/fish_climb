@@ -21,6 +21,7 @@
 [ext_resource type="Script" uid="uid://bm0pw0bb20w2g" path="res://source/npc/npc_data.gd" id="15_kogck"]
 [ext_resource type="PackedScene" uid="uid://wubj35i2lekd" path="res://source/props/rock/rock.tscn" id="16_ta7ci"]
 [ext_resource type="Resource" uid="uid://dci5sou0qxjpg" path="res://data/npcs/pickaxe/pickaxe.tres" id="17_of21v"]
+[ext_resource type="Resource" uid="uid://kt7rdyakcwk2" path="res://data/npcs/plato/plato.tres" id="18_mca5t"]
 [ext_resource type="PackedScene" uid="uid://baaaiwjrjaeti" path="res://source/pause_menu/pause_menu.tscn" id="20_3ca7f"]
 [ext_resource type="Script" uid="uid://csyr1bfucvmvk" path="res://source/build_overlay/version_number_label.gd" id="23_tn76l"]
 [ext_resource type="PackedScene" uid="uid://veqesipi4ps2" path="res://source/gameplay_overlay/game_overlay.tscn" id="24_of21v"]
@@ -217,6 +218,9 @@ radius = 397.73
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ynad1"]
 radius = 252.04
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ka3sy"]
+size = Vector2(600, 1200)
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_pgbyh"]
 diffuse_texture = ExtResource("5_d7v53")
@@ -691,10 +695,10 @@ interaction_shape = SubResource("CircleShape2D_ynad1")
 metadata/_custom_type_script = "uid://ycmo11btri04"
 
 [node name="Plato" type="Node2D" parent="Npcs" unique_id=2131966288]
-position = Vector2(8464, -21056)
+position = Vector2(8439, -21056)
 script = ExtResource("10_0qmeg")
-npc_data = ExtResource("17_of21v")
-interaction_shape = SubResource("CircleShape2D_ynad1")
+npc_data = ExtResource("18_mca5t")
+interaction_shape = SubResource("RectangleShape2D_ka3sy")
 metadata/_custom_type_script = "uid://ycmo11btri04"
 
 [node name="Parallax2D4" type="Parallax2D" parent="." unique_id=1407528033]
@@ -1108,4 +1112,4 @@ metadata/_custom_type_script = "uid://mir3qg4jicfq"
 [node name="GameOverlay" parent="." unique_id=657389411 instance=ExtResource("24_of21v")]
 
 [node name="Player" parent="." unique_id=1896629207 instance=ExtResource("9_u6cys")]
-position = Vector2(16668, -24416)
+position = Vector2(7752, -21248)
