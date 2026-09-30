@@ -1,5 +1,7 @@
 extends ColorPickerButton
 
+@export var target_property: StringName
+
 func _ready() -> void:
 	var picker := get_picker()
 	if not picker:
@@ -18,19 +20,14 @@ func _ready() -> void:
 	
 	color_changed.connect(update_fish_colour.unbind(1))
 	
-	SaveManager.bind_save_function(save_game)
-	SaveManager.bind_load_function(load_game)
+	refresh_colour()
+	
+	CustomisationManager.customisation_updated.connect(refresh_colour)
+
+func refresh_colour() -> void:
+	get_picker().color = CustomisationManager.get(target_property)
+	color = CustomisationManager.get(target_property)
 
 func update_fish_colour() -> void:
-	var player: Player = get_tree().get_first_node_in_group("player")
-	player.player_body.self_modulate = get_picker().color
+	CustomisationManager.set(target_property, get_picker().color)
 	color = get_picker().color
-
-func save_game() -> void:
-	DOT_save.set_value_data("fish_tint", get_picker().color)
-	
-func load_game() -> void:
-	var tint = DOT_save.get_value_data("fish_tint")
-	if tint:
-		get_picker().color = DOT_save.get_value_data("fish_tint")
-		update_fish_colour()

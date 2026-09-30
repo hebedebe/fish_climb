@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Fish Climb"
-config/version="main.58.0"
+config/version="main.75.0"
 run/main_scene="uid://bf4fe4aelm51o"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="uid://cxwvbsaib3hsw"
@@ -28,6 +28,7 @@ GameplayEvents="*uid://fw7nxsnta1ei"
 SaveManager="*uid://v8vnx2catin4"
 DOT_save="*uid://ctt30dnwyf7w6"
 SettingsManager="*uid://0yb4tnlf26w2"
+CustomisationManager="*uid://cau58pg1eso2j"
 
 [dialogue_manager]
 

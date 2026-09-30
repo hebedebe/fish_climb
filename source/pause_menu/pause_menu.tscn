@@ -17,6 +17,8 @@
 [ext_resource type="AudioStream" uid="uid://3pfmhmdckqi2" path="res://source/pause_menu/slider_tick.mp3" id="12_0xran"]
 [ext_resource type="Script" uid="uid://c2utkakehsrcq" path="res://source/pause_menu/settings_option_button.gd" id="12_cksnl"]
 [ext_resource type="Script" uid="uid://d0omsjfrqemt7" path="res://source/pause_menu/color_picker_button.gd" id="14_hvmt2"]
+[ext_resource type="Script" uid="uid://bl23reswtsoo8" path="res://source/pause_menu/pattern_picker.gd" id="17_71yj7"]
+[ext_resource type="Script" uid="uid://bs8137kh8ifja" path="res://source/pause_menu/pattern_strength_slider.gd" id="17_ijfxw"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_h3lid"]
 
@@ -417,8 +419,7 @@ mouse_filter = 2
 script = ExtResource("7_atvq0")
 metadata/_custom_type_script = "uid://dku0u3p6r0e0h"
 
-[node name="CustomisationPanel" type="Panel" parent="PauseMenu" unique_id=1758351434]
-propagate_maximum_size = true
+[node name="CustomisationPanel" type="PanelContainer" parent="PauseMenu" unique_id=1968978902]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -428,7 +429,7 @@ anchor_bottom = 0.5
 offset_left = 223.0
 offset_top = -30.0
 offset_right = 529.0
-offset_bottom = 40.0
+offset_bottom = 47.0
 grow_horizontal = 2
 grow_vertical = 2
 offset_transform_enabled = true
@@ -437,12 +438,7 @@ theme_override_styles/panel = SubResource("StyleBox_dkg16")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/CustomisationPanel" unique_id=1576529292]
 clip_contents = true
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 2
 
 [node name="Title" type="Label" parent="PauseMenu/CustomisationPanel/VBoxContainer" unique_id=1983850593]
 layout_mode = 2
@@ -450,34 +446,97 @@ text = "Customisation"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="PauseMenu/CustomisationPanel/VBoxContainer" unique_id=856063224]
+[node name="BaseTint" type="HBoxContainer" parent="PauseMenu/CustomisationPanel/VBoxContainer" unique_id=856063224]
 layout_mode = 2
 
-[node name="Spacer" type="Control" parent="PauseMenu/CustomisationPanel/VBoxContainer/HBoxContainer" unique_id=1181451188]
+[node name="Spacer" type="Control" parent="PauseMenu/CustomisationPanel/VBoxContainer/BaseTint" unique_id=1181451188]
 custom_minimum_size = Vector2(20, 0)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="PauseMenu/CustomisationPanel/VBoxContainer/HBoxContainer" unique_id=1388926310]
+[node name="Label" type="Label" parent="PauseMenu/CustomisationPanel/VBoxContainer/BaseTint" unique_id=1388926310]
 layout_mode = 2
 text = "Fish Tint"
 vertical_alignment = 1
 
-[node name="ColorPickerButton" type="ColorPickerButton" parent="PauseMenu/CustomisationPanel/VBoxContainer/HBoxContainer" unique_id=942190361]
+[node name="ColorPickerButton" type="ColorPickerButton" parent="PauseMenu/CustomisationPanel/VBoxContainer/BaseTint" unique_id=942190361]
 layout_mode = 2
 size_flags_horizontal = 3
 color = Color(1, 1, 1, 1)
 edit_alpha = false
 edit_intensity = false
 script = ExtResource("14_hvmt2")
+target_property = &"player_base_tint"
 
-[node name="Spacer2" type="Control" parent="PauseMenu/CustomisationPanel/VBoxContainer/HBoxContainer" unique_id=938691321]
+[node name="Spacer2" type="Control" parent="PauseMenu/CustomisationPanel/VBoxContainer/BaseTint" unique_id=938691321]
 custom_minimum_size = Vector2(20, 0)
 layout_mode = 2
 
+[node name="PatternTint" type="HBoxContainer" parent="PauseMenu/CustomisationPanel/VBoxContainer" unique_id=1989056901]
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="PauseMenu/CustomisationPanel/VBoxContainer/PatternTint" unique_id=293554009]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PauseMenu/CustomisationPanel/VBoxContainer/PatternTint" unique_id=359842691]
+layout_mode = 2
+text = "Pattern Tint"
+vertical_alignment = 1
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="PauseMenu/CustomisationPanel/VBoxContainer/PatternTint" unique_id=2057578681]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(1, 1, 1, 1)
+edit_alpha = false
+edit_intensity = false
+script = ExtResource("14_hvmt2")
+target_property = &"player_pattern_tint"
+
+[node name="Spacer2" type="Control" parent="PauseMenu/CustomisationPanel/VBoxContainer/PatternTint" unique_id=1887842224]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="PatternStrength" type="HBoxContainer" parent="PauseMenu/CustomisationPanel/VBoxContainer" unique_id=760617284]
+layout_mode = 2
+
+[node name="Spacer2" type="Control" parent="PauseMenu/CustomisationPanel/VBoxContainer/PatternStrength" unique_id=746725122]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PauseMenu/CustomisationPanel/VBoxContainer/PatternStrength" unique_id=1674162225]
+layout_mode = 2
+text = "Pattern Strength"
+
+[node name="HSlider" type="HSlider" parent="PauseMenu/CustomisationPanel/VBoxContainer/PatternStrength" unique_id=1528030223]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.0
+script = ExtResource("17_ijfxw")
+
+[node name="Spacer3" type="Control" parent="PauseMenu/CustomisationPanel/VBoxContainer/PatternStrength" unique_id=336995164]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="PickPattern" type="Button" parent="PauseMenu/CustomisationPanel/VBoxContainer" unique_id=1905799957]
+layout_mode = 2
+text = "Pick Pattern"
+script = ExtResource("17_71yj7")
+
+[node name="FileDialog" type="FileDialog" parent="PauseMenu/CustomisationPanel/VBoxContainer/PickPattern" unique_id=45463338]
+oversampling_override = 1.0
+title = "Select a fish pattern"
+position = Vector2i(0, 36)
+popup_window = true
+sharp_corners = true
+force_native = true
+theme = ExtResource("2_fuwgk")
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.png", "*.jpg", "*.jpeg", "*.webp", "*.svg")
+
 [node name="AppearingControl" type="Control" parent="PauseMenu/CustomisationPanel" unique_id=522643560]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 2
 mouse_filter = 2
 script = ExtResource("7_atvq0")
 metadata/_custom_type_script = "uid://dku0u3p6r0e0h"

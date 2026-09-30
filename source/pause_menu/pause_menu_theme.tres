@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://bkl6g25jwb47h" path="res://addons/StyleboxFancy/StyleBoxFancy.gd" id="3_6o16e"]
 [ext_resource type="Texture2D" uid="uid://cy4ohbighomfp" path="res://data/dialogue_bubbles/rock/CONCGRAY.JPG" id="4_dora2"]
 [ext_resource type="Texture2D" uid="uid://g4ms8cxd6sw1" path="res://source/terrain_textures/cells.jpg" id="5_6o16e"]
+[ext_resource type="Texture2D" uid="uid://spt6hes383ke" path="res://data/dialogue_bubbles/fish_head/SD132.JPG" id="5_dora2"]
 
 [sub_resource type="StyleBox" id="StyleBox_nsejh"]
 resource_local_to_scene = false
@@ -108,6 +109,30 @@ shadow_offset = Vector2(2, 2)
 shadow_spread = Vector2(2, 2)
 metadata/_custom_type_script = "uid://bkl6g25jwb47h"
 
+[sub_resource type="StyleBox" id="StyleBox_vd5xl"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("3_6o16e")
+texture = ExtResource("5_dora2")
+texture_stretch_mode = 1
+texture_repeat = 2
+corner_radius_top_left = 19
+corner_radius_top_right = 19
+corner_radius_bottom_right = 19
+corner_radius_bottom_left = 19
+corner_curvature_top_left = 1.465
+corner_curvature_top_right = 1.465
+corner_curvature_bottom_right = 1.465
+corner_curvature_bottom_left = 1.465
+shadow_enabled = true
+shadow_offset = Vector2(2, 2)
+shadow_spread = Vector2(2, 2)
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
 [sub_resource type="StyleBox" id="StyleBox_dora2"]
 resource_local_to_scene = false
 resource_name = ""
@@ -190,6 +215,7 @@ Button/styles/focus = SubResource("StyleBox_nsejh")
 Button/styles/hover = SubResource("StyleBox_n0r4j")
 Button/styles/normal = SubResource("StyleBox_hlr7p")
 Button/styles/pressed = SubResource("StyleBox_fcfi7")
+FileDialog/styles/panel = SubResource("StyleBox_vd5xl")
 FoldableContainer/styles/focus = SubResource("StyleBox_n0r4j")
 FoldableContainer/styles/panel = SubResource("StyleBox_dora2")
 FoldableContainer/styles/title_collapsed_hover_panel = SubResource("StyleBox_hlr7p")
