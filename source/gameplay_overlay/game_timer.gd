@@ -6,6 +6,7 @@ var timer: float
 func _ready() -> void:
 	SaveManager.bind_save_function(save_timer)
 	SaveManager.bind_load_function(load_timer)
+	SettingsManager.gameplay_settings_changed.connect(on_settings_changed)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -22,3 +23,6 @@ func load_timer() -> void:
 	var loaded_time = DOT_save.get_value_data("timer")
 	if loaded_time:
 		timer = loaded_time
+
+func on_settings_changed() -> void:
+	visible = SettingsManager.show_timer
