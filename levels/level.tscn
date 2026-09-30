@@ -25,6 +25,7 @@
 [ext_resource type="Script" uid="uid://csyr1bfucvmvk" path="res://source/build_overlay/version_number_label.gd" id="23_tn76l"]
 [ext_resource type="PackedScene" uid="uid://veqesipi4ps2" path="res://source/gameplay_overlay/game_overlay.tscn" id="24_of21v"]
 [ext_resource type="Script" uid="uid://mir3qg4jicfq" path="res://source/debugging/fps_label.gd" id="24_werwd"]
+[ext_resource type="PackedScene" uid="uid://dsejsxjweaaw6" path="res://source/props/hanging_platform/hanging_platform.tscn" id="26_80cyg"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_wjuib"]
 diffuse_texture = ExtResource("1_ukwr8")
@@ -311,6 +312,13 @@ _data = {
 }
 point_count = 11
 
+[sub_resource type="Curve2D" id="Curve2D_ia6v6"]
+bake_interval = 300.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 12927, -15292, -469.0857, -10.037487, 469.0857, 10.037487, 16203, -15794, -664.5624, -87.34248, 664.5624, 87.34248, 18589, -16607, 0, 0, 0, 0, 20031, -17774, 0, 0, 0, 0, 19428, -17643, 0, 0, 0, 0, 20503, -18246, 0, 0, 0, 0, 20804, -19334, 0, 0, 0, 0, 20608, -19386, 0, 0, 0, 0, 20962, -19596, 0, 0, 0, 0, 22050, -23541, 0, 0, 0, 0, 18096, -27323, 0, 0, 0, 0, 22338, -27150, -287.9153, -1113.2726, 287.9153, 1113.2726, 27367, -23887, 1900.2411, -882.9403, -1900.2411, 882.9403, 22088, -11718, 0, 0, 0, 0, 19586, -11399, 0, 0, 0, 0, 13005, -13706)
+}
+point_count = 16
+
 [sub_resource type="Curve2D" id="Curve2D_vr6yy"]
 bake_interval = 150.0
 _data = {
@@ -370,9 +378,9 @@ point_count = 13
 [sub_resource type="Curve2D" id="Curve2D_3i7yh"]
 bake_interval = 300.0
 _data = {
-"points": PackedVector2Array(2585.2686, -1.4616699, -2585.2686, 1.4616699, 4801.375, 2650.2188, 455.85562, 439.57504, -455.85562, -439.57504, 413.75488, 1477.6846, 1586.3102, 555.20856, -1586.3102, -555.20856, -2185.625, -78.78125, 1971.9176, 411.71906, -1971.9176, -411.71906, -7118.625, -839.78125, -1235.1572, 205.85953, 1235.1572, -205.85953, -6927.625, -2622.7813, -2552.849, -1439.5767, 2552.849, 1439.5767, 5254.375, -2680.7813, 0, 0, 0, 0, 5762.375, 2094.2188)
+"points": PackedVector2Array(2585.2686, -1.4616699, -2585.2686, 1.4616699, 4801.375, 2650.2188, 455.85562, 439.57504, -455.85562, -439.57504, 413.75488, 1477.6846, 1586.3102, 555.20856, -1586.3102, -555.20856, -2185.625, -78.78125, 1971.9176, 411.71906, -1971.9176, -411.71906, -7118.625, -839.78125, -1235.1572, 205.85953, 1235.1572, -205.85953, -6927.625, -2622.7813, -72.27896, 66.71904, 72.27896, -66.71904, -3419.625, -3022.7813, 33.35952, 83.398796, -33.35952, -83.398796, -3347.087, -3541.7754, 66.71904, 55.599197, -66.71904, -55.599197, -4168.625, -3584.7813, -72.27896, 50.03928, 72.27896, -50.03928, -4197.625, -3844.7813, -66.71904, 50.03928, 66.71904, -50.03928, -3289.625, -3786.7813, 55.599197, 88.95872, -55.599197, -88.95872, -3120.625, -4955.7813, 61.15912, 77.838875, -61.15912, -77.838875, -3705.625, -5031.7813, -44.47936, 33.35952, 44.47936, -33.35952, -3683.625, -5313.7813, -94.51865, 61.159122, 94.51865, -61.159122, -3044.625, -5291.7813, -72.27896, 66.71904, 72.27896, -66.71904, -2968.625, -6115.7813, -111.198395, -161.23767, 111.198395, 161.23767, -790.625, -6060.7813, -13.455006, -67.275024, 13.455006, 67.275024, -1172.625, -2358.7813, -56.363636, -14.545454, 56.363636, 14.545454, 1294.375, -2013.7813, -2552.849, -1439.5767, 2552.849, 1439.5767, 3738.375, -609.78125, 0, 0, 0, 0, 5762.375, 2094.2188)
 }
-point_count = 7
+point_count = 20
 
 [sub_resource type="Curve2D" id="Curve2D_wjuib"]
 bake_interval = 300.0
@@ -429,6 +437,20 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -133.44434, 367.44434, -37.090527, 42.79676, 37.090527, -42.79676, 806.55566, 389.44434, 28.531174, 39.943645, -28.531174, -39.943645, 784.55566, 101.444336, 31.384293, 19.971823, -31.384293, -19.971823, 251.55566, 101.444336, 14.265587, 25.678057, -14.265587, -25.678057, 236.55566, -172.55566, 25.678057, 19.971823, -25.678057, -19.971823, -162.44434, -179.55566, 28.531174, 25.678057, -28.531174, -25.678057, -207.44434, -498.55566, 25.678057, -19.971823, -25.678057, 19.971823, -791.44434, -461.55566, -48.503, -51.356113, 48.503, 51.356113, -784.44434, 352.44434)
 }
 point_count = 9
+
+[sub_resource type="Curve2D" id="Curve2D_dcgl2"]
+bake_interval = 200.0
+_data = {
+"points": PackedVector2Array(53.70923, -1106.6873, -53.70923, 1106.6873, 5184, -23930, -216.69424, -206.8445, 216.69424, 206.8445, 3732, -22027, -246.24345, 0, 246.24345, 0, 10584, -23601, -98.49738, -433.3885, 98.49738, 433.3885, 13924, -21355, -39.398952, -334.89108, 39.398952, 334.89108, 12043, -19051, -630.38324, 167.44554, 630.38324, -167.44554, 15640, -17967, 0, 0, 0, 0, 16875.197, -20345.22, 0, 0, 0, 0, 18514, -20220, 0, 0, 0, 0, 18433, -20462, 0, 0, 0, 0, 16964.74, -20640.713, 157.59581, 650.0827, -157.59581, -650.0827, 17667, -23485, 0, 0, 0, 0, 15590, -24272, 0, 0, 0, 0, 15565, -25143, 0, 0, 0, 0, 15378, -25151, 0, 0, 0, 0, 15354, -24337, 0, 0, 0, 0, 14401, -24361, 0, 0, 0, 0, 14450, -25582, 0, 0, 0, 0, 14230, -25590, 0, 0, 0, 0, 14246, -24915, 0, 0, 0, 0, 13327, -24923, 0, 0, 0, 0, 13351, -25835, 0, 0, 0, 0, 12895, -25859, 0, 0, 0, 0, 12895, -24955, 0, 0, 0, 0, 11153.166, -24963.496, 0, 0, 0, 0, 12000, -26575, 0, 0, 0, 0, 12114, -26950, 0, 0, 0, 0, 11772, -26990, 0, 0, 0, 0, 11007, -26437, 0, 0, 0, 0, 9965, -26298, 0, 0, 0, 0, 7954, -26274, 2397.7798, -58.340607, -2397.7798, 58.340607, 5404, -24817)
+}
+point_count = 31
+
+[sub_resource type="Curve2D" id="Curve2D_qucvi"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(177.29529, 226.54398, -177.29529, -226.54398, -3644, -25574, 196.99477, -118.19685, -196.99477, 118.19685, -5140, -25499, 187.14502, -98.49738, -187.14502, 98.49738, -5574, -24932, 118.19685, 39.398952, -118.19685, -39.398952, -8694, -24714, 128.0466, 147.74608, -128.0466, -147.74608, -9169, -25001, 167.44554, 78.797905, -167.44554, -78.797905, -9612, -25503, 128.0466, -68.948166, -128.0466, 68.948166, -10341, -25464, -137.89633, -157.59581, 137.89633, 157.59581, -10154, -24400, -216.69424, -59.098427, 216.69424, 59.098427, -8768, -23480, -866.777, 206.8445, 866.777, -206.8445, -6233, -23642, -285.6424, 334.89108, 285.6424, -334.89108, -4056, -24303)
+}
+point_count = 11
 
 [node name="TestLevel" type="Node" unique_id=1147868162]
 
@@ -655,7 +677,7 @@ interaction_shape = SubResource("CircleShape2D_574oa")
 metadata/_custom_type_script = "uid://ycmo11btri04"
 
 [node name="EndOfGame" type="Node2D" parent="Npcs" unique_id=1434383262]
-position = Vector2(5008, -17975)
+position = Vector2(-7181, -25109)
 script = ExtResource("10_0qmeg")
 npc_data = SubResource("Resource_pb0qc")
 interaction_shape = SubResource("CircleShape2D_ctgui")
@@ -663,6 +685,13 @@ metadata/_custom_type_script = "uid://ycmo11btri04"
 
 [node name="Pickaxe" type="Node2D" parent="Npcs" unique_id=661636215]
 position = Vector2(-2413, -9984)
+script = ExtResource("10_0qmeg")
+npc_data = ExtResource("17_of21v")
+interaction_shape = SubResource("CircleShape2D_ynad1")
+metadata/_custom_type_script = "uid://ycmo11btri04"
+
+[node name="Plato" type="Node2D" parent="Npcs" unique_id=2131966288]
+position = Vector2(8464, -21056)
 script = ExtResource("10_0qmeg")
 npc_data = ExtResource("17_of21v")
 interaction_shape = SubResource("CircleShape2D_ynad1")
@@ -842,6 +871,14 @@ fill_texture_scale = Vector2(0.4, 0.4)
 bake_interval = 300.0
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
+[node name="CurvedTerrain32" type="Path2D" parent="Level" unique_id=73963921]
+texture_filter = 4
+curve = SubResource("Curve2D_ia6v6")
+script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("3_hy0rb")
+bake_interval = 300.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
 [node name="CurvedTerrain16" type="Path2D" parent="Level" unique_id=1263150035]
 texture_filter = 4
 position = Vector2(10464.2, -4713.6)
@@ -997,6 +1034,43 @@ fill_texture = ExtResource("3_hy0rb")
 bake_interval = 150.0
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
+[node name="CurvedTerrain31" type="Path2D" parent="Level" unique_id=1401138501]
+texture_filter = 4
+curve = SubResource("Curve2D_dcgl2")
+script = ExtResource("2_pb8y7")
+bake_interval = 200.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="Rock13" parent="Level" unique_id=91406416 instance=ExtResource("16_ta7ci")]
+position = Vector2(19755, -22978)
+
+[node name="CurvedTerrain33" type="Path2D" parent="Level" unique_id=206790092]
+texture_filter = 4
+curve = SubResource("Curve2D_qucvi")
+script = ExtResource("2_pb8y7")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="Rock14" parent="Level" unique_id=1759959210 instance=ExtResource("16_ta7ci")]
+position = Vector2(9174, -17182)
+
+[node name="HangingPlatform" parent="Level" unique_id=412206538 instance=ExtResource("26_80cyg")]
+position = Vector2(5715, -26195)
+
+[node name="HangingPlatform2" parent="Level" unique_id=1238363209 instance=ExtResource("26_80cyg")]
+position = Vector2(3177, -26211)
+
+[node name="HangingPlatform3" parent="Level" unique_id=644765685 instance=ExtResource("26_80cyg")]
+position = Vector2(451, -26211)
+
+[node name="Rock15" parent="Level" unique_id=1875811274 instance=ExtResource("16_ta7ci")]
+position = Vector2(21191, -20684)
+
+[node name="Rock16" parent="Level" unique_id=365297797 instance=ExtResource("16_ta7ci")]
+position = Vector2(-1690, -26014)
+
+[node name="Rock17" parent="Level" unique_id=788743935 instance=ExtResource("16_ta7ci")]
+position = Vector2(-1952, -25948)
+
 [node name="PostProcess" parent="." unique_id=1121221467 instance=ExtResource("10_368ro")]
 
 [node name="PauseCanvasLayer" parent="." unique_id=945801933 instance=ExtResource("20_3ca7f")]
@@ -1034,4 +1108,4 @@ metadata/_custom_type_script = "uid://mir3qg4jicfq"
 [node name="GameOverlay" parent="." unique_id=657389411 instance=ExtResource("24_of21v")]
 
 [node name="Player" parent="." unique_id=1896629207 instance=ExtResource("9_u6cys")]
-position = Vector2(8, 86)
+position = Vector2(16668, -24416)
