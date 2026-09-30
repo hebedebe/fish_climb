@@ -108,6 +108,31 @@ shadow_offset = Vector2(2, 2)
 shadow_spread = Vector2(2, 2)
 metadata/_custom_type_script = "uid://bkl6g25jwb47h"
 
+[sub_resource type="StyleBox" id="StyleBox_dora2"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("3_6o16e")
+color = Color(0.47843137, 0.43137255, 0.39215687, 0.7647059)
+texture = ExtResource("4_dora2")
+texture_stretch_mode = 1
+texture_repeat = 2
+corner_radius_top_left = 19
+corner_radius_top_right = 19
+corner_radius_bottom_right = 19
+corner_radius_bottom_left = 19
+corner_curvature_top_left = 1.465
+corner_curvature_top_right = 1.465
+corner_curvature_bottom_right = 1.465
+corner_curvature_bottom_left = 1.465
+shadow_enabled = true
+shadow_offset = Vector2(2, 2)
+shadow_spread = Vector2(2, 2)
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
 [sub_resource type="StyleBox" id="StyleBox_h80ay"]
 resource_local_to_scene = false
 resource_name = ""
@@ -159,11 +184,18 @@ shadow_spread = Vector2(2, 2)
 metadata/_custom_type_script = "uid://bkl6g25jwb47h"
 
 [resource]
+default_font = ExtResource("2_e4xhx")
 Button/fonts/font = ExtResource("1_gl7oa")
 Button/styles/focus = SubResource("StyleBox_nsejh")
 Button/styles/hover = SubResource("StyleBox_n0r4j")
 Button/styles/normal = SubResource("StyleBox_hlr7p")
 Button/styles/pressed = SubResource("StyleBox_fcfi7")
+FoldableContainer/styles/focus = SubResource("StyleBox_n0r4j")
+FoldableContainer/styles/panel = SubResource("StyleBox_dora2")
+FoldableContainer/styles/title_collapsed_hover_panel = SubResource("StyleBox_hlr7p")
+FoldableContainer/styles/title_collapsed_panel = SubResource("StyleBox_hlr7p")
+FoldableContainer/styles/title_hover_panel = SubResource("StyleBox_n0r4j")
+FoldableContainer/styles/title_panel = SubResource("StyleBox_hlr7p")
 HSlider/styles/grabber_area = SubResource("StyleBox_h80ay")
 HSlider/styles/grabber_area_highlight = SubResource("StyleBox_6o16e")
 Label/colors/font_shadow_color = Color(0, 0, 0, 0.5921569)
