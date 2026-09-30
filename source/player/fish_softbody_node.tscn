@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://5htp8srxetmt"]
 
 [ext_resource type="Script" uid="uid://dka57amjtl42m" path="res://source/player/fish_softbody_node.gd" id="1_5vljk"]
-[ext_resource type="Script" uid="uid://dxmcvmej7jj70" path="res://source/saver.gd" id="2_a4y42"]
+[ext_resource type="Script" uid="uid://dxmcvmej7jj70" path="res://source/saving/saver_node.gd" id="2_a4y42"]
 
 [node name="FishSoftbodyNode" type="RigidBody2D" unique_id=266591616]
 physics_interpolation_mode = 1

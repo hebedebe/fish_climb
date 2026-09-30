@@ -27,6 +27,7 @@ DialogueManager="*uid://c3rodes2l3gxb"
 GameplayEvents="*uid://fw7nxsnta1ei"
 SaveManager="*uid://v8vnx2catin4"
 DOT_save="*uid://ctt30dnwyf7w6"
+SettingsManager="*uid://0yb4tnlf26w2"
 
 [dialogue_manager]
 
@@ -36,6 +37,7 @@ runtime/balloon_path="res://data/dialogue_bubbles/default/balloon.tscn"
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+window/vsync/vsync_mode=0
 
 [editor_plugins]
 

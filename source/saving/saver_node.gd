@@ -1,10 +1,10 @@
 @tool
 @icon("res://addons/at-icons/node/floppy_disk.svg")
-class_name Saver extends Node
+class_name SaverNode extends Node
 
 enum SaveName {
-	OwnerName,
-	OwnerPath,
+	ParentName,
+	ParentPath,
 	SaverName,
 	SaverPath,
 	Custom,
@@ -19,7 +19,7 @@ enum SaveName {
 	get:
 		if custom_save_name.is_empty():
 			if save_name_mode == SaveName.Custom:
-				save_name_mode = SaveName.OwnerName
+				save_name_mode = SaveName.ParentName
 			return save_name_mode
 		else:
 			return SaveName.Custom
@@ -32,7 +32,7 @@ enum SaveName {
 @export var print_on_load: bool = false
 
 func _ready() -> void:
-	if not owner:
+	if not get_parent():
 		printerr("Saver (%s) must have an owning node" % name)
 	
 	if not Engine.is_editor_hint():
@@ -41,10 +41,10 @@ func _ready() -> void:
 
 func get_save_name() -> String:
 	match save_name_mode:
-		SaveName.OwnerName:
-			return owner.name
-		SaveName.OwnerPath:
-			return owner.get_path()
+		SaveName.ParentName:
+			return get_parent().name
+		SaveName.ParentPath:
+			return get_parent().get_path()
 		SaveName.SaverName:
 			return name
 		SaveName.SaverPath:
@@ -61,7 +61,7 @@ func save_value(property_name: String) -> void:
 	var path = get_save_path(property_name)
 	if print_on_load:
 		print("Saving data to ", path)
-	DOT_save.set_value_data(path, owner.get(property_name))
+	DOT_save.set_value_data(path, get_parent().get(property_name))
 	
 func load_value(property_name: String) -> void:
 	var path = get_save_path(property_name)
@@ -69,7 +69,7 @@ func load_value(property_name: String) -> void:
 		print("Loading data from ", path)
 	var value = DOT_save.get_value_data(path)
 	if value:
-		owner.set(property_name, value)
+		get_parent().set(property_name, value)
 
 func save_data() -> void:
 	if not save_enabled:
@@ -82,3 +82,7 @@ func load_data() -> void:
 		return
 	for property in properties_to_save:
 		load_value(property)
+
+func add_property(property: StringName) -> void:
+	if not property in properties_to_save:
+		properties_to_save.append(property)
