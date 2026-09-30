@@ -5,11 +5,14 @@
 
 [node name="FishSoftbodyNode" type="RigidBody2D" unique_id=1243274414]
 physics_interpolation_mode = 1
-continuous_cd = 1
+continuous_cd = 2
 contact_monitor = true
 max_contacts_reported = 1
+linear_damp = 0.1
+angular_damp = 0.1
 script = ExtResource("1_5vljk")
 impulse_sound_threshold = 150.0
+additional_solver_iterations = 1
 
 [node name="Saver" type="Node" parent="." unique_id=1347680804]
 script = ExtResource("2_a4y42")
