@@ -26,7 +26,8 @@ func flip(strength: float, flip_direction: FlipDirection) -> void:
 func update_customisation() -> void:
 	var shader_material: ShaderMaterial = material
 	if not CustomisationManager.player_pattern_path.is_empty():
-		shader_material.set_shader_parameter("pattern", load(CustomisationManager.player_pattern_path))
+		var image := Utilities.load_image_texture(CustomisationManager.player_pattern_path)
+		shader_material.set_shader_parameter("pattern", image)
 	shader_material.set_shader_parameter("pattern_tint", CustomisationManager.player_pattern_tint)
 	shader_material.set_shader_parameter("base_tint", CustomisationManager.player_base_tint)
 	shader_material.set_shader_parameter("pattern_strength", CustomisationManager.player_pattern_strength)

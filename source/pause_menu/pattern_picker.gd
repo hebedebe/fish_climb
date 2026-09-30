@@ -24,7 +24,11 @@ func on_pressed() -> void:
 		_:
 			file_dialog.popup_centered()
 
-func on_file_selected_web(file_name: String, _file_type: String, _base64_data: String) -> void:
+func on_file_selected_web(file_name: String, _file_type: String, base64_data: String) -> void:
+	var raw_data: PackedByteArray = Marshalls.base64_to_raw(base64_data)
+	var file = FileAccess.open(file_name, FileAccess.WRITE)
+	file.store_buffer(raw_data)
+	file.close()
 	CustomisationManager.player_pattern_path = file_name
 
 func on_file_selected(path: String) -> void:
