@@ -15,6 +15,9 @@ class_name SoftBody2D
 ## Called after a joint is removed.
 signal joint_removed(rigid_body_a: SoftBodyChild, rigid_body_b: SoftBodyChild)
 
+@export_tool_button("Regenerate softbody") 
+var regenerate_softbody_action: Callable = create_softbody2d
+
 #region Properties
 
 func _set(property, value):
@@ -211,7 +214,7 @@ const MAX_REGIONS := 400
 	get:
 		return damping
 ## Sets the [member DampedSpringJoint2D.rest_length] property of the joint based on the distance between bones.
-@export_range(0, 2, 0.1, "or_greater") var rest_length_ratio : float = 0 :
+@export_range(0, 2, 0.01, "or_greater") var rest_length_ratio : float = 0 :
 	set (value):
 		if rest_length_ratio == value:
 			return
@@ -237,7 +240,7 @@ const MAX_REGIONS := 400
 
 @export_subgroup("PinJoint")
 ## Relevant only if you picked [member SoftBody2D.joint_type] = "pin". Sets the [member PinJoint2D.softness] property of the joint.
-@export_range(0, 100, 0.1, "or_greater") var softness: float = 60 :
+@export_range(0, 100, 0.01, "or_greater") var softness: float = 60 :
 	set (value):
 		if softness == value:
 			return
@@ -971,14 +974,20 @@ func _generate_joints(rigid_bodies: Array[RigidBody2D], connected_bones: Array):
 			connected_nodes[idx_a].append(node_b)
 			var joint: Joint2D
 			if joint_type == "pin":
-				var pin_joint = PinJoint2D.new()
+				var pin_joint := RapierPinJoint2D.new()
+				pin_joint.physics_interpolation_mode = Node.PHYSICS_INTERPOLATION_MODE_ON
+				pin_joint.joint_type = 0
 				pin_joint.softness = softness
+				#pin_joint.motor_position_stiffness = 10.0
+				#pin_joint.motor_position_damping = 1.0
+				#pin_joint.motor_position_enabled = true
 				pin_joint.angular_limit_enabled = angular_limit_enabled
 				pin_joint.angular_limit_lower = angular_limit_lower
 				pin_joint.angular_limit_upper = angular_limit_upper
 				joint = pin_joint
 			else:
-				var spring_joint = DampedSpringJoint2D.new()
+				var spring_joint := RapierDampedSpringJoint2D.new()
+				spring_joint.joint_type = 0
 				spring_joint.stiffness = stiffness
 				var joint_distance := (node_a.global_position - node_b.global_position).length()
 				spring_joint.set_meta("joint_distance", joint_distance)
@@ -1328,6 +1337,8 @@ func _process(delta: float) -> void:
 		return
 	_delete_every_x_frames = 2
 	# Break at max max_deletions joints
+	if break_distance_ratio <= 0:
+		return
 	var deleted_count = 0
 	for rigid_body in get_rigid_bodies():
 		for node in rigid_body.joints:
