@@ -25,3 +25,5 @@ func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 
 	if impulse_length > impulse_sound_threshold:
 		GameplayEvents.broadcast("FishSlapSound")
+	
+	
