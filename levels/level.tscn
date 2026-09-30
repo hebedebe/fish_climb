@@ -1042,6 +1042,7 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 texture_filter = 4
 curve = SubResource("Curve2D_dcgl2")
 script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("7_ta7ci")
 bake_interval = 200.0
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
@@ -1052,6 +1053,7 @@ position = Vector2(19755, -22978)
 texture_filter = 4
 curve = SubResource("Curve2D_qucvi")
 script = ExtResource("2_pb8y7")
+fill_texture = ExtResource("4_mxp4k")
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="Rock14" parent="Level" unique_id=1759959210 instance=ExtResource("16_ta7ci")]
