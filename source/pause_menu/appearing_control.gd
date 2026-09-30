@@ -1,9 +1,11 @@
+@tool
 class_name AppearingControl extends Control
 
 var tween: Tween
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
+	(get_parent() as Control).offset_transform_enabled = true
 
 func appear() -> void:
 	var parent: Control = get_parent()

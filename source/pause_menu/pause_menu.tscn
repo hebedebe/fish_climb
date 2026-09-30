@@ -394,6 +394,14 @@ theme = ExtResource("2_fuwgk")
 text = "Reset Save (THIS CANNOT BE UNDONE)"
 horizontal_alignment = 1
 
+[node name="AppearingControl" type="Control" parent="PauseMenu/ResetSaveButton" unique_id=6786933]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+script = ExtResource("7_atvq0")
+metadata/_custom_type_script = "uid://dku0u3p6r0e0h"
+
 [node name="CustomisationPanel" type="Panel" parent="PauseMenu" unique_id=1758351434]
 propagate_maximum_size = true
 layout_mode = 1
@@ -475,6 +483,7 @@ metadata/_custom_type_script = "uid://ctj52ol5st0sb"
 
 [connection signal="hidden" from="." to="PauseMenu/PauseMenuHideSound" method="play"]
 [connection signal="shown" from="." to="PauseMenu/PausePanel/AppearingControl" method="appear"]
+[connection signal="shown" from="." to="PauseMenu/ResetSaveButton/AppearingControl" method="appear"]
 [connection signal="shown" from="." to="PauseMenu/CustomisationPanel/AppearingControl" method="appear"]
 [connection signal="shown" from="." to="PauseMenu/PauseMenuShowSound" method="play"]
 [connection signal="pressed" from="PauseMenu/PausePanel/VBoxContainer/Resume" to="." method="toggle_pause"]
