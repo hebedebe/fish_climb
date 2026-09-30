@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bako5rr78molg" path="res://source/terrain_textures/SD140.JPG" id="5_d7v53"]
 [ext_resource type="Texture2D" uid="uid://c07240xp5nha8" path="res://source/terrain_textures/MULCH.png" id="7_ta7ci"]
 [ext_resource type="Script" uid="uid://ogq6jh0v4dn7" path="res://source/interactive_grass/interactive_grass_curve.gd" id="9_hy0rb"]
+[ext_resource type="Script" uid="uid://bp1ybfc8lh1nw" path="res://source/pause_menu/water_rect.gd" id="9_of21v"]
 [ext_resource type="PackedScene" uid="uid://d2f2uonx5sjhi" path="res://source/player/player.tscn" id="9_u6cys"]
 [ext_resource type="Script" uid="uid://ycmo11btri04" path="res://source/npc/npc.gd" id="10_0qmeg"]
 [ext_resource type="PackedScene" uid="uid://cm6gykwt0fjxj" path="res://source/post_process/post_process.tscn" id="10_368ro"]
@@ -194,13 +195,6 @@ shader_parameter/offSetSpeed = Vector2(0.1, 0.1)
 shader_parameter/backGroundDirX = 0.00500000349738
 shader_parameter/backGroundDirY = 0.00500000349738
 shader_parameter/backgroundOffset = Vector2(0, 0)
-
-[sub_resource type="Gradient" id="Gradient_574oa"]
-colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_kogck"]
-gradient = SubResource("Gradient_574oa")
-width = 1
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0qmeg"]
 radius = 248.6
@@ -635,12 +629,14 @@ repeat_size = Vector2(1024, 1024)
 autoscroll = Vector2(-7, 3)
 repeat_times = 8
 
-[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D2" unique_id=1092604663]
-modulate = Color(0.641934, 0.641934, 0.641934, 1)
-texture_repeat = 2
+[node name="WaterRect" type="ColorRect" parent="Parallax2D2" unique_id=294126116]
 material = SubResource("ShaderMaterial_3ca7f")
-scale = Vector2(1024, 1024)
-texture = SubResource("GradientTexture1D_kogck")
+custom_minimum_size = Vector2(1024, 1024)
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+script = ExtResource("9_of21v")
+metadata/_custom_type_script = "uid://bp1ybfc8lh1nw"
 
 [node name="Npcs" type="Node2D" parent="." unique_id=657659378]
 

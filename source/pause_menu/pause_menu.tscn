@@ -4,6 +4,7 @@
 [ext_resource type="Theme" uid="uid://7fikpqm7uett" path="res://source/pause_menu/pause_menu_theme.tres" id="2_fuwgk"]
 [ext_resource type="Shader" uid="uid://cis7hl82hoo7r" path="res://source/shaders/water.gdshader" id="2_jkalf"]
 [ext_resource type="Script" uid="uid://ctj52ol5st0sb" path="res://source/event_trigger.gd" id="2_jtk1q"]
+[ext_resource type="Script" uid="uid://bp1ybfc8lh1nw" path="res://source/pause_menu/water_rect.gd" id="3_am6jd"]
 [ext_resource type="Script" uid="uid://crwf7wnbr427k" path="res://source/pause_menu/quit_button.gd" id="3_dkg16"]
 [ext_resource type="Script" uid="uid://cjmmhbp1b5312" path="res://addons/StyleboxFancy/StyleBorder.gd" id="3_itf5k"]
 [ext_resource type="Script" uid="uid://bcbsc627eevsr" path="res://source/pause_menu/sound_slider.gd" id="3_pmjhf"]
@@ -100,6 +101,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("3_am6jd")
 
 [node name="PausePanel" type="PanelContainer" parent="PauseMenu" unique_id=1670536202]
 layout_mode = 1
@@ -290,7 +292,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("2_fuwgk")
 alignment = 1
-selected = 2
+selected = 0
 item_count = 3
 popup/item_0/text = "Low"
 popup/item_0/id = 0
@@ -300,6 +302,33 @@ popup/item_2/text = "High"
 popup/item_2/id = 2
 script = ExtResource("12_cksnl")
 target_setting = &"grass_quality_level"
+
+[node name="WaterQuality" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer" unique_id=1253010323]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer/WaterQuality" unique_id=741840633]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer/WaterQuality" unique_id=1989023855]
+layout_mode = 2
+text = "Water Quality"
+
+[node name="OptionButton" type="OptionButton" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer/WaterQuality" unique_id=370972152]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_fuwgk")
+alignment = 1
+selected = 0
+item_count = 3
+popup/item_0/text = "Low"
+popup/item_0/id = 0
+popup/item_1/text = "Medium"
+popup/item_1/id = 1
+popup/item_2/text = "High"
+popup/item_2/id = 2
+script = ExtResource("12_cksnl")
+target_setting = &"water_quality_level"
 
 [node name="Padding2" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer" unique_id=722548698]
 custom_minimum_size = Vector2(0, 10)

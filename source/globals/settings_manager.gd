@@ -13,9 +13,16 @@ var grass_quality_level: QualityLevel = QualityLevel.HIGH:
 		grass_quality_level = value
 		graphics_settings_changed.emit()
 
+
+var water_quality_level: QualityLevel = QualityLevel.HIGH:
+	set(value):
+		water_quality_level = value
+		graphics_settings_changed.emit()
+
+
 var saver: SaverNode
 
 func _ready() -> void:
 	saver = SaverNode.new()
 	add_child(saver)
-	saver.add_property("grass_quality_level")
+	saver.add_property("water_quality_level")
