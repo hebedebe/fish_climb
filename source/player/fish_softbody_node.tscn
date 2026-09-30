@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://5htp8srxetmt"]
 
 [ext_resource type="Script" uid="uid://dka57amjtl42m" path="res://source/player/fish_softbody_node.gd" id="1_5vljk"]
+[ext_resource type="Script" uid="uid://dxmcvmej7jj70" path="res://source/saving/saver_node.gd" id="2_a4y42"]
 
 [node name="FishSoftbodyNode" type="RigidBody2D" unique_id=1243274414]
 physics_interpolation_mode = 1
@@ -8,5 +9,9 @@ continuous_cd = 1
 contact_monitor = true
 max_contacts_reported = 1
 script = ExtResource("1_5vljk")
-impulse_sound_threshold = 200.0
-metadata/_custom_type_script = "uid://unwhnooi7g2c"
+impulse_sound_threshold = 150.0
+
+[node name="Saver" type="Node" parent="." unique_id=1347680804]
+script = ExtResource("2_a4y42")
+properties_to_save = Array[StringName]([&"position", &"rotation", &"linear_velocity", &"angular_velocity"])
+metadata/_custom_type_script = "uid://dxmcvmej7jj70"

@@ -15,4 +15,5 @@ sprite_texture_filter = 3
 npc_name = "fish head"
 npc_dialogue = ExtResource("1_8rme1")
 npc_dialogue_balloon = ExtResource("1_3udrl")
+talk_volume = null
 metadata/_custom_type_script = "uid://bm0pw0bb20w2g"

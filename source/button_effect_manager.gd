@@ -1,4 +1,5 @@
 @tool
+@icon("res://addons/at-icons/node/stars.svg")
 class_name ButtonEffectManager extends Node
 
 @export_group("Sounds")

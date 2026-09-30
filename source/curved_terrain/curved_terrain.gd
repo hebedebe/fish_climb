@@ -1,8 +1,17 @@
+@icon("res://addons/at-icons/node2d/itinerary.svg")
 @tool
 class_name CurvedTerrain
 extends Path2D
 
+@warning_ignore("unused_private_class_variable")
+@export_tool_button("Update Node Location") var _update_node_location_action = update_node_location
+
 @export_group("Visuals")
+@export_subgroup("Edge")
+@export var edge_visible: bool = true:
+	set(value): 
+		edge_visible = value
+		update_edge()
 @export var edge_texture: Texture2D:
 	set(value): 
 		edge_texture = value
@@ -12,6 +21,11 @@ extends Path2D
 		edge_width = value
 		update_edge()
 
+@export_subgroup("Fill")
+@export var fill_visible: bool = true:
+	set(value): 
+		fill_visible = value
+		update_fill()
 @export var fill_texture: Texture2D:
 	set(value):
 		fill_texture = value
@@ -22,6 +36,7 @@ extends Path2D
 		fill_texture_scale = value
 		update_fill()
 
+@export_subgroup("")
 @export var material_override: Material:
 	set(value):
 		material_override = value
@@ -110,6 +125,7 @@ func update_collision_visibility() -> void:
 
 func update_fill():
 	if polygon2d:
+		polygon2d.visible = fill_visible
 		polygon2d.texture = fill_texture
 		polygon2d.texture_scale = fill_texture_scale
 		if material_override:
@@ -117,6 +133,7 @@ func update_fill():
 		
 func update_edge():
 	if line2d:
+		line2d.visible = edge_visible
 		line2d.texture = edge_texture
 		line2d.width = edge_width
 		line2d.antialiased = true
@@ -126,3 +143,19 @@ func update_edge():
 func update_curve():
 	if curve and curve.bake_interval != bake_interval:
 		curve.bake_interval = bake_interval
+
+func get_average_point_location() -> Vector2:
+	var point_total: Vector2 = Vector2.ZERO
+	for idx in curve.point_count:
+		point_total += curve.sample(idx, 0)
+	var point_average: Vector2 = point_total / curve.point_count
+	return point_average
+
+func update_node_location() -> void:
+	var points_average := get_average_point_location()
+	print(points_average)
+	position += points_average
+	
+	for idx in curve.point_count:
+		curve.set_point_position(idx, curve.get_closest_point(curve.sample(idx,0)) - points_average)
+	

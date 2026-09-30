@@ -4,16 +4,18 @@
 [ext_resource type="Theme" uid="uid://7fikpqm7uett" path="res://source/pause_menu/pause_menu_theme.tres" id="2_fuwgk"]
 [ext_resource type="Shader" uid="uid://cis7hl82hoo7r" path="res://source/shaders/water.gdshader" id="2_jkalf"]
 [ext_resource type="Script" uid="uid://ctj52ol5st0sb" path="res://source/event_trigger.gd" id="2_jtk1q"]
+[ext_resource type="Script" uid="uid://bp1ybfc8lh1nw" path="res://source/pause_menu/water_rect.gd" id="3_am6jd"]
 [ext_resource type="Script" uid="uid://crwf7wnbr427k" path="res://source/pause_menu/quit_button.gd" id="3_dkg16"]
 [ext_resource type="Script" uid="uid://cjmmhbp1b5312" path="res://addons/StyleboxFancy/StyleBorder.gd" id="3_itf5k"]
 [ext_resource type="Script" uid="uid://bcbsc627eevsr" path="res://source/pause_menu/sound_slider.gd" id="3_pmjhf"]
 [ext_resource type="Script" uid="uid://bkl6g25jwb47h" path="res://addons/StyleboxFancy/StyleBoxFancy.gd" id="4_lxr6y"]
 [ext_resource type="Texture2D" uid="uid://spt6hes383ke" path="res://data/dialogue_bubbles/fish_head/SD132.JPG" id="5_elatv"]
 [ext_resource type="Script" uid="uid://dmtv6vw6acjpk" path="res://source/button_effect_manager.gd" id="6_lxr6y"]
-[ext_resource type="Script" uid="uid://dku0u3p6r0e0h" path="res://source/pause_menu/panel.gd" id="7_atvq0"]
+[ext_resource type="Script" uid="uid://dku0u3p6r0e0h" path="res://source/pause_menu/appearing_control.gd" id="7_atvq0"]
 [ext_resource type="AudioStream" uid="uid://bf4xk61uuey88" path="res://source/player/fish_slap.mp3" id="8_atvq0"]
 [ext_resource type="Script" uid="uid://nph4hph7elpv" path="res://source/pause_menu/squish_button.gd" id="8_h3lid"]
 [ext_resource type="AudioStream" uid="uid://3pfmhmdckqi2" path="res://source/pause_menu/slider_tick.mp3" id="12_0xran"]
+[ext_resource type="Script" uid="uid://c2utkakehsrcq" path="res://source/pause_menu/settings_option_button.gd" id="12_cksnl"]
 [ext_resource type="Script" uid="uid://d0omsjfrqemt7" path="res://source/pause_menu/color_picker_button.gd" id="14_hvmt2"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_h3lid"]
@@ -99,35 +101,27 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("3_am6jd")
 
-[node name="PausePanel" type="Panel" parent="PauseMenu" unique_id=565647339]
-propagate_maximum_size = true
+[node name="PausePanel" type="PanelContainer" parent="PauseMenu" unique_id=1670536202]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -187.0
-offset_top = -98.0
-offset_right = 187.0
-offset_bottom = 98.0
+offset_left = -122.0
+offset_top = -74.0
+offset_right = 122.0
+offset_bottom = 74.0
 grow_horizontal = 2
 grow_vertical = 2
 offset_transform_enabled = true
 theme = ExtResource("2_fuwgk")
 theme_override_styles/panel = SubResource("StyleBox_dkg16")
-script = ExtResource("7_atvq0")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/PausePanel" unique_id=2118855270]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 9.0
-offset_right = -9.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 2
 theme = ExtResource("2_fuwgk")
 
 [node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer" unique_id=121078647]
@@ -160,16 +154,31 @@ theme = ExtResource("2_fuwgk")
 text = "Resume"
 horizontal_alignment = 1
 
-[node name="MasterVolume" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer" unique_id=347308132]
+[node name="AudioContainer" type="FoldableContainer" parent="PauseMenu/PausePanel/VBoxContainer" unique_id=526770003]
+layout_mode = 2
+theme = ExtResource("2_fuwgk")
+folded = true
+title = "Audio"
+title_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer" unique_id=34671927]
+visible = false
+layout_mode = 2
+
+[node name="Padding" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer" unique_id=884926579]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="MasterVolume" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer" unique_id=347308132]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 
-[node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/MasterVolume" unique_id=1254770908]
+[node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/MasterVolume" unique_id=1254770908]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 text = "Master Volume"
 
-[node name="HSlider" type="HSlider" parent="PauseMenu/PausePanel/VBoxContainer/MasterVolume" unique_id=261197150]
+[node name="HSlider" type="HSlider" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/MasterVolume" unique_id=261197150]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
@@ -182,16 +191,16 @@ target_bus = &"Master"
 tick_sound = ExtResource("12_0xran")
 tick_volume = -15.0
 
-[node name="SFXVolume" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer" unique_id=287235150]
+[node name="SFXVolume" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer" unique_id=287235150]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 
-[node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/SFXVolume" unique_id=286913045]
+[node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/SFXVolume" unique_id=286913045]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 text = "SFX Volume"
 
-[node name="HSlider" type="HSlider" parent="PauseMenu/PausePanel/VBoxContainer/SFXVolume" unique_id=1846871681]
+[node name="HSlider" type="HSlider" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/SFXVolume" unique_id=1846871681]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
@@ -204,16 +213,16 @@ target_bus = &"SFX"
 tick_sound = ExtResource("12_0xran")
 tick_volume = -15.0
 
-[node name="UIVolume" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer" unique_id=1109030797]
+[node name="UIVolume" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer" unique_id=1109030797]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 
-[node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/UIVolume" unique_id=1460167933]
+[node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/UIVolume" unique_id=1460167933]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 text = "UI Volume"
 
-[node name="HSlider" type="HSlider" parent="PauseMenu/PausePanel/VBoxContainer/UIVolume" unique_id=540830630]
+[node name="HSlider" type="HSlider" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/UIVolume" unique_id=540830630]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
@@ -226,16 +235,16 @@ target_bus = &"UI"
 tick_sound = ExtResource("12_0xran")
 tick_volume = -15.0
 
-[node name="MusicVolume" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer" unique_id=1042172978]
+[node name="MusicVolume" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer" unique_id=1042172978]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 
-[node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/MusicVolume" unique_id=1020622869]
+[node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/MusicVolume" unique_id=1020622869]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 text = "Music Volume"
 
-[node name="HSlider" type="HSlider" parent="PauseMenu/PausePanel/VBoxContainer/MusicVolume" unique_id=1646205583]
+[node name="HSlider" type="HSlider" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/MusicVolume" unique_id=1646205583]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
@@ -247,6 +256,85 @@ script = ExtResource("3_pmjhf")
 target_bus = &"Music"
 tick_sound = ExtResource("12_0xran")
 tick_volume = -15.0
+
+[node name="Padding2" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer" unique_id=445465970]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="GraphicsContainer" type="FoldableContainer" parent="PauseMenu/PausePanel/VBoxContainer" unique_id=2127554504]
+layout_mode = 2
+theme = ExtResource("2_fuwgk")
+folded = true
+title = "Graphics"
+title_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer" unique_id=1870615097]
+visible = false
+layout_mode = 2
+
+[node name="Padding" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer" unique_id=1481135759]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="GrassQuality" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer" unique_id=404600921]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer/GrassQuality" unique_id=641283719]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer/GrassQuality" unique_id=751220886]
+layout_mode = 2
+text = "Grass Quality"
+
+[node name="OptionButton" type="OptionButton" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer/GrassQuality" unique_id=18522901]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_fuwgk")
+alignment = 1
+selected = 0
+allow_reselect = true
+item_count = 3
+popup/item_0/text = "Low"
+popup/item_0/id = 0
+popup/item_1/text = "Medium"
+popup/item_1/id = 1
+popup/item_2/text = "High"
+popup/item_2/id = 2
+script = ExtResource("12_cksnl")
+target_setting = &"grass_quality_level"
+
+[node name="WaterQuality" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer" unique_id=1253010323]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer/WaterQuality" unique_id=741840633]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer/WaterQuality" unique_id=1989023855]
+layout_mode = 2
+text = "Water Quality"
+
+[node name="OptionButton" type="OptionButton" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer/WaterQuality" unique_id=370972152]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_fuwgk")
+alignment = 1
+selected = 0
+allow_reselect = true
+item_count = 3
+popup/item_0/text = "Low"
+popup/item_0/id = 0
+popup/item_1/text = "Medium"
+popup/item_1/id = 1
+popup/item_2/text = "High"
+popup/item_2/id = 2
+script = ExtResource("12_cksnl")
+target_setting = &"water_quality_level"
+
+[node name="Padding2" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer" unique_id=722548698]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
 
 [node name="Quit" type="Button" parent="PauseMenu/PausePanel/VBoxContainer" unique_id=241834269]
 layout_mode = 2
@@ -271,6 +359,12 @@ grow_vertical = 2
 theme = ExtResource("2_fuwgk")
 text = "Quit"
 horizontal_alignment = 1
+
+[node name="AppearingControl" type="Control" parent="PauseMenu/PausePanel" unique_id=1019635844]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("7_atvq0")
+metadata/_custom_type_script = "uid://dku0u3p6r0e0h"
 
 [node name="ResetSaveButton" type="Button" parent="PauseMenu" unique_id=1085077099]
 layout_mode = 1
@@ -300,6 +394,14 @@ theme = ExtResource("2_fuwgk")
 text = "Reset Save (THIS CANNOT BE UNDONE)"
 horizontal_alignment = 1
 
+[node name="AppearingControl" type="Control" parent="PauseMenu/ResetSaveButton" unique_id=6786933]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+script = ExtResource("7_atvq0")
+metadata/_custom_type_script = "uid://dku0u3p6r0e0h"
+
 [node name="CustomisationPanel" type="Panel" parent="PauseMenu" unique_id=1758351434]
 propagate_maximum_size = true
 layout_mode = 1
@@ -317,7 +419,6 @@ grow_vertical = 2
 offset_transform_enabled = true
 theme = ExtResource("2_fuwgk")
 theme_override_styles/panel = SubResource("StyleBox_dkg16")
-script = ExtResource("7_atvq0")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/CustomisationPanel" unique_id=1576529292]
 clip_contents = true
@@ -358,6 +459,14 @@ script = ExtResource("14_hvmt2")
 custom_minimum_size = Vector2(20, 0)
 layout_mode = 2
 
+[node name="AppearingControl" type="Control" parent="PauseMenu/CustomisationPanel" unique_id=522643560]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+script = ExtResource("7_atvq0")
+metadata/_custom_type_script = "uid://dku0u3p6r0e0h"
+
 [node name="PauseMenuShowSound" type="AudioStreamPlayer" parent="PauseMenu" unique_id=571232195]
 bus = &"UI"
 
@@ -373,8 +482,9 @@ trigger_callbacks = Dictionary[StringName, String]({
 metadata/_custom_type_script = "uid://ctj52ol5st0sb"
 
 [connection signal="hidden" from="." to="PauseMenu/PauseMenuHideSound" method="play"]
-[connection signal="shown" from="." to="PauseMenu/PausePanel" method="appear"]
-[connection signal="shown" from="." to="PauseMenu/CustomisationPanel" method="appear"]
+[connection signal="shown" from="." to="PauseMenu/PausePanel/AppearingControl" method="appear"]
+[connection signal="shown" from="." to="PauseMenu/ResetSaveButton/AppearingControl" method="appear"]
+[connection signal="shown" from="." to="PauseMenu/CustomisationPanel/AppearingControl" method="appear"]
 [connection signal="shown" from="." to="PauseMenu/PauseMenuShowSound" method="play"]
 [connection signal="pressed" from="PauseMenu/PausePanel/VBoxContainer/Resume" to="." method="toggle_pause"]
 [connection signal="pressed" from="PauseMenu/ResetSaveButton" to="PauseMenu/ResetSaveButton" method="_on_pressed"]

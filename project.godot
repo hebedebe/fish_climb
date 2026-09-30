@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Fish Climb"
-config/version="rapier.38.2"
+config/version="main.58.0"
 run/main_scene="uid://bf4fe4aelm51o"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="uid://cxwvbsaib3hsw"
@@ -27,6 +27,7 @@ DialogueManager="*uid://c3rodes2l3gxb"
 GameplayEvents="*uid://fw7nxsnta1ei"
 SaveManager="*uid://v8vnx2catin4"
 DOT_save="*uid://ctt30dnwyf7w6"
+SettingsManager="*uid://0yb4tnlf26w2"
 
 [dialogue_manager]
 
@@ -36,6 +37,7 @@ runtime/balloon_path="res://data/dialogue_bubbles/default/balloon.tscn"
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+window/vsync/vsync_mode=0
 
 [editor_plugins]
 
@@ -103,4 +105,3 @@ rapier/solver/num_internal_stabilization_iterations=4
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-anti_aliasing/quality/msaa_2d=2

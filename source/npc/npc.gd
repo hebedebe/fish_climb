@@ -1,5 +1,5 @@
 @tool
-@icon("uid://ctl1v20tk17cd")
+@icon("res://addons/at-icons/node2d/human.svg")
 class_name Npc extends Node2D
 
 @export var npc_data: NpcData:
@@ -17,6 +17,7 @@ class_name Npc extends Node2D
 var sprite: Sprite2D
 var interaction_area: InteractionArea2D
 var interaction_area_collider: CollisionShape2D
+var voice_player: AudioStreamPlayer2D
 
 func _ready() -> void:
 	initialise_nodes()
@@ -33,6 +34,9 @@ func initialise_nodes() -> void:
 	interaction_area_collider = CollisionShape2D.new()
 	interaction_area.add_child(interaction_area_collider)
 	interaction_area_collider.shape = interaction_shape
+	
+	voice_player = AudioStreamPlayer2D.new()
+	add_child(voice_player)
 
 func update_nodes() -> void:
 	if not npc_data:
@@ -45,8 +49,13 @@ func update_nodes() -> void:
 		sprite.scale = npc_data.sprite_scale
 		sprite.skew = npc_data.sprite_skew
 		sprite.texture_filter = npc_data.sprite_texture_filter
+	
+	if voice_player:
+		voice_player.stream = npc_data.talk_sound
+		voice_player.volume_db = npc_data.talk_volume
 
 func show_dialogue() -> void:
+	voice_player.play()
 	if npc_data.npc_dialogue_balloon:
 		DialogueManager.show_dialogue_balloon_scene(npc_data.npc_dialogue_balloon, npc_data.npc_dialogue)
 	else:
