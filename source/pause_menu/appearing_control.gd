@@ -5,11 +5,11 @@ var tween: Tween
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
-	(get_parent() as Control).offset_transform_enabled = true
+	(get_parent_control() as Control).offset_transform_enabled = true
 
 func appear() -> void:
-	var parent: Control = get_parent()
-	offset_transform_scale = Vector2.ZERO
+	var parent: Control = get_parent_control()
+	parent.offset_transform_scale = Vector2.ZERO
 	if tween:
 		tween.stop()
 	tween = get_tree().create_tween()

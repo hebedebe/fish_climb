@@ -157,12 +157,10 @@ horizontal_alignment = 1
 [node name="AudioContainer" type="FoldableContainer" parent="PauseMenu/PausePanel/VBoxContainer" unique_id=526770003]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
-folded = true
 title = "Audio"
 title_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer" unique_id=34671927]
-visible = false
 layout_mode = 2
 
 [node name="Padding" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer" unique_id=884926579]
@@ -172,6 +170,10 @@ layout_mode = 2
 [node name="MasterVolume" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer" unique_id=347308132]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
+
+[node name="Padding" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/MasterVolume" unique_id=2047389984]
+custom_minimum_size = Vector2(20, 10)
+layout_mode = 2
 
 [node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/MasterVolume" unique_id=1254770908]
 layout_mode = 2
@@ -195,6 +197,10 @@ tick_volume = -15.0
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 
+[node name="Padding" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/SFXVolume" unique_id=971770706]
+custom_minimum_size = Vector2(20, 10)
+layout_mode = 2
+
 [node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/SFXVolume" unique_id=286913045]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
@@ -217,6 +223,10 @@ tick_volume = -15.0
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 
+[node name="Padding" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/UIVolume" unique_id=665509532]
+custom_minimum_size = Vector2(20, 10)
+layout_mode = 2
+
 [node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/UIVolume" unique_id=1460167933]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
@@ -238,6 +248,10 @@ tick_volume = -15.0
 [node name="MusicVolume" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer" unique_id=1042172978]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
+
+[node name="Padding" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/MusicVolume" unique_id=1430094627]
+custom_minimum_size = Vector2(20, 10)
+layout_mode = 2
 
 [node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer/VBoxContainer/MusicVolume" unique_id=1020622869]
 layout_mode = 2

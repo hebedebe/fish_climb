@@ -8,8 +8,6 @@ physics_interpolation_mode = 1
 continuous_cd = 2
 contact_monitor = true
 max_contacts_reported = 1
-linear_damp = 0.1
-angular_damp = 0.1
 script = ExtResource("1_5vljk")
 impulse_sound_threshold = 150.0
 

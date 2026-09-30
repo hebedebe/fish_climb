@@ -102,7 +102,6 @@ locale/translations_pot_files=PackedStringArray("res://data/npcs/glorp/glorp_dia
 
 2d/physics_engine="Rapier2D"
 3d/physics_engine="Jolt Physics"
-rapier/solver/num_internal_pgs_iterations=2
 
 [rendering]
 
