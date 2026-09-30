@@ -2,6 +2,9 @@
 @icon("res://addons/at-icons/node/floppy_disk.svg")
 class_name SaverNode extends Node
 
+signal data_loaded
+signal data_saved
+
 enum SaveName {
 	ParentName,
 	ParentPath,
@@ -76,12 +79,14 @@ func save_data() -> void:
 		return
 	for property in properties_to_save:
 		save_value(property)
+	data_saved.emit()
 	
 func load_data() -> void:
 	if not load_enabled:
 		return
 	for property in properties_to_save:
 		load_value(property)
+	data_loaded.emit()
 
 func add_property(property: StringName) -> void:
 	if not property in properties_to_save:
