@@ -45,6 +45,7 @@ func autosave_loop() -> void:
 	autosave_loop()
 
 func save_game(mode: SaveMode, emit: bool = true) -> void:
+	#check_saver_paths()
 	if emit:
 		saving.emit(mode)
 	#print(get_save_path(mode))
@@ -88,3 +89,20 @@ func get_value(mode: SaveMode, property_key) -> Variant:
 		return str_to_var(save_data[mode][property_key])
 	else:
 		return null
+
+## checks that there are no conflicting saver paths
+func check_saver_paths() -> void:
+	var savers := get_tree().get_nodes_in_group(&"Saver")
+	var paths: Array
+	for saver: SaverNode in savers:
+		paths.append_array(saver.get_all_save_paths())
+	var check_successful: bool = true
+	for path in paths:
+		var path_count = paths.count(path)
+		if path_count > 1:
+			push_error("Found duplicated path \"%s\" (%s uses)" % [path, path_count])
+			check_successful = false
+	if check_successful:
+		print("Check passed!")
+	else:
+		print("Check failed")

@@ -45,6 +45,8 @@ func _ready() -> void:
 	if not Engine.is_editor_hint():
 		SaveManager.saving.connect(save_data)
 		SaveManager.loading.connect(load_data)
+		
+	add_to_group(&"Saver")
 
 func get_save_name() -> String:
 	var save_name: String = ""
@@ -103,3 +105,9 @@ func load_data(mode: SaveManager.SaveMode) -> void:
 func add_property(property: StringName) -> void:
 	if not property in properties_to_save:
 		properties_to_save.append(property)
+
+func get_all_save_paths() -> Array[String]:
+	var paths: Array[String]
+	for property in properties_to_save:
+		paths.append(get_save_path(property))
+	return paths
