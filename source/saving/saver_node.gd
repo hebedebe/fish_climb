@@ -18,6 +18,8 @@ enum SaveName {
 @export var save_enabled: bool = true
 @export var load_enabled: bool = true
 
+@export var save_mode: SaveManager.SaveMode
+
 @export var save_name_mode: SaveName:
 	get:
 		if custom_save_name.is_empty():
@@ -39,8 +41,8 @@ func _ready() -> void:
 		printerr("Saver (%s) must have an owning node" % name)
 	
 	if not Engine.is_editor_hint():
-		DOT_save.data_is_saving.connect(save_data)
-		DOT_save.data_is_loading.connect(load_data)
+		SaveManager.saving.connect(save_data)
+		SaveManager.loading.connect(load_data)
 
 func get_save_name() -> String:
 	match save_name_mode:
@@ -58,31 +60,35 @@ func get_save_name() -> String:
 	return ""
 
 func get_save_path(property_name: String) -> String:
-	return get_save_name() + "." + property_name
+	return Utilities.dot_separated_string(get_save_name(), property_name)
 
 func save_value(property_name: String) -> void:
 	var path = get_save_path(property_name)
 	if print_on_load:
 		print("Saving data to ", path)
-	DOT_save.set_value_data(path, get_parent().get(property_name))
+	SaveManager.store_value(save_mode, path, get_parent().get(property_name))
 	
 func load_value(property_name: String) -> void:
 	var path = get_save_path(property_name)
 	if print_on_load:
 		print("Loading data from ", path)
-	var value = DOT_save.get_value_data(path)
+	var value = SaveManager.get_value(save_mode, path)
 	if value:
 		get_parent().set(property_name, value)
 
-func save_data() -> void:
+func save_data(mode: SaveManager.SaveMode) -> void:
 	if not save_enabled:
+		return
+	if not mode == save_mode:
 		return
 	for property in properties_to_save:
 		save_value(property)
 	data_saved.emit()
 	
-func load_data() -> void:
+func load_data(mode: SaveManager.SaveMode) -> void:
 	if not load_enabled:
+		return
+	if not mode == save_mode:
 		return
 	for property in properties_to_save:
 		load_value(property)

@@ -28,6 +28,7 @@ var saver: SaverNode
 func _ready() -> void:
 	saver = SaverNode.new()
 	add_child(saver)
+	saver.save_mode = SaveManager.SaveMode.Settings
 	saver.add_property("player_base_tint")
 	saver.add_property("player_pattern_tint")
 	saver.add_property("player_pattern_path")

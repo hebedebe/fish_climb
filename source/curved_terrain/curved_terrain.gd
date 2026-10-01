@@ -85,7 +85,7 @@ func _ready() -> void:
 	
 	curve.changed.connect(editor_generate_terrain)
 	
-	print("Generated curve terrain ", name)
+	#print("Generated curve terrain ", name)
 
 func editor_generate_terrain() -> void:
 	if not Engine.is_editor_hint():

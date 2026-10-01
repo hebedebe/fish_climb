@@ -5,7 +5,7 @@ static func dot_separated_string(...arguments: Array) -> String:
 	for i: int in range(arguments.size()):
 		if i: # not the first index
 			string += "."
-		string += arguments[i]
+		string += "%s" % arguments[i]
 	return string
 
 static func load_image_texture(path: String) -> ImageTexture:
@@ -20,6 +20,7 @@ static func load_image_texture(path: String) -> ImageTexture:
 static func get_text_file_content(filePath) -> String:
 	var file = FileAccess.open(filePath, FileAccess.READ)
 	var content = file.get_as_text()
+	file.close()
 	return content
 	
 static func format_time(time: float) -> String:
