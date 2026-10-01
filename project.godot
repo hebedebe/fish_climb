@@ -29,6 +29,7 @@ SaveManager="*uid://v8vnx2catin4"
 DOT_save="*uid://ctt30dnwyf7w6"
 SettingsManager="*uid://0yb4tnlf26w2"
 CustomisationManager="*uid://cau58pg1eso2j"
+LeaderboardManager="*uid://crfp70xj7lvj1"
 
 [dialogue_manager]
 
@@ -42,7 +43,7 @@ window/vsync/vsync_mode=0
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/AutoExportVersion/plugin.cfg", "res://addons/FileAccessWeb/plugin.cfg", "res://addons/StyleboxFancy/plugin.cfg", "res://addons/at-icons/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/dot_save_manager/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/softbody2d/plugin.cfg")
+enabled=PackedStringArray("res://addons/AutoExportVersion/plugin.cfg", "res://addons/FileAccessWeb/plugin.cfg", "res://addons/StyleboxFancy/plugin.cfg", "res://addons/at-icons/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/dot_save_manager/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/simpleboards_plugin/plugin.cfg", "res://addons/softbody2d/plugin.cfg")
 
 [file_customization]
 

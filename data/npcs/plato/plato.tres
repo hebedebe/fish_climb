@@ -10,7 +10,6 @@ script = ExtResource("4_f4bi7")
 npc_sprite = ExtResource("3_c0f1q")
 sprite_position = Vector2(0, -120)
 sprite_rotation = 0.135
-sprite_scale = Vector2(0.4, 0.4)
 sprite_texture_filter = 3
 npc_name = "plato"
 npc_dialogue = ExtResource("1_wbeq2")
