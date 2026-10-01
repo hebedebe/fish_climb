@@ -1181,7 +1181,7 @@ metadata/_custom_type_script = "uid://mir3qg4jicfq"
 [node name="GameOverlay" parent="." unique_id=657389411 instance=ExtResource("24_of21v")]
 
 [node name="Player" parent="." unique_id=1896629207 instance=ExtResource("9_u6cys")]
-position = Vector2(18068, -17154)
+position = Vector2(-1, 32)
 
 [node name="Rock" parent="." unique_id=1017542395 instance=ExtResource("16_ta7ci")]
 position = Vector2(21358, -20735)

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://d4a0un8pdbtxo"]
+
+[ext_resource type="Script" uid="uid://3b58a7e4ag01" path="res://source/pause_menu/leaderboard_entry/leaderboard_entry.gd" id="1_6841j"]
+
+[node name="LeaderboardEntry" type="HBoxContainer" unique_id=445891864]
+offset_right = 175.0
+offset_bottom = 23.0
+alignment = 1
+script = ExtResource("1_6841j")
+
+[node name="Label" type="Label" parent="." unique_id=35488078]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "name"
+
+[node name="Control" type="Control" parent="." unique_id=246613829]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="." unique_id=1725931469]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "value"

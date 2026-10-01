@@ -21,6 +21,9 @@
 [ext_resource type="Script" uid="uid://qtuywdxikejb" path="res://source/pause_menu/show_timer_check_box.gd" id="15_wsr1x"]
 [ext_resource type="Script" uid="uid://bl23reswtsoo8" path="res://source/pause_menu/pattern_picker.gd" id="17_71yj7"]
 [ext_resource type="Script" uid="uid://bs8137kh8ifja" path="res://source/pause_menu/pattern_strength_slider.gd" id="17_ijfxw"]
+[ext_resource type="Script" uid="uid://damlnfr3lo8b" path="res://source/pause_menu/leaderboard.gd" id="21_4axkd"]
+[ext_resource type="Script" uid="uid://rgcmj7srds4m" path="res://source/pause_menu/player_name.gd" id="21_h2wqy"]
+[ext_resource type="Script" uid="uid://dxmcvmej7jj70" path="res://source/saving/saver_node.gd" id="22_itu50"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_h3lid"]
 
@@ -80,6 +83,7 @@ script/source = "extends SquishButton
 
 func _on_pressed() -> void:
 	SaveManager.clear_save()
+	GameplayEvents.broadcast(&\"save_reset\")
 	get_tree().reload_current_scene()
 "
 
@@ -589,6 +593,64 @@ bus = &"UI"
 [node name="PauseMenuHideSound" type="AudioStreamPlayer" parent="PauseMenu" unique_id=780896203]
 bus = &"UI"
 
+[node name="LeaderboardPanel" type="PanelContainer" parent="PauseMenu" unique_id=1518703962]
+custom_maximum_size = Vector2(-1, 300)
+layout_mode = 0
+offset_left = 35.0
+offset_top = 243.0
+offset_right = 341.0
+offset_bottom = 414.0
+offset_transform_enabled = true
+theme = ExtResource("2_fuwgk")
+theme_override_styles/panel = SubResource("StyleBox_dkg16")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/LeaderboardPanel" unique_id=475791064]
+clip_contents = true
+layout_mode = 2
+
+[node name="Title" type="Label" parent="PauseMenu/LeaderboardPanel/VBoxContainer" unique_id=1074340581]
+layout_mode = 2
+text = "Leaderboard"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PauseMenu/LeaderboardPanel/VBoxContainer" unique_id=1375950341]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PauseMenu/LeaderboardPanel/VBoxContainer/HBoxContainer" unique_id=677687166]
+layout_mode = 2
+text = "Your name: "
+
+[node name="PlayerName" type="LineEdit" parent="PauseMenu/LeaderboardPanel/VBoxContainer/HBoxContainer" unique_id=1963220034]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Unnamed player"
+placeholder_text = "put yo name here"
+script = ExtResource("21_h2wqy")
+
+[node name="SaverNode" type="Node" parent="PauseMenu/LeaderboardPanel/VBoxContainer/HBoxContainer/PlayerName" unique_id=1131393291]
+script = ExtResource("22_itu50")
+properties_to_save = Array[StringName]([&"text"])
+metadata/_custom_type_script = "uid://dxmcvmej7jj70"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PauseMenu/LeaderboardPanel/VBoxContainer" unique_id=1917698907]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="Leaderboard" type="VBoxContainer" parent="PauseMenu/LeaderboardPanel/VBoxContainer/ScrollContainer" unique_id=828091096]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("21_4axkd")
+
+[node name="AppearingControl" type="Control" parent="PauseMenu/LeaderboardPanel" unique_id=880834399]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("7_atvq0")
+metadata/_custom_type_script = "uid://dku0u3p6r0e0h"
+
 [node name="TogglePauseTrigger" type="Node" parent="." unique_id=562028054]
 process_mode = 3
 script = ExtResource("2_jtk1q")
@@ -602,5 +664,6 @@ metadata/_custom_type_script = "uid://ctj52ol5st0sb"
 [connection signal="shown" from="." to="PauseMenu/ResetSaveButton/AppearingControl" method="appear"]
 [connection signal="shown" from="." to="PauseMenu/CustomisationPanel/AppearingControl" method="appear"]
 [connection signal="shown" from="." to="PauseMenu/PauseMenuShowSound" method="play"]
+[connection signal="shown" from="." to="PauseMenu/LeaderboardPanel/AppearingControl" method="appear"]
 [connection signal="pressed" from="PauseMenu/PausePanel/VBoxContainer/Resume" to="." method="toggle_pause"]
 [connection signal="pressed" from="PauseMenu/ResetSaveButton" to="PauseMenu/ResetSaveButton" method="_on_pressed"]

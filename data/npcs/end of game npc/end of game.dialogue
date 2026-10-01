@@ -1,3 +1,5 @@
 ~ start
+$> GameplayEvents.broadcast("pause_timer")
 jerma sus: this the end of the game twin
+$> LeaderboardManager.save_score()
 => END

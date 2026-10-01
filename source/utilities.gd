@@ -9,7 +9,6 @@ static func dot_separated_string(...arguments: Array) -> String:
 	return string
 
 static func load_image_texture(path: String) -> ImageTexture:
-	
 	var loaded_image := Image.new()
 	var error := loaded_image.load(path)
 	
@@ -17,3 +16,14 @@ static func load_image_texture(path: String) -> ImageTexture:
 		return null
 
 	return ImageTexture.create_from_image(loaded_image)
+
+static func get_text_file_content(filePath) -> String:
+	var file = FileAccess.open(filePath, FileAccess.READ)
+	var content = file.get_as_text()
+	return content
+	
+static func format_time(time: float) -> String:
+	var minutes = floor(time / 60.0)
+	var seconds = floori(time) % 60
+	var milliseconds = time - floor(time)
+	return "%02d:%02d.%0d" % [minutes, seconds, milliseconds*1000]
