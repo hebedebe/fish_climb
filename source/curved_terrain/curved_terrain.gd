@@ -136,7 +136,8 @@ func update_edge():
 		line2d.visible = edge_visible
 		line2d.texture = edge_texture
 		line2d.width = edge_width
-		line2d.antialiased = true
+		line2d.joint_mode = Line2D.LINE_JOINT_SHARP
+		#line2d.antialiased = true
 		if material_override:
 			polygon2d.material = material_override
 

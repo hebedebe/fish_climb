@@ -24,6 +24,7 @@
 [ext_resource type="Script" uid="uid://damlnfr3lo8b" path="res://source/pause_menu/leaderboard.gd" id="21_4axkd"]
 [ext_resource type="Script" uid="uid://rgcmj7srds4m" path="res://source/pause_menu/player_name.gd" id="21_h2wqy"]
 [ext_resource type="Script" uid="uid://dxmcvmej7jj70" path="res://source/saving/saver_node.gd" id="22_itu50"]
+[ext_resource type="Script" uid="uid://3b58a7e4ag01" path="res://source/pause_menu/leaderboard_entry/leaderboard_entry.gd" id="24_hj5a0"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_h3lid"]
 
@@ -632,6 +633,7 @@ script = ExtResource("21_h2wqy")
 process_mode = 3
 script = ExtResource("22_itu50")
 save_mode = 1
+hash_save_name = null
 properties_to_save = Array[StringName]([&"text"])
 metadata/_custom_type_script = "uid://dxmcvmej7jj70"
 
@@ -646,6 +648,13 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("21_4axkd")
+
+[node name="LeaderboardEntry" type="HBoxContainer" parent="PauseMenu/LeaderboardPanel/VBoxContainer/ScrollContainer/Leaderboard" unique_id=405229913]
+layout_mode = 2
+script = ExtResource("24_hj5a0")
+entry_name = "loading..."
+entry_value = "loading..."
+metadata/_custom_type_script = "uid://3b58a7e4ag01"
 
 [node name="AppearingControl" type="Control" parent="PauseMenu/LeaderboardPanel" unique_id=880834399]
 layout_mode = 2

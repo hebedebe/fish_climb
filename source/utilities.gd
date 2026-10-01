@@ -28,3 +28,6 @@ static func format_time(time: float) -> String:
 	var seconds = floori(time) % 60
 	var milliseconds = time - floor(time)
 	return "%02d:%02d.%0d" % [minutes, seconds, milliseconds*1000]
+
+static func small_hash(string: String) -> String:
+	return string.sha1_text().substr(0,6)

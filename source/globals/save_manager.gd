@@ -34,9 +34,8 @@ func _ready() -> void:
 	autosave_loop()
 
 func load_save():
-	await get_tree().create_timer(0.1).timeout
-	load_game(SaveMode.Game)
-	load_game(SaveMode.Settings)
+	call_deferred("load_game", SaveMode.Game)
+	call_deferred("load_game", SaveMode.Settings)
 
 func autosave_loop() -> void:
 	await get_tree().create_timer(autosave_interval).timeout

@@ -20,6 +20,8 @@ enum SaveName {
 
 @export var save_mode: SaveManager.SaveMode
 
+@export var hash_save_name: bool = true
+
 @export var save_name_mode: SaveName:
 	get:
 		if custom_save_name.is_empty():
@@ -45,22 +47,26 @@ func _ready() -> void:
 		SaveManager.loading.connect(load_data)
 
 func get_save_name() -> String:
+	var save_name: String = ""
 	match save_name_mode:
 		SaveName.ParentName:
-			return get_parent().name
+			save_name = get_parent().name
 		SaveName.ParentPath:
-			return get_parent().get_path()
+			save_name = get_parent().get_path()
 		SaveName.SaverName:
-			return name
+			save_name = name
 		SaveName.SaverPath:
-			return get_path()
+			save_name = get_path()
 		SaveName.Custom:
-			return custom_save_name
-	printerr("Could not get save name (%s)" % self)
-	return ""
+			save_name = custom_save_name
+	
+	return save_name
 
 func get_save_path(property_name: String) -> String:
-	return Utilities.dot_separated_string(get_save_name(), property_name)
+	var save_path = Utilities.dot_separated_string(get_save_name(), property_name)
+	if hash_save_name:
+		save_path = Utilities.small_hash(save_path)
+	return save_path
 
 func save_value(property_name: String) -> void:
 	var path = get_save_path(property_name)
