@@ -38,6 +38,8 @@ enum SaveName {
 @export var print_on_save: bool = false
 @export var print_on_load: bool = false
 
+var cached_save_paths: Dictionary[String, String]
+
 func _ready() -> void:
 	if not get_parent():
 		printerr("Saver (%s) must have an owning node" % name)
@@ -65,9 +67,14 @@ func get_save_name() -> String:
 	return save_name
 
 func get_save_path(property_name: String) -> String:
+	if cached_save_paths.has(property_name):
+		return cached_save_paths[property_name]
+	
 	var save_path = Utilities.dot_separated_string(get_save_name(), property_name)
 	if hash_save_name:
 		save_path = Utilities.small_hash(save_path)
+	
+	cached_save_paths[property_name] = save_path
 	return save_path
 
 func save_value(property_name: String) -> void:

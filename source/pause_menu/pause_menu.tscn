@@ -633,7 +633,6 @@ script = ExtResource("21_h2wqy")
 process_mode = 3
 script = ExtResource("22_itu50")
 save_mode = 1
-hash_save_name = null
 properties_to_save = Array[StringName]([&"text"])
 metadata/_custom_type_script = "uid://dxmcvmej7jj70"
 

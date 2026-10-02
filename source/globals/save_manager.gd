@@ -51,18 +51,18 @@ func save_game(mode: SaveMode, emit: bool = true) -> void:
 	#print(get_save_path(mode))
 	var file := FileAccess.open(get_save_path(mode), FileAccess.WRITE)
 	ensure_save_entry(mode)
-	var data := JSON.stringify(save_data[mode])
+	var data := var_to_bytes(save_data[mode]).compress(FileAccess.CompressionMode.COMPRESSION_GZIP)
+	#data = data.remove_char(" ".unicode_at(0))#.strip_edges().strip_escapes()
 	if data:
-		file.store_string(data)
+		file.store_buffer(data)
 		file.close()
 
 func load_game(mode: SaveMode, emit: bool = true) -> void:
 	if not FileAccess.file_exists(get_save_path(mode)):
 		push_error("Cannot load from nonexistent file.")
 		return
-	var file_contents := Utilities.get_text_file_content(get_save_path(mode))
-	var data = JSON.parse_string(file_contents)
-	#print(data)
+	var file_contents := Utilities.get_byte_file_content(get_save_path(mode))
+	var data = bytes_to_var(file_contents.decompress_dynamic(-1, FileAccess.CompressionMode.COMPRESSION_GZIP))
 	save_data[mode] = data
 	if emit:
 		loading.emit(mode)
@@ -81,12 +81,12 @@ func ensure_save_entry(mode: SaveMode):
 
 func store_value(mode: SaveMode, property_key, property_value) -> void:
 	ensure_save_entry(mode)
-	save_data[mode][property_key] = var_to_str(property_value)
+	save_data[mode][property_key] = var_to_bytes(property_value)
 
 func get_value(mode: SaveMode, property_key) -> Variant:
 	ensure_save_entry(mode)
 	if save_data[mode].has(property_key):
-		return str_to_var(save_data[mode][property_key])
+		return bytes_to_var(save_data[mode][property_key])
 	else:
 		return null
 

@@ -22,6 +22,10 @@ static func get_text_file_content(filePath) -> String:
 	var content = file.get_as_text()
 	file.close()
 	return content
+
+static func get_byte_file_content(filePath) -> PackedByteArray:
+	var data = FileAccess.get_file_as_bytes(filePath)
+	return data
 	
 static func format_time(time: float) -> String:
 	var minutes = floor(time / 60.0)
@@ -30,4 +34,4 @@ static func format_time(time: float) -> String:
 	return "%02d:%02d.%0d" % [minutes, seconds, milliseconds*1000]
 
 static func small_hash(string: String) -> String:
-	return string.sha1_text().substr(0,4)
+	return string.sha1_text().substr(0,5)
