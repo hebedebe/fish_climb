@@ -27,6 +27,8 @@ func _ready() -> void:
 	
 	print("Save manager initialised")
 	
+	validate_save_file(SaveMode.Game)
+	validate_save_file(SaveMode.Settings)
 	
 	if auto_load:
 		get_tree().scene_changed.connect(load_save)
@@ -106,3 +108,15 @@ func check_saver_paths() -> void:
 		print("Check passed!")
 	else:
 		print("Check failed")
+
+
+func validate_save_file(mode: SaveMode) -> void:
+	var path := get_save_path(mode)
+	var file_contents := Utilities.get_byte_file_content(path)
+	var data = bytes_to_var(file_contents.decompress_dynamic(-1, FileAccess.CompressionMode.COMPRESSION_GZIP))
+	if data == null:
+		push_error("File contained null or was not a valid binary file.")
+		clear_data(mode)
+		print("Cleared invalid file data at (%s)!" % path)
+	else:
+		print("Save file %s validated!" % path)
