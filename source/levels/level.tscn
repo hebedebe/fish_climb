@@ -86,6 +86,20 @@ _data = {
 }
 point_count = 4
 
+[sub_resource type="Curve2D" id="Curve2D_oiyxd"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -14508, -19298, 227.52895, 2156.1077, -227.52895, -2156.1077, -9677, -24245, -260.03308, -574.23975, 260.03308, 574.23975, -9143, -24012, -1769.3333, -215.28009, 1769.3333, 215.28009, -7869, -21727, -87.24707, 471.13416, 87.24707, -471.13416, -6124, -24059, 281.7025, -1798.5623, -281.7025, 1798.5623, -5125, -24338, -2458.3643, -1758.3002, 2458.3643, 1758.3002, -3940, -15024, -383.8871, 2739.5579, 383.8871, -2739.5579, -5914, -14769, 1989.2332, 855.02124, -1989.2332, -855.02124, -8357, -21308, 2879.153, -2408.019, -2879.153, 2408.019, -13741, -18694)
+}
+point_count = 10
+
+[sub_resource type="Curve2D" id="Curve2D_x0ggs"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -9581.5, 22.40039, -863.746, -2322.5168, 863.746, 2322.5168, -7048.5, 2019.4004, 0, 0, 0, 0, -9140.5, 5205.4004, 0, 0, 0, 0, 1666.5, 9313.4, 0, 0, 0, 0, 6848.5, 8142.4004, 0, 0, 0, 0, 11186.5, -1704.5996, 0, 0, 0, 0, 5044.5, -7270.5996, 0, 0, 0, 0, 2529.5, -7865.5996, 1401.1879, -1055.6896, -1401.1879, 1055.6896, 1032.5, -4199.5996, 0, 0, 0, 0, -2537.5, -3662.5996)
+}
+point_count = 10
+
 [sub_resource type="Curve2D" id="Curve2D_hy0rb"]
 bake_interval = 500.0
 _data = {
@@ -605,6 +619,27 @@ curve = SubResource("Curve2D_ddeq6")
 script = ExtResource("3_yu8j2")
 edge_visible = false
 fill_texture = ExtResource("1_oiyxd")
+generate_collision = false
+visible_collision = false
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain6" type="Path2D" parent="Background" unique_id=484585236]
+texture_filter = 4
+curve = SubResource("Curve2D_oiyxd")
+script = ExtResource("3_yu8j2")
+edge_visible = false
+fill_texture = ExtResource("5_f1a0d")
+generate_collision = false
+visible_collision = false
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain10" type="Path2D" parent="Background" unique_id=1575785206]
+texture_filter = 4
+position = Vector2(13522.5, -22110.4)
+curve = SubResource("Curve2D_x0ggs")
+script = ExtResource("3_yu8j2")
+edge_visible = false
+fill_texture = ExtResource("4_sllqb")
 generate_collision = false
 visible_collision = false
 metadata/_custom_type_script = "uid://b5go11q4fwls4"

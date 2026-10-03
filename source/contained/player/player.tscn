@@ -95,7 +95,7 @@ metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=656171891]
 top_level = true
 position = Vector2(0, -200)
-offset = Vector2(0.28430486, -1.5666952)
+offset = Vector2(0.66004246, 0.39290085)
 zoom = Vector2(0.3, 0.3)
 editor_draw_limits = true
 
@@ -103,6 +103,7 @@ editor_draw_limits = true
 process_priority = 300
 process_physics_priority = 300
 script = ExtResource("9_bypms")
+interpolation_mode = 1
 metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
 [node name="PlayerBody" parent="." unique_id=1218513241 instance=ExtResource("2_rp4kk")]
@@ -110,6 +111,7 @@ position = Vector2(-343, -95)
 script = ExtResource("7_fhjrr")
 
 [node name="PlayerCenter" type="Node2D" parent="PlayerBody" unique_id=121034645 node_paths=PackedStringArray("player_body")]
+physics_interpolation_mode = 1
 position = Vector2(343, 95)
 script = SubResource("GDScript_w1lkv")
 player_body = NodePath("..")

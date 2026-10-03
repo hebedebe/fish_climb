@@ -35,15 +35,20 @@ func _ready() -> void:
 	
 	hover_sound_player = AudioStreamPlayer.new()
 	hover_sound_player.bus = &"UI"
-	get_hover_signal().connect(hover_sound_player.play)
+	get_hover_signal().connect(try_play_sound.bind(hover_sound_player))
 	add_child(hover_sound_player)
 	
 	pressed_sound_player = AudioStreamPlayer.new()
 	pressed_sound_player.bus = &"UI"
-	get_pressed_signal().connect(pressed_sound_player.play)
+	get_pressed_signal().connect(try_play_sound.bind(pressed_sound_player))
 	add_child(pressed_sound_player)
 	
 	update_sounds()
+
+## used to prevent errors when playing during scene reload/change
+func try_play_sound(target: AudioStreamPlayer, ..._args):
+	if target.is_inside_tree():
+		target.play()
 
 func update_sounds() -> void:
 	if hover_sound_player:
@@ -63,8 +68,6 @@ func parent_has_signal(signal_name: StringName) -> bool:
 func get_pressed_signal() -> Signal:
 	if parent_has_signal("pressed"):
 		return get_parent_control().pressed
-	if parent_has_signal("folding_changed"):
-		return get_parent_control().folding_changed
 	if parent_has_signal("item_selected"):
 		return get_parent_control().item_selected
 	return empty

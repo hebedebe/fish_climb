@@ -18,12 +18,8 @@ func _ready() -> void:
 	SilentWolf.configure({
 		"api_key": load_api_key(),
 		"game_id": GAME_ID,
-		"log_level": SilentWolfLogLevel.ERRORS,
+		"log_level": SilentWolfLogLevel.ERRORS as int,
 	})
-
-	#SilentWolf.configure_scores({
-		#"open_scene_on_close": "res://scenes/MainPage.tscn"
-	#})
 
 func load_api_key() -> String:
 	if not FileAccess.file_exists(API_KEY_PATH):

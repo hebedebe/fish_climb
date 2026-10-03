@@ -66,6 +66,14 @@ var collision_polygon2d: CollisionPolygon2D
 var static_body: StaticBody2D
 
 func _ready() -> void:
+	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+	
+	create_child_nodes()
+	_generate_terrain()
+	
+	curve.changed.connect(editor_generate_terrain)
+
+func create_child_nodes() -> void:
 	polygon2d = Polygon2D.new()
 	polygon2d.texture_repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
 	add_child(polygon2d)
@@ -79,13 +87,6 @@ func _ready() -> void:
 	add_child(static_body)
 	collision_polygon2d = CollisionPolygon2D.new()
 	static_body.add_child(collision_polygon2d)
-	
-	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
-	_generate_terrain()
-	
-	curve.changed.connect(editor_generate_terrain)
-	
-	#print("Generated curve terrain ", name)
 
 func editor_generate_terrain() -> void:
 	if not Engine.is_editor_hint():

@@ -34,7 +34,7 @@ func _ready() -> void:
 		get_tree().scene_changed.connect(load_save)
 		await load_save()
 	autosave_loop()
-
+	
 func load_save():
 	call_deferred("load_game", SaveMode.Game)
 	call_deferred("load_game", SaveMode.Settings)
