@@ -3,7 +3,7 @@
 [ext_resource type="Resource" uid="uid://bate3lca2p2tc" path="res://data/npcs/glorp/glorp_dialogue.dialogue" id="1_qstc3"]
 [ext_resource type="PackedScene" uid="uid://m5hyiu6c8vw8" path="res://data/dialogue_bubbles/glorp/balloon.tscn" id="2_4te7k"]
 [ext_resource type="Texture2D" uid="uid://d3mtx32p0cxlt" path="res://data/npcs/glorp/glorp_npc.png" id="2_11nhp"]
-[ext_resource type="Script" uid="uid://bm0pw0bb20w2g" path="res://source/npc/scripts/npc_data.gd" id="3_4te7k"]
+[ext_resource type="Script" uid="uid://bm0pw0bb20w2g" path="res://source/contained/npc/scripts/npc_data.gd" id="3_4te7k"]
 [ext_resource type="AudioStream" uid="uid://dgby217nep631" path="res://data/npcs/glorp/alien.mp3" id="5_4te7k"]
 
 [resource]

@@ -50,8 +50,10 @@ enabled=PackedStringArray("res://addons/AutoExportVersion/plugin.cfg", "res://ad
 folder_colors={
 "res://addons/": "gray",
 "res://data/": "orange",
-"res://levels/": "yellow",
-"res://source/": "teal"
+"res://source/": "teal",
+"res://source/common/": "green",
+"res://source/contained/": "yellow",
+"res://source/levels/": "purple"
 }
 
 [importer_defaults]
@@ -98,7 +100,7 @@ skip_dialogue={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://data/npcs/glorp/glorp_dialogue.dialogue", "res://data/npcs/pickaxe/pickaxe_dialogue.dialogue", "res://data/npcs/end of game npc/end of game.dialogue", "res://data/npcs/fish_head/fish_head_dialogue.dialogue", "res://data/npcs/plato/plato_dialogue.dialogue")
+locale/translations_pot_files=PackedStringArray("res://data/npcs/end of game npc/end of game.dialogue", "res://data/npcs/fish_head/fish_head_dialogue.dialogue", "res://data/npcs/glorp/glorp_dialogue.dialogue", "res://data/npcs/pickaxe/pickaxe_dialogue.dialogue", "res://data/npcs/plato/plato_dialogue.dialogue")
 
 [physics]
 

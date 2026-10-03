@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://dsejsxjweaaw6"]
+
+[ext_resource type="Script" uid="uid://bxkgx408l3anp" path="res://source/contained/props/hanging_platform/scripts/hanging_platform.gd" id="1_yr1xt"]
+[ext_resource type="Script" uid="uid://b5go11q4fwls4" path="res://source/contained/curved_terrain/scripts/curved_terrain.gd" id="2_g2ov5"]
+[ext_resource type="Texture2D" uid="uid://bcgo2een4wlxq" path="res://source/common/textures/GRYDIRT2.JPG" id="3_admx5"]
+[ext_resource type="Script" uid="uid://dxmcvmej7jj70" path="res://source/contained/saving/scripts/saver_node.gd" id="4_5no1j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cs72l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pb0qc"]
+size = Vector2(1418, 382)
+
+[sub_resource type="Curve2D" id="Curve2D_admx5"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -709, -191, 0, 0, 0, 0, 709, -191, 0, 0, 0, 0, 709, 191, 0, 0, 0, 0, -709, 191)
+}
+point_count = 4
+
+[node name="HangingPlatform" type="Node2D" unique_id=412206538 node_paths=PackedStringArray("rope_start", "rope_end")]
+script = ExtResource("1_yr1xt")
+rope_start = NodePath("TopAnchor")
+rope_end = NodePath("Platform")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1690700015]
+width = 20.0
+default_color = Color(0.5489626, 0.5489626, 0.54896253, 1)
+
+[node name="TopAnchor" type="StaticBody2D" parent="." unique_id=678827679]
+position = Vector2(0, -774)
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopAnchor" unique_id=1307451092]
+shape = SubResource("CircleShape2D_cs72l")
+
+[node name="DampedSpringJoint2D" type="DampedSpringJoint2D" parent="." unique_id=1285930837]
+position = Vector2(0, -774)
+node_a = NodePath("../TopAnchor")
+node_b = NodePath("../Platform")
+length = 770.0
+rest_length = 770.0
+stiffness = 40.0
+
+[node name="Platform" type="RigidBody2D" parent="." unique_id=1560873381]
+collision_layer = 3
+collision_mask = 3
+mass = 10.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform" unique_id=964247709]
+position = Vector2(0, 188)
+shape = SubResource("RectangleShape2D_pb0qc")
+
+[node name="CurvedTerrain" type="Path2D" parent="Platform" unique_id=1588062209]
+texture_filter = 4
+position = Vector2(0, 188)
+curve = SubResource("Curve2D_admx5")
+script = ExtResource("2_g2ov5")
+fill_texture = ExtResource("3_admx5")
+generate_collision = false
+visible_collision = false
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="SaverNode" type="Node" parent="Platform" unique_id=2092604599]
+script = ExtResource("4_5no1j")
+save_name_mode = 3
+properties_to_save = Array[StringName]([&"position", &"rotation", &"linear_velocity", &"angular_velocity"])
+metadata/_custom_type_script = "uid://dxmcvmej7jj70"
