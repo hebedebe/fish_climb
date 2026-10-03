@@ -118,3 +118,10 @@ func get_all_save_paths() -> Array[String]:
 	for property in properties_to_save:
 		paths.append(get_save_path(property))
 	return paths
+
+
+func set_save_mode_settings() -> void:
+	save_mode = SaveManager.SaveMode.Settings
+	
+func set_save_mode_gameplay() -> void:
+	save_mode = SaveManager.SaveMode.Game

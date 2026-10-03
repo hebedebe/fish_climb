@@ -38,6 +38,6 @@ func stop_charging() -> void:
 	charge = 0.0
 	charging = false
 
-## return the charge amount from 0-1
+## return the charge amount from 0-1 (could go higher than 1 if the player was somehow overcharged)
 func get_charge_factor() -> float:
 	return charge / flip_strength

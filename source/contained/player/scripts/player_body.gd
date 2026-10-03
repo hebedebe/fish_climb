@@ -31,3 +31,18 @@ func update_customisation() -> void:
 	shader_material.set_shader_parameter("pattern_tint", CustomisationManager.player_pattern_tint)
 	shader_material.set_shader_parameter("base_tint", CustomisationManager.player_base_tint)
 	shader_material.set_shader_parameter("pattern_strength", CustomisationManager.player_pattern_strength)
+
+func get_bone(idx: int) -> Bone2D:
+	var skeleton_2d: Skeleton2D = %Skeleton2D
+	if not skeleton_2d:
+		push_error("No Skeleton2D found in player body")
+		return null
+	return skeleton_2d.get_bone(idx)
+	
+## Returns the local transform of the bone
+func get_bone_transform(idx: int) -> Transform2D:
+	return get_bone(idx).transform
+
+## Returns the global transform of the bone
+func get_bone_global_transform(idx: int) -> Transform2D:
+	return get_bone(idx).global_transform

@@ -27,9 +27,6 @@
 [ext_resource type="PackedScene" uid="uid://veqesipi4ps2" path="res://source/contained/gameplay_overlay/game_overlay.tscn" id="25_kloy6"]
 [ext_resource type="PackedScene" uid="uid://d2f2uonx5sjhi" path="res://source/contained/player/player.tscn" id="26_uvro3"]
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_wjuib"]
-diffuse_texture = ExtResource("2_x0ggs")
-
 [sub_resource type="Curve2D" id="Curve2D_atrxo"]
 bake_interval = 100.0
 _data = {
@@ -204,6 +201,9 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 8296, -26290, -142.02649, 4.17725, 142.02649, -4.17725, 9958, -26303, -158.7355, 50.127, 158.7355, -50.127, 10999, -26449, -121.14024, 91.8995, 121.14024, -91.8995, 11483, -26779)
 }
 point_count = 4
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_wjuib"]
+diffuse_texture = ExtResource("2_x0ggs")
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_werwd"]
 
@@ -506,34 +506,13 @@ point_count = 18
 
 [node name="TestLevel" type="Node" unique_id=1147868162]
 
-[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=1690094218]
-scroll_scale = Vector2(0.6, 0.6)
-scroll_offset = Vector2(6, 0)
-repeat_size = Vector2(400, 400)
-repeat_times = 20
+[node name="Background" type="Node2D" parent="." unique_id=943117830]
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3" unique_id=961844215]
-modulate = Color(0.641934, 0.641934, 0.641934, 1)
-texture_repeat = 2
-scale = Vector2(2, 2)
-texture = ExtResource("1_oiyxd")
-
-[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1707690037]
-scroll_scale = Vector2(0.9, 0.9)
-scroll_offset = Vector2(6, 0)
-repeat_size = Vector2(756, 512)
-autoscroll = Vector2(5, 2)
-repeat_times = 8
-
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=784935603]
-modulate = Color(0.64, 0.64, 0.64, 0.5294118)
-texture_repeat = 2
-texture = SubResource("CanvasTexture_wjuib")
-
-[node name="Background" type="Node2D" parent="." unique_id=454372018]
+[node name="Terrain" type="Node2D" parent="Background" unique_id=454372018]
 modulate = Color(0.4362548, 0.5572508, 0.6929729, 1)
+z_index = -3
 
-[node name="CurvedTerrain" type="Path2D" parent="Background" unique_id=804298422]
+[node name="CurvedTerrain" type="Path2D" parent="Background/Terrain" unique_id=804298422]
 texture_filter = 4
 position = Vector2(312.81824, -1275.6364)
 curve = SubResource("Curve2D_atrxo")
@@ -544,7 +523,7 @@ generate_collision = false
 visible_collision = false
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
-[node name="CurvedTerrain2" type="Path2D" parent="Background" unique_id=1202189113]
+[node name="CurvedTerrain2" type="Path2D" parent="Background/Terrain" unique_id=1202189113]
 texture_filter = 4
 position = Vector2(166.99995, 49.666656)
 curve = SubResource("Curve2D_n4g7x")
@@ -555,7 +534,7 @@ generate_collision = false
 visible_collision = false
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
-[node name="CurvedTerrain3" type="Path2D" parent="Background" unique_id=970427350]
+[node name="CurvedTerrain3" type="Path2D" parent="Background/Terrain" unique_id=970427350]
 texture_filter = 4
 position = Vector2(-1828.091, -5309.727)
 curve = SubResource("Curve2D_ukwr8")
@@ -567,7 +546,7 @@ bake_interval = 150.0
 visible_collision = false
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
-[node name="CurvedTerrain4" type="Path2D" parent="Background" unique_id=645654014]
+[node name="CurvedTerrain4" type="Path2D" parent="Background/Terrain" unique_id=645654014]
 texture_filter = 4
 position = Vector2(8975.066, -7201.933)
 curve = SubResource("Curve2D_rtcij")
@@ -579,7 +558,7 @@ generate_collision = false
 visible_collision = false
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
-[node name="CurvedTerrain5" type="Path2D" parent="Background" unique_id=1299070874]
+[node name="CurvedTerrain5" type="Path2D" parent="Background/Terrain" unique_id=1299070874]
 texture_filter = 4
 position = Vector2(-4430.25, -6193.25)
 curve = SubResource("Curve2D_kogck")
@@ -590,7 +569,7 @@ generate_collision = false
 visible_collision = false
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
-[node name="CurvedTerrain7" type="Path2D" parent="Background" unique_id=1247010327]
+[node name="CurvedTerrain7" type="Path2D" parent="Background/Terrain" unique_id=1247010327]
 texture_filter = 4
 position = Vector2(11.700458, -15326.2)
 curve = SubResource("Curve2D_sgadm")
@@ -601,7 +580,7 @@ generate_collision = false
 visible_collision = false
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
-[node name="CurvedTerrain8" type="Path2D" parent="Background" unique_id=2088259998]
+[node name="CurvedTerrain8" type="Path2D" parent="Background/Terrain" unique_id=2088259998]
 texture_filter = 4
 position = Vector2(-1981.5, -11943.5)
 curve = SubResource("Curve2D_humu5")
@@ -612,7 +591,7 @@ generate_collision = false
 visible_collision = false
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
-[node name="CurvedTerrain9" type="Path2D" parent="Background" unique_id=167710054]
+[node name="CurvedTerrain9" type="Path2D" parent="Background/Terrain" unique_id=167710054]
 texture_filter = 4
 position = Vector2(3696, -8408.5)
 curve = SubResource("Curve2D_ddeq6")
@@ -623,7 +602,7 @@ generate_collision = false
 visible_collision = false
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
-[node name="CurvedTerrain6" type="Path2D" parent="Background" unique_id=484585236]
+[node name="CurvedTerrain6" type="Path2D" parent="Background/Terrain" unique_id=484585236]
 texture_filter = 4
 curve = SubResource("Curve2D_oiyxd")
 script = ExtResource("3_yu8j2")
@@ -633,7 +612,7 @@ generate_collision = false
 visible_collision = false
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
-[node name="CurvedTerrain10" type="Path2D" parent="Background" unique_id=1575785206]
+[node name="CurvedTerrain10" type="Path2D" parent="Background/Terrain" unique_id=1575785206]
 texture_filter = 4
 position = Vector2(13522.5, -22110.4)
 curve = SubResource("Curve2D_x0ggs")
@@ -644,114 +623,144 @@ generate_collision = false
 visible_collision = false
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
-[node name="Grass" type="Node2D" parent="." unique_id=380388134]
+[node name="Grass" type="Node2D" parent="Background" unique_id=380388134]
+z_index = -2
 
-[node name="InstanceCurve" type="Path2D" parent="Grass" unique_id=2144010310]
+[node name="InstanceCurve" type="Path2D" parent="Background/Grass" unique_id=2144010310]
 curve = SubResource("Curve2D_hy0rb")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 bake_interval = 500.0
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="GrassCurve" type="Path2D" parent="Grass" unique_id=1281514323]
+[node name="GrassCurve" type="Path2D" parent="Background/Grass" unique_id=1281514323]
 curve = SubResource("Curve2D_mxp4k")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="GrassCurve2" type="Path2D" parent="Grass" unique_id=1924862979]
+[node name="GrassCurve2" type="Path2D" parent="Background/Grass" unique_id=1924862979]
 curve = SubResource("Curve2D_d7v53")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="GrassCurve3" type="Path2D" parent="Grass" unique_id=2032009890]
+[node name="GrassCurve3" type="Path2D" parent="Background/Grass" unique_id=2032009890]
 curve = SubResource("Curve2D_0qmeg")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="GrassCurve4" type="Path2D" parent="Grass" unique_id=338499821]
+[node name="GrassCurve4" type="Path2D" parent="Background/Grass" unique_id=338499821]
 curve = SubResource("Curve2D_ta7ci")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 bake_interval = 600.0
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="GrassCurve5" type="Path2D" parent="Grass" unique_id=1275423728]
+[node name="GrassCurve5" type="Path2D" parent="Background/Grass" unique_id=1275423728]
 curve = SubResource("Curve2D_lh335")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 bake_interval = 450.0
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="GrassCurve6" type="Path2D" parent="Grass" unique_id=2084839169]
+[node name="GrassCurve6" type="Path2D" parent="Background/Grass" unique_id=2084839169]
 curve = SubResource("Curve2D_u6cys")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="GrassCurve7" type="Path2D" parent="Grass" unique_id=1537476183]
+[node name="GrassCurve7" type="Path2D" parent="Background/Grass" unique_id=1537476183]
 curve = SubResource("Curve2D_368ro")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="GrassCurve8" type="Path2D" parent="Grass" unique_id=3124458]
+[node name="GrassCurve8" type="Path2D" parent="Background/Grass" unique_id=3124458]
 curve = SubResource("Curve2D_3ca7f")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 bake_interval = 600.0
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="GrassCurve9" type="Path2D" parent="Grass" unique_id=843823783]
+[node name="GrassCurve9" type="Path2D" parent="Background/Grass" unique_id=843823783]
 curve = SubResource("Curve2D_8henu")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 bake_interval = 500.0
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="GrassCurve10" type="Path2D" parent="Grass" unique_id=2045015864]
+[node name="GrassCurve10" type="Path2D" parent="Background/Grass" unique_id=2045015864]
 curve = SubResource("Curve2D_rm7tw")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 bake_interval = 500.0
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="GrassCurve11" type="Path2D" parent="Grass" unique_id=686223891]
+[node name="GrassCurve11" type="Path2D" parent="Background/Grass" unique_id=686223891]
 curve = SubResource("Curve2D_spdwc")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 bake_interval = 600.0
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="GrassCurve12" type="Path2D" parent="Grass" unique_id=1568859582]
+[node name="GrassCurve12" type="Path2D" parent="Background/Grass" unique_id=1568859582]
 curve = SubResource("Curve2D_7cmws")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 bake_interval = 600.0
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="GrassCurve13" type="Path2D" parent="Grass" unique_id=1088584640]
+[node name="GrassCurve13" type="Path2D" parent="Background/Grass" unique_id=1088584640]
 curve = SubResource("Curve2D_1kusu")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="GrassCurve14" type="Path2D" parent="Grass" unique_id=1559111817]
+[node name="GrassCurve14" type="Path2D" parent="Background/Grass" unique_id=1559111817]
 curve = SubResource("Curve2D_ntbti")
 script = ExtResource("6_1dme8")
 scene = ExtResource("7_ogdwf")
 bake_interval = 600.0
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
-[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=1198502382]
+[node name="Parallax" type="Node2D" parent="Background" unique_id=657330340]
+
+[node name="Parallax2D3" type="Parallax2D" parent="Background/Parallax" unique_id=1690094218]
+z_index = -10
+scroll_scale = Vector2(0.6, 0.6)
+scroll_offset = Vector2(6, 0)
+repeat_size = Vector2(400, 400)
+repeat_times = 20
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Parallax/Parallax2D3" unique_id=961844215]
+modulate = Color(0.641934, 0.641934, 0.641934, 1)
+texture_repeat = 2
+scale = Vector2(2, 2)
+texture = ExtResource("1_oiyxd")
+
+[node name="Parallax2D" type="Parallax2D" parent="Background/Parallax" unique_id=1707690037]
+z_index = -5
+scroll_scale = Vector2(0.9, 0.9)
+scroll_offset = Vector2(6, 0)
+repeat_size = Vector2(756, 512)
+autoscroll = Vector2(5, 2)
+repeat_times = 8
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Parallax/Parallax2D" unique_id=784935603]
+modulate = Color(0.64, 0.64, 0.64, 0.5294118)
+texture_repeat = 2
+texture = SubResource("CanvasTexture_wjuib")
+
+[node name="Parallax2D2" type="Parallax2D" parent="Background/Parallax" unique_id=1198502382]
 modulate = Color(1, 1, 1, 0.45882353)
+z_index = -1
 repeat_size = Vector2(1024, 1024)
 autoscroll = Vector2(-7, 3)
 repeat_times = 8
 
-[node name="WaterRect" type="ColorRect" parent="Parallax2D2" unique_id=294126116]
+[node name="WaterRect" type="ColorRect" parent="Background/Parallax/Parallax2D2" unique_id=294126116]
 material = SubResource("ShaderMaterial_3ca7f")
 custom_minimum_size = Vector2(1024, 1024)
 offset_right = 40.0
