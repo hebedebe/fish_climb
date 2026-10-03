@@ -1,4 +1,4 @@
-extends VBoxContainer
+class_name LeaderboardContainer extends VBoxContainer
 
 
 func _ready() -> void:
