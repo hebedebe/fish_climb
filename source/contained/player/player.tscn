@@ -95,7 +95,7 @@ metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=656171891]
 top_level = true
 position = Vector2(0, -200)
-offset = Vector2(-0.14789698, -2.748625)
+offset = Vector2(0.28430486, -1.5666952)
 zoom = Vector2(0.3, 0.3)
 editor_draw_limits = true
 

@@ -1143,6 +1143,9 @@ script = ExtResource("3_yu8j2")
 fill_texture = ExtResource("4_sllqb")
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
+[node name="Rock15" parent="Level" unique_id=1017542395 instance=ExtResource("20_su2an")]
+position = Vector2(21358, -20735)
+
 [node name="PostProcess" parent="." unique_id=1121221467 instance=ExtResource("22_m5nn3")]
 
 [node name="PauseCanvasLayer" parent="." unique_id=945801933 instance=ExtResource("23_hon24")]
@@ -1153,6 +1156,3 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="Player" parent="." unique_id=1896629207 instance=ExtResource("26_uvro3")]
 position = Vector2(-1, 32)
-
-[node name="Rock" parent="." unique_id=1017542395 instance=ExtResource("20_su2an")]
-position = Vector2(21358, -20735)

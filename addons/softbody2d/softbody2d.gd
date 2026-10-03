@@ -489,7 +489,7 @@ func create_regions():
 ## Call this to create a new softbody at runtime.
 func create_softbody2d(runtime: bool = false):
 	# At runtime if we already have skeleton, don't create it.
-	if (!Engine.is_editor_hint() || !get_tree()) && !runtime:
+	if (!Engine.is_editor_hint() || !is_inside_tree()) && !runtime:
 		return
 	clear_softbody2d()
 	if draw_regions:

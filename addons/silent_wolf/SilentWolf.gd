@@ -148,10 +148,13 @@ func send_get_request(http_node: HTTPRequest, request_url: String):
 	print("GET headers: " + str(headers))
 	if !http_node.is_inside_tree():
 		await get_tree().create_timer(0.01).timeout
+	
 	SWLogger.debug("Method: GET")
 	SWLogger.debug("request_url: " + str(request_url))
 	SWLogger.debug("headers: " + str(headers))
-	http_node.request(request_url, headers) 
+	
+	if http_node.is_inside_tree():
+		http_node.request(request_url, headers) 
 
 
 func send_post_request(http_node, request_url, payload):
