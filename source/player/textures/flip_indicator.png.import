@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxwvbsaib3hsw"
-path="res://.godot/imported/fish.png-b4d21899af01fec8ad75be995dea6893.ctex"
+uid="uid://cid5vhp64kah1"
+path="res://.godot/imported/flip_indicator.png-14582d5b91c41f8cf8300405e5a87bb9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://source/player/fish.png"
-dest_files=["res://.godot/imported/fish.png-b4d21899af01fec8ad75be995dea6893.ctex"]
+source_file="res://source/player/textures/flip_indicator.png"
+dest_files=["res://.godot/imported/flip_indicator.png-14582d5b91c41f8cf8300405e5a87bb9.ctex"]
 
 [params]
 

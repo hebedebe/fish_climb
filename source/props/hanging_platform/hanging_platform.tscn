@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dsejsxjweaaw6"]
 
-[ext_resource type="Script" uid="uid://bxkgx408l3anp" path="res://source/props/hanging_platform/hanging_platform.gd" id="1_yr1xt"]
-[ext_resource type="Script" uid="uid://b5go11q4fwls4" path="res://source/curved_terrain/curved_terrain.gd" id="2_g2ov5"]
+[ext_resource type="Script" uid="uid://bxkgx408l3anp" path="res://source/props/hanging_platform/scripts/hanging_platform.gd" id="1_yr1xt"]
+[ext_resource type="Script" uid="uid://b5go11q4fwls4" path="res://source/curved_terrain/scripts/curved_terrain.gd" id="2_g2ov5"]
 [ext_resource type="Texture2D" uid="uid://bcgo2een4wlxq" path="res://source/terrain_textures/GRYDIRT2.JPG" id="3_admx5"]
-[ext_resource type="Script" uid="uid://dxmcvmej7jj70" path="res://source/saving/saver_node.gd" id="4_5no1j"]
+[ext_resource type="Script" uid="uid://dxmcvmej7jj70" path="res://source/saving/scripts/saver_node.gd" id="4_5no1j"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cs72l"]
 

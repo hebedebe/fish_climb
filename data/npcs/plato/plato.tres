@@ -3,7 +3,7 @@
 [ext_resource type="Resource" uid="uid://dbeowv3patxaa" path="res://data/npcs/plato/plato_dialogue.dialogue" id="1_wbeq2"]
 [ext_resource type="PackedScene" uid="uid://bddjr2ug0dowq" path="res://data/dialogue_bubbles/rock/balloon.tscn" id="2_c0f1q"]
 [ext_resource type="Texture2D" uid="uid://dsu6j42dcbtni" path="res://data/npcs/plato/plato.png" id="3_c0f1q"]
-[ext_resource type="Script" uid="uid://bm0pw0bb20w2g" path="res://source/npc/npc_data.gd" id="4_f4bi7"]
+[ext_resource type="Script" uid="uid://bm0pw0bb20w2g" path="res://source/npc/scripts/npc_data.gd" id="4_f4bi7"]
 
 [resource]
 script = ExtResource("4_f4bi7")

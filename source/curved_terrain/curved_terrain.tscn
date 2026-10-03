@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://duiekr3xgtl61"]
 
-[ext_resource type="Script" uid="uid://b5go11q4fwls4" path="res://source/curved_terrain/curved_terrain.gd" id="1_6j1ap"]
-[ext_resource type="Shader" uid="uid://cadnte8s5ipk7" path="res://addons/lit/shaders/receiver/lit_receiver_fast.gdshader" id="2_lr5jd"]
+[ext_resource type="Script" uid="uid://b5go11q4fwls4" path="res://source/curved_terrain/scripts/curved_terrain.gd" id="1_6j1ap"]
+[ext_resource type="Shader" path="res://addons/lit/shaders/receiver/lit_receiver_fast.gdshader" id="2_lr5jd"]
 
 [sub_resource type="Curve2D" id="Curve2D_3ug24"]
 bake_interval = 200.0

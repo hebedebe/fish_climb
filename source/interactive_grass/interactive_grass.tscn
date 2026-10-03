@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://qm3jgcscb63x"]
 
-[ext_resource type="Shader" uid="uid://twdnbaq64vwn" path="res://source/interactive_grass/interactive_grass.gdshader" id="1_dsqgq"]
-[ext_resource type="Script" uid="uid://cmt7h2ouqkm1u" path="res://source/interactive_grass/interactive_grass.gd" id="1_h03ex"]
-[ext_resource type="Texture2D" uid="uid://dgr6ru47s3v7x" path="res://source/interactive_grass/sea_grass.png" id="1_y1j7f"]
+[ext_resource type="Shader" uid="uid://twdnbaq64vwn" path="res://source/interactive_grass/shaders/interactive_grass.gdshader" id="1_dsqgq"]
+[ext_resource type="Script" uid="uid://cmt7h2ouqkm1u" path="res://source/interactive_grass/scripts/interactive_grass.gd" id="1_h03ex"]
+[ext_resource type="Texture2D" uid="uid://dgr6ru47s3v7x" path="res://source/interactive_grass/textures/sea_grass.png" id="1_y1j7f"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_dsqgq"]
 resource_local_to_scene = true

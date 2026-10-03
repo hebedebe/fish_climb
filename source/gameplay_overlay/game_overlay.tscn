@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://veqesipi4ps2"]
 
-[ext_resource type="Script" uid="uid://dxpmtc1i0uiiq" path="res://source/gameplay_overlay/game_timer.gd" id="1_6m664"]
+[ext_resource type="Script" uid="uid://dxpmtc1i0uiiq" path="res://source/gameplay_overlay/scripts/game_timer.gd" id="1_6m664"]
 [ext_resource type="FontFile" uid="uid://c133g8c5fvpir" path="res://data/dialogue_bubbles/rock/Aquifer.ttf" id="1_cnclq"]
 
 [node name="GameOverlay" type="CanvasLayer" unique_id=657389411]

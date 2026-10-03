@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cid5vhp64kah1"
-path="res://.godot/imported/flip_indicator.png-8bfcf0d085030518aec39a6f3597b213.ctex"
+uid="uid://dy2gmuttxx04"
+path="res://.godot/imported/up_indicator.png-6648e0787934def71474b2a074c6ad56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://source/player/flip_indicator.png"
-dest_files=["res://.godot/imported/flip_indicator.png-8bfcf0d085030518aec39a6f3597b213.ctex"]
+source_file="res://source/player/textures/up_indicator.png"
+dest_files=["res://.godot/imported/up_indicator.png-6648e0787934def71474b2a074c6ad56.ctex"]
 
 [params]
 

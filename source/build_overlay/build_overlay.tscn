@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://ci5spsld76qi"]
+
+[ext_resource type="Script" uid="uid://csyr1bfucvmvk" path="res://source/build_overlay/scripts/version_number_label.gd" id="1_shcgg"]
+[ext_resource type="Script" uid="uid://mir3qg4jicfq" path="res://source/build_overlay/scripts/fps_label.gd" id="2_4ufww"]
+
+[node name="BuildOverlay" type="CanvasLayer" unique_id=1933529950]
+
+[node name="Control" type="Control" parent="." unique_id=505810575]
+modulate = Color(1, 1, 1, 0.5372549)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VersionNumber" type="Label" parent="Control" unique_id=850063563]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 81.0
+grow_vertical = 0
+text = "Build 0.2.1"
+script = ExtResource("1_shcgg")
+
+[node name="FPSLabel" type="Label" parent="Control" unique_id=236843124]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("2_4ufww")
+metadata/_custom_type_script = "uid://mir3qg4jicfq"

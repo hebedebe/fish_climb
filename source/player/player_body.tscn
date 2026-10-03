@@ -1,10 +1,9 @@
 [gd_scene format=3 uid="uid://dxix4kq8nmpm7"]
 
-[ext_resource type="Shader" uid="uid://ccipkylrwvdso" path="res://source/player/player_body.gdshader" id="1_lppol"]
-[ext_resource type="Texture2D" uid="uid://cxwvbsaib3hsw" path="res://source/player/fish.png" id="1_rji8l"]
+[ext_resource type="Shader" uid="uid://ccipkylrwvdso" path="res://source/player/shaders/player_body.gdshader" id="1_lppol"]
+[ext_resource type="Texture2D" uid="uid://cxwvbsaib3hsw" path="res://source/player/textures/fish.png" id="1_rji8l"]
 [ext_resource type="Script" uid="uid://kol6k5y6rb8a" path="res://addons/softbody2d/softbody2d.gd" id="2_rji8l"]
 [ext_resource type="PackedScene" uid="uid://5htp8srxetmt" path="res://source/player/fish_softbody_node.tscn" id="3_lppol"]
-[ext_resource type="Script" uid="uid://dka57amjtl42m" path="res://source/player/fish_softbody_node.gd" id="5_bjrat"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_of21v"]
 shader = ExtResource("1_lppol")
@@ -330,8 +329,6 @@ visible = false
 modification_stack = SubResource("SkeletonModificationStack2D_arvyr")
 
 [node name="Bone-0" type="Bone2D" parent="Skeleton2D" unique_id=962397931]
-position = Vector2(51.106888, 57.673954)
-rotation = 1.5465868
 rest = Transform2D(0.02420721, 0.999707, -0.999707, 0.02420721, 51.106888, 57.673954)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -343,8 +340,6 @@ metadata/connected_nodes_idx = [2, 1]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-1" type="Bone2D" parent="Skeleton2D" unique_id=2078965295]
-position = Vector2(52.084312, 98.03962)
-rotation = -0.44750297
 rest = Transform2D(0.90153044, -0.43271574, 0.43271574, 0.90153044, 52.084312, 98.03962)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -356,9 +351,6 @@ metadata/connected_nodes_idx = [0, 2, 4]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-2" type="Bone2D" parent="Skeleton2D" unique_id=1497421003]
-position = Vector2(96.539696, 76.701965)
-rotation = 2.6940897
-scale = Vector2(0.99999994, 0.99999994)
 rest = Transform2D(-0.9015304, 0.43271577, -0.43271577, -0.9015304, 96.539696, 76.701965)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -370,8 +362,6 @@ metadata/connected_nodes_idx = [3, 0, 1, 4]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-3" type="Bone2D" parent="Skeleton2D" unique_id=2026839538]
-position = Vector2(139.88316, 89.050285)
-rotation = -0.32122815
 rest = Transform2D(0.94884837, -0.31573212, 0.31573212, 0.94884837, 139.88316, 89.050285)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -383,9 +373,6 @@ metadata/connected_nodes_idx = [2, 4, 6, 8]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-4" type="Bone2D" parent="Skeleton2D" unique_id=1947910266]
-position = Vector2(95.43366, 109.38798)
-rotation = -1.5369711
-scale = Vector2(0.99999994, 0.99999994)
 rest = Transform2D(0.033818785, -0.999428, 0.999428, 0.033818785, 95.43366, 109.38798)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -397,8 +384,6 @@ metadata/connected_nodes_idx = [1, 2, 3]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-5" type="Bone2D" parent="Skeleton2D" unique_id=1210563861]
-position = Vector2(225.03384, 56.451477)
-rotation = 1.5369159
 rest = Transform2D(0.033873945, 0.9994261, -0.9994261, 0.033873945, 225.03384, 56.451477)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -410,8 +395,6 @@ metadata/connected_nodes_idx = [10, 12, 7, 6]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-6" type="Bone2D" parent="Skeleton2D" unique_id=1463245275]
-position = Vector2(182.97603, 74.711006)
-rotation = -0.40959775
 rest = Transform2D(0.9172811, -0.3982404, 0.3982404, 0.9172811, 182.97603, 74.711006)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -423,8 +406,6 @@ metadata/connected_nodes_idx = [3, 8, 5, 7]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-7" type="Bone2D" parent="Skeleton2D" unique_id=1360333569]
-position = Vector2(226.50551, 99.871796)
-rotation = 2.6814508
 rest = Transform2D(-0.89598954, 0.44407517, -0.44407517, -0.89598954, 226.50551, 99.871796)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -436,8 +417,6 @@ metadata/connected_nodes_idx = [5, 12, 6, 8, 14, 9]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-8" type="Bone2D" parent="Skeleton2D" unique_id=421143080]
-position = Vector2(186.06328, 119.91599)
-rotation = -0.4601418
 rest = Transform2D(0.89598954, -0.44407517, 0.44407517, 0.89598954, 186.06328, 119.91599)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -449,8 +428,6 @@ metadata/connected_nodes_idx = [3, 6, 7, 9]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-9" type="Bone2D" parent="Skeleton2D" unique_id=168058762]
-position = Vector2(226.88278, 140.28854)
-rotation = -2.6786745
 rest = Transform2D(-0.89475316, -0.44656107, 0.44656107, -0.89475316, 226.88278, 140.28854)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -462,9 +439,6 @@ metadata/connected_nodes_idx = [7, 14, 8, 16]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-10" type="Bone2D" parent="Skeleton2D" unique_id=838688594]
-position = Vector2(265.07623, 41.564377)
-rotation = 1.4954046
-scale = Vector2(0.99999994, 0.99999994)
 rest = Transform2D(0.075320326, 0.99715936, -0.99715936, 0.075320326, 265.07623, 41.564377)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -476,8 +450,6 @@ metadata/connected_nodes_idx = [5, 12, 11]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-11" type="Bone2D" parent="Skeleton2D" unique_id=1251220573]
-position = Vector2(301.58884, 52.90603)
-rotation = 2.4500496
 rest = Transform2D(-0.7702629, 0.6377265, -0.6377265, -0.7702629, 301.58884, 52.90603)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -489,8 +461,6 @@ metadata/connected_nodes_idx = [17, 10, 12, 19, 13]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-12" type="Bone2D" parent="Skeleton2D" unique_id=262101074]
-position = Vector2(268.03152, 80.68925)
-rotation = 1.5765846
 rest = Transform2D(-0.005788218, 0.99998325, -0.99998325, -0.005788218, 268.03152, 80.68925)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -502,8 +472,6 @@ metadata/connected_nodes_idx = [5, 10, 7, 14, 11, 13]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-13" type="Bone2D" parent="Skeleton2D" unique_id=1522848655]
-position = Vector2(294.5, 99)
-rotation = 2.4984474
 rest = Transform2D(-0.80021346, 0.5997153, -0.5997153, -0.80021346, 294.5, 99)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -515,8 +483,6 @@ metadata/connected_nodes_idx = [11, 19, 12, 14, 21, 15]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-14" type="Bone2D" parent="Skeleton2D" unique_id=195342879]
-position = Vector2(267.80975, 119.002846)
-rotation = 1.5978985
 rest = Transform2D(-0.027098838, 0.9996328, -0.9996328, -0.027098838, 267.80975, 119.002846)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -528,8 +494,6 @@ metadata/connected_nodes_idx = [7, 12, 9, 16, 13, 15]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-15" type="Bone2D" parent="Skeleton2D" unique_id=340138078]
-position = Vector2(301.56247, 144.1203)
-rotation = -0.58143675
 rest = Transform2D(0.8356744, -0.54922515, 0.54922515, 0.8356744, 301.56247, 144.1203)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -541,8 +505,6 @@ metadata/connected_nodes_idx = [16, 13, 21, 14, 23]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-16" type="Bone2D" parent="Skeleton2D" unique_id=1459049163]
-position = Vector2(266.833, 155.03345)
-rotation = -2.7880206
 rest = Transform2D(-0.9381419, -0.3462511, 0.3462511, -0.9381419, 266.833, 155.03345)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -554,9 +516,6 @@ metadata/connected_nodes_idx = [15, 9, 14]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-17" type="Bone2D" parent="Skeleton2D" unique_id=933821696]
-position = Vector2(340.3983, 37.99109)
-rotation = 1.6450423
-scale = Vector2(0.99999994, 0.99999994)
 rest = Transform2D(-0.07417778, 0.997245, -0.997245, -0.07417778, 340.3983, 37.99109)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -568,9 +527,6 @@ metadata/connected_nodes_idx = [11, 19, 18]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-18" type="Bone2D" parent="Skeleton2D" unique_id=139091788]
-position = Vector2(381.0868, 48.188366)
-rotation = 2.5250502
-scale = Vector2(0.99999994, 0.99999994)
 rest = Transform2D(-0.8158825, 0.5782177, -0.5782177, -0.8158825, 381.0868, 48.188366)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -582,8 +538,6 @@ metadata/connected_nodes_idx = [24, 17, 19, 26, 20]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-19" type="Bone2D" parent="Skeleton2D" unique_id=2092949671]
-position = Vector2(337.3333, 79.196556)
-rotation = 1.5675131
 rest = Transform2D(0.0032832127, 0.99999464, -0.99999464, 0.0032832127, 337.3333, 79.196556)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -595,8 +549,6 @@ metadata/connected_nodes_idx = [11, 17, 13, 21, 18, 20]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-20" type="Bone2D" parent="Skeleton2D" unique_id=159113339]
-position = Vector2(379.71198, 99.89497)
-rotation = 2.6873593
 rest = Transform2D(-0.8985977, 0.4387735, -0.4387735, -0.8985977, 379.71198, 99.89497)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -608,8 +560,6 @@ metadata/connected_nodes_idx = [18, 26, 19, 21, 28, 22]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-21" type="Bone2D" parent="Skeleton2D" unique_id=345984712]
-position = Vector2(337.469, 120.521675)
-rotation = 1.4969035
 rest = Transform2D(0.07382556, 0.9972712, -0.9972712, 0.07382556, 337.469, 120.521675)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -621,8 +571,6 @@ metadata/connected_nodes_idx = [13, 19, 15, 23, 20, 22]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-22" type="Bone2D" parent="Skeleton2D" unique_id=1386287535]
-position = Vector2(381.15134, 151.3304)
-rotation = -2.5273252
 rest = Transform2D(-0.81719583, -0.5763601, 0.5763601, -0.81719583, 381.15134, 151.3304)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -634,8 +582,6 @@ metadata/connected_nodes_idx = [20, 28, 21, 23, 30]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-23" type="Bone2D" parent="Skeleton2D" unique_id=432534160]
-position = Vector2(340.4204, 160.39084)
-rotation = -1.6446891
 rest = Transform2D(-0.07382553, -0.9972712, 0.9972712, -0.07382553, 340.4204, 160.39084)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -647,8 +593,6 @@ metadata/connected_nodes_idx = [15, 21, 22]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-24" type="Bone2D" parent="Skeleton2D" unique_id=554204462]
-position = Vector2(422.69208, 37.43136)
-rotation = 1.5588948
 rest = Transform2D(0.011901292, 0.9999292, -0.9999292, 0.011901292, 422.69208, 37.43136)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -660,9 +604,6 @@ metadata/connected_nodes_idx = [18, 26, 25]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-25" type="Bone2D" parent="Skeleton2D" unique_id=377689314]
-position = Vector2(466.62885, 54.75244)
-rotation = 2.6739016
-scale = Vector2(0.99999994, 0.99999994)
 rest = Transform2D(-0.89261156, 0.45082653, -0.45082653, -0.89261156, 466.62885, 54.75244)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -674,8 +615,6 @@ metadata/connected_nodes_idx = [31, 24, 26, 27]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-26" type="Bone2D" parent="Skeleton2D" unique_id=407479335]
-position = Vector2(423.15955, 76.70725)
-rotation = 1.5702615
 rest = Transform2D(0.00053484837, 0.9999999, -0.9999999, 0.00053484837, 423.15955, 76.70725)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -687,8 +626,6 @@ metadata/connected_nodes_idx = [18, 24, 20, 28, 25, 27]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-27" type="Bone2D" parent="Skeleton2D" unique_id=1476394311]
-position = Vector2(466.31412, 99.945)
-rotation = 2.647895
 rest = Transform2D(-0.8805867, 0.47388515, -0.47388515, -0.8805867, 466.31412, 99.945)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -700,8 +637,6 @@ metadata/connected_nodes_idx = [25, 31, 26, 28, 33, 29]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-28" type="Bone2D" parent="Skeleton2D" unique_id=554410496]
-position = Vector2(423.1844, 123.155136)
-rotation = 1.5491925
 rest = Transform2D(0.021602098, 0.99976665, -0.99976665, 0.021602098, 423.1844, 123.155136)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -713,8 +648,6 @@ metadata/connected_nodes_idx = [20, 26, 22, 30, 27, 29]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-29" type="Bone2D" parent="Skeleton2D" unique_id=1970155320]
-position = Vector2(466.70526, 148.64319)
-rotation = -2.6117907
 rest = Transform2D(-0.8629072, -0.5053625, 0.5053625, -0.8629072, 466.70526, 148.64319)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -726,8 +659,6 @@ metadata/connected_nodes_idx = [27, 33, 28, 30]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-30" type="Bone2D" parent="Skeleton2D" unique_id=1170709697]
-position = Vector2(424.03812, 162.66666)
-rotation = -1.5924001
 rest = Transform2D(-0.021602066, -0.99976665, 0.99976665, -0.021602066, 424.03812, 162.66666)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -739,9 +670,6 @@ metadata/connected_nodes_idx = [22, 28, 29]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-31" type="Bone2D" parent="Skeleton2D" unique_id=476523545]
-position = Vector2(508.52393, 74.782326)
-rotation = 2.604021
-scale = Vector2(0.99999994, 0.99999994)
 rest = Transform2D(-0.85895467, 0.5120516, -0.5120516, -0.85895467, 508.52393, 74.782326)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -753,9 +681,6 @@ metadata/connected_nodes_idx = [25, 32, 27, 33]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-32" type="Bone2D" parent="Skeleton2D" unique_id=593574740]
-position = Vector2(546.04315, 114.38934)
-rotation = 2.6852708
-scale = Vector2(0.99999994, 0.99999994)
 rest = Transform2D(-0.8976793, 0.4406493, -0.4406493, -0.8976793, 546.04315, 114.38934)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -767,8 +692,6 @@ metadata/connected_nodes_idx = [31, 33]
 metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-33" type="Bone2D" parent="Skeleton2D" unique_id=133982305]
-position = Vector2(509.7322, 132.21352)
-rotation = -1.591832
 rest = Transform2D(-0.021034164, -0.99977875, 0.99977875, -0.021034164, 509.7322, 132.21352)
 auto_calculate_length_and_angle = false
 length = 50.0
@@ -779,18 +702,13 @@ metadata/connected_nodes_paths = [NodePath("Bone-32"), NodePath("Bone-27"), Node
 metadata/connected_nodes_idx = [32, 27, 31, 29]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-0" type="RigidBody2D" parent="." unique_id=1243274414 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-0" parent="." unique_id=1243274414 instance=ExtResource("3_lppol")]
 position = Vector2(51.106888, 57.673954)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 0
 metadata/bone_name = &"Bone-0"
 
@@ -821,18 +739,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-1")
 softness = 0.7
 
-[node name="Bone-1" type="RigidBody2D" parent="." unique_id=1274994266 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-1" parent="." unique_id=1274994266 instance=ExtResource("3_lppol")]
 position = Vector2(52.084312, 98.03962)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 1
 metadata/bone_name = &"Bone-1"
 
@@ -872,18 +785,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-4")
 softness = 0.7
 
-[node name="Bone-2" type="RigidBody2D" parent="." unique_id=1905382754 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-2" parent="." unique_id=1905382754 instance=ExtResource("3_lppol")]
 position = Vector2(96.539696, 76.701965)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 2
 metadata/bone_name = &"Bone-2"
 
@@ -932,18 +840,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-4")
 softness = 0.7
 
-[node name="Bone-3" type="RigidBody2D" parent="." unique_id=1338113545 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-3" parent="." unique_id=1338113545 instance=ExtResource("3_lppol")]
 position = Vector2(139.88316, 89.050285)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 3
 metadata/bone_name = &"Bone-3"
 
@@ -992,18 +895,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-8")
 softness = 0.7
 
-[node name="Bone-4" type="RigidBody2D" parent="." unique_id=1909889774 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-4" parent="." unique_id=1909889774 instance=ExtResource("3_lppol")]
 position = Vector2(95.43366, 109.38798)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 4
 metadata/bone_name = &"Bone-4"
 
@@ -1043,18 +941,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-3")
 softness = 0.7
 
-[node name="Bone-5" type="RigidBody2D" parent="." unique_id=1624721721 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-5" parent="." unique_id=1624721721 instance=ExtResource("3_lppol")]
 position = Vector2(225.03384, 56.451477)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 5
 metadata/bone_name = &"Bone-5"
 
@@ -1103,18 +996,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-6")
 softness = 0.7
 
-[node name="Bone-6" type="RigidBody2D" parent="." unique_id=250294468 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-6" parent="." unique_id=250294468 instance=ExtResource("3_lppol")]
 position = Vector2(182.97603, 74.711006)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 6
 metadata/bone_name = &"Bone-6"
 
@@ -1163,18 +1051,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-7")
 softness = 0.7
 
-[node name="Bone-7" type="RigidBody2D" parent="." unique_id=1017413432 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-7" parent="." unique_id=1017413432 instance=ExtResource("3_lppol")]
 position = Vector2(226.50551, 99.871796)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 7
 metadata/bone_name = &"Bone-7"
 
@@ -1241,18 +1124,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-9")
 softness = 0.7
 
-[node name="Bone-8" type="RigidBody2D" parent="." unique_id=355718826 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-8" parent="." unique_id=355718826 instance=ExtResource("3_lppol")]
 position = Vector2(186.06328, 119.91599)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 8
 metadata/bone_name = &"Bone-8"
 
@@ -1301,18 +1179,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-9")
 softness = 0.7
 
-[node name="Bone-9" type="RigidBody2D" parent="." unique_id=1440685709 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-9" parent="." unique_id=1440685709 instance=ExtResource("3_lppol")]
 position = Vector2(226.88278, 140.28854)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 9
 metadata/bone_name = &"Bone-9"
 
@@ -1361,18 +1234,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-16")
 softness = 0.7
 
-[node name="Bone-10" type="RigidBody2D" parent="." unique_id=1603378464 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-10" parent="." unique_id=1603378464 instance=ExtResource("3_lppol")]
 position = Vector2(265.07623, 41.564377)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 10
 metadata/bone_name = &"Bone-10"
 
@@ -1412,18 +1280,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-11")
 softness = 0.7
 
-[node name="Bone-11" type="RigidBody2D" parent="." unique_id=984864847 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-11" parent="." unique_id=984864847 instance=ExtResource("3_lppol")]
 position = Vector2(301.58884, 52.90603)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 11
 metadata/bone_name = &"Bone-11"
 
@@ -1481,18 +1344,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 softness = 0.7
 
-[node name="Bone-12" type="RigidBody2D" parent="." unique_id=1410376174 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-12" parent="." unique_id=1410376174 instance=ExtResource("3_lppol")]
 position = Vector2(268.03152, 80.68925)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 12
 metadata/bone_name = &"Bone-12"
 
@@ -1559,18 +1417,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 softness = 0.7
 
-[node name="Bone-13" type="RigidBody2D" parent="." unique_id=211155646 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-13" parent="." unique_id=211155646 instance=ExtResource("3_lppol")]
 position = Vector2(294.5, 99)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 13
 metadata/bone_name = &"Bone-13"
 
@@ -1637,18 +1490,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 softness = 0.7
 
-[node name="Bone-14" type="RigidBody2D" parent="." unique_id=337611777 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-14" parent="." unique_id=337611777 instance=ExtResource("3_lppol")]
 position = Vector2(267.80975, 119.002846)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 14
 metadata/bone_name = &"Bone-14"
 
@@ -1715,18 +1563,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 softness = 0.7
 
-[node name="Bone-15" type="RigidBody2D" parent="." unique_id=1719492981 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-15" parent="." unique_id=1719492981 instance=ExtResource("3_lppol")]
 position = Vector2(301.56247, 144.1203)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 15
 metadata/bone_name = &"Bone-15"
 
@@ -1784,18 +1627,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-23")
 softness = 0.7
 
-[node name="Bone-16" type="RigidBody2D" parent="." unique_id=1692754737 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-16" parent="." unique_id=1692754737 instance=ExtResource("3_lppol")]
 position = Vector2(266.833, 155.03345)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 16
 metadata/bone_name = &"Bone-16"
 
@@ -1835,18 +1673,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 softness = 0.7
 
-[node name="Bone-17" type="RigidBody2D" parent="." unique_id=596266591 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-17" parent="." unique_id=596266591 instance=ExtResource("3_lppol")]
 position = Vector2(340.3983, 37.99109)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 17
 metadata/bone_name = &"Bone-17"
 
@@ -1886,18 +1719,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-18")
 softness = 0.7
 
-[node name="Bone-18" type="RigidBody2D" parent="." unique_id=447149774 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-18" parent="." unique_id=447149774 instance=ExtResource("3_lppol")]
 position = Vector2(381.0868, 48.188366)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 18
 metadata/bone_name = &"Bone-18"
 
@@ -1955,18 +1783,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 softness = 0.7
 
-[node name="Bone-19" type="RigidBody2D" parent="." unique_id=1533972170 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-19" parent="." unique_id=1533972170 instance=ExtResource("3_lppol")]
 position = Vector2(337.3333, 79.196556)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 19
 metadata/bone_name = &"Bone-19"
 
@@ -2033,18 +1856,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 softness = 0.7
 
-[node name="Bone-20" type="RigidBody2D" parent="." unique_id=604510780 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-20" parent="." unique_id=604510780 instance=ExtResource("3_lppol")]
 position = Vector2(379.71198, 99.89497)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 20
 metadata/bone_name = &"Bone-20"
 
@@ -2111,18 +1929,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 softness = 0.7
 
-[node name="Bone-21" type="RigidBody2D" parent="." unique_id=563097879 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-21" parent="." unique_id=563097879 instance=ExtResource("3_lppol")]
 position = Vector2(337.469, 120.521675)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 21
 metadata/bone_name = &"Bone-21"
 
@@ -2189,18 +2002,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 softness = 0.7
 
-[node name="Bone-22" type="RigidBody2D" parent="." unique_id=2128578474 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-22" parent="." unique_id=2128578474 instance=ExtResource("3_lppol")]
 position = Vector2(381.15134, 151.3304)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 22
 metadata/bone_name = &"Bone-22"
 
@@ -2258,18 +2066,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-30")
 softness = 0.7
 
-[node name="Bone-23" type="RigidBody2D" parent="." unique_id=586481631 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-23" parent="." unique_id=586481631 instance=ExtResource("3_lppol")]
 position = Vector2(340.4204, 160.39084)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 23
 metadata/bone_name = &"Bone-23"
 
@@ -2309,18 +2112,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 softness = 0.7
 
-[node name="Bone-24" type="RigidBody2D" parent="." unique_id=2094674836 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-24" parent="." unique_id=2094674836 instance=ExtResource("3_lppol")]
 position = Vector2(422.69208, 37.43136)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 24
 metadata/bone_name = &"Bone-24"
 
@@ -2360,18 +2158,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-25")
 softness = 0.7
 
-[node name="Bone-25" type="RigidBody2D" parent="." unique_id=1241709825 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-25" parent="." unique_id=1241709825 instance=ExtResource("3_lppol")]
 position = Vector2(466.62885, 54.75244)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 25
 metadata/bone_name = &"Bone-25"
 
@@ -2420,18 +2213,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-27")
 softness = 0.7
 
-[node name="Bone-26" type="RigidBody2D" parent="." unique_id=938884768 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-26" parent="." unique_id=938884768 instance=ExtResource("3_lppol")]
 position = Vector2(423.15955, 76.70725)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 26
 metadata/bone_name = &"Bone-26"
 
@@ -2498,18 +2286,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-27")
 softness = 0.7
 
-[node name="Bone-27" type="RigidBody2D" parent="." unique_id=1703853241 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-27" parent="." unique_id=1703853241 instance=ExtResource("3_lppol")]
 position = Vector2(466.31412, 99.945)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 27
 metadata/bone_name = &"Bone-27"
 
@@ -2576,18 +2359,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-29")
 softness = 0.7
 
-[node name="Bone-28" type="RigidBody2D" parent="." unique_id=1638447677 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-28" parent="." unique_id=1638447677 instance=ExtResource("3_lppol")]
 position = Vector2(423.1844, 123.155136)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 28
 metadata/bone_name = &"Bone-28"
 
@@ -2654,18 +2432,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-29")
 softness = 0.7
 
-[node name="Bone-29" type="RigidBody2D" parent="." unique_id=346065370 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-29" parent="." unique_id=346065370 instance=ExtResource("3_lppol")]
 position = Vector2(466.70526, 148.64319)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 29
 metadata/bone_name = &"Bone-29"
 
@@ -2714,18 +2487,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-30")
 softness = 0.7
 
-[node name="Bone-30" type="RigidBody2D" parent="." unique_id=1410525536 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-30" parent="." unique_id=1410525536 instance=ExtResource("3_lppol")]
 position = Vector2(424.03812, 162.66666)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 30
 metadata/bone_name = &"Bone-30"
 
@@ -2765,18 +2533,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-29")
 softness = 0.7
 
-[node name="Bone-31" type="RigidBody2D" parent="." unique_id=951866960 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-31" parent="." unique_id=951866960 instance=ExtResource("3_lppol")]
 position = Vector2(508.52393, 74.782326)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 31
 metadata/bone_name = &"Bone-31"
 
@@ -2825,18 +2588,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-33")
 softness = 0.7
 
-[node name="Bone-32" type="RigidBody2D" parent="." unique_id=1966682398 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-32" parent="." unique_id=1966682398 instance=ExtResource("3_lppol")]
 position = Vector2(546.04315, 114.38934)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 32
 metadata/bone_name = &"Bone-32"
 
@@ -2867,18 +2625,13 @@ node_a = NodePath("..")
 node_b = NodePath("../../Bone-33")
 softness = 0.7
 
-[node name="Bone-33" type="RigidBody2D" parent="." unique_id=1629228511 instance=ExtResource("3_lppol")]
-physics_interpolation_mode = 1
+[node name="Bone-33" parent="." unique_id=1629228511 instance=ExtResource("3_lppol")]
 position = Vector2(509.7322, 132.21352)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 can_sleep = false
 continuous_cd = 1
-contact_monitor = true
-max_contacts_reported = 1
-script = ExtResource("5_bjrat")
-impulse_sound_threshold = 150.0
 metadata/idx = 33
 metadata/bone_name = &"Bone-33"
 

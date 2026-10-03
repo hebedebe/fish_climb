@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgr6ru47s3v7x"
-path="res://.godot/imported/sea_grass.png-628d697e24cc8ba7dc3f139111c93f6f.ctex"
+uid="uid://cxwvbsaib3hsw"
+path="res://.godot/imported/fish.png-79057b8e3c6db5e925e99a95f66108a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://source/interactive_grass/sea_grass.png"
-dest_files=["res://.godot/imported/sea_grass.png-628d697e24cc8ba7dc3f139111c93f6f.ctex"]
+source_file="res://source/player/textures/fish.png"
+dest_files=["res://.godot/imported/fish.png-79057b8e3c6db5e925e99a95f66108a8.ctex"]
 
 [params]
 
@@ -36,5 +36,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=556
+process/size_limit=0
 detect_3d/compress_to=1

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://meorku5uxn6u"]
 
-[ext_resource type="Script" uid="uid://b5go11q4fwls4" path="res://source/curved_terrain/curved_terrain.gd" id="1_en0bm"]
+[ext_resource type="Script" uid="uid://b5go11q4fwls4" path="res://source/curved_terrain/scripts/curved_terrain.gd" id="1_en0bm"]
 
 [sub_resource type="Curve2D" id="Curve2D_en0bm"]
 bake_interval = 100.0

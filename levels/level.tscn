@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://bf4fe4aelm51o"]
 
 [ext_resource type="Texture2D" uid="uid://ciya18p0r3686" path="res://source/terrain_textures/OPOCEAN2.JPG" id="1_ukwr8"]
-[ext_resource type="Script" uid="uid://b5go11q4fwls4" path="res://source/curved_terrain/curved_terrain.gd" id="2_pb8y7"]
+[ext_resource type="Script" uid="uid://b5go11q4fwls4" path="res://source/curved_terrain/scripts/curved_terrain.gd" id="2_pb8y7"]
 [ext_resource type="Texture2D" uid="uid://bcgo2een4wlxq" path="res://source/terrain_textures/GRYDIRT2.JPG" id="3_hy0rb"]
 [ext_resource type="Texture2D" uid="uid://g4ms8cxd6sw1" path="res://source/terrain_textures/cells.jpg" id="4_mxp4k"]
 [ext_resource type="Texture2D" uid="uid://bako5rr78molg" path="res://source/terrain_textures/SD140.JPG" id="5_d7v53"]
 [ext_resource type="Texture2D" uid="uid://c07240xp5nha8" path="res://source/terrain_textures/MULCH.png" id="7_ta7ci"]
-[ext_resource type="Script" uid="uid://ogq6jh0v4dn7" path="res://source/interactive_grass/interactive_grass_curve.gd" id="9_hy0rb"]
-[ext_resource type="Script" uid="uid://bp1ybfc8lh1nw" path="res://source/pause_menu/water_rect.gd" id="9_of21v"]
+[ext_resource type="Script" uid="uid://ogq6jh0v4dn7" path="res://source/interactive_grass/scripts/interactive_grass_curve.gd" id="9_hy0rb"]
+[ext_resource type="Script" uid="uid://bp1ybfc8lh1nw" path="res://source/misc/scripts/water_rect.gd" id="9_of21v"]
 [ext_resource type="PackedScene" uid="uid://d2f2uonx5sjhi" path="res://source/player/player.tscn" id="9_u6cys"]
-[ext_resource type="Script" uid="uid://ycmo11btri04" path="res://source/npc/npc.gd" id="10_0qmeg"]
+[ext_resource type="Script" uid="uid://ycmo11btri04" path="res://source/npc/scripts/npc.gd" id="10_0qmeg"]
 [ext_resource type="PackedScene" uid="uid://cm6gykwt0fjxj" path="res://source/post_process/post_process.tscn" id="10_368ro"]
 [ext_resource type="Shader" uid="uid://cis7hl82hoo7r" path="res://source/shaders/water.gdshader" id="10_kogck"]
 [ext_resource type="PackedScene" uid="uid://qm3jgcscb63x" path="res://source/interactive_grass/interactive_grass.tscn" id="11_pb8y7"]
@@ -18,14 +18,13 @@
 [ext_resource type="Resource" uid="uid://cjjy5f7ldfyyc" path="res://data/npcs/fish_head/fish_head.tres" id="12_574oa"]
 [ext_resource type="PackedScene" uid="uid://m5hyiu6c8vw8" path="res://data/dialogue_bubbles/glorp/balloon.tscn" id="13_3ca7f"]
 [ext_resource type="Texture2D" uid="uid://c2btkk5vk1hg2" path="res://data/npcs/end of game npc/Whentheimposterissus.webp" id="13_mxp4k"]
-[ext_resource type="Script" uid="uid://bm0pw0bb20w2g" path="res://source/npc/npc_data.gd" id="15_kogck"]
+[ext_resource type="Script" uid="uid://bm0pw0bb20w2g" path="res://source/npc/scripts/npc_data.gd" id="15_kogck"]
 [ext_resource type="PackedScene" uid="uid://wubj35i2lekd" path="res://source/props/rock/rock.tscn" id="16_ta7ci"]
 [ext_resource type="Resource" uid="uid://dci5sou0qxjpg" path="res://data/npcs/pickaxe/pickaxe.tres" id="17_of21v"]
 [ext_resource type="Resource" uid="uid://kt7rdyakcwk2" path="res://data/npcs/plato/plato.tres" id="18_mca5t"]
 [ext_resource type="PackedScene" uid="uid://baaaiwjrjaeti" path="res://source/pause_menu/pause_menu.tscn" id="20_3ca7f"]
-[ext_resource type="Script" uid="uid://csyr1bfucvmvk" path="res://source/build_overlay/version_number_label.gd" id="23_tn76l"]
+[ext_resource type="PackedScene" uid="uid://ci5spsld76qi" path="res://source/build_overlay/build_overlay.tscn" id="24_80cyg"]
 [ext_resource type="PackedScene" uid="uid://veqesipi4ps2" path="res://source/gameplay_overlay/game_overlay.tscn" id="24_of21v"]
-[ext_resource type="Script" uid="uid://mir3qg4jicfq" path="res://source/debugging/fps_label.gd" id="24_werwd"]
 [ext_resource type="PackedScene" uid="uid://dsejsxjweaaw6" path="res://source/props/hanging_platform/hanging_platform.tscn" id="26_80cyg"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_wjuib"]
@@ -1148,35 +1147,7 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="PauseCanvasLayer" parent="." unique_id=945801933 instance=ExtResource("20_3ca7f")]
 
-[node name="BuildOverlay" type="CanvasLayer" parent="." unique_id=1263373585]
-
-[node name="Control" type="Control" parent="BuildOverlay" unique_id=1170340916]
-modulate = Color(1, 1, 1, 0.5372549)
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
-[node name="VersionNumber" type="Label" parent="BuildOverlay/Control" unique_id=324590164]
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -23.0
-offset_right = 81.0
-grow_vertical = 0
-text = "Build 0.2.1"
-script = ExtResource("23_tn76l")
-
-[node name="FPSLabel" type="Label" parent="BuildOverlay/Control" unique_id=594462935]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-script = ExtResource("24_werwd")
-metadata/_custom_type_script = "uid://mir3qg4jicfq"
+[node name="BuildOverlay" parent="." unique_id=1933529950 instance=ExtResource("24_80cyg")]
 
 [node name="GameOverlay" parent="." unique_id=657389411 instance=ExtResource("24_of21v")]
 

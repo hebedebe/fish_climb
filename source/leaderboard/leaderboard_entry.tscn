@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d4a0un8pdbtxo"]
 
-[ext_resource type="Script" uid="uid://3b58a7e4ag01" path="res://source/pause_menu/leaderboard_entry/leaderboard_entry.gd" id="1_6841j"]
+[ext_resource type="Script" uid="uid://3b58a7e4ag01" path="res://source/leaderboard/scripts/leaderboard_entry.gd" id="1_6841j"]
 
 [node name="LeaderboardEntry" type="HBoxContainer" unique_id=445891864]
 offset_right = 175.0
