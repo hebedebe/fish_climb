@@ -8,12 +8,16 @@ static func dot_separated_string(...arguments: Array) -> String:
 		string += "%s" % arguments[i]
 	return string
 
-static func load_image_texture(path: String) -> ImageTexture:
+static func load_image_texture(path: String, generate_mipmaps: bool = true) -> ImageTexture:
 	var loaded_image := Image.new()
 	var error := loaded_image.load(path)
 	
 	if error != OK:
 		return null
+	
+	if generate_mipmaps:
+		if loaded_image.generate_mipmaps() != OK:
+			push_error("Failed to generate pattern mipmaps")
 
 	return ImageTexture.create_from_image(loaded_image)
 
