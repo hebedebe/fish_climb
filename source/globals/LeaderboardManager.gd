@@ -1,5 +1,11 @@
 extends Node
 
+enum SilentWolfLogLevel {
+	ERRORS=0,
+	INFO=1,
+	DEBUG=2,
+}
+
 const GAME_ID = "FishClimb"
 const API_KEY_PATH = "res://data/leaderboard_api_key.txt"
 
@@ -12,7 +18,7 @@ func _ready() -> void:
 	SilentWolf.configure({
 		"api_key": load_api_key(),
 		"game_id": GAME_ID,
-		"log_level": 0
+		"log_level": SilentWolfLogLevel.ERRORS,
 	})
 
 	#SilentWolf.configure_scores({
@@ -24,7 +30,7 @@ func load_api_key() -> String:
 		push_error("Could not locate API key file at (%s)" % API_KEY_PATH)
 		return ""
 	var key = Utilities.get_text_file_content(API_KEY_PATH).strip_edges()
-	print("got key (%s)" % key)
+	print("got api key!")
 	return key
 
 func get_scores():

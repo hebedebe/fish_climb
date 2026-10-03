@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://bf4xk61uuey88" path="res://source/player/fish_slap.mp3" id="5_bphl4"]
 [ext_resource type="Script" uid="uid://cs82iu1vomx41" path="res://source/sound_with_delay.gd" id="6_fhjrr"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="6_jo3qi"]
-[ext_resource type="Script" uid="uid://ctj52ol5st0sb" path="res://source/event_trigger.gd" id="6_q3bky"]
+[ext_resource type="Script" uid="uid://ctj52ol5st0sb" path="res://source/events/event_trigger.gd" id="6_q3bky"]
 [ext_resource type="Script" uid="uid://dukgiw3swnxfg" path="res://source/player/player_body.gd" id="7_fhjrr"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="7_ka6av"]
 [ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="8_5ffni"]

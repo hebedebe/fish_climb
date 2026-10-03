@@ -17,288 +17,288 @@ diffuse_texture = ExtResource("1_rji8l")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4x6j0"]
 custom_solver_bias = 1.0
-radius = 30.0
+radius = 20.0
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_1lhgo"]
 friction = 10.0
 rough = true
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_je5rc"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_bjrat"]
 resource_local_to_scene = true
 bone_index = 0
 bone2d_node = NodePath("Bone-0")
 target_nodepath = NodePath("Bone-1")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_jvegi"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_je5rc"]
 resource_local_to_scene = true
 bone_index = 1
 bone2d_node = NodePath("Bone-1")
 target_nodepath = NodePath("Bone-2")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_te1fm"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_jvegi"]
 resource_local_to_scene = true
 bone_index = 10
 bone2d_node = NodePath("Bone-10")
 target_nodepath = NodePath("Bone-12")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_p8ck4"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_te1fm"]
 resource_local_to_scene = true
 bone_index = 11
 bone2d_node = NodePath("Bone-11")
 target_nodepath = NodePath("Bone-12")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_8ql48"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_p8ck4"]
 resource_local_to_scene = true
 bone_index = 12
 bone2d_node = NodePath("Bone-12")
 target_nodepath = NodePath("Bone-14")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_fclyd"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_8ql48"]
 resource_local_to_scene = true
 bone_index = 13
 bone2d_node = NodePath("Bone-13")
 target_nodepath = NodePath("Bone-14")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_01fqs"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_fclyd"]
 resource_local_to_scene = true
 bone_index = 14
 bone2d_node = NodePath("Bone-14")
 target_nodepath = NodePath("Bone-16")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_3j3cr"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_01fqs"]
 resource_local_to_scene = true
 bone_index = 15
 bone2d_node = NodePath("Bone-15")
 target_nodepath = NodePath("Bone-21")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_plvsd"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_3j3cr"]
 resource_local_to_scene = true
 bone_index = 16
 bone2d_node = NodePath("Bone-16")
 target_nodepath = NodePath("Bone-9")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_fo7dc"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_plvsd"]
 resource_local_to_scene = true
 bone_index = 17
 bone2d_node = NodePath("Bone-17")
 target_nodepath = NodePath("Bone-19")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_d0woo"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_fo7dc"]
 resource_local_to_scene = true
 bone_index = 18
 bone2d_node = NodePath("Bone-18")
 target_nodepath = NodePath("Bone-19")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_x6krn"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_d0woo"]
 resource_local_to_scene = true
 bone_index = 19
 bone2d_node = NodePath("Bone-19")
 target_nodepath = NodePath("Bone-21")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_ffu4l"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_x6krn"]
 resource_local_to_scene = true
 bone_index = 2
 bone2d_node = NodePath("Bone-2")
 target_nodepath = NodePath("Bone-1")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_7epk1"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_ffu4l"]
 resource_local_to_scene = true
 bone_index = 20
 bone2d_node = NodePath("Bone-20")
 target_nodepath = NodePath("Bone-21")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_pwhbx"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_7epk1"]
 resource_local_to_scene = true
 bone_index = 21
 bone2d_node = NodePath("Bone-21")
 target_nodepath = NodePath("Bone-23")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_vc00s"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_pwhbx"]
 resource_local_to_scene = true
 bone_index = 22
 bone2d_node = NodePath("Bone-22")
 target_nodepath = NodePath("Bone-21")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_158hb"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_vc00s"]
 resource_local_to_scene = true
 bone_index = 23
 bone2d_node = NodePath("Bone-23")
 target_nodepath = NodePath("Bone-21")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_oxy2g"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_158hb"]
 resource_local_to_scene = true
 bone_index = 24
 bone2d_node = NodePath("Bone-24")
 target_nodepath = NodePath("Bone-26")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_i6h4y"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_oxy2g"]
 resource_local_to_scene = true
 bone_index = 25
 bone2d_node = NodePath("Bone-25")
 target_nodepath = NodePath("Bone-26")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_5q11b"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_i6h4y"]
 resource_local_to_scene = true
 bone_index = 26
 bone2d_node = NodePath("Bone-26")
 target_nodepath = NodePath("Bone-28")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_4l7ox"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_5q11b"]
 resource_local_to_scene = true
 bone_index = 27
 bone2d_node = NodePath("Bone-27")
 target_nodepath = NodePath("Bone-28")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_xadfj"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_4l7ox"]
 resource_local_to_scene = true
 bone_index = 28
 bone2d_node = NodePath("Bone-28")
 target_nodepath = NodePath("Bone-30")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_4jk70"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_xadfj"]
 resource_local_to_scene = true
 bone_index = 29
 bone2d_node = NodePath("Bone-29")
 target_nodepath = NodePath("Bone-28")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_jyd1l"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_4jk70"]
 resource_local_to_scene = true
 bone_index = 3
 bone2d_node = NodePath("Bone-3")
 target_nodepath = NodePath("Bone-6")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_r6rsy"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_jyd1l"]
 resource_local_to_scene = true
 bone_index = 30
 bone2d_node = NodePath("Bone-30")
 target_nodepath = NodePath("Bone-28")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_w773g"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_r6rsy"]
 resource_local_to_scene = true
 bone_index = 31
 bone2d_node = NodePath("Bone-31")
 target_nodepath = NodePath("Bone-27")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_pg80u"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_w773g"]
 resource_local_to_scene = true
 bone_index = 32
 bone2d_node = NodePath("Bone-32")
 target_nodepath = NodePath("Bone-33")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_8h3sb"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_pg80u"]
 resource_local_to_scene = true
 bone_index = 33
 bone2d_node = NodePath("Bone-33")
 target_nodepath = NodePath("Bone-31")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_kbxlm"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_8h3sb"]
 resource_local_to_scene = true
 bone_index = 4
 bone2d_node = NodePath("Bone-4")
 target_nodepath = NodePath("Bone-2")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_d6qyh"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_kbxlm"]
 resource_local_to_scene = true
 bone_index = 5
 bone2d_node = NodePath("Bone-5")
 target_nodepath = NodePath("Bone-7")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_ag66y"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_d6qyh"]
 resource_local_to_scene = true
 bone_index = 6
 bone2d_node = NodePath("Bone-6")
 target_nodepath = NodePath("Bone-5")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_4x6j0"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_ag66y"]
 resource_local_to_scene = true
 bone_index = 7
 bone2d_node = NodePath("Bone-7")
 target_nodepath = NodePath("Bone-8")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_6j855"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_4x6j0"]
 resource_local_to_scene = true
 bone_index = 8
 bone2d_node = NodePath("Bone-8")
 target_nodepath = NodePath("Bone-7")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_arvyr"]
+[sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_6j855"]
 resource_local_to_scene = true
 bone_index = 9
 bone2d_node = NodePath("Bone-9")
 target_nodepath = NodePath("Bone-8")
 editor/draw_gizmo = false
 
-[sub_resource type="SkeletonModificationStack2D" id="SkeletonModificationStack2D_o8ps7"]
+[sub_resource type="SkeletonModificationStack2D" id="SkeletonModificationStack2D_arvyr"]
 resource_local_to_scene = true
 enabled = true
 modification_count = 34
-modifications/0 = SubResource("SkeletonModification2DLookAt_je5rc")
-modifications/1 = SubResource("SkeletonModification2DLookAt_jvegi")
-modifications/2 = SubResource("SkeletonModification2DLookAt_ffu4l")
-modifications/3 = SubResource("SkeletonModification2DLookAt_jyd1l")
-modifications/4 = SubResource("SkeletonModification2DLookAt_kbxlm")
-modifications/5 = SubResource("SkeletonModification2DLookAt_d6qyh")
-modifications/6 = SubResource("SkeletonModification2DLookAt_ag66y")
-modifications/7 = SubResource("SkeletonModification2DLookAt_4x6j0")
-modifications/8 = SubResource("SkeletonModification2DLookAt_6j855")
-modifications/9 = SubResource("SkeletonModification2DLookAt_arvyr")
-modifications/10 = SubResource("SkeletonModification2DLookAt_te1fm")
-modifications/11 = SubResource("SkeletonModification2DLookAt_p8ck4")
-modifications/12 = SubResource("SkeletonModification2DLookAt_8ql48")
-modifications/13 = SubResource("SkeletonModification2DLookAt_fclyd")
-modifications/14 = SubResource("SkeletonModification2DLookAt_01fqs")
-modifications/15 = SubResource("SkeletonModification2DLookAt_3j3cr")
-modifications/16 = SubResource("SkeletonModification2DLookAt_plvsd")
-modifications/17 = SubResource("SkeletonModification2DLookAt_fo7dc")
-modifications/18 = SubResource("SkeletonModification2DLookAt_d0woo")
-modifications/19 = SubResource("SkeletonModification2DLookAt_x6krn")
-modifications/20 = SubResource("SkeletonModification2DLookAt_7epk1")
-modifications/21 = SubResource("SkeletonModification2DLookAt_pwhbx")
-modifications/22 = SubResource("SkeletonModification2DLookAt_vc00s")
-modifications/23 = SubResource("SkeletonModification2DLookAt_158hb")
-modifications/24 = SubResource("SkeletonModification2DLookAt_oxy2g")
-modifications/25 = SubResource("SkeletonModification2DLookAt_i6h4y")
-modifications/26 = SubResource("SkeletonModification2DLookAt_5q11b")
-modifications/27 = SubResource("SkeletonModification2DLookAt_4l7ox")
-modifications/28 = SubResource("SkeletonModification2DLookAt_xadfj")
-modifications/29 = SubResource("SkeletonModification2DLookAt_4jk70")
-modifications/30 = SubResource("SkeletonModification2DLookAt_r6rsy")
-modifications/31 = SubResource("SkeletonModification2DLookAt_w773g")
-modifications/32 = SubResource("SkeletonModification2DLookAt_pg80u")
-modifications/33 = SubResource("SkeletonModification2DLookAt_8h3sb")
+modifications/0 = SubResource("SkeletonModification2DLookAt_bjrat")
+modifications/1 = SubResource("SkeletonModification2DLookAt_je5rc")
+modifications/2 = SubResource("SkeletonModification2DLookAt_x6krn")
+modifications/3 = SubResource("SkeletonModification2DLookAt_4jk70")
+modifications/4 = SubResource("SkeletonModification2DLookAt_8h3sb")
+modifications/5 = SubResource("SkeletonModification2DLookAt_kbxlm")
+modifications/6 = SubResource("SkeletonModification2DLookAt_d6qyh")
+modifications/7 = SubResource("SkeletonModification2DLookAt_ag66y")
+modifications/8 = SubResource("SkeletonModification2DLookAt_4x6j0")
+modifications/9 = SubResource("SkeletonModification2DLookAt_6j855")
+modifications/10 = SubResource("SkeletonModification2DLookAt_jvegi")
+modifications/11 = SubResource("SkeletonModification2DLookAt_te1fm")
+modifications/12 = SubResource("SkeletonModification2DLookAt_p8ck4")
+modifications/13 = SubResource("SkeletonModification2DLookAt_8ql48")
+modifications/14 = SubResource("SkeletonModification2DLookAt_fclyd")
+modifications/15 = SubResource("SkeletonModification2DLookAt_01fqs")
+modifications/16 = SubResource("SkeletonModification2DLookAt_3j3cr")
+modifications/17 = SubResource("SkeletonModification2DLookAt_plvsd")
+modifications/18 = SubResource("SkeletonModification2DLookAt_fo7dc")
+modifications/19 = SubResource("SkeletonModification2DLookAt_d0woo")
+modifications/20 = SubResource("SkeletonModification2DLookAt_ffu4l")
+modifications/21 = SubResource("SkeletonModification2DLookAt_7epk1")
+modifications/22 = SubResource("SkeletonModification2DLookAt_pwhbx")
+modifications/23 = SubResource("SkeletonModification2DLookAt_vc00s")
+modifications/24 = SubResource("SkeletonModification2DLookAt_158hb")
+modifications/25 = SubResource("SkeletonModification2DLookAt_oxy2g")
+modifications/26 = SubResource("SkeletonModification2DLookAt_i6h4y")
+modifications/27 = SubResource("SkeletonModification2DLookAt_5q11b")
+modifications/28 = SubResource("SkeletonModification2DLookAt_4l7ox")
+modifications/29 = SubResource("SkeletonModification2DLookAt_xadfj")
+modifications/30 = SubResource("SkeletonModification2DLookAt_jyd1l")
+modifications/31 = SubResource("SkeletonModification2DLookAt_r6rsy")
+modifications/32 = SubResource("SkeletonModification2DLookAt_w773g")
+modifications/33 = SubResource("SkeletonModification2DLookAt_pg80u")
 
 [node name="PlayerBody" type="Polygon2D" unique_id=1218513241]
 physics_interpolation_mode = 1
@@ -317,7 +317,7 @@ vertex_interval = 50
 stiffness = 69.5
 softness = 0.7
 shape_2d = SubResource("CircleShape2D_4x6j0")
-margin_offset_edge = 15.0
+margin_offset_edge = 10.0
 can_sleep = false
 continuous_cd = 1
 collision_layer = 2
@@ -325,15 +325,14 @@ rigidbody_scene = ExtResource("3_lppol")
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
 metadata/_custom_type_script = "uid://kol6k5y6rb8a"
 
-[node name="Skeleton2D" type="Skeleton2D" parent="." unique_id=1965520175]
+[node name="Skeleton2D" type="Skeleton2D" parent="." unique_id=25965132]
 visible = false
-modification_stack = SubResource("SkeletonModificationStack2D_o8ps7")
+modification_stack = SubResource("SkeletonModificationStack2D_arvyr")
 
-[node name="Bone-0" type="Bone2D" parent="Skeleton2D" unique_id=1185921612]
-position = Vector2(56.03634, 58.510933)
-rotation = 1.5443051
-scale = Vector2(0.99999994, 0.99999994)
-rest = Transform2D(0.026488142, 0.9996491, -0.9996491, 0.026488142, 56.03634, 58.510933)
+[node name="Bone-0" type="Bone2D" parent="Skeleton2D" unique_id=962397931]
+position = Vector2(51.106888, 57.673954)
+rotation = 1.5465868
+rest = Transform2D(0.02420721, 0.999707, -0.999707, 0.02420721, 51.106888, 57.673954)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -343,10 +342,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-2"), NodePath("Bone-1")]
 metadata/connected_nodes_idx = [2, 1]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-1" type="Bone2D" parent="Skeleton2D" unique_id=727025510]
-position = Vector2(57.084274, 98.059425)
-rotation = -0.43785763
-rest = Transform2D(0.9056621, -0.42400017, 0.42400017, 0.9056621, 57.084274, 98.059425)
+[node name="Bone-1" type="Bone2D" parent="Skeleton2D" unique_id=2078965295]
+position = Vector2(52.084312, 98.03962)
+rotation = -0.44750297
+rest = Transform2D(0.90153044, -0.43271574, 0.43271574, 0.90153044, 52.084312, 98.03962)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -356,11 +355,11 @@ metadata/connected_nodes_paths = [NodePath("Bone-0"), NodePath("Bone-2"), NodePa
 metadata/connected_nodes_idx = [0, 2, 4]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-2" type="Bone2D" parent="Skeleton2D" unique_id=2056112934]
-position = Vector2(101.50828, 77.26162)
-rotation = 2.703735
+[node name="Bone-2" type="Bone2D" parent="Skeleton2D" unique_id=1497421003]
+position = Vector2(96.539696, 76.701965)
+rotation = 2.6940897
 scale = Vector2(0.99999994, 0.99999994)
-rest = Transform2D(-0.9056621, 0.42400008, -0.42400008, -0.9056621, 101.50828, 77.26162)
+rest = Transform2D(-0.9015304, 0.43271577, -0.43271577, -0.9015304, 96.539696, 76.701965)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -370,10 +369,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-3"), NodePath("Bone-0"), NodePa
 metadata/connected_nodes_idx = [3, 0, 1, 4]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-3" type="Bone2D" parent="Skeleton2D" unique_id=56192996]
-position = Vector2(144.87285, 89.371376)
-rotation = -0.3063227
-rest = Transform2D(0.95344895, -0.30155456, 0.30155456, 0.95344895, 144.87285, 89.371376)
+[node name="Bone-3" type="Bone2D" parent="Skeleton2D" unique_id=2026839538]
+position = Vector2(139.88316, 89.050285)
+rotation = -0.32122815
+rest = Transform2D(0.94884837, -0.31573212, 0.31573212, 0.94884837, 139.88316, 89.050285)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -383,10 +382,11 @@ metadata/connected_nodes_paths = [NodePath("Bone-2"), NodePath("Bone-4"), NodePa
 metadata/connected_nodes_idx = [2, 4, 6, 8]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-4" type="Bone2D" parent="Skeleton2D" unique_id=412635249]
-position = Vector2(100.42687, 109.12741)
-rotation = -1.5368731
-rest = Transform2D(0.03391672, -0.99942464, 0.99942464, 0.03391672, 100.42687, 109.12741)
+[node name="Bone-4" type="Bone2D" parent="Skeleton2D" unique_id=1947910266]
+position = Vector2(95.43366, 109.38798)
+rotation = -1.5369711
+scale = Vector2(0.99999994, 0.99999994)
+rest = Transform2D(0.033818785, -0.999428, 0.999428, 0.033818785, 95.43366, 109.38798)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -396,10 +396,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-1"), NodePath("Bone-2"), NodePa
 metadata/connected_nodes_idx = [1, 2, 3]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-5" type="Bone2D" parent="Skeleton2D" unique_id=1013326777]
-position = Vector2(229.2976, 59.06306)
-rotation = 1.5166706
-rest = Transform2D(0.054099318, 0.9985356, -0.9985356, 0.054099318, 229.2976, 59.06306)
+[node name="Bone-5" type="Bone2D" parent="Skeleton2D" unique_id=1210563861]
+position = Vector2(225.03384, 56.451477)
+rotation = 1.5369159
+rest = Transform2D(0.033873945, 0.9994261, -0.9994261, 0.033873945, 225.03384, 56.451477)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -409,10 +409,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-10"), NodePath("Bone-12"), Node
 metadata/connected_nodes_idx = [10, 12, 7, 6]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-6" type="Bone2D" parent="Skeleton2D" unique_id=756647269]
-position = Vector2(187.86151, 75.775024)
-rotation = -0.3833643
-rest = Transform2D(0.9274115, -0.37404266, 0.37404266, 0.9274115, 187.86151, 75.775024)
+[node name="Bone-6" type="Bone2D" parent="Skeleton2D" unique_id=1463245275]
+position = Vector2(182.97603, 74.711006)
+rotation = -0.40959775
+rest = Transform2D(0.9172811, -0.3982404, 0.3982404, 0.9172811, 182.97603, 74.711006)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -422,10 +422,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-3"), NodePath("Bone-8"), NodePa
 metadata/connected_nodes_idx = [3, 8, 5, 7]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-7" type="Bone2D" parent="Skeleton2D" unique_id=783179974]
-position = Vector2(231.5051, 99.80769)
-rotation = 2.6999884
-rest = Transform2D(-0.90406716, 0.4273904, -0.4273904, -0.90406716, 231.5051, 99.80769)
+[node name="Bone-7" type="Bone2D" parent="Skeleton2D" unique_id=1360333569]
+position = Vector2(226.50551, 99.871796)
+rotation = 2.6814508
+rest = Transform2D(-0.89598954, 0.44407517, -0.44407517, -0.89598954, 226.50551, 99.871796)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -435,10 +435,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-5"), NodePath("Bone-12"), NodeP
 metadata/connected_nodes_idx = [5, 12, 6, 8, 14, 9]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-8" type="Bone2D" parent="Skeleton2D" unique_id=952976664]
-position = Vector2(190.97278, 118.96902)
-rotation = -0.4416043
-rest = Transform2D(0.90406716, -0.4273904, 0.4273904, 0.90406716, 190.97278, 118.96902)
+[node name="Bone-8" type="Bone2D" parent="Skeleton2D" unique_id=421143080]
+position = Vector2(186.06328, 119.91599)
+rotation = -0.4601418
+rest = Transform2D(0.89598954, -0.44407517, 0.44407517, 0.89598954, 186.06328, 119.91599)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -448,10 +448,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-3"), NodePath("Bone-6"), NodePa
 metadata/connected_nodes_idx = [3, 6, 7, 9]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-9" type="Bone2D" parent="Skeleton2D" unique_id=1590244947]
-position = Vector2(231.15013, 137.68282)
-rotation = -2.705694
-rest = Transform2D(-0.906491, -0.42222524, 0.42222524, -0.906491, 231.15013, 137.68282)
+[node name="Bone-9" type="Bone2D" parent="Skeleton2D" unique_id=168058762]
+position = Vector2(226.88278, 140.28854)
+rotation = -2.6786745
+rest = Transform2D(-0.89475316, -0.44656107, 0.44656107, -0.89475316, 226.88278, 140.28854)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -461,10 +461,11 @@ metadata/connected_nodes_paths = [NodePath("Bone-7"), NodePath("Bone-14"), NodeP
 metadata/connected_nodes_idx = [7, 14, 8, 16]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-10" type="Bone2D" parent="Skeleton2D" unique_id=94971153]
-position = Vector2(267.35596, 46.01442)
-rotation = 1.4438815
-rest = Transform2D(0.12657438, 0.9919571, -0.9919571, 0.12657438, 267.35596, 46.01442)
+[node name="Bone-10" type="Bone2D" parent="Skeleton2D" unique_id=838688594]
+position = Vector2(265.07623, 41.564377)
+rotation = 1.4954046
+scale = Vector2(0.99999994, 0.99999994)
+rest = Transform2D(0.075320326, 0.99715936, -0.99715936, 0.075320326, 265.07623, 41.564377)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -474,10 +475,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-5"), NodePath("Bone-12"), NodeP
 metadata/connected_nodes_idx = [5, 12, 11]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-11" type="Bone2D" parent="Skeleton2D" unique_id=1856159415]
-position = Vector2(300.82883, 57.847927)
-rotation = 2.4113042
-rest = Transform2D(-0.74498206, 0.6670845, -0.6670845, -0.74498206, 300.82883, 57.847927)
+[node name="Bone-11" type="Bone2D" parent="Skeleton2D" unique_id=1251220573]
+position = Vector2(301.58884, 52.90603)
+rotation = 2.4500496
+rest = Transform2D(-0.7702629, 0.6377265, -0.6377265, -0.7702629, 301.58884, 52.90603)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -487,10 +488,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-17"), NodePath("Bone-10"), Node
 metadata/connected_nodes_idx = [17, 10, 12, 19, 13]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-12" type="Bone2D" parent="Skeleton2D" unique_id=1105753842]
-position = Vector2(272.14346, 83.53387)
-rotation = 1.5810404
-rest = Transform2D(-0.010243877, 0.99994755, -0.99994755, -0.010243877, 272.14346, 83.53387)
+[node name="Bone-12" type="Bone2D" parent="Skeleton2D" unique_id=262101074]
+position = Vector2(268.03152, 80.68925)
+rotation = 1.5765846
+rest = Transform2D(-0.005788218, 0.99998325, -0.99998325, -0.005788218, 268.03152, 80.68925)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -500,7 +501,7 @@ metadata/connected_nodes_paths = [NodePath("Bone-5"), NodePath("Bone-10"), NodeP
 metadata/connected_nodes_idx = [5, 10, 7, 14, 11, 13]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-13" type="Bone2D" parent="Skeleton2D" unique_id=548347985]
+[node name="Bone-13" type="Bone2D" parent="Skeleton2D" unique_id=1522848655]
 position = Vector2(294.5, 99)
 rotation = 2.4984474
 rest = Transform2D(-0.80021346, 0.5997153, -0.5997153, -0.80021346, 294.5, 99)
@@ -513,11 +514,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-11"), NodePath("Bone-19"), Node
 metadata/connected_nodes_idx = [11, 19, 12, 14, 21, 15]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-14" type="Bone2D" parent="Skeleton2D" unique_id=694257821]
-position = Vector2(271.81082, 116.00427)
-rotation = 1.6506404
-scale = Vector2(0.99999994, 0.99999994)
-rest = Transform2D(-0.07975923, 0.99681413, -0.99681413, -0.07975923, 271.81082, 116.00427)
+[node name="Bone-14" type="Bone2D" parent="Skeleton2D" unique_id=195342879]
+position = Vector2(267.80975, 119.002846)
+rotation = 1.5978985
+rest = Transform2D(-0.027098838, 0.9996328, -0.9996328, -0.027098838, 267.80975, 119.002846)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -527,10 +527,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-7"), NodePath("Bone-12"), NodeP
 metadata/connected_nodes_idx = [7, 12, 9, 16, 13, 15]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-15" type="Bone2D" parent="Skeleton2D" unique_id=382115895]
-position = Vector2(300.78925, 139.18044)
-rotation = -0.57554495
-rest = Transform2D(0.8388958, -0.54429203, 0.54429203, 0.8388958, 300.78925, 139.18044)
+[node name="Bone-15" type="Bone2D" parent="Skeleton2D" unique_id=340138078]
+position = Vector2(301.56247, 144.1203)
+rotation = -0.58143675
+rest = Transform2D(0.8356744, -0.54922515, 0.54922515, 0.8356744, 301.56247, 144.1203)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -540,10 +540,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-16"), NodePath("Bone-13"), Node
 metadata/connected_nodes_idx = [16, 13, 21, 14, 23]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-16" type="Bone2D" parent="Skeleton2D" unique_id=289950042]
-position = Vector2(269.04666, 150.55019)
-rotation = -2.814267
-rest = Transform2D(-0.94690555, -0.3215119, 0.3215119, -0.94690555, 269.04666, 150.55019)
+[node name="Bone-16" type="Bone2D" parent="Skeleton2D" unique_id=1459049163]
+position = Vector2(266.833, 155.03345)
+rotation = -2.7880206
+rest = Transform2D(-0.9381419, -0.3462511, 0.3462511, -0.9381419, 266.833, 155.03345)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -553,10 +553,11 @@ metadata/connected_nodes_paths = [NodePath("Bone-15"), NodePath("Bone-9"), NodeP
 metadata/connected_nodes_idx = [15, 9, 14]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-17" type="Bone2D" parent="Skeleton2D" unique_id=477508771]
-position = Vector2(337.39236, 41.986633)
-rotation = 1.6872262
-rest = Transform2D(-0.11616698, 0.9932297, -0.9932297, -0.11616698, 337.39236, 41.986633)
+[node name="Bone-17" type="Bone2D" parent="Skeleton2D" unique_id=933821696]
+position = Vector2(340.3983, 37.99109)
+rotation = 1.6450423
+scale = Vector2(0.99999994, 0.99999994)
+rest = Transform2D(-0.07417778, 0.997245, -0.997245, -0.07417778, 340.3983, 37.99109)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -566,10 +567,11 @@ metadata/connected_nodes_paths = [NodePath("Bone-11"), NodePath("Bone-19"), Node
 metadata/connected_nodes_idx = [11, 19, 18]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-18" type="Bone2D" parent="Skeleton2D" unique_id=757041408]
-position = Vector2(376.77448, 50.71896)
-rotation = 2.5340757
-rest = Transform2D(-0.821068, 0.57083046, -0.57083046, -0.821068, 376.77448, 50.71896)
+[node name="Bone-18" type="Bone2D" parent="Skeleton2D" unique_id=139091788]
+position = Vector2(381.0868, 48.188366)
+rotation = 2.5250502
+scale = Vector2(0.99999994, 0.99999994)
+rest = Transform2D(-0.8158825, 0.5782177, -0.5782177, -0.8158825, 381.0868, 48.188366)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -579,10 +581,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-24"), NodePath("Bone-17"), Node
 metadata/connected_nodes_idx = [24, 17, 19, 26, 20]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-19" type="Bone2D" parent="Skeleton2D" unique_id=414044262]
-position = Vector2(332.79492, 81.29484)
-rotation = 1.5652956
-rest = Transform2D(0.005500722, 0.99998486, -0.99998486, 0.005500722, 332.79492, 81.29484)
+[node name="Bone-19" type="Bone2D" parent="Skeleton2D" unique_id=2092949671]
+position = Vector2(337.3333, 79.196556)
+rotation = 1.5675131
+rest = Transform2D(0.0032832127, 0.99999464, -0.99999464, 0.0032832127, 337.3333, 79.196556)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -592,10 +594,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-11"), NodePath("Bone-17"), Node
 metadata/connected_nodes_idx = [11, 17, 13, 21, 18, 20]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-20" type="Bone2D" parent="Skeleton2D" unique_id=1948405015]
-position = Vector2(374.71225, 99.84247)
-rotation = 2.7253609
-rest = Transform2D(-0.91461897, 0.40431684, -0.40431684, -0.91461897, 374.71225, 99.84247)
+[node name="Bone-20" type="Bone2D" parent="Skeleton2D" unique_id=159113339]
+position = Vector2(379.71198, 99.89497)
+rotation = 2.6873593
+rest = Transform2D(-0.8985977, 0.4387735, -0.4387735, -0.8985977, 379.71198, 99.89497)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -605,10 +607,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-18"), NodePath("Bone-26"), Node
 metadata/connected_nodes_idx = [18, 26, 19, 21, 28, 22]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-21" type="Bone2D" parent="Skeleton2D" unique_id=1047246653]
-position = Vector2(332.99838, 118.28252)
-rotation = 1.4551303
-rest = Transform2D(0.11540825, 0.99331814, -0.99331814, 0.11540825, 332.99838, 118.28252)
+[node name="Bone-21" type="Bone2D" parent="Skeleton2D" unique_id=345984712]
+position = Vector2(337.469, 120.521675)
+rotation = 1.4969035
+rest = Transform2D(0.07382556, 0.9972712, -0.9972712, 0.07382556, 337.469, 120.521675)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -618,10 +620,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-13"), NodePath("Bone-19"), Node
 metadata/connected_nodes_idx = [13, 19, 15, 23, 20, 22]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-22" type="Bone2D" parent="Skeleton2D" unique_id=335409023]
-position = Vector2(376.87128, 148.74559)
-rotation = -2.5346699
-rest = Transform2D(-0.82140696, -0.57034254, 0.57034254, -0.82140696, 376.87128, 148.74559)
+[node name="Bone-22" type="Bone2D" parent="Skeleton2D" unique_id=1386287535]
+position = Vector2(381.15134, 151.3304)
+rotation = -2.5273252
+rest = Transform2D(-0.81719583, -0.5763601, 0.5763601, -0.81719583, 381.15134, 151.3304)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -631,10 +633,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-20"), NodePath("Bone-28"), Node
 metadata/connected_nodes_idx = [20, 28, 21, 23, 30]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-23" type="Bone2D" parent="Skeleton2D" unique_id=500863256]
-position = Vector2(337.42554, 156.387)
-rotation = -1.6864624
-rest = Transform2D(-0.11540834, -0.99331814, 0.99331814, -0.11540834, 337.42554, 156.387)
+[node name="Bone-23" type="Bone2D" parent="Skeleton2D" unique_id=432534160]
+position = Vector2(340.4204, 160.39084)
+rotation = -1.6446891
+rest = Transform2D(-0.07382553, -0.9972712, 0.9972712, -0.07382553, 340.4204, 160.39084)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -644,10 +646,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-15"), NodePath("Bone-21"), Node
 metadata/connected_nodes_idx = [15, 21, 22]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-24" type="Bone2D" parent="Skeleton2D" unique_id=1353023180]
-position = Vector2(418.18497, 39.596058)
-rotation = 1.5695328
-rest = Transform2D(0.0012635745, 0.9999992, -0.9999992, 0.0012635745, 418.18497, 39.596058)
+[node name="Bone-24" type="Bone2D" parent="Skeleton2D" unique_id=554204462]
+position = Vector2(422.69208, 37.43136)
+rotation = 1.5588948
+rest = Transform2D(0.011901292, 0.9999292, -0.9999292, 0.011901292, 422.69208, 37.43136)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -657,10 +659,11 @@ metadata/connected_nodes_paths = [NodePath("Bone-18"), NodePath("Bone-26"), Node
 metadata/connected_nodes_idx = [18, 26, 25]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-25" type="Bone2D" parent="Skeleton2D" unique_id=1654753615]
-position = Vector2(461.7863, 55.997276)
-rotation = 2.6818664
-rest = Transform2D(-0.896174, 0.4437028, -0.4437028, -0.896174, 461.7863, 55.997276)
+[node name="Bone-25" type="Bone2D" parent="Skeleton2D" unique_id=377689314]
+position = Vector2(466.62885, 54.75244)
+rotation = 2.6739016
+scale = Vector2(0.99999994, 0.99999994)
+rest = Transform2D(-0.89261156, 0.45082653, -0.45082653, -0.89261156, 466.62885, 54.75244)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -670,10 +673,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-31"), NodePath("Bone-24"), Node
 metadata/connected_nodes_idx = [31, 24, 26, 27]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-26" type="Bone2D" parent="Skeleton2D" unique_id=1061973860]
-position = Vector2(418.23294, 77.56088)
-rotation = 1.5699621
-rest = Transform2D(0.0008341828, 0.99999964, -0.99999964, 0.0008341828, 418.23294, 77.56088)
+[node name="Bone-26" type="Bone2D" parent="Skeleton2D" unique_id=407479335]
+position = Vector2(423.15955, 76.70725)
+rotation = 1.5702615
+rest = Transform2D(0.00053484837, 0.9999999, -0.9999999, 0.00053484837, 423.15955, 76.70725)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -683,10 +686,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-18"), NodePath("Bone-24"), Node
 metadata/connected_nodes_idx = [18, 24, 20, 28, 25, 27]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-27" type="Bone2D" parent="Skeleton2D" unique_id=1013420043]
-position = Vector2(461.31418, 99.917496)
-rotation = 2.6633115
-rest = Transform2D(-0.88778734, 0.4602539, -0.4602539, -0.88778734, 461.31418, 99.917496)
+[node name="Bone-27" type="Bone2D" parent="Skeleton2D" unique_id=1476394311]
+position = Vector2(466.31412, 99.945)
+rotation = 2.647895
+rest = Transform2D(-0.8805867, 0.47388515, -0.47388515, -0.8805867, 466.31412, 99.945)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -696,11 +699,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-25"), NodePath("Bone-31"), Node
 metadata/connected_nodes_idx = [25, 31, 26, 28, 33, 29]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-28" type="Bone2D" parent="Skeleton2D" unique_id=1308607967]
-position = Vector2(418.2702, 122.232704)
-rotation = 1.53731
-scale = Vector2(0.99999994, 0.99999994)
-rest = Transform2D(0.033480063, 0.99943936, -0.99943936, 0.033480063, 418.2702, 122.232704)
+[node name="Bone-28" type="Bone2D" parent="Skeleton2D" unique_id=554410496]
+position = Vector2(423.1844, 123.155136)
+rotation = 1.5491925
+rest = Transform2D(0.021602098, 0.99976665, -0.99976665, 0.021602098, 423.1844, 123.155136)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -710,11 +712,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-20"), NodePath("Bone-26"), Node
 metadata/connected_nodes_idx = [20, 26, 22, 30, 27, 29]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-29" type="Bone2D" parent="Skeleton2D" unique_id=855735997]
-position = Vector2(461.9009, 147.2582)
-rotation = -2.6208298
-scale = Vector2(0.99999994, 0.99999994)
-rest = Transform2D(-0.86743987, -0.497542, 0.497542, -0.86743987, 461.9009, 147.2582)
+[node name="Bone-29" type="Bone2D" parent="Skeleton2D" unique_id=1970155320]
+position = Vector2(466.70526, 148.64319)
+rotation = -2.6117907
+rest = Transform2D(-0.8629072, -0.5053625, 0.5053625, -0.8629072, 466.70526, 148.64319)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -724,11 +725,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-27"), NodePath("Bone-33"), Node
 metadata/connected_nodes_idx = [27, 33, 28, 30]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-30" type="Bone2D" parent="Skeleton2D" unique_id=262862794]
-position = Vector2(419.5508, 160.4612)
-rotation = -1.6042826
-scale = Vector2(0.99999994, 0.99999994)
-rest = Transform2D(-0.033480033, -0.99943936, 0.99943936, -0.033480033, 419.5508, 160.4612)
+[node name="Bone-30" type="Bone2D" parent="Skeleton2D" unique_id=1170709697]
+position = Vector2(424.03812, 162.66666)
+rotation = -1.5924001
+rest = Transform2D(-0.021602066, -0.99976665, 0.99976665, -0.021602066, 424.03812, 162.66666)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -738,10 +738,11 @@ metadata/connected_nodes_paths = [NodePath("Bone-22"), NodePath("Bone-28"), Node
 metadata/connected_nodes_idx = [22, 28, 29]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-31" type="Bone2D" parent="Skeleton2D" unique_id=537942072]
-position = Vector2(503.55563, 75.344505)
-rotation = 2.6147177
-rest = Transform2D(-0.8643827, 0.50283456, -0.50283456, -0.8643827, 503.55563, 75.344505)
+[node name="Bone-31" type="Bone2D" parent="Skeleton2D" unique_id=476523545]
+position = Vector2(508.52393, 74.782326)
+rotation = 2.604021
+scale = Vector2(0.99999994, 0.99999994)
+rest = Transform2D(-0.85895467, 0.5120516, -0.5120516, -0.85895467, 508.52393, 74.782326)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -751,10 +752,11 @@ metadata/connected_nodes_paths = [NodePath("Bone-25"), NodePath("Bone-32"), Node
 metadata/connected_nodes_idx = [25, 32, 27, 33]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-32" type="Bone2D" parent="Skeleton2D" unique_id=758606396]
-position = Vector2(541.0525, 114.084015)
-rotation = 2.6949403
-rest = Transform2D(-0.9018982, 0.4319487, -0.4319487, -0.9018982, 541.0525, 114.084015)
+[node name="Bone-32" type="Bone2D" parent="Skeleton2D" unique_id=593574740]
+position = Vector2(546.04315, 114.38934)
+rotation = 2.6852708
+scale = Vector2(0.99999994, 0.99999994)
+rest = Transform2D(-0.8976793, 0.4406493, -0.4406493, -0.8976793, 546.04315, 114.38934)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -764,10 +766,10 @@ metadata/connected_nodes_paths = [NodePath("Bone-31"), NodePath("Bone-33")]
 metadata/connected_nodes_idx = [31, 33]
 metadata/_local_pose_override_enabled_ = true
 
-[node name="Bone-33" type="Bone2D" parent="Skeleton2D" unique_id=1916959836]
-position = Vector2(504.7907, 131.45097)
-rotation = -1.5928059
-rest = Transform2D(-0.022007758, -0.9997578, 0.9997578, -0.022007758, 504.7907, 131.45097)
+[node name="Bone-33" type="Bone2D" parent="Skeleton2D" unique_id=133982305]
+position = Vector2(509.7322, 132.21352)
+rotation = -1.591832
+rest = Transform2D(-0.021034164, -0.99977875, 0.99977875, -0.021034164, 509.7322, 132.21352)
 auto_calculate_length_and_angle = false
 length = 50.0
 bone_angle = 0.0
@@ -779,7 +781,7 @@ metadata/_local_pose_override_enabled_ = true
 
 [node name="Bone-0" type="RigidBody2D" parent="." unique_id=1243274414 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(56.03634, 58.510933)
+position = Vector2(51.106888, 57.673954)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -792,36 +794,36 @@ impulse_sound_threshold = 150.0
 metadata/idx = 0
 metadata/bone_name = &"Bone-0"
 
-[node name="@CollisionShape2D@27702" type="CollisionShape2D" parent="Bone-0" unique_id=368800547]
+[node name="@CollisionShape2D@27959" type="CollisionShape2D" parent="Bone-0" unique_id=184925284]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-0" unique_id=1807191083]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-0" unique_id=445480965]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-0")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-0-Bone-2" type="PinJoint2D" parent="Bone-0" unique_id=1149149430]
+[node name="Joint2D-Bone-0-Bone-2" type="PinJoint2D" parent="Bone-0" unique_id=218990040]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(39.22258, 16.173714)
-rotation = -1.1796827
+position = Vector2(26.0886, 10.926342)
+rotation = -1.1741748
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-2")
 softness = 0.7
 
-[node name="Joint2D-Bone-0-Bone-1" type="PinJoint2D" parent="Bone-0" unique_id=429305137]
+[node name="Joint2D-Bone-0-Bone-1" type="PinJoint2D" parent="Bone-0" unique_id=1770553345]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(1.1237984, 42.411522)
-rotation = -0.026491242
+position = Vector2(0.68468094, 28.275982)
+rotation = -0.024209576
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-1")
 softness = 0.7
 
-[node name="Bone-1" type="RigidBody2D" parent="." unique_id=951093680 instance=ExtResource("3_lppol")]
+[node name="Bone-1" type="RigidBody2D" parent="." unique_id=1274994266 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(57.084274, 98.059425)
+position = Vector2(52.084312, 98.03962)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -834,45 +836,45 @@ impulse_sound_threshold = 150.0
 metadata/idx = 1
 metadata/bone_name = &"Bone-1"
 
-[node name="@CollisionShape2D@27704" type="CollisionShape2D" parent="Bone-1" unique_id=895098155]
+[node name="@CollisionShape2D@27961" type="CollisionShape2D" parent="Bone-1" unique_id=1290411277]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-1" unique_id=23198844]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-1" unique_id=1222665059]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-1")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-1-Bone-0" type="PinJoint2D" parent="Bone-1" unique_id=1250709936]
+[node name="Joint2D-Bone-1-Bone-0" type="PinJoint2D" parent="Bone-1" unique_id=785183670]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-1.1237984, -42.41152)
-rotation = -3.168084
+position = Vector2(-0.68468094, -28.275978)
+rotation = -3.1658022
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-0")
 softness = 0.7
 
-[node name="Joint2D-Bone-1-Bone-2" type="PinJoint2D" parent="Bone-1" unique_id=807329497]
+[node name="Joint2D-Bone-1-Bone-2" type="PinJoint2D" parent="Bone-1" unique_id=798219641]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(38.42399, -17.9888)
-rotation = -2.0086539
+position = Vector2(25.49913, -12.239052)
+rotation = -2.0182993
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-2")
 softness = 0.7
 
-[node name="Joint2D-Bone-1-Bone-4" type="PinJoint2D" parent="Bone-1" unique_id=1545715625]
+[node name="Joint2D-Bone-1-Bone-4" type="PinJoint2D" parent="Bone-1" unique_id=431807427]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(41.107292, 10.497177)
-rotation = -1.320779
+position = Vector2(27.362198, 7.163109)
+rotation = -1.3147538
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-4")
 softness = 0.7
 
-[node name="Bone-2" type="RigidBody2D" parent="." unique_id=2049099257 instance=ExtResource("3_lppol")]
+[node name="Bone-2" type="RigidBody2D" parent="." unique_id=1905382754 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(101.50828, 77.26162)
+position = Vector2(96.539696, 76.701965)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -885,54 +887,54 @@ impulse_sound_threshold = 150.0
 metadata/idx = 2
 metadata/bone_name = &"Bone-2"
 
-[node name="@CollisionShape2D@27706" type="CollisionShape2D" parent="Bone-2" unique_id=2066425236]
+[node name="@CollisionShape2D@27963" type="CollisionShape2D" parent="Bone-2" unique_id=1603026394]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-2" unique_id=2025588277]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-2" unique_id=494970537]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-2")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-2-Bone-3" type="PinJoint2D" parent="Bone-2" unique_id=1685898121]
+[node name="Joint2D-Bone-2-Bone-3" type="PinJoint2D" parent="Bone-2" unique_id=2124150276]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(40.863, 11.411186)
-rotation = -1.298479
+position = Vector2(27.201889, 7.749672)
+rotation = -1.2932546
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-3")
 softness = 0.7
 
-[node name="Joint2D-Bone-2-Bone-0" type="PinJoint2D" parent="Bone-2" unique_id=658320078]
+[node name="Joint2D-Bone-2-Bone-0" type="PinJoint2D" parent="Bone-2" unique_id=1978448955]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-39.22258, -16.173717)
-rotation = -4.321275
+position = Vector2(-26.0886, -10.926338)
+rotation = -4.3157673
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-0")
 softness = 0.7
 
-[node name="Joint2D-Bone-2-Bone-1" type="PinJoint2D" parent="Bone-2" unique_id=1198734462]
+[node name="Joint2D-Bone-2-Bone-1" type="PinJoint2D" parent="Bone-2" unique_id=1016397598]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-38.42399, 17.9888)
-rotation = 1.1329387
+position = Vector2(-25.49913, 12.239052)
+rotation = 1.1232933
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-1")
 softness = 0.7
 
-[node name="Joint2D-Bone-2-Bone-4" type="PinJoint2D" parent="Bone-2" unique_id=957933467]
+[node name="Joint2D-Bone-2-Bone-4" type="PinJoint2D" parent="Bone-2" unique_id=444400206]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-1.4389648, 42.402)
-rotation = 0.033923194
+position = Vector2(-0.95653534, 28.26809)
+rotation = 0.033825204
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-4")
 softness = 0.7
 
-[node name="Bone-3" type="RigidBody2D" parent="." unique_id=2020026774 instance=ExtResource("3_lppol")]
+[node name="Bone-3" type="RigidBody2D" parent="." unique_id=1338113545 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(144.87285, 89.371376)
+position = Vector2(139.88316, 89.050285)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -945,54 +947,54 @@ impulse_sound_threshold = 150.0
 metadata/idx = 3
 metadata/bone_name = &"Bone-3"
 
-[node name="@CollisionShape2D@27708" type="CollisionShape2D" parent="Bone-3" unique_id=1070816053]
+[node name="@CollisionShape2D@27965" type="CollisionShape2D" parent="Bone-3" unique_id=341363760]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-3" unique_id=1845154446]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-3" unique_id=1980192275]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-3")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-3-Bone-2" type="PinJoint2D" parent="Bone-3" unique_id=1988234017]
+[node name="Joint2D-Bone-3-Bone-2" type="PinJoint2D" parent="Bone-3" unique_id=301331515]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-40.863007, -11.411186)
-rotation = -4.4400716
+position = Vector2(-27.201889, -7.749672)
+rotation = -4.4348474
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-2")
 softness = 0.7
 
-[node name="Joint2D-Bone-3-Bone-4" type="PinJoint2D" parent="Bone-3" unique_id=1789232438]
+[node name="Joint2D-Bone-3-Bone-4" type="PinJoint2D" parent="Bone-3" unique_id=1474289985]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-38.769012, 17.232643)
-rotation = 1.1525294
+position = Vector2(-25.719902, 11.768036)
+rotation = 1.1416849
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-4")
 softness = 0.7
 
-[node name="Joint2D-Bone-3-Bone-6" type="PinJoint2D" parent="Bone-3" unique_id=704354791]
+[node name="Joint2D-Bone-3-Bone-6" type="PinJoint2D" parent="Bone-3" unique_id=1854674060]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(40.451416, -12.793877)
-rotation = -1.8771191
+position = Vector2(26.837479, -8.930252)
+rotation = -1.8920245
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-6")
 softness = 0.7
 
-[node name="Joint2D-Bone-3-Bone-8" type="PinJoint2D" parent="Bone-3" unique_id=1930869263]
+[node name="Joint2D-Bone-3-Bone-8" type="PinJoint2D" parent="Bone-3" unique_id=866451646]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(35.70157, 22.921562)
-rotation = -1.0000428
+position = Vector2(23.515366, 15.717117)
+rotation = -0.98161083
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-8")
 softness = 0.7
 
-[node name="Bone-4" type="RigidBody2D" parent="." unique_id=2028899511 instance=ExtResource("3_lppol")]
+[node name="Bone-4" type="RigidBody2D" parent="." unique_id=1909889774 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(100.42687, 109.12741)
+position = Vector2(95.43366, 109.38798)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1005,45 +1007,45 @@ impulse_sound_threshold = 150.0
 metadata/idx = 4
 metadata/bone_name = &"Bone-4"
 
-[node name="@CollisionShape2D@27710" type="CollisionShape2D" parent="Bone-4" unique_id=1175388156]
+[node name="@CollisionShape2D@27967" type="CollisionShape2D" parent="Bone-4" unique_id=1382843357]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-4" unique_id=2097211842]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-4" unique_id=1384849797]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-4")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-4-Bone-1" type="PinJoint2D" parent="Bone-4" unique_id=2111178825]
+[node name="Joint2D-Bone-4-Bone-1" type="PinJoint2D" parent="Bone-4" unique_id=278479630]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-41.107292, -10.497177)
-rotation = -4.462372
+position = Vector2(-27.362198, -7.163109)
+rotation = -4.4563465
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-1")
 softness = 0.7
 
-[node name="Joint2D-Bone-4-Bone-2" type="PinJoint2D" parent="Bone-4" unique_id=237952857]
+[node name="Joint2D-Bone-4-Bone-2" type="PinJoint2D" parent="Bone-4" unique_id=279529099]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(1.4389648, -42.401993)
-rotation = -3.1076694
+position = Vector2(0.95653534, -28.26809)
+rotation = -3.1077673
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-2")
 softness = 0.7
 
-[node name="Joint2D-Bone-4-Bone-3" type="PinJoint2D" parent="Bone-4" unique_id=172298945]
+[node name="Joint2D-Bone-4-Bone-3" type="PinJoint2D" parent="Bone-4" unique_id=658399617]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(38.769005, -17.23265)
-rotation = -1.9890633
+position = Vector2(25.719902, -11.768036)
+rotation = -1.9999077
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-3")
 softness = 0.7
 
-[node name="Bone-5" type="RigidBody2D" parent="." unique_id=321948489 instance=ExtResource("3_lppol")]
+[node name="Bone-5" type="RigidBody2D" parent="." unique_id=1624721721 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(229.2976, 59.06306)
+position = Vector2(225.03384, 56.451477)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1056,54 +1058,54 @@ impulse_sound_threshold = 150.0
 metadata/idx = 5
 metadata/bone_name = &"Bone-5"
 
-[node name="@CollisionShape2D@27712" type="CollisionShape2D" parent="Bone-5" unique_id=298221835]
+[node name="@CollisionShape2D@27969" type="CollisionShape2D" parent="Bone-5" unique_id=907080153]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-5" unique_id=1816399741]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-5" unique_id=689614421]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-5")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-5-Bone-10" type="PinJoint2D" parent="Bone-5" unique_id=2147428988]
+[node name="Joint2D-Bone-5-Bone-10" type="PinJoint2D" parent="Bone-5" unique_id=277880034]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(40.133057, -13.759975)
-rotation = -1.9010952
+position = Vector2(26.511322, -9.856472)
+rotation = -1.9267441
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-10")
 softness = 0.7
 
-[node name="Joint2D-Bone-5-Bone-12" type="PinJoint2D" parent="Bone-5" unique_id=775692702]
+[node name="Joint2D-Bone-5-Bone-12" type="PinJoint2D" parent="Bone-5" unique_id=2144761942]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(36.841064, 21.041264)
-rotation = -1.051871
+position = Vector2(24.639236, 13.88913)
+rotation = -1.0574962
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-12")
 softness = 0.7
 
-[node name="Joint2D-Bone-5-Bone-7" type="PinJoint2D" parent="Bone-5" unique_id=451276001]
+[node name="Joint2D-Bone-5-Bone-7" type="PinJoint2D" parent="Bone-5" unique_id=176177714]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(2.2952423, 42.364277)
-rotation = -0.05412574
+position = Vector2(0.95809937, 28.268036)
+rotation = -0.033880427
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-7")
 softness = 0.7
 
-[node name="Joint2D-Bone-5-Bone-6" type="PinJoint2D" parent="Bone-5" unique_id=2010822927]
+[node name="Joint2D-Bone-5-Bone-6" type="PinJoint2D" parent="Bone-5" unique_id=2010797124]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-39.34674, 15.869289)
-rotation = 1.1874319
+position = Vector2(-25.944626, 11.263939)
+rotation = 1.1611985
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-6")
 softness = 0.7
 
-[node name="Bone-6" type="RigidBody2D" parent="." unique_id=378670827 instance=ExtResource("3_lppol")]
+[node name="Bone-6" type="RigidBody2D" parent="." unique_id=250294468 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(187.86151, 75.775024)
+position = Vector2(182.97603, 74.711006)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1116,54 +1118,54 @@ impulse_sound_threshold = 150.0
 metadata/idx = 6
 metadata/bone_name = &"Bone-6"
 
-[node name="@CollisionShape2D@27714" type="CollisionShape2D" parent="Bone-6" unique_id=867543471]
+[node name="@CollisionShape2D@27971" type="CollisionShape2D" parent="Bone-6" unique_id=1023671477]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-6" unique_id=467913009]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-6" unique_id=1739735911]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-6")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-6-Bone-3" type="PinJoint2D" parent="Bone-6" unique_id=1194959713]
+[node name="Joint2D-Bone-6-Bone-3" type="PinJoint2D" parent="Bone-6" unique_id=581558311]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-40.451416, 12.793877)
-rotation = 1.2644736
+position = Vector2(-26.837479, 8.930252)
+rotation = 1.2495681
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-3")
 softness = 0.7
 
-[node name="Joint2D-Bone-6-Bone-8" type="PinJoint2D" parent="Bone-6" unique_id=1474450183]
+[node name="Joint2D-Bone-6-Bone-8" type="PinJoint2D" parent="Bone-6" unique_id=1677097751]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(3.0480804, 42.316772)
-rotation = -0.071905926
+position = Vector2(1.9271698, 28.218544)
+rotation = -0.06818862
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-8")
 softness = 0.7
 
-[node name="Joint2D-Bone-6-Bone-5" type="PinJoint2D" parent="Bone-6" unique_id=1348436390]
+[node name="Joint2D-Bone-6-Bone-5" type="PinJoint2D" parent="Bone-6" unique_id=635454753]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(39.34674, -15.869286)
-rotation = -1.9541606
+position = Vector2(25.944626, -11.263939)
+rotation = -1.9803941
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-5")
 softness = 0.7
 
-[node name="Joint2D-Bone-6-Bone-7" type="PinJoint2D" parent="Bone-6" unique_id=792704784]
+[node name="Joint2D-Bone-6-Bone-7" type="PinJoint2D" parent="Bone-6" unique_id=417469642]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(37.164368, 20.464836)
-rotation = -1.0674485
+position = Vector2(24.487823, 14.154381)
+rotation = -1.0466975
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-7")
 softness = 0.7
 
-[node name="Bone-7" type="RigidBody2D" parent="." unique_id=1413012781 instance=ExtResource("3_lppol")]
+[node name="Bone-7" type="RigidBody2D" parent="." unique_id=1017413432 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(231.5051, 99.80769)
+position = Vector2(226.50551, 99.871796)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1176,72 +1178,72 @@ impulse_sound_threshold = 150.0
 metadata/idx = 7
 metadata/bone_name = &"Bone-7"
 
-[node name="@CollisionShape2D@27716" type="CollisionShape2D" parent="Bone-7" unique_id=670359219]
+[node name="@CollisionShape2D@27973" type="CollisionShape2D" parent="Bone-7" unique_id=448301546]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-7" unique_id=630051900]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-7" unique_id=1288275199]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-7")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-7-Bone-5" type="PinJoint2D" parent="Bone-7" unique_id=1905600620]
+[node name="Joint2D-Bone-7-Bone-5" type="PinJoint2D" parent="Bone-7" unique_id=267910726]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-2.2952423, -42.364273)
-rotation = -3.1957183
+position = Vector2(-0.95809937, -28.268036)
+rotation = -3.1754732
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-5")
 softness = 0.7
 
-[node name="Joint2D-Bone-7-Bone-12" type="PinJoint2D" parent="Bone-7" unique_id=34857431]
+[node name="Joint2D-Bone-7-Bone-12" type="PinJoint2D" parent="Bone-7" unique_id=1174401427]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(39.385742, -15.772209)
-rotation = -1.9516946
+position = Vector2(25.677048, -11.861267)
+rotation = -2.0035355
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-12")
 softness = 0.7
 
-[node name="Joint2D-Bone-7-Bone-6" type="PinJoint2D" parent="Bone-7" unique_id=167061002]
+[node name="Joint2D-Bone-7-Bone-6" type="PinJoint2D" parent="Bone-7" unique_id=376386970]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-37.164368, -20.464836)
-rotation = -4.209041
+position = Vector2(-24.487823, -14.154381)
+rotation = -4.18829
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-6")
 softness = 0.7
 
-[node name="Joint2D-Bone-7-Bone-8" type="PinJoint2D" parent="Bone-7" unique_id=822046910]
+[node name="Joint2D-Bone-7-Bone-8" type="PinJoint2D" parent="Bone-7" unique_id=1192843613]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-38.356323, 18.132637)
-rotation = 1.129192
+position = Vector2(-25.342407, 12.560341)
+rotation = 1.1106545
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-8")
 softness = 0.7
 
-[node name="Joint2D-Bone-7-Bone-14" type="PinJoint2D" parent="Bone-7" unique_id=162101554]
+[node name="Joint2D-Bone-7-Bone-14" type="PinJoint2D" parent="Bone-7" unique_id=1630829915]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(39.36685, 15.819305)
-rotation = -1.1887021
+position = Vector2(25.664978, 11.887344)
+rotation = -1.1370411
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 softness = 0.7
 
-[node name="Joint2D-Bone-7-Bone-9" type="PinJoint2D" parent="Bone-7" unique_id=1398984114]
+[node name="Joint2D-Bone-7-Bone-9" type="PinJoint2D" parent="Bone-7" unique_id=849196759]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-0.39759827, 42.424545)
-rotation = 0.009371682
+position = Vector2(0.26400757, 28.283035)
+rotation = -0.009334282
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-9")
 softness = 0.7
 
-[node name="Bone-8" type="RigidBody2D" parent="." unique_id=1940416576 instance=ExtResource("3_lppol")]
+[node name="Bone-8" type="RigidBody2D" parent="." unique_id=355718826 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(190.97278, 118.96902)
+position = Vector2(186.06328, 119.91599)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1254,54 +1256,54 @@ impulse_sound_threshold = 150.0
 metadata/idx = 8
 metadata/bone_name = &"Bone-8"
 
-[node name="@CollisionShape2D@27718" type="CollisionShape2D" parent="Bone-8" unique_id=316837458]
+[node name="@CollisionShape2D@27975" type="CollisionShape2D" parent="Bone-8" unique_id=397684273]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-8" unique_id=363247277]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-8" unique_id=1387702393]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-8")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-8-Bone-3" type="PinJoint2D" parent="Bone-8" unique_id=1800332870]
+[node name="Joint2D-Bone-8-Bone-3" type="PinJoint2D" parent="Bone-8" unique_id=729001290]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-35.70157, -22.921562)
-rotation = -4.1416354
+position = Vector2(-23.515366, -15.717117)
+rotation = -4.1232038
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-3")
 softness = 0.7
 
-[node name="Joint2D-Bone-8-Bone-6" type="PinJoint2D" parent="Bone-8" unique_id=584111132]
+[node name="Joint2D-Bone-8-Bone-6" type="PinJoint2D" parent="Bone-8" unique_id=675480644]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-3.0480804, -42.316772)
-rotation = -3.2134986
+position = Vector2(-1.9271698, -28.218544)
+rotation = -3.2097812
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-6")
 softness = 0.7
 
-[node name="Joint2D-Bone-8-Bone-7" type="PinJoint2D" parent="Bone-8" unique_id=448736662]
+[node name="Joint2D-Bone-8-Bone-7" type="PinJoint2D" parent="Bone-8" unique_id=1138723509]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(38.356323, -18.132637)
-rotation = -2.0124006
+position = Vector2(25.342407, -12.560341)
+rotation = -2.0309381
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-7")
 softness = 0.7
 
-[node name="Joint2D-Bone-8-Bone-9" type="PinJoint2D" parent="Bone-8" unique_id=1153854199]
+[node name="Joint2D-Bone-8-Bone-9" type="PinJoint2D" parent="Bone-8" unique_id=1405644459]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(38.459152, 17.91349)
-rotation = -1.1348977
+position = Vector2(25.30745, 12.630653)
+rotation = -1.1078781
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-9")
 softness = 0.7
 
-[node name="Bone-9" type="RigidBody2D" parent="." unique_id=1154622528 instance=ExtResource("3_lppol")]
+[node name="Bone-9" type="RigidBody2D" parent="." unique_id=1440685709 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(231.15013, 137.68282)
+position = Vector2(226.88278, 140.28854)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1314,54 +1316,54 @@ impulse_sound_threshold = 150.0
 metadata/idx = 9
 metadata/bone_name = &"Bone-9"
 
-[node name="@CollisionShape2D@27720" type="CollisionShape2D" parent="Bone-9" unique_id=954913170]
+[node name="@CollisionShape2D@27977" type="CollisionShape2D" parent="Bone-9" unique_id=248980844]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-9" unique_id=734137783]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-9" unique_id=321728931]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-9")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-9-Bone-7" type="PinJoint2D" parent="Bone-9" unique_id=1057007548]
+[node name="Joint2D-Bone-9-Bone-7" type="PinJoint2D" parent="Bone-9" unique_id=32597352]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(0.39759827, -42.424545)
-rotation = -3.132221
+position = Vector2(-0.26400757, -28.283035)
+rotation = -3.150927
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-7")
 softness = 0.7
 
-[node name="Joint2D-Bone-9-Bone-14" type="PinJoint2D" parent="Bone-9" unique_id=2010525180]
+[node name="Joint2D-Bone-9-Bone-14" type="PinJoint2D" parent="Bone-9" unique_id=1859677314]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(37.43779, -19.960236)
-rotation = -2.0606165
+position = Vector2(25.093353, -13.0507965)
+rotation = -2.0503862
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 softness = 0.7
 
-[node name="Joint2D-Bone-9-Bone-8" type="PinJoint2D" parent="Bone-9" unique_id=1717216578]
+[node name="Joint2D-Bone-9-Bone-8" type="PinJoint2D" parent="Bone-9" unique_id=971720381]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-38.459152, -17.913498)
-rotation = -4.27649
+position = Vector2(-25.307434, -12.630653)
+rotation = -4.2494707
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-8")
 softness = 0.7
 
-[node name="Joint2D-Bone-9-Bone-16" type="PinJoint2D" parent="Bone-9" unique_id=1541090963]
+[node name="Joint2D-Bone-9-Bone-16" type="PinJoint2D" parent="Bone-9" unique_id=324317948]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(40.173813, 13.6405945)
-rotation = -1.2434707
+position = Vector2(26.534653, 9.793457)
+rotation = -1.2172242
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-16")
 softness = 0.7
 
-[node name="Bone-10" type="RigidBody2D" parent="." unique_id=1086699170 instance=ExtResource("3_lppol")]
+[node name="Bone-10" type="RigidBody2D" parent="." unique_id=1603378464 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(267.35596, 46.01442)
+position = Vector2(265.07623, 41.564377)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1374,45 +1376,45 @@ impulse_sound_threshold = 150.0
 metadata/idx = 10
 metadata/bone_name = &"Bone-10"
 
-[node name="@CollisionShape2D@27722" type="CollisionShape2D" parent="Bone-10" unique_id=1295468880]
+[node name="@CollisionShape2D@27979" type="CollisionShape2D" parent="Bone-10" unique_id=1535607673]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-10" unique_id=978144492]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-10" unique_id=1238469597]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-10")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-10-Bone-5" type="PinJoint2D" parent="Bone-10" unique_id=1944517267]
+[node name="Joint2D-Bone-10-Bone-5" type="PinJoint2D" parent="Bone-10" unique_id=1947447606]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-40.133057, 13.759975)
-rotation = 1.2404975
+position = Vector2(-26.511322, 9.856472)
+rotation = 1.2148486
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-5")
 softness = 0.7
 
-[node name="Joint2D-Bone-10-Bone-12" type="PinJoint2D" parent="Bone-10" unique_id=493665701]
+[node name="Joint2D-Bone-10-Bone-12" type="PinJoint2D" parent="Bone-10" unique_id=1181848872]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(5.3700867, 42.085175)
-rotation = -0.12691481
+position = Vector2(2.130371, 28.203926)
+rotation = -0.075391725
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-12")
 softness = 0.7
 
-[node name="Joint2D-Bone-10-Bone-11" type="PinJoint2D" parent="Bone-10" unique_id=497775235]
+[node name="Joint2D-Bone-10-Bone-11" type="PinJoint2D" parent="Bone-10" unique_id=1987862174]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(40.000366, 14.141136)
-rotation = -1.2309843
+position = Vector2(27.01117, 8.390289)
+rotation = -1.2696224
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-11")
 softness = 0.7
 
-[node name="Bone-11" type="RigidBody2D" parent="." unique_id=600669482 instance=ExtResource("3_lppol")]
+[node name="Bone-11" type="RigidBody2D" parent="." unique_id=984864847 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(300.82883, 57.847927)
+position = Vector2(301.58884, 52.90603)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1425,63 +1427,63 @@ impulse_sound_threshold = 150.0
 metadata/idx = 11
 metadata/bone_name = &"Bone-11"
 
-[node name="@CollisionShape2D@27724" type="CollisionShape2D" parent="Bone-11" unique_id=1846465409]
+[node name="@CollisionShape2D@27981" type="CollisionShape2D" parent="Bone-11" unique_id=417728597]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-11" unique_id=1261906726]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-11" unique_id=1692192508]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-11")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-11-Bone-17" type="PinJoint2D" parent="Bone-11" unique_id=486227361]
+[node name="Joint2D-Bone-11-Bone-17" type="PinJoint2D" parent="Bone-11" unique_id=400099512]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(38.921936, -16.884373)
-rotation = -1.9800977
+position = Vector2(26.401672, -10.146484)
+rotation = -1.9377059
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-17")
 softness = 0.7
 
-[node name="Joint2D-Bone-11-Bone-10" type="PinJoint2D" parent="Bone-11" unique_id=259261107]
+[node name="Joint2D-Bone-11-Bone-10" type="PinJoint2D" parent="Bone-11" unique_id=53779966]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-40.000366, -14.14114)
-rotation = -4.372577
+position = Vector2(-27.01117, -8.390289)
+rotation = -4.4112153
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-10")
 softness = 0.7
 
-[node name="Joint2D-Bone-11-Bone-12" type="PinJoint2D" parent="Bone-11" unique_id=793791739]
+[node name="Joint2D-Bone-11-Bone-12" type="PinJoint2D" parent="Bone-11" unique_id=1880999380]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-31.606903, 28.301998)
-rotation = 0.8405079
+position = Vector2(-21.786316, 18.037628)
+rotation = 0.8792533
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-12")
 softness = 0.7
 
-[node name="Joint2D-Bone-11-Bone-19" type="PinJoint2D" parent="Bone-11" unique_id=2005552081]
+[node name="Joint2D-Bone-11-Bone-19" type="PinJoint2D" parent="Bone-11" unique_id=240360053]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(34.210266, 25.09299)
-rotation = -0.9379436
+position = Vector2(22.784882, 16.758568)
+rotation = -0.9366315
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-19")
 softness = 0.7
 
-[node name="Joint2D-Bone-11-Bone-13" type="PinJoint2D" parent="Bone-11" unique_id=586896321]
+[node name="Joint2D-Bone-11-Bone-13" type="PinJoint2D" parent="Bone-11" unique_id=1821251974]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-6.4489746, 41.933407)
-rotation = 0.15259568
+position = Vector2(-4.2993164, 27.955605)
+rotation = 0.15259545
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 softness = 0.7
 
-[node name="Bone-12" type="RigidBody2D" parent="." unique_id=255177956 instance=ExtResource("3_lppol")]
+[node name="Bone-12" type="RigidBody2D" parent="." unique_id=1410376174 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(272.14346, 83.53387)
+position = Vector2(268.03152, 80.68925)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1494,70 +1496,70 @@ impulse_sound_threshold = 150.0
 metadata/idx = 12
 metadata/bone_name = &"Bone-12"
 
-[node name="@CollisionShape2D@27726" type="CollisionShape2D" parent="Bone-12" unique_id=1276543231]
+[node name="@CollisionShape2D@27983" type="CollisionShape2D" parent="Bone-12" unique_id=249912840]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-12" unique_id=1635901858]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-12" unique_id=1099190362]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-12")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-12-Bone-5" type="PinJoint2D" parent="Bone-12" unique_id=485656103]
+[node name="Joint2D-Bone-12-Bone-5" type="PinJoint2D" parent="Bone-12" unique_id=256848141]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-36.84108, -21.041264)
-rotation = -4.193464
+position = Vector2(-24.639236, -13.88913)
+rotation = -4.199089
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-5")
 softness = 0.7
 
-[node name="Joint2D-Bone-12-Bone-10" type="PinJoint2D" parent="Bone-12" unique_id=1813378942]
+[node name="Joint2D-Bone-12-Bone-10" type="PinJoint2D" parent="Bone-12" unique_id=1948326900]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-5.3700867, -42.08518)
-rotation = -3.2685075
+position = Vector2(-2.130371, -28.203926)
+rotation = -3.2169843
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-10")
 softness = 0.7
 
-[node name="Joint2D-Bone-12-Bone-7" type="PinJoint2D" parent="Bone-12" unique_id=1673267676]
+[node name="Joint2D-Bone-12-Bone-7" type="PinJoint2D" parent="Bone-12" unique_id=1868605460]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-39.385757, 15.772209)
-rotation = 1.1898979
+position = Vector2(-25.677032, 11.861267)
+rotation = 1.1380571
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-7")
 softness = 0.7
 
-[node name="Joint2D-Bone-12-Bone-14" type="PinJoint2D" parent="Bone-12" unique_id=849843476]
+[node name="Joint2D-Bone-12-Bone-14" type="PinJoint2D" parent="Bone-12" unique_id=368077808]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-0.43460083, 42.42418)
-rotation = 0.010244056
+position = Vector2(-0.1637268, 28.283798)
+rotation = 0.005788251
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 softness = 0.7
 
-[node name="Joint2D-Bone-12-Bone-11" type="PinJoint2D" parent="Bone-12" unique_id=51058797]
+[node name="Joint2D-Bone-12-Bone-11" type="PinJoint2D" parent="Bone-12" unique_id=769240790]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(31.606903, -28.301998)
-rotation = -2.3010848
+position = Vector2(21.786316, -18.037628)
+rotation = -2.2623394
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-11")
 softness = 0.7
 
-[node name="Joint2D-Bone-12-Bone-13" type="PinJoint2D" parent="Bone-12" unique_id=1570818614]
+[node name="Joint2D-Bone-12-Bone-13" type="PinJoint2D" parent="Bone-12" unique_id=1824065145]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(34.89102, 24.137428)
-rotation = -0.9655985
+position = Vector2(23.260681, 16.091621)
+rotation = -0.96559846
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 softness = 0.7
 
-[node name="Bone-13" type="RigidBody2D" parent="." unique_id=343939457 instance=ExtResource("3_lppol")]
+[node name="Bone-13" type="RigidBody2D" parent="." unique_id=211155646 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
 position = Vector2(294.5, 99)
 collision_layer = 2
@@ -1572,72 +1574,72 @@ impulse_sound_threshold = 150.0
 metadata/idx = 13
 metadata/bone_name = &"Bone-13"
 
-[node name="@CollisionShape2D@27728" type="CollisionShape2D" parent="Bone-13" unique_id=983916612]
+[node name="@CollisionShape2D@27985" type="CollisionShape2D" parent="Bone-13" unique_id=337314259]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-13" unique_id=1406472707]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-13" unique_id=1603328232]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-13")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-13-Bone-11" type="PinJoint2D" parent="Bone-13" unique_id=128136365]
+[node name="Joint2D-Bone-13-Bone-11" type="PinJoint2D" parent="Bone-13" unique_id=1489321865]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(6.4489746, -41.933407)
-rotation = -2.988997
+position = Vector2(4.2993164, -27.955605)
+rotation = -2.9889972
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-11")
 softness = 0.7
 
-[node name="Joint2D-Bone-13-Bone-19" type="PinJoint2D" parent="Bone-13" unique_id=2144478527]
+[node name="Joint2D-Bone-13-Bone-19" type="PinJoint2D" parent="Bone-13" unique_id=755199552]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(38.509735, -17.804482)
-rotation = -2.0038624
+position = Vector2(25.673157, -11.869659)
+rotation = -2.0038626
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-19")
 softness = 0.7
 
-[node name="Joint2D-Bone-13-Bone-12" type="PinJoint2D" parent="Bone-13" unique_id=1073030598]
+[node name="Joint2D-Bone-13-Bone-12" type="PinJoint2D" parent="Bone-13" unique_id=1060377025]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-34.891052, -24.137436)
+position = Vector2(-23.260681, -16.091621)
 rotation = -4.107191
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-12")
 softness = 0.7
 
-[node name="Joint2D-Bone-13-Bone-14" type="PinJoint2D" parent="Bone-13" unique_id=1797975205]
+[node name="Joint2D-Bone-13-Bone-14" type="PinJoint2D" parent="Bone-13" unique_id=2085488506]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-33.950195, 25.443764)
+position = Vector2(-22.633453, 16.96251)
 rotation = 0.9276511
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 softness = 0.7
 
-[node name="Joint2D-Bone-13-Bone-21" type="PinJoint2D" parent="Bone-13" unique_id=627876662]
+[node name="Joint2D-Bone-13-Bone-21" type="PinJoint2D" parent="Bone-13" unique_id=1871074890]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(37.934174, 18.999931)
-rotation = -1.1064564
+position = Vector2(25.28946, 12.666611)
+rotation = -1.1064568
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-21")
 softness = 0.7
 
-[node name="Joint2D-Bone-13-Bone-15" type="PinJoint2D" parent="Bone-13" unique_id=1731163017]
+[node name="Joint2D-Bone-13-Bone-15" type="PinJoint2D" parent="Bone-13" unique_id=2065632633]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(6.560913, 41.916046)
-rotation = -0.15526529
+position = Vector2(4.3739624, 27.94403)
+rotation = -0.15526552
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 softness = 0.7
 
-[node name="Bone-14" type="RigidBody2D" parent="." unique_id=650703358 instance=ExtResource("3_lppol")]
+[node name="Bone-14" type="RigidBody2D" parent="." unique_id=337611777 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(271.81082, 116.00427)
+position = Vector2(267.80975, 119.002846)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1650,72 +1652,72 @@ impulse_sound_threshold = 150.0
 metadata/idx = 14
 metadata/bone_name = &"Bone-14"
 
-[node name="@CollisionShape2D@27730" type="CollisionShape2D" parent="Bone-14" unique_id=753993822]
+[node name="@CollisionShape2D@27987" type="CollisionShape2D" parent="Bone-14" unique_id=541746956]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-14" unique_id=1871611301]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-14" unique_id=53681950]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-14")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-14-Bone-7" type="PinJoint2D" parent="Bone-14" unique_id=536277126]
+[node name="Joint2D-Bone-14-Bone-7" type="PinJoint2D" parent="Bone-14" unique_id=1926863111]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-39.36685, -15.819305)
-rotation = -4.3302946
+position = Vector2(-25.664978, -11.887352)
+rotation = -4.2786336
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-7")
 softness = 0.7
 
-[node name="Joint2D-Bone-14-Bone-12" type="PinJoint2D" parent="Bone-14" unique_id=620859706]
+[node name="Joint2D-Bone-14-Bone-12" type="PinJoint2D" parent="Bone-14" unique_id=1744419040]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(0.43460083, -42.42418)
-rotation = -3.1313486
+position = Vector2(0.1637268, -28.283798)
+rotation = -3.1358044
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-12")
 softness = 0.7
 
-[node name="Joint2D-Bone-14-Bone-9" type="PinJoint2D" parent="Bone-14" unique_id=382948315]
+[node name="Joint2D-Bone-14-Bone-9" type="PinJoint2D" parent="Bone-14" unique_id=1252888512]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-37.437805, 19.960236)
-rotation = 1.0809761
+position = Vector2(-25.093353, 13.050804)
+rotation = 1.0912064
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-9")
 softness = 0.7
 
-[node name="Joint2D-Bone-14-Bone-16" type="PinJoint2D" parent="Bone-14" unique_id=555430611]
+[node name="Joint2D-Bone-14-Bone-16" type="PinJoint2D" parent="Bone-14" unique_id=1869261593]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-3.3838806, 42.291245)
-rotation = 0.07984404
+position = Vector2(-0.7664795, 28.273888)
+rotation = 0.027102156
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-16")
 softness = 0.7
 
-[node name="Joint2D-Bone-14-Bone-13" type="PinJoint2D" parent="Bone-14" unique_id=2087098550]
+[node name="Joint2D-Bone-14-Bone-13" type="PinJoint2D" parent="Bone-14" unique_id=1648563628]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(33.950165, -25.443764)
+position = Vector2(22.633453, -16.96251)
 rotation = -2.2139416
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 softness = 0.7
 
-[node name="Joint2D-Bone-14-Bone-15" type="PinJoint2D" parent="Bone-14" unique_id=1397566453]
+[node name="Joint2D-Bone-14-Bone-15" type="PinJoint2D" parent="Bone-14" unique_id=1288030528]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(33.133118, 26.498978)
-rotation = -0.89619374
+position = Vector2(22.690857, 16.885643)
+rotation = -0.9310427
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 softness = 0.7
 
-[node name="Bone-15" type="RigidBody2D" parent="." unique_id=918666635 instance=ExtResource("3_lppol")]
+[node name="Bone-15" type="RigidBody2D" parent="." unique_id=1719492981 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(300.78925, 139.18044)
+position = Vector2(301.56247, 144.1203)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1728,63 +1730,63 @@ impulse_sound_threshold = 150.0
 metadata/idx = 15
 metadata/bone_name = &"Bone-15"
 
-[node name="@CollisionShape2D@27732" type="CollisionShape2D" parent="Bone-15" unique_id=881285418]
+[node name="@CollisionShape2D@27989" type="CollisionShape2D" parent="Bone-15" unique_id=926909786]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-15" unique_id=343774226]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-15" unique_id=768989307]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-15")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-15-Bone-16" type="PinJoint2D" parent="Bone-15" unique_id=825508272]
+[node name="Joint2D-Bone-15-Bone-16" type="PinJoint2D" parent="Bone-15" unique_id=1036376333]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-39.941498, 14.306488)
-rotation = 1.2268475
+position = Vector2(-26.983429, 8.47908)
+rotation = 1.2663332
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-16")
 softness = 0.7
 
-[node name="Joint2D-Bone-15-Bone-13" type="PinJoint2D" parent="Bone-15" unique_id=2133683619]
+[node name="Joint2D-Bone-15-Bone-13" type="PinJoint2D" parent="Bone-15" unique_id=507135925]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-6.560913, -41.91604)
-rotation = -3.2968578
+position = Vector2(-4.3739624, -27.94403)
+rotation = -3.296858
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 softness = 0.7
 
-[node name="Joint2D-Bone-15-Bone-21" type="PinJoint2D" parent="Bone-15" unique_id=2040514142]
+[node name="Joint2D-Bone-15-Bone-21" type="PinJoint2D" parent="Bone-15" unique_id=1549574421]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(35.59134, -23.092354)
-rotation = -2.1463413
+position = Vector2(23.636444, -15.534439)
+rotation = -2.1522331
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-21")
 softness = 0.7
 
-[node name="Joint2D-Bone-15-Bone-14" type="PinJoint2D" parent="Bone-15" unique_id=821859450]
+[node name="Joint2D-Bone-15-Bone-14" type="PinJoint2D" parent="Bone-15" unique_id=1858530040]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-33.133118, -26.498978)
-rotation = -4.0377865
+position = Vector2(-22.690857, -16.88565)
+rotation = -4.072635
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 softness = 0.7
 
-[node name="Joint2D-Bone-15-Bone-23" type="PinJoint2D" parent="Bone-15" unique_id=910886541]
+[node name="Joint2D-Bone-15-Bone-23" type="PinJoint2D" parent="Bone-15" unique_id=363921247]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(38.401947, 18.035812)
-rotation = -1.1317149
+position = Vector2(26.089508, 10.924164)
+rotation = -1.1742582
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-23")
 softness = 0.7
 
-[node name="Bone-16" type="RigidBody2D" parent="." unique_id=1188071022 instance=ExtResource("3_lppol")]
+[node name="Bone-16" type="RigidBody2D" parent="." unique_id=1692754737 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(269.04666, 150.55019)
+position = Vector2(266.833, 155.03345)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1797,45 +1799,45 @@ impulse_sound_threshold = 150.0
 metadata/idx = 16
 metadata/bone_name = &"Bone-16"
 
-[node name="@CollisionShape2D@27734" type="CollisionShape2D" parent="Bone-16" unique_id=525631437]
+[node name="@CollisionShape2D@27991" type="CollisionShape2D" parent="Bone-16" unique_id=1950975600]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-16" unique_id=1843166372]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-16" unique_id=1024796786]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-16")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-16-Bone-15" type="PinJoint2D" parent="Bone-16" unique_id=1621924983]
+[node name="Joint2D-Bone-16-Bone-15" type="PinJoint2D" parent="Bone-16" unique_id=2121966198]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(39.941498, -14.306488)
-rotation = -1.9147451
+position = Vector2(26.983429, -8.47908)
+rotation = -1.8752593
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 softness = 0.7
 
-[node name="Joint2D-Bone-16-Bone-9" type="PinJoint2D" parent="Bone-16" unique_id=1293314598]
+[node name="Joint2D-Bone-16-Bone-9" type="PinJoint2D" parent="Bone-16" unique_id=345441645]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-40.173798, -13.6405945)
-rotation = -4.385063
+position = Vector2(-26.534653, -9.793457)
+rotation = -4.358817
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-9")
 softness = 0.7
 
-[node name="Joint2D-Bone-16-Bone-14" type="PinJoint2D" parent="Bone-16" unique_id=317738086]
+[node name="Joint2D-Bone-16-Bone-14" type="PinJoint2D" parent="Bone-16" unique_id=1513933610]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(3.3838806, -42.291245)
-rotation = -3.0617487
+position = Vector2(0.7664795, -28.27388)
+rotation = -3.1144905
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-14")
 softness = 0.7
 
-[node name="Bone-17" type="RigidBody2D" parent="." unique_id=1543277814 instance=ExtResource("3_lppol")]
+[node name="Bone-17" type="RigidBody2D" parent="." unique_id=596266591 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(337.39236, 41.986633)
+position = Vector2(340.3983, 37.99109)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1848,45 +1850,45 @@ impulse_sound_threshold = 150.0
 metadata/idx = 17
 metadata/bone_name = &"Bone-17"
 
-[node name="@CollisionShape2D@27736" type="CollisionShape2D" parent="Bone-17" unique_id=1310552770]
+[node name="@CollisionShape2D@27993" type="CollisionShape2D" parent="Bone-17" unique_id=1161078689]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-17" unique_id=1493112503]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-17" unique_id=265569067]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-17")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-17-Bone-11" type="PinJoint2D" parent="Bone-17" unique_id=488955489]
+[node name="Joint2D-Bone-17-Bone-11" type="PinJoint2D" parent="Bone-17" unique_id=416679147]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-38.921936, 16.884373)
-rotation = 1.1614949
+position = Vector2(-26.401672, 10.146484)
+rotation = 1.2038866
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-11")
 softness = 0.7
 
-[node name="Joint2D-Bone-17-Bone-19" type="PinJoint2D" parent="Bone-17" unique_id=1653073428]
+[node name="Joint2D-Bone-17-Bone-19" type="PinJoint2D" parent="Bone-17" unique_id=901625531]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-4.9285583, 42.13916)
-rotation = 0.11642985
+position = Vector2(-2.098053, 28.206345)
+rotation = 0.074245974
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-19")
 softness = 0.7
 
-[node name="Joint2D-Bone-17-Bone-18" type="PinJoint2D" parent="Bone-17" unique_id=1465243542]
+[node name="Joint2D-Bone-17-Bone-18" type="PinJoint2D" parent="Bone-17" unique_id=50958126]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(41.42038, 9.18428)
-rotation = -1.3525933
+position = Vector2(27.435791, 6.875904)
+rotation = -1.325236
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-18")
 softness = 0.7
 
-[node name="Bone-18" type="RigidBody2D" parent="." unique_id=421918450 instance=ExtResource("3_lppol")]
+[node name="Bone-18" type="RigidBody2D" parent="." unique_id=447149774 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(376.77448, 50.71896)
+position = Vector2(381.0868, 48.188366)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1899,63 +1901,63 @@ impulse_sound_threshold = 150.0
 metadata/idx = 18
 metadata/bone_name = &"Bone-18"
 
-[node name="@CollisionShape2D@27738" type="CollisionShape2D" parent="Bone-18" unique_id=552542331]
+[node name="@CollisionShape2D@27995" type="CollisionShape2D" parent="Bone-18" unique_id=5371613]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-18" unique_id=1841375927]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-18" unique_id=1055175970]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-18")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-18-Bone-24" type="PinJoint2D" parent="Bone-18" unique_id=136503572]
+[node name="Joint2D-Bone-18-Bone-24" type="PinJoint2D" parent="Bone-18" unique_id=338061885]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(40.97406, -11.00568)
-rotation = -1.8332038
+position = Vector2(27.38379, -7.080055)
+rotation = -1.8238049
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-24")
 softness = 0.7
 
-[node name="Joint2D-Bone-18-Bone-17" type="PinJoint2D" parent="Bone-18" unique_id=269459927]
+[node name="Joint2D-Bone-18-Bone-17" type="PinJoint2D" parent="Bone-18" unique_id=551634773]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-41.42038, -9.18428)
-rotation = -4.494186
+position = Vector2(-27.435791, -6.875904)
+rotation = -4.466829
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-17")
 softness = 0.7
 
-[node name="Joint2D-Bone-18-Bone-19" type="PinJoint2D" parent="Bone-18" unique_id=643315989]
+[node name="Joint2D-Bone-18-Bone-19" type="PinJoint2D" parent="Bone-18" unique_id=330733191]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-34.83496, 24.218288)
-rotation = 0.9632794
+position = Vector2(-23.07663, 16.354465)
+rotation = 0.95425385
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-19")
 softness = 0.7
 
-[node name="Joint2D-Bone-18-Bone-26" type="PinJoint2D" parent="Bone-18" unique_id=968301092]
+[node name="Joint2D-Bone-18-Bone-26" type="PinJoint2D" parent="Bone-18" unique_id=2085803322]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(35.61374, 23.057796)
-rotation = -0.99622196
+position = Vector2(23.412415, 15.870045)
+rotation = -0.9750934
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-26")
 softness = 0.7
 
-[node name="Joint2D-Bone-18-Bone-20" type="PinJoint2D" parent="Bone-18" unique_id=910503357]
+[node name="Joint2D-Bone-18-Bone-20" type="PinJoint2D" parent="Bone-18" unique_id=1059004300]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-1.7795105, 42.389072)
-rotation = 0.041955754
+position = Vector2(-0.75177, 28.27428)
+rotation = 0.026582522
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 softness = 0.7
 
-[node name="Bone-19" type="RigidBody2D" parent="." unique_id=1308585724 instance=ExtResource("3_lppol")]
+[node name="Bone-19" type="RigidBody2D" parent="." unique_id=1533972170 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(332.79492, 81.29484)
+position = Vector2(337.3333, 79.196556)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -1968,72 +1970,72 @@ impulse_sound_threshold = 150.0
 metadata/idx = 19
 metadata/bone_name = &"Bone-19"
 
-[node name="@CollisionShape2D@27740" type="CollisionShape2D" parent="Bone-19" unique_id=1423478932]
+[node name="@CollisionShape2D@27997" type="CollisionShape2D" parent="Bone-19" unique_id=1087129572]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-19" unique_id=2014379610]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-19" unique_id=1588473938]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-19")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-19-Bone-11" type="PinJoint2D" parent="Bone-19" unique_id=262931246]
+[node name="Joint2D-Bone-19-Bone-11" type="PinJoint2D" parent="Bone-19" unique_id=772556774]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-34.210266, -25.09299)
-rotation = -4.0795364
+position = Vector2(-22.784882, -16.758568)
+rotation = -4.078224
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-11")
 softness = 0.7
 
-[node name="Joint2D-Bone-19-Bone-17" type="PinJoint2D" parent="Bone-19" unique_id=42193646]
+[node name="Joint2D-Bone-19-Bone-17" type="PinJoint2D" parent="Bone-19" unique_id=1514651018]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(4.9285583, -42.139164)
-rotation = -3.0251627
+position = Vector2(2.098053, -28.206348)
+rotation = -3.0673468
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-17")
 softness = 0.7
 
-[node name="Joint2D-Bone-19-Bone-13" type="PinJoint2D" parent="Bone-19" unique_id=709649544]
+[node name="Joint2D-Bone-19-Bone-13" type="PinJoint2D" parent="Bone-19" unique_id=2083809426]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-38.509735, 17.804482)
-rotation = 1.1377302
+position = Vector2(-25.673157, 11.869659)
+rotation = 1.13773
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 softness = 0.7
 
-[node name="Joint2D-Bone-19-Bone-21" type="PinJoint2D" parent="Bone-19" unique_id=1671222705]
+[node name="Joint2D-Bone-19-Bone-21" type="PinJoint2D" parent="Bone-19" unique_id=727394345]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(0.23336792, 42.425766)
-rotation = -0.0055007497
+position = Vector2(0.09286499, 28.284119)
+rotation = -0.0032832185
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-21")
 softness = 0.7
 
-[node name="Joint2D-Bone-19-Bone-18" type="PinJoint2D" parent="Bone-19" unique_id=1871854740]
+[node name="Joint2D-Bone-19-Bone-18" type="PinJoint2D" parent="Bone-19" unique_id=1253756537]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(34.83496, -24.218292)
-rotation = -2.1783135
+position = Vector2(23.07663, -16.35447)
+rotation = -2.1873388
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-18")
 softness = 0.7
 
-[node name="Joint2D-Bone-19-Bone-20" type="PinJoint2D" parent="Bone-19" unique_id=1765239255]
+[node name="Joint2D-Bone-19-Bone-20" type="PinJoint2D" parent="Bone-19" unique_id=1965518631]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(38.797974, 17.167366)
-rotation = -1.1542126
+position = Vector2(25.414886, 12.41304)
+rotation = -1.1164588
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 softness = 0.7
 
-[node name="Bone-20" type="RigidBody2D" parent="." unique_id=803358573 instance=ExtResource("3_lppol")]
+[node name="Bone-20" type="RigidBody2D" parent="." unique_id=604510780 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(374.71225, 99.84247)
+position = Vector2(379.71198, 99.89497)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -2046,72 +2048,72 @@ impulse_sound_threshold = 150.0
 metadata/idx = 20
 metadata/bone_name = &"Bone-20"
 
-[node name="@CollisionShape2D@27742" type="CollisionShape2D" parent="Bone-20" unique_id=821671969]
+[node name="@CollisionShape2D@27999" type="CollisionShape2D" parent="Bone-20" unique_id=1227489252]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-20" unique_id=1370529898]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-20" unique_id=1659986772]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-20")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-20-Bone-18" type="PinJoint2D" parent="Bone-20" unique_id=1144711000]
+[node name="Joint2D-Bone-20-Bone-18" type="PinJoint2D" parent="Bone-20" unique_id=1096063155]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(1.7795105, -42.389072)
-rotation = -3.0996368
+position = Vector2(0.75177, -28.274277)
+rotation = -3.11501
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-18")
 softness = 0.7
 
-[node name="Joint2D-Bone-20-Bone-26" type="PinJoint2D" parent="Bone-20" unique_id=1408473500]
+[node name="Joint2D-Bone-20-Bone-26" type="PinJoint2D" parent="Bone-20" unique_id=965897306]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(37.76468, -19.33464)
-rotation = -2.0439794
+position = Vector2(24.952972, -13.317261)
+rotation = -2.0610347
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-26")
 softness = 0.7
 
-[node name="Joint2D-Bone-20-Bone-19" type="PinJoint2D" parent="Bone-20" unique_id=1907356078]
+[node name="Joint2D-Bone-20-Bone-19" type="PinJoint2D" parent="Bone-20" unique_id=2060611489]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-38.797943, -17.167366)
-rotation = -4.2958055
+position = Vector2(-25.414886, -12.41304)
+rotation = -4.2580514
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-19")
 softness = 0.7
 
-[node name="Joint2D-Bone-20-Bone-21" type="PinJoint2D" parent="Bone-20" unique_id=1250847845]
+[node name="Joint2D-Bone-20-Bone-21" type="PinJoint2D" parent="Bone-20" unique_id=1861057972]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-38.803986, 17.15371)
-rotation = 1.1545645
+position = Vector2(-25.416168, 12.410393)
+rotation = 1.116563
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-21")
 softness = 0.7
 
-[node name="Joint2D-Bone-20-Bone-28" type="PinJoint2D" parent="Bone-20" unique_id=2146554731]
+[node name="Joint2D-Bone-20-Bone-28" type="PinJoint2D" parent="Bone-20" unique_id=1247584191]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(37.733154, 19.396103)
-rotation = -1.0959853
+position = Vector2(24.938843, 13.343674)
+rotation = -1.079499
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-28")
 softness = 0.7
 
-[node name="Joint2D-Bone-20-Bone-22" type="PinJoint2D" parent="Bone-20" unique_id=724986455]
+[node name="Joint2D-Bone-20-Bone-22" type="PinJoint2D" parent="Bone-20" unique_id=318036566]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(1.8712769, 42.385117)
-rotation = -0.044120386
+position = Vector2(0.79119873, 28.273209)
+rotation = -0.02797659
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 softness = 0.7
 
-[node name="Bone-21" type="RigidBody2D" parent="." unique_id=1166866240 instance=ExtResource("3_lppol")]
+[node name="Bone-21" type="RigidBody2D" parent="." unique_id=563097879 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(332.99838, 118.28252)
+position = Vector2(337.469, 120.521675)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -2124,72 +2126,72 @@ impulse_sound_threshold = 150.0
 metadata/idx = 21
 metadata/bone_name = &"Bone-21"
 
-[node name="@CollisionShape2D@27744" type="CollisionShape2D" parent="Bone-21" unique_id=830013087]
+[node name="@CollisionShape2D@28001" type="CollisionShape2D" parent="Bone-21" unique_id=1373213539]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-21" unique_id=1327421312]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-21" unique_id=1510739873]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-21")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-21-Bone-13" type="PinJoint2D" parent="Bone-21" unique_id=1939847228]
+[node name="Joint2D-Bone-21-Bone-13" type="PinJoint2D" parent="Bone-21" unique_id=1679253213]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-37.934174, -18.999931)
+position = Vector2(-25.28946, -12.666611)
 rotation = -4.2480493
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-13")
 softness = 0.7
 
-[node name="Joint2D-Bone-21-Bone-19" type="PinJoint2D" parent="Bone-21" unique_id=1434523469]
+[node name="Joint2D-Bone-21-Bone-19" type="PinJoint2D" parent="Bone-21" unique_id=314438317]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-0.23336792, -42.425766)
-rotation = -3.1470933
+position = Vector2(-0.09286499, -28.284119)
+rotation = -3.144876
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-19")
 softness = 0.7
 
-[node name="Joint2D-Bone-21-Bone-15" type="PinJoint2D" parent="Bone-21" unique_id=1190002996]
+[node name="Joint2D-Bone-21-Bone-15" type="PinJoint2D" parent="Bone-21" unique_id=2066471034]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-35.59134, 23.092361)
-rotation = 0.99525136
+position = Vector2(-23.636444, 15.534431)
+rotation = 0.98935956
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 softness = 0.7
 
-[node name="Joint2D-Bone-21-Bone-23" type="PinJoint2D" parent="Bone-21" unique_id=363884802]
+[node name="Joint2D-Bone-21-Bone-23" type="PinJoint2D" parent="Bone-21" unique_id=2067921273]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(4.8963623, 42.14293)
-rotation = -0.11566599
+position = Vector2(2.0881042, 28.207085)
+rotation = -0.07389279
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-23")
 softness = 0.7
 
-[node name="Joint2D-Bone-21-Bone-20" type="PinJoint2D" parent="Bone-21" unique_id=1919797348]
+[node name="Joint2D-Bone-21-Bone-20" type="PinJoint2D" parent="Bone-21" unique_id=1800088214]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(38.803986, -17.15371)
-rotation = -1.9870281
+position = Vector2(25.416168, -12.410393)
+rotation = -2.0250297
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 softness = 0.7
 
-[node name="Joint2D-Bone-21-Bone-22" type="PinJoint2D" parent="Bone-21" unique_id=1349582843]
+[node name="Joint2D-Bone-21-Bone-22" type="PinJoint2D" parent="Bone-21" unique_id=1145092456]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(34.849335, 24.197586)
-rotation = -0.96387345
+position = Vector2(23.1138, 16.301933)
+rotation = -0.9565288
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 softness = 0.7
 
-[node name="Bone-22" type="RigidBody2D" parent="." unique_id=1280448673 instance=ExtResource("3_lppol")]
+[node name="Bone-22" type="RigidBody2D" parent="." unique_id=2128578474 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(376.87128, 148.74559)
+position = Vector2(381.15134, 151.3304)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -2202,63 +2204,63 @@ impulse_sound_threshold = 150.0
 metadata/idx = 22
 metadata/bone_name = &"Bone-22"
 
-[node name="@CollisionShape2D@27746" type="CollisionShape2D" parent="Bone-22" unique_id=521081272]
+[node name="@CollisionShape2D@28003" type="CollisionShape2D" parent="Bone-22" unique_id=629503099]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-22" unique_id=1257478468]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-22" unique_id=162993148]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-22")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-22-Bone-20" type="PinJoint2D" parent="Bone-22" unique_id=310337941]
+[node name="Joint2D-Bone-22-Bone-20" type="PinJoint2D" parent="Bone-22" unique_id=1296750953]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-1.8712769, -42.385117)
-rotation = -3.185713
+position = Vector2(-0.79119873, -28.273201)
+rotation = -3.1695693
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 softness = 0.7
 
-[node name="Joint2D-Bone-22-Bone-28" type="PinJoint2D" parent="Bone-22" unique_id=810317273]
+[node name="Joint2D-Bone-22-Bone-28" type="PinJoint2D" parent="Bone-22" unique_id=860912337]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(35.72766, -22.880867)
-rotation = -2.1404107
+position = Vector2(23.494324, -15.748535)
+rotation = -2.1613185
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-28")
 softness = 0.7
 
-[node name="Joint2D-Bone-22-Bone-21" type="PinJoint2D" parent="Bone-22" unique_id=1649441956]
+[node name="Joint2D-Bone-22-Bone-21" type="PinJoint2D" parent="Bone-22" unique_id=1705580136]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-34.849335, -24.197586)
-rotation = -4.1054664
+position = Vector2(-23.1138, -16.301926)
+rotation = -4.0981216
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-21")
 softness = 0.7
 
-[node name="Joint2D-Bone-22-Bone-23" type="PinJoint2D" parent="Bone-22" unique_id=1852977945]
+[node name="Joint2D-Bone-22-Bone-23" type="PinJoint2D" parent="Bone-22" unique_id=2051853222]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-41.65207, 8.068817)
-rotation = 1.3794471
+position = Vector2(-27.609436, 6.141617)
+rotation = 1.3519138
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-23")
 softness = 0.7
 
-[node name="Joint2D-Bone-22-Bone-30" type="PinJoint2D" parent="Bone-22" unique_id=2049028797]
+[node name="Joint2D-Bone-22-Bone-30" type="PinJoint2D" parent="Bone-22" unique_id=74262915]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(40.912964, 11.230682)
-rotation = -1.3028934
+position = Vector2(27.345093, 7.228119)
+rotation = -1.3123769
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-30")
 softness = 0.7
 
-[node name="Bone-23" type="RigidBody2D" parent="." unique_id=1754974864 instance=ExtResource("3_lppol")]
+[node name="Bone-23" type="RigidBody2D" parent="." unique_id=586481631 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(337.42554, 156.387)
+position = Vector2(340.4204, 160.39084)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -2271,45 +2273,45 @@ impulse_sound_threshold = 150.0
 metadata/idx = 23
 metadata/bone_name = &"Bone-23"
 
-[node name="@CollisionShape2D@27748" type="CollisionShape2D" parent="Bone-23" unique_id=2058474643]
+[node name="@CollisionShape2D@28005" type="CollisionShape2D" parent="Bone-23" unique_id=1168365333]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-23" unique_id=837108163]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-23" unique_id=1016488540]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-23")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-23-Bone-15" type="PinJoint2D" parent="Bone-23" unique_id=472665188]
+[node name="Joint2D-Bone-23-Bone-15" type="PinJoint2D" parent="Bone-23" unique_id=550314930]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-38.401947, -18.035812)
-rotation = -4.273308
+position = Vector2(-26.089508, -10.924164)
+rotation = -4.3158507
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-15")
 softness = 0.7
 
-[node name="Joint2D-Bone-23-Bone-21" type="PinJoint2D" parent="Bone-23" unique_id=1446557151]
+[node name="Joint2D-Bone-23-Bone-21" type="PinJoint2D" parent="Bone-23" unique_id=303953456]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-4.8963623, -42.14292)
-rotation = -3.2572587
+position = Vector2(-2.0881042, -28.207092)
+rotation = -3.2154853
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-21")
 softness = 0.7
 
-[node name="Joint2D-Bone-23-Bone-22" type="PinJoint2D" parent="Bone-23" unique_id=1872197754]
+[node name="Joint2D-Bone-23-Bone-22" type="PinJoint2D" parent="Bone-23" unique_id=2113375112]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(41.65207, -8.068817)
-rotation = -1.7621456
+position = Vector2(27.609436, -6.141617)
+rotation = -1.7896787
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 softness = 0.7
 
-[node name="Bone-24" type="RigidBody2D" parent="." unique_id=2055525226 instance=ExtResource("3_lppol")]
+[node name="Bone-24" type="RigidBody2D" parent="." unique_id=2094674836 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(418.18497, 39.596058)
+position = Vector2(422.69208, 37.43136)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -2322,45 +2324,45 @@ impulse_sound_threshold = 150.0
 metadata/idx = 24
 metadata/bone_name = &"Bone-24"
 
-[node name="@CollisionShape2D@27750" type="CollisionShape2D" parent="Bone-24" unique_id=1602587983]
+[node name="@CollisionShape2D@28007" type="CollisionShape2D" parent="Bone-24" unique_id=12955531]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-24" unique_id=1964648665]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-24" unique_id=602081827]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-24")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-24-Bone-18" type="PinJoint2D" parent="Bone-24" unique_id=124746513]
+[node name="Joint2D-Bone-24-Bone-18" type="PinJoint2D" parent="Bone-24" unique_id=1824605261]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-40.97409, 11.00568)
-rotation = 1.3083888
+position = Vector2(-27.38379, 7.080055)
+rotation = 1.3177878
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-18")
 softness = 0.7
 
-[node name="Joint2D-Bone-24-Bone-26" type="PinJoint2D" parent="Bone-24" unique_id=197710156]
+[node name="Joint2D-Bone-24-Bone-26" type="PinJoint2D" parent="Bone-24" unique_id=118658206]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(0.053619385, 42.426373)
-rotation = -0.0012635748
+position = Vector2(0.3366089, 28.282265)
+rotation = -0.011901573
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-26")
 softness = 0.7
 
-[node name="Joint2D-Bone-24-Bone-25" type="PinJoint2D" parent="Bone-24" unique_id=1905768824]
+[node name="Joint2D-Bone-24-Bone-25" type="PinJoint2D" parent="Bone-24" unique_id=1690007031]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(39.70987, 14.937397)
-rotation = -1.2110062
+position = Vector2(26.313324, 10.37344)
+rotation = -1.1952761
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-25")
 softness = 0.7
 
-[node name="Bone-25" type="RigidBody2D" parent="." unique_id=1471116377 instance=ExtResource("3_lppol")]
+[node name="Bone-25" type="RigidBody2D" parent="." unique_id=1241709825 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(461.7863, 55.997276)
+position = Vector2(466.62885, 54.75244)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -2373,54 +2375,54 @@ impulse_sound_threshold = 150.0
 metadata/idx = 25
 metadata/bone_name = &"Bone-25"
 
-[node name="@CollisionShape2D@27752" type="CollisionShape2D" parent="Bone-25" unique_id=1774767368]
+[node name="@CollisionShape2D@28009" type="CollisionShape2D" parent="Bone-25" unique_id=1735292546]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-25" unique_id=1879324108]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-25" unique_id=2039308818]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-25")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-25-Bone-31" type="PinJoint2D" parent="Bone-25" unique_id=44264799]
+[node name="Joint2D-Bone-25-Bone-31" type="PinJoint2D" parent="Bone-25" unique_id=4023688]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(38.497192, 17.831596)
-rotation = -1.1370262
+position = Vector2(25.517853, 12.199989)
+rotation = -1.1248246
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-31")
 softness = 0.7
 
-[node name="Joint2D-Bone-25-Bone-24" type="PinJoint2D" parent="Bone-25" unique_id=1697203448]
+[node name="Joint2D-Bone-25-Bone-24" type="PinJoint2D" parent="Bone-25" unique_id=162439329]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-39.70987, -14.937401)
-rotation = -4.3525987
+position = Vector2(-26.313324, -10.37344)
+rotation = -4.336869
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-24")
 softness = 0.7
 
-[node name="Joint2D-Bone-25-Bone-26" type="PinJoint2D" parent="Bone-25" unique_id=1938061441]
+[node name="Joint2D-Bone-25-Bone-26" type="PinJoint2D" parent="Bone-25" unique_id=956845034]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-38.021454, 18.824715)
-rotation = 1.11107
+position = Vector2(-25.246857, 12.751305)
+rotation = 1.1031052
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-26")
 softness = 0.7
 
-[node name="Joint2D-Bone-25-Bone-27" type="PinJoint2D" parent="Bone-25" unique_id=1057842118]
+[node name="Joint2D-Bone-25-Bone-27" type="PinJoint2D" parent="Bone-25" unique_id=1166064832]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-0.45602417, 42.423958)
-rotation = 0.010748788
+position = Vector2(-0.19696045, 28.283585)
+rotation = 0.006964012
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-27")
 softness = 0.7
 
-[node name="Bone-26" type="RigidBody2D" parent="." unique_id=2138224730 instance=ExtResource("3_lppol")]
+[node name="Bone-26" type="RigidBody2D" parent="." unique_id=938884768 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(418.23294, 77.56088)
+position = Vector2(423.15955, 76.70725)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -2433,72 +2435,72 @@ impulse_sound_threshold = 150.0
 metadata/idx = 26
 metadata/bone_name = &"Bone-26"
 
-[node name="@CollisionShape2D@27754" type="CollisionShape2D" parent="Bone-26" unique_id=1711983564]
+[node name="@CollisionShape2D@28011" type="CollisionShape2D" parent="Bone-26" unique_id=240029456]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-26" unique_id=1781397904]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-26" unique_id=1306679576]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-26")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-26-Bone-18" type="PinJoint2D" parent="Bone-26" unique_id=1372595101]
+[node name="Joint2D-Bone-26-Bone-18" type="PinJoint2D" parent="Bone-26" unique_id=319300757]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-35.61374, -23.0578)
-rotation = -4.1378145
+position = Vector2(-23.412415, -15.870045)
+rotation = -4.1166863
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-18")
 softness = 0.7
 
-[node name="Joint2D-Bone-26-Bone-24" type="PinJoint2D" parent="Bone-26" unique_id=1549886934]
+[node name="Joint2D-Bone-26-Bone-24" type="PinJoint2D" parent="Bone-26" unique_id=771289118]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-0.053619385, -42.426373)
-rotation = -3.1428564
+position = Vector2(-0.3366089, -28.282269)
+rotation = -3.1534944
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-24")
 softness = 0.7
 
-[node name="Joint2D-Bone-26-Bone-20" type="PinJoint2D" parent="Bone-26" unique_id=874539284]
+[node name="Joint2D-Bone-26-Bone-20" type="PinJoint2D" parent="Bone-26" unique_id=1471148487]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-37.76468, 19.33464)
-rotation = 1.0976132
+position = Vector2(-24.952972, 13.317261)
+rotation = 1.080558
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 softness = 0.7
 
-[node name="Joint2D-Bone-26-Bone-28" type="PinJoint2D" parent="Bone-26" unique_id=1378054488]
+[node name="Joint2D-Bone-26-Bone-28" type="PinJoint2D" parent="Bone-26" unique_id=499855037]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(0.03540039, 42.42639)
-rotation = -0.0008341829
+position = Vector2(0.015136719, 28.284264)
+rotation = -0.00053484837
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-28")
 softness = 0.7
 
-[node name="Joint2D-Bone-26-Bone-25" type="PinJoint2D" parent="Bone-26" unique_id=1823221882]
+[node name="Joint2D-Bone-26-Bone-25" type="PinJoint2D" parent="Bone-26" unique_id=323353747]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(38.021454, -18.824715)
-rotation = -2.0305226
+position = Vector2(25.246857, -12.751305)
+rotation = -2.0384874
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-25")
 softness = 0.7
 
-[node name="Joint2D-Bone-26-Bone-27" type="PinJoint2D" parent="Bone-26" unique_id=1828169454]
+[node name="Joint2D-Bone-26-Bone-27" type="PinJoint2D" parent="Bone-26" unique_id=680464112]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(37.657745, 19.542137)
-rotation = -1.0921111
+position = Vector2(24.90332, 13.409866)
+rotation = -1.0768429
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-27")
 softness = 0.7
 
-[node name="Bone-27" type="RigidBody2D" parent="." unique_id=97219837 instance=ExtResource("3_lppol")]
+[node name="Bone-27" type="RigidBody2D" parent="." unique_id=1703853241 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(461.31418, 99.917496)
+position = Vector2(466.31412, 99.945)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -2511,72 +2513,72 @@ impulse_sound_threshold = 150.0
 metadata/idx = 27
 metadata/bone_name = &"Bone-27"
 
-[node name="@CollisionShape2D@27756" type="CollisionShape2D" parent="Bone-27" unique_id=957965895]
+[node name="@CollisionShape2D@28013" type="CollisionShape2D" parent="Bone-27" unique_id=1164627018]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-27" unique_id=248105621]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-27" unique_id=383336408]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-27")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-27-Bone-25" type="PinJoint2D" parent="Bone-27" unique_id=908913559]
+[node name="Joint2D-Bone-27-Bone-25" type="PinJoint2D" parent="Bone-27" unique_id=1003532183]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(0.45602417, -42.423958)
-rotation = -3.1308439
+position = Vector2(0.19696045, -28.283585)
+rotation = -3.1346285
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-25")
 softness = 0.7
 
-[node name="Joint2D-Bone-27-Bone-31" type="PinJoint2D" parent="Bone-27" unique_id=1462529783]
+[node name="Joint2D-Bone-27-Bone-31" type="PinJoint2D" parent="Bone-27" unique_id=289877785]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(36.672638, -21.333466)
-rotation = -2.0976713
+position = Vector2(24.294922, -14.483002)
+rotation = -2.108368
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-31")
 softness = 0.7
 
-[node name="Joint2D-Bone-27-Bone-26" type="PinJoint2D" parent="Bone-27" unique_id=1948069010]
+[node name="Joint2D-Bone-27-Bone-26" type="PinJoint2D" parent="Bone-27" unique_id=175265012]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-37.657745, -19.542137)
-rotation = -4.2337036
+position = Vector2(-24.90332, -13.409866)
+rotation = -4.218436
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-26")
 softness = 0.7
 
-[node name="Joint2D-Bone-27-Bone-28" type="PinJoint2D" parent="Bone-27" unique_id=802086353]
+[node name="Joint2D-Bone-27-Bone-28" type="PinJoint2D" parent="Bone-27" unique_id=1680451130]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-37.66562, 19.526917)
-rotation = 1.0925151
+position = Vector2(-24.906769, 13.403496)
+rotation = 1.0770987
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-28")
 softness = 0.7
 
-[node name="Joint2D-Bone-27-Bone-33" type="PinJoint2D" parent="Bone-27" unique_id=483038657]
+[node name="Joint2D-Bone-27-Bone-33" type="PinJoint2D" parent="Bone-27" unique_id=2060376097]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(34.343994, 24.909653)
-rotation = -0.94329226
+position = Vector2(22.701263, 16.871666)
+rotation = -0.93165857
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-33")
 softness = 0.7
 
-[node name="Joint2D-Bone-27-Bone-29" type="PinJoint2D" parent="Bone-27" unique_id=592861661]
+[node name="Joint2D-Bone-27-Bone-29" type="PinJoint2D" parent="Bone-27" unique_id=1395891023]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(0.52578735, 42.42314)
-rotation = -0.012393192
+position = Vector2(0.22717285, 28.283363)
+rotation = -0.008031801
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-29")
 softness = 0.7
 
-[node name="Bone-28" type="RigidBody2D" parent="." unique_id=1134100922 instance=ExtResource("3_lppol")]
+[node name="Bone-28" type="RigidBody2D" parent="." unique_id=1638447677 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(418.2702, 122.232704)
+position = Vector2(423.1844, 123.155136)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -2589,72 +2591,72 @@ impulse_sound_threshold = 150.0
 metadata/idx = 28
 metadata/bone_name = &"Bone-28"
 
-[node name="@CollisionShape2D@27758" type="CollisionShape2D" parent="Bone-28" unique_id=880155645]
+[node name="@CollisionShape2D@28015" type="CollisionShape2D" parent="Bone-28" unique_id=1116723125]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-28" unique_id=317124517]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-28" unique_id=563811134]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-28")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-28-Bone-20" type="PinJoint2D" parent="Bone-28" unique_id=1459184238]
+[node name="Joint2D-Bone-28-Bone-20" type="PinJoint2D" parent="Bone-28" unique_id=1403203305]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-37.733154, -19.396095)
-rotation = -4.237578
+position = Vector2(-24.938843, -13.343674)
+rotation = -4.2210917
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-20")
 softness = 0.7
 
-[node name="Joint2D-Bone-28-Bone-26" type="PinJoint2D" parent="Bone-28" unique_id=1029052569]
+[node name="Joint2D-Bone-28-Bone-26" type="PinJoint2D" parent="Bone-28" unique_id=820275561]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-0.03540039, -42.42639)
-rotation = -3.1424267
+position = Vector2(-0.015136719, -28.284264)
+rotation = -3.1421275
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-26")
 softness = 0.7
 
-[node name="Joint2D-Bone-28-Bone-22" type="PinJoint2D" parent="Bone-28" unique_id=1578638370]
+[node name="Joint2D-Bone-28-Bone-22" type="PinJoint2D" parent="Bone-28" unique_id=1146817762]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-35.72766, 22.880867)
-rotation = 1.001182
+position = Vector2(-23.494324, 15.748535)
+rotation = 0.98027414
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 softness = 0.7
 
-[node name="Joint2D-Bone-28-Bone-30" type="PinJoint2D" parent="Bone-28" unique_id=723969652]
+[node name="Joint2D-Bone-28-Bone-30" type="PinJoint2D" parent="Bone-28" unique_id=852302330]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(1.4204407, 42.402626)
-rotation = -0.03348632
+position = Vector2(0.61099243, 28.277664)
+rotation = -0.02160378
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-30")
 softness = 0.7
 
-[node name="Joint2D-Bone-28-Bone-27" type="PinJoint2D" parent="Bone-28" unique_id=1332161790]
+[node name="Joint2D-Bone-28-Bone-27" type="PinJoint2D" parent="Bone-28" unique_id=188880046]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(37.66562, -19.526924)
-rotation = -2.0490775
+position = Vector2(24.906738, -13.403496)
+rotation = -2.064494
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-27")
 softness = 0.7
 
-[node name="Joint2D-Bone-28-Bone-29" type="PinJoint2D" parent="Bone-28" unique_id=723051473]
+[node name="Joint2D-Bone-28-Bone-29" type="PinJoint2D" parent="Bone-28" unique_id=1986451766]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(36.80237, 21.108925)
-rotation = -1.0500336
+position = Vector2(24.406708, 14.293808)
+rotation = -1.0409943
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-29")
 softness = 0.7
 
-[node name="Bone-29" type="RigidBody2D" parent="." unique_id=1250428193 instance=ExtResource("3_lppol")]
+[node name="Bone-29" type="RigidBody2D" parent="." unique_id=346065370 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(461.9009, 147.2582)
+position = Vector2(466.70526, 148.64319)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -2667,54 +2669,54 @@ impulse_sound_threshold = 150.0
 metadata/idx = 29
 metadata/bone_name = &"Bone-29"
 
-[node name="@CollisionShape2D@27760" type="CollisionShape2D" parent="Bone-29" unique_id=1782912491]
+[node name="@CollisionShape2D@28017" type="CollisionShape2D" parent="Bone-29" unique_id=1999349622]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-29" unique_id=436911282]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-29" unique_id=288636937]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-29")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-29-Bone-27" type="PinJoint2D" parent="Bone-29" unique_id=195799535]
+[node name="Joint2D-Bone-29-Bone-27" type="PinJoint2D" parent="Bone-29" unique_id=826728263]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-0.52578735, -42.42315)
-rotation = -3.1539857
+position = Vector2(-0.22717285, -28.283356)
+rotation = -3.1496243
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-27")
 softness = 0.7
 
-[node name="Joint2D-Bone-29-Bone-33" type="PinJoint2D" parent="Bone-29" unique_id=689354416]
+[node name="Joint2D-Bone-29-Bone-33" type="PinJoint2D" parent="Bone-29" unique_id=1712383945]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(39.808807, -14.671707)
-rotation = -1.9239041
+position = Vector2(26.423431, -10.089691)
+rotation = -1.9355555
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-33")
 softness = 0.7
 
-[node name="Joint2D-Bone-29-Bone-28" type="PinJoint2D" parent="Bone-29" unique_id=1078261902]
+[node name="Joint2D-Bone-29-Bone-28" type="PinJoint2D" parent="Bone-29" unique_id=704118805]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-36.80237, -21.108917)
-rotation = -4.191626
+position = Vector2(-24.406708, -14.293808)
+rotation = -4.182587
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-28")
 softness = 0.7
 
-[node name="Joint2D-Bone-29-Bone-30" type="PinJoint2D" parent="Bone-29" unique_id=2022304278]
+[node name="Joint2D-Bone-29-Bone-30" type="PinJoint2D" parent="Bone-29" unique_id=554942461]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-40.503693, 12.627365)
-rotation = 1.268587
+position = Vector2(-26.870148, 8.831451)
+rotation = 1.2532474
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-30")
 softness = 0.7
 
-[node name="Bone-30" type="RigidBody2D" parent="." unique_id=492705010 instance=ExtResource("3_lppol")]
+[node name="Bone-30" type="RigidBody2D" parent="." unique_id=1410525536 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(419.5508, 160.4612)
+position = Vector2(424.03812, 162.66666)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -2727,45 +2729,45 @@ impulse_sound_threshold = 150.0
 metadata/idx = 30
 metadata/bone_name = &"Bone-30"
 
-[node name="@CollisionShape2D@27762" type="CollisionShape2D" parent="Bone-30" unique_id=1203322771]
+[node name="@CollisionShape2D@28019" type="CollisionShape2D" parent="Bone-30" unique_id=1740452783]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-30" unique_id=2086995455]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-30" unique_id=692164509]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-30")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-30-Bone-22" type="PinJoint2D" parent="Bone-30" unique_id=1463912323]
+[node name="Joint2D-Bone-30-Bone-22" type="PinJoint2D" parent="Bone-30" unique_id=714450853]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-40.912964, -11.230682)
-rotation = -4.444486
+position = Vector2(-27.345093, -7.228119)
+rotation = -4.4539695
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-22")
 softness = 0.7
 
-[node name="Joint2D-Bone-30-Bone-28" type="PinJoint2D" parent="Bone-30" unique_id=2034243996]
+[node name="Joint2D-Bone-30-Bone-28" type="PinJoint2D" parent="Bone-30" unique_id=811097125]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-1.4204407, -42.40262)
-rotation = -3.1750789
+position = Vector2(-0.61099243, -28.277664)
+rotation = -3.1631963
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-28")
 softness = 0.7
 
-[node name="Joint2D-Bone-30-Bone-29" type="PinJoint2D" parent="Bone-30" unique_id=1403453558]
+[node name="Joint2D-Bone-30-Bone-29" type="PinJoint2D" parent="Bone-30" unique_id=2135994592]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(40.503693, -12.627365)
-rotation = -1.8730055
+position = Vector2(26.870148, -8.831451)
+rotation = -1.8883452
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-29")
 softness = 0.7
 
-[node name="Bone-31" type="RigidBody2D" parent="." unique_id=995640704 instance=ExtResource("3_lppol")]
+[node name="Bone-31" type="RigidBody2D" parent="." unique_id=951866960 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(503.55563, 75.344505)
+position = Vector2(508.52393, 74.782326)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -2778,54 +2780,54 @@ impulse_sound_threshold = 150.0
 metadata/idx = 31
 metadata/bone_name = &"Bone-31"
 
-[node name="@CollisionShape2D@27764" type="CollisionShape2D" parent="Bone-31" unique_id=1025863325]
+[node name="@CollisionShape2D@28021" type="CollisionShape2D" parent="Bone-31" unique_id=579575196]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-31" unique_id=2106515025]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-31" unique_id=220524384]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-31")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-31-Bone-25" type="PinJoint2D" parent="Bone-31" unique_id=719006846]
+[node name="Joint2D-Bone-31-Bone-25" type="PinJoint2D" parent="Bone-31" unique_id=1827244548]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-38.497192, -17.831596)
-rotation = -4.278619
+position = Vector2(-25.517853, -12.199989)
+rotation = -4.2664175
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-25")
 softness = 0.7
 
-[node name="Joint2D-Bone-31-Bone-32" type="PinJoint2D" parent="Bone-31" unique_id=670397832]
+[node name="Joint2D-Bone-31-Bone-32" type="PinJoint2D" parent="Bone-31" unique_id=2067900207]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(29.50705, 30.484947)
-rotation = -0.7690996
+position = Vector2(19.451477, 20.533875)
+rotation = -0.75833493
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-32")
 softness = 0.7
 
-[node name="Joint2D-Bone-31-Bone-27" type="PinJoint2D" parent="Bone-31" unique_id=199980184]
+[node name="Joint2D-Bone-31-Bone-27" type="PinJoint2D" parent="Bone-31" unique_id=446557071]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-36.672638, 21.333466)
-rotation = 1.0439214
+position = Vector2(-24.294922, 14.483002)
+rotation = 1.0332247
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-27")
 softness = 0.7
 
-[node name="Joint2D-Bone-31-Bone-33" type="PinJoint2D" parent="Bone-31" unique_id=1159113762]
+[node name="Joint2D-Bone-31-Bone-33" type="PinJoint2D" parent="Bone-31" unique_id=1094143413]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(0.9337158, 42.41613)
-rotation = -0.022009568
+position = Vector2(0.5949402, 28.278015)
+rotation = -0.021035628
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-33")
 softness = 0.7
 
-[node name="Bone-32" type="RigidBody2D" parent="." unique_id=1093537787 instance=ExtResource("3_lppol")]
+[node name="Bone-32" type="RigidBody2D" parent="." unique_id=1966682398 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(541.0525, 114.084015)
+position = Vector2(546.04315, 114.38934)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -2838,36 +2840,36 @@ impulse_sound_threshold = 150.0
 metadata/idx = 32
 metadata/bone_name = &"Bone-32"
 
-[node name="@CollisionShape2D@27766" type="CollisionShape2D" parent="Bone-32" unique_id=1288852817]
+[node name="@CollisionShape2D@28023" type="CollisionShape2D" parent="Bone-32" unique_id=2039072407]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-32" unique_id=245582206]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-32" unique_id=753408035]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-32")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-32-Bone-31" type="PinJoint2D" parent="Bone-32" unique_id=555112869]
+[node name="Joint2D-Bone-32-Bone-31" type="PinJoint2D" parent="Bone-32" unique_id=1602885319]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-29.50708, -30.484947)
-rotation = -3.9106922
+position = Vector2(-19.451477, -20.533875)
+rotation = -3.8999276
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-31")
 softness = 0.7
 
-[node name="Joint2D-Bone-32-Bone-33" type="PinJoint2D" parent="Bone-32" unique_id=1494391851]
+[node name="Joint2D-Bone-32-Bone-33" type="PinJoint2D" parent="Bone-32" unique_id=1126542002]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-38.264313, 18.326035)
-rotation = 1.124144
+position = Vector2(-25.390198, 12.46344)
+rotation = 1.1144744
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-33")
 softness = 0.7
 
-[node name="Bone-33" type="RigidBody2D" parent="." unique_id=1534147207 instance=ExtResource("3_lppol")]
+[node name="Bone-33" type="RigidBody2D" parent="." unique_id=1629228511 instance=ExtResource("3_lppol")]
 physics_interpolation_mode = 1
-position = Vector2(504.7907, 131.45097)
+position = Vector2(509.7322, 132.21352)
 collision_layer = 2
 mass = 0.1
 physics_material_override = SubResource("PhysicsMaterial_1lhgo")
@@ -2880,47 +2882,47 @@ impulse_sound_threshold = 150.0
 metadata/idx = 33
 metadata/bone_name = &"Bone-33"
 
-[node name="@CollisionShape2D@27768" type="CollisionShape2D" parent="Bone-33" unique_id=1921677637]
+[node name="@CollisionShape2D@28025" type="CollisionShape2D" parent="Bone-33" unique_id=122854564]
 shape = SubResource("CircleShape2D_4x6j0")
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-33" unique_id=1466479690]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Bone-33" unique_id=1833360436]
 visible = false
 remote_path = NodePath("../../Skeleton2D/Bone-33")
 update_rotation = false
 update_scale = false
 
-[node name="Joint2D-Bone-33-Bone-32" type="PinJoint2D" parent="Bone-33" unique_id=1416841514]
+[node name="Joint2D-Bone-33-Bone-32" type="PinJoint2D" parent="Bone-33" unique_id=393696495]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(38.264282, -18.326035)
-rotation = -2.0174487
+position = Vector2(25.390228, -12.46344)
+rotation = -2.0271182
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-32")
 softness = 0.7
 
-[node name="Joint2D-Bone-33-Bone-27" type="PinJoint2D" parent="Bone-33" unique_id=214925563]
+[node name="Joint2D-Bone-33-Bone-27" type="PinJoint2D" parent="Bone-33" unique_id=660820939]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-34.343994, -24.909653)
-rotation = -4.084885
+position = Vector2(-22.701263, -16.871674)
+rotation = -4.0732512
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-27")
 softness = 0.7
 
-[node name="Joint2D-Bone-33-Bone-31" type="PinJoint2D" parent="Bone-33" unique_id=57388940]
+[node name="Joint2D-Bone-33-Bone-31" type="PinJoint2D" parent="Bone-33" unique_id=2008312502]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-0.9337158, -42.416138)
-rotation = -3.163602
+position = Vector2(-0.5949402, -28.278015)
+rotation = -3.1626284
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-31")
 softness = 0.7
 
-[node name="Joint2D-Bone-33-Bone-29" type="PinJoint2D" parent="Bone-33" unique_id=806582576]
+[node name="Joint2D-Bone-33-Bone-29" type="PinJoint2D" parent="Bone-33" unique_id=2111851082]
 physics_interpolation_mode = 1
 visible = false
-position = Vector2(-39.808807, 14.671707)
-rotation = 1.2176887
+position = Vector2(-26.423431, 10.089691)
+rotation = 1.2060372
 node_a = NodePath("..")
 node_b = NodePath("../../Bone-29")
 softness = 0.7

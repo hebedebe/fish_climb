@@ -1,1 +1,0 @@
-class_name RopeConstraint extends Node2D
