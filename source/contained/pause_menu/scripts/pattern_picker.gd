@@ -37,6 +37,10 @@ func on_file_selected_web(file_name: String, _file_type: String, base64_data: St
 	file.store_buffer(raw_data)
 	file.close()
 	
+	print("(WEB ONLY) Saved file copy to %s" % file_path)
+	if not OS.is_userfs_persistent():
+		print("(WEB ONLY) User filesystem is NOT persistent - file copy will be lost on reload")
+	
 	CustomisationManager.player_pattern_path = file_path
 
 func on_file_selected(path: String) -> void:

@@ -23,7 +23,7 @@ anchor_bottom = 1.0
 offset_top = -23.0
 offset_right = 81.0
 grow_vertical = 0
-text = "Build 0.2.1"
+text = "Build x.x.x"
 script = ExtResource("1_shcgg")
 
 [node name="FPSLabel" type="Label" parent="Control" unique_id=236843124]

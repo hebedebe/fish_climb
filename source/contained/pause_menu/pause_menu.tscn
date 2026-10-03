@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://baaaiwjrjaeti"]
+[gd_scene format=3 uid="uid://baaaiwjrjaeti"]
 
 [ext_resource type="Script" uid="uid://i68hudjpficx" path="res://source/contained/pause_menu/scripts/pause_menu.gd" id="1_g2srp"]
 [ext_resource type="Theme" uid="uid://7fikpqm7uett" path="res://source/contained/pause_menu/themes/pause_menu_theme.tres" id="2_fuwgk"]
@@ -10,7 +10,7 @@
 [ext_resource type="Script" uid="uid://bcbsc627eevsr" path="res://source/contained/pause_menu/scripts/sound_slider.gd" id="3_pmjhf"]
 [ext_resource type="Script" uid="uid://bkl6g25jwb47h" path="res://addons/StyleboxFancy/StyleBoxFancy.gd" id="4_lxr6y"]
 [ext_resource type="Texture2D" uid="uid://spt6hes383ke" path="res://data/dialogue_bubbles/fish_head/SD132.JPG" id="5_elatv"]
-[ext_resource type="Script" uid="uid://dmtv6vw6acjpk" path="res://source/contained/ui/scripts/button_effect_manager.gd" id="6_lxr6y"]
+[ext_resource type="Script" uid="uid://dmtv6vw6acjpk" path="res://source/contained/ui/scripts/control_effect_manager.gd" id="6_lxr6y"]
 [ext_resource type="Script" uid="uid://dku0u3p6r0e0h" path="res://source/contained/pause_menu/scripts/appearing_control.gd" id="7_atvq0"]
 [ext_resource type="AudioStream" uid="uid://bf4xk61uuey88" path="res://source/common/sounds/fish_slap.mp3" id="8_atvq0"]
 [ext_resource type="Script" uid="uid://nph4hph7elpv" path="res://source/contained/pause_menu/scripts/squish_button.gd" id="8_h3lid"]
@@ -19,6 +19,7 @@
 [ext_resource type="Script" uid="uid://d0omsjfrqemt7" path="res://source/contained/pause_menu/scripts/color_picker_button.gd" id="14_hvmt2"]
 [ext_resource type="Script" uid="uid://exhb4r7v6l3r" path="res://source/contained/pause_menu/scripts/antialiasing_box.gd" id="14_yxgq6"]
 [ext_resource type="Script" uid="uid://qtuywdxikejb" path="res://source/contained/pause_menu/scripts/show_timer_check_box.gd" id="15_wsr1x"]
+[ext_resource type="AudioStream" uid="uid://chxkakk7n5kty" path="res://source/common/sounds/tick.mp3" id="16_6gim1"]
 [ext_resource type="Script" uid="uid://bl23reswtsoo8" path="res://source/contained/pause_menu/scripts/pattern_picker.gd" id="17_71yj7"]
 [ext_resource type="Script" uid="uid://bs8137kh8ifja" path="res://source/contained/pause_menu/scripts/pattern_strength_slider.gd" id="17_ijfxw"]
 [ext_resource type="Script" uid="uid://damlnfr3lo8b" path="res://source/contained/pause_menu/scripts/leaderboard.gd" id="21_4axkd"]
@@ -74,9 +75,6 @@ shadow_enabled = true
 shadow_offset = Vector2(2, 2)
 shadow_spread = Vector2(2, 2)
 metadata/_custom_type_script = "uid://bkl6g25jwb47h"
-
-[sub_resource type="AudioStreamMP3" id="AudioStreamMP3_elatv"]
-data = PackedByteArray("//OEZAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAJAAAIEAAnJycnJycnJycnJ1tbW1tbW1tbW1tbfHx8fHx8fHx8fHyWlpaWlpaWlpaWlrGxsbGxsbGxsbGxy8vLy8vLy8vLy8vl5eXl5eXl5eXl5fz8/Pz8/Pz8/Pz8//////////////8AAABQTEFNRTQuMCAABHgAAAAAAAAAADUIJAQgLQAB4AAACBCZHvT4AAAAAAAAAAAAAAAAAAAA//OkZAAF+AE5j6AAAAAAA0gBQAAAAAAKlCALYna/v8EAfL4Jv4f5Q4XggfUCH/iN//4Y5Q53bPygIOKHP5d//4P///B96sqZu4O4AAAUkzOKRbVkmROGYQIIbFy1TDqDAzXFOQoejLxtlGFjYCNagahUeHBWsKOl+zAyz1uzuaGtF5UKW3BpMBMwgMw4xSI2hgyYPOGIGHH4YQRXRTUUSQAxdHhKovw4Y2ATEL2ww7RaCO3JyAGmByAKhwgmAgizGJt2j4MIP+1aM3IJed84DceJNLYPGFB2n6pnSvz5ITHhLeNZilPKn4jcUqv3PuQ/EcchxFN1HEBi/3JvZ2a0MvUw+LUnI8xCzjWijuVae9DEORJnEOMCQGQGsx25+L2K//PEZNsqXhdtj8zpkAAAA0gBgAAAXkqSWe+5ypdsVc+v5ZuSqlvy/KWXKSxK5eyiEt6pmyd/4efhlDLLrcFNJTB0/NQ3LsZmm+lprUSj0jwmr/Yflcvt/yzblFNKJZYlHL9js//4SJrECUlm3UfyyoJB0Px2flknjF7v/dcKC4rKqGd5ljWpquO8q1W6/M26tgAnWrft8xCRMzCrqKc5VtEnKrYj59AZlM+li3liH87qTMiJEyRUXKGXRjwEGAHooUR6IKkRYhxFZkTzsaJqMWpFwc4fy4TaJmgkXW0zIusYGx8ul1mcui5UWRQSdSzQ2SplqeUZoodIvGJaK5YJk+mbKMlnkzpqRVFSKJdUTxgKFJIvGZODrIiYnjUpE0kQIpF42JmbIlFTOYG7VmJcXMjZJFIxNUEZkpBJI2qUsvGzlgssbIGSSLrRWhmJsktFjqtklqu0yzpdZFanMs4Zl1FmU/zFaRkbVpTFGv2bu6wDSJilqzTIlJNtjKqOU0d2//OUZPMb0gtjj+fIAAAAA0gBwAAAkjUPU8hcJ+vypo12rLdXcdV2Uw4yqNS92YbS0PvAjQFTAgh6lMiUfXw6Mj6zK2uwLkNgytsR0ffn1Oj5ty9ce7RBNSUnU21bXrHW0XMt8X/bErRQ9AVOKuSsFHLDQdqsg1IBtThzQ8FINTY2sVgWlnmLFYWDpblmv9V/aVSLlVrkmVgWla7xWZUVTJuPZ1hoKtYldeJNqGZiVHFCw1VhG/4cl4KayabG1ZqYmacAKVOzf7+RTXiZvLjdZvGYYd/IsIllpCOxDNS7bkYYTw02swyFCIgzx9DkIC23//OEZO8XhgdFe2GImIAAA0gAAAAAa8D7q3Lsrv1KTXg0sVyvRcxbLa7WWXHp1mjRKLhq5LVrVghRJh+xo6WsuVrlmSTGcomox5MUZNpdnXC96FMKhAWE19lDCiw5AVHqbehWbapzEDdWYkwWGjjlFTakiwhBsMFoOHh0LTtasLN/AdHmq3GprNzH//Nfx7ZyktnBI8AuImxEoGlYdWeEAAkaj+Y1Y4Mlj2TqiK8kSzyjI8Ux2NtMp43zlCxYTMJQ//OEZN0W+dsxjz2ImgAAA0gAAAAAdh/gLQdRvrmK8gZgnUoE0CzfQkBHQICdWJQ0T/wybYWjONfWVRkoGRGp9yb0kbTcJ77jm//3KWyedBdFUvu1vvPlQKPDw9EQE5qJPSPJwJIyaSe/blcINTqR1Xqb7yP2DeKyXhCYdxYrr3e30BRttAAkjJ8R8vISHF0Aj2b25/KllF9y6lKyOTpiioXabZjMKFEmBxVxGGTN1kV6h1KjrmF9Z7aPrWiEGxFZ//OEZNASPWspjx3pWAAAA0gAAAAAhqedP3yGJdSe2efhKgRs1tfL9zdM5VlJpFm3rML1EL2HyyWLwZXv/cXezWjLhALB4RiQu8xfP7nfLoNOzpe1Hz1IjNlF51dyFg/vNLzSk3/3JmmNsr31AAAG9dUIiYeFAEs013+/XY6rBQFYBNVoCApCjQWFO28Fl1BVrLptHyGpJaP06YD59I+ZnKDF9rQn0bNa0YldR9G3UBJmKUKAgJc8Ma7NThhQETs0//OEZOkTJXklLwsMWAAAA0gAAAAAAm1KMcZvh9ZjqlG2Am14GAi1UBJgJtjqrscZv/2bUBYGwmwWEcNiuOhYioXDoqIaFYmhSY4FyOCsTQrj5uPl66Xj5uPlxcNVTEFNRTQuMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//N0ZPoSyU8tjw3jaoAAA0gAAAAAVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//MUZPYAAAH+AAAAAAAAA0gAAAAAVVVV")
 
 [sub_resource type="GDScript" id="GDScript_0xran"]
 script/source = "extends SquishButton
@@ -146,11 +144,14 @@ theme = ExtResource("2_fuwgk")
 text = " "
 script = ExtResource("8_h3lid")
 
-[node name="ButtonEffectManager" type="Node" parent="PauseMenu/PausePanel/VBoxContainer/Resume" unique_id=2036537857]
+[node name="ButtonEffectManager" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/Resume" unique_id=1841622067]
+physics_interpolation_mode = 0
+anchors_preset = 0
 script = ExtResource("6_lxr6y")
-hover_sound = SubResource("AudioStreamMP3_elatv")
-hover_sound_volume = -20.0
+hover_sound = ExtResource("16_6gim1")
+hover_sound_volume = -15.0
 pressed_sound = ExtResource("8_atvq0")
+pressed_sound_volume = -5.0
 metadata/_custom_type_script = "uid://dmtv6vw6acjpk"
 
 [node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/Resume" unique_id=717107479]
@@ -287,6 +288,17 @@ tick_volume = -15.0
 custom_minimum_size = Vector2(0, 10)
 layout_mode = 2
 
+[node name="ButtonEffectManager2" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/AudioContainer" unique_id=1572839743]
+physics_interpolation_mode = 0
+visible = false
+layout_mode = 2
+script = ExtResource("6_lxr6y")
+hover_sound = ExtResource("16_6gim1")
+hover_sound_volume = -15.0
+pressed_sound = ExtResource("8_atvq0")
+pressed_sound_volume = -5.0
+metadata/_custom_type_script = "uid://dmtv6vw6acjpk"
+
 [node name="GraphicsContainer" type="FoldableContainer" parent="PauseMenu/PausePanel/VBoxContainer" unique_id=2127554504]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
@@ -330,6 +342,18 @@ popup/item_2/id = 2
 script = ExtResource("12_cksnl")
 target_setting = &"grass_quality_level"
 
+[node name="ButtonEffectManager2" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer/GrassQuality/OptionButton" unique_id=2114154436]
+physics_interpolation_mode = 0
+visible = false
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("6_lxr6y")
+hover_sound = ExtResource("16_6gim1")
+hover_sound_volume = -15.0
+pressed_sound = ExtResource("8_atvq0")
+pressed_sound_volume = -5.0
+metadata/_custom_type_script = "uid://dmtv6vw6acjpk"
+
 [node name="WaterQuality" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer" unique_id=1253010323]
 layout_mode = 2
 
@@ -358,6 +382,18 @@ popup/item_2/id = 2
 script = ExtResource("12_cksnl")
 target_setting = &"water_quality_level"
 
+[node name="ButtonEffectManager2" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer/WaterQuality/OptionButton" unique_id=749391257]
+physics_interpolation_mode = 0
+visible = false
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("6_lxr6y")
+hover_sound = ExtResource("16_6gim1")
+hover_sound_volume = -15.0
+pressed_sound = ExtResource("8_atvq0")
+pressed_sound_volume = -5.0
+metadata/_custom_type_script = "uid://dmtv6vw6acjpk"
+
 [node name="Antialiasing" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer/VBoxContainer" unique_id=1361566507]
 layout_mode = 2
 
@@ -380,6 +416,17 @@ script = ExtResource("14_yxgq6")
 custom_minimum_size = Vector2(0, 10)
 layout_mode = 2
 
+[node name="ButtonEffectManager2" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/GraphicsContainer" unique_id=2056391127]
+physics_interpolation_mode = 0
+visible = false
+layout_mode = 2
+script = ExtResource("6_lxr6y")
+hover_sound = ExtResource("16_6gim1")
+hover_sound_volume = -15.0
+pressed_sound = ExtResource("8_atvq0")
+pressed_sound_volume = -5.0
+metadata/_custom_type_script = "uid://dmtv6vw6acjpk"
+
 [node name="ShowTimer" type="HBoxContainer" parent="PauseMenu/PausePanel/VBoxContainer" unique_id=896019822]
 layout_mode = 2
 
@@ -398,17 +445,30 @@ button_pressed = true
 text = "tick this box twin"
 script = ExtResource("15_wsr1x")
 
+[node name="ButtonEffectManager2" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/ShowTimer/CheckBox" unique_id=541438037]
+physics_interpolation_mode = 0
+anchors_preset = 0
+script = ExtResource("6_lxr6y")
+hover_sound = ExtResource("16_6gim1")
+hover_sound_volume = -15.0
+pressed_sound = ExtResource("8_atvq0")
+pressed_sound_volume = -5.0
+metadata/_custom_type_script = "uid://dmtv6vw6acjpk"
+
 [node name="Quit" type="Button" parent="PauseMenu/PausePanel/VBoxContainer" unique_id=241834269]
 layout_mode = 2
 theme = ExtResource("2_fuwgk")
 text = " "
 script = ExtResource("3_dkg16")
 
-[node name="ButtonEffectManager" type="Node" parent="PauseMenu/PausePanel/VBoxContainer/Quit" unique_id=181807875]
+[node name="ButtonEffectManager2" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/Quit" unique_id=1757833416]
+physics_interpolation_mode = 0
+anchors_preset = 0
 script = ExtResource("6_lxr6y")
-hover_sound = SubResource("AudioStreamMP3_elatv")
-hover_sound_volume = -20.0
+hover_sound = ExtResource("16_6gim1")
+hover_sound_volume = -15.0
 pressed_sound = ExtResource("8_atvq0")
+pressed_sound_volume = -5.0
 metadata/_custom_type_script = "uid://dmtv6vw6acjpk"
 
 [node name="Label" type="Label" parent="PauseMenu/PausePanel/VBoxContainer/Quit" unique_id=174215825]
@@ -440,10 +500,6 @@ text = " "
 script = SubResource("GDScript_0xran")
 
 [node name="ButtonEffectManager" type="Node" parent="PauseMenu/ResetSaveButton" unique_id=1170657419]
-script = ExtResource("6_lxr6y")
-hover_sound = SubResource("AudioStreamMP3_elatv")
-hover_sound_volume = -20.0
-pressed_sound = ExtResource("8_atvq0")
 metadata/_custom_type_script = "uid://dmtv6vw6acjpk"
 
 [node name="Label" type="Label" parent="PauseMenu/ResetSaveButton" unique_id=1811782631]
@@ -464,6 +520,16 @@ offset_bottom = 40.0
 mouse_filter = 2
 script = ExtResource("7_atvq0")
 metadata/_custom_type_script = "uid://dku0u3p6r0e0h"
+
+[node name="ButtonEffectManager2" type="Control" parent="PauseMenu/ResetSaveButton" unique_id=1942268920]
+physics_interpolation_mode = 0
+anchors_preset = 0
+script = ExtResource("6_lxr6y")
+hover_sound = ExtResource("16_6gim1")
+hover_sound_volume = -15.0
+pressed_sound = ExtResource("8_atvq0")
+pressed_sound_volume = -5.0
+metadata/_custom_type_script = "uid://dmtv6vw6acjpk"
 
 [node name="CustomisationPanel" type="PanelContainer" parent="PauseMenu" unique_id=1968978902]
 layout_mode = 1
@@ -588,6 +654,16 @@ script = ExtResource("22_itu50")
 save_mode = 1
 properties_to_save = Array[StringName]([&"save_by_path"])
 metadata/_custom_type_script = "uid://dxmcvmej7jj70"
+
+[node name="ButtonEffectManager2" type="Control" parent="PauseMenu/CustomisationPanel/VBoxContainer/PickPattern" unique_id=373755166]
+physics_interpolation_mode = 0
+anchors_preset = 0
+script = ExtResource("6_lxr6y")
+hover_sound = ExtResource("16_6gim1")
+hover_sound_volume = -15.0
+pressed_sound = ExtResource("8_atvq0")
+pressed_sound_volume = -5.0
+metadata/_custom_type_script = "uid://dmtv6vw6acjpk"
 
 [node name="AppearingControl" type="Control" parent="PauseMenu/CustomisationPanel" unique_id=522643560]
 layout_mode = 2

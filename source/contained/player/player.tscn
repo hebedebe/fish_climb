@@ -95,7 +95,7 @@ metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=656171891]
 top_level = true
 position = Vector2(0, -200)
-offset = Vector2(1.1091774, 1.6453933)
+offset = Vector2(-0.14789698, -2.748625)
 zoom = Vector2(0.3, 0.3)
 editor_draw_limits = true
 
@@ -118,6 +118,7 @@ player_body = NodePath("..")
 
 [node name="SlapSound" type="AudioStreamPlayer2D" parent="PlayerBody/PlayerCenter/Sounds" unique_id=965572218]
 stream = SubResource("AudioStreamRandomizer_4eph7")
+volume_db = 1.0
 bus = &"SFX"
 script = ExtResource("6_fhjrr")
 delay = 0.3
