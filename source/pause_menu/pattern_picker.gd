@@ -1,8 +1,11 @@
 extends Button
 
+const WEB_FILE_PATH = "user://patterns/"
+
 @export var file_types: String
 
 var web_file_dialogue: FileAccessWeb
+
 @onready var file_dialog: FileDialog = $FileDialog
 
 func _ready() -> void:
@@ -25,11 +28,16 @@ func on_pressed() -> void:
 			file_dialog.popup_centered()
 
 func on_file_selected_web(file_name: String, _file_type: String, base64_data: String) -> void:
-	var raw_data: PackedByteArray = Marshalls.base64_to_raw(base64_data)
-	var file = FileAccess.open(file_name, FileAccess.WRITE)
+	var raw_data := Marshalls.base64_to_raw(base64_data)
+	
+	var file_path := WEB_FILE_PATH + file_name
+	DirAccess.make_dir_absolute(WEB_FILE_PATH)
+	
+	var file := FileAccess.open(file_path, FileAccess.WRITE)
 	file.store_buffer(raw_data)
 	file.close()
-	CustomisationManager.player_pattern_path = file_name
+	
+	CustomisationManager.player_pattern_path = file_path
 
 func on_file_selected(path: String) -> void:
 	CustomisationManager.player_pattern_path = path

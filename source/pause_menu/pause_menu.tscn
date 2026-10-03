@@ -583,6 +583,12 @@ access = 2
 filters = PackedStringArray("*.png", "*.jpg", "*.jpeg", "*.webp", "*.svg")
 use_native_dialog = true
 
+[node name="SaverNode" type="Node" parent="PauseMenu/CustomisationPanel/VBoxContainer/PickPattern" unique_id=1446902802]
+script = ExtResource("22_itu50")
+save_mode = 1
+properties_to_save = Array[StringName]([&"save_by_path"])
+metadata/_custom_type_script = "uid://dxmcvmej7jj70"
+
 [node name="AppearingControl" type="Control" parent="PauseMenu/CustomisationPanel" unique_id=522643560]
 layout_mode = 2
 mouse_filter = 2

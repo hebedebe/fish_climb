@@ -14,6 +14,7 @@ var player_pattern_tint: Color = Color.WHITE:
 		
 var player_pattern_path: String:
 	set(value):
+		print("Set player pattern path: %s" % value)
 		player_pattern_path = value
 		customisation_updated.emit()
 
