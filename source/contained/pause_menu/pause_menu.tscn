@@ -83,8 +83,9 @@ script/source = "extends SquishButton
 func _on_pressed() -> void:
 	SaveManager.clear_data(SaveManager.SaveMode.Game)
 	GameplayEvents.broadcast(&\"save_reset\")
+	GameplayEvents.broadcast(&\"reload_current_scene\")
 	#SaveManager.load_game(SaveManager.SaveMode.Game)
-	get_tree().reload_current_scene()
+	#get_tree().reload_current_scene()
 "
 
 [node name="PauseCanvasLayer" type="CanvasLayer" unique_id=945801933]

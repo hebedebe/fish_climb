@@ -22,8 +22,6 @@
 [ext_resource type="PackedScene" uid="uid://wubj35i2lekd" path="res://source/contained/props/rock/rock.tscn" id="20_su2an"]
 [ext_resource type="PackedScene" uid="uid://dsejsxjweaaw6" path="res://source/contained/props/hanging_platform/hanging_platform.tscn" id="21_grxpw"]
 [ext_resource type="PackedScene" uid="uid://cm6gykwt0fjxj" path="res://source/contained/post_process/post_process.tscn" id="22_m5nn3"]
-[ext_resource type="PackedScene" uid="uid://baaaiwjrjaeti" path="res://source/contained/pause_menu/pause_menu.tscn" id="23_hon24"]
-[ext_resource type="PackedScene" uid="uid://ci5spsld76qi" path="res://source/contained/build_overlay/build_overlay.tscn" id="24_w23gn"]
 [ext_resource type="PackedScene" uid="uid://veqesipi4ps2" path="res://source/contained/gameplay_overlay/game_overlay.tscn" id="25_kloy6"]
 [ext_resource type="PackedScene" uid="uid://d2f2uonx5sjhi" path="res://source/contained/player/player.tscn" id="26_uvro3"]
 
@@ -1191,10 +1189,6 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 position = Vector2(21358, -20735)
 
 [node name="PostProcess" parent="." unique_id=1121221467 instance=ExtResource("22_m5nn3")]
-
-[node name="PauseCanvasLayer" parent="." unique_id=945801933 instance=ExtResource("23_hon24")]
-
-[node name="BuildOverlay" parent="." unique_id=1933529950 instance=ExtResource("24_w23gn")]
 
 [node name="GameOverlay" parent="." unique_id=657389411 instance=ExtResource("25_kloy6")]
 

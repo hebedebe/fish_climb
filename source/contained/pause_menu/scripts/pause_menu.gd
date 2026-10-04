@@ -1,3 +1,4 @@
+@icon("res://addons/at-icons/node/pause.svg")
 extends CanvasLayer
 
 signal shown
