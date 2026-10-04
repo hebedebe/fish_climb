@@ -82,7 +82,7 @@ static var SETTINGS_CONFIGURATION: Dictionary = {
 	},
 
 	CUSTOM_TEST_SCENE_PATH: {
-		value = preload("./test_scene.tscn").resource_path,
+		value = Utilities.editor_load("res://addons/dialogue_manager/test_scene.gd").resource_path,
 		type = TYPE_STRING,
 		hint = PROPERTY_HINT_FILE,
 		hint_string = "*.tscn,*.scn",

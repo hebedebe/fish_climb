@@ -147,6 +147,7 @@ script = ExtResource("8_h3lid")
 [node name="ButtonEffectManager" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/Resume" unique_id=1841622067]
 physics_interpolation_mode = 0
 anchors_preset = 0
+mouse_filter = 2
 script = ExtResource("6_lxr6y")
 hover_sound = ExtResource("16_6gim1")
 hover_sound_volume = -15.0
@@ -292,6 +293,7 @@ layout_mode = 2
 physics_interpolation_mode = 0
 visible = false
 layout_mode = 2
+mouse_filter = 2
 script = ExtResource("6_lxr6y")
 hover_sound = ExtResource("16_6gim1")
 hover_sound_volume = -15.0
@@ -420,6 +422,7 @@ layout_mode = 2
 physics_interpolation_mode = 0
 visible = false
 layout_mode = 2
+mouse_filter = 2
 script = ExtResource("6_lxr6y")
 hover_sound = ExtResource("16_6gim1")
 hover_sound_volume = -15.0
@@ -448,6 +451,7 @@ script = ExtResource("15_wsr1x")
 [node name="ButtonEffectManager2" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/ShowTimer/CheckBox" unique_id=541438037]
 physics_interpolation_mode = 0
 anchors_preset = 0
+mouse_filter = 2
 script = ExtResource("6_lxr6y")
 hover_sound = ExtResource("16_6gim1")
 hover_sound_volume = -15.0
@@ -464,6 +468,7 @@ script = ExtResource("3_dkg16")
 [node name="ButtonEffectManager2" type="Control" parent="PauseMenu/PausePanel/VBoxContainer/Quit" unique_id=1757833416]
 physics_interpolation_mode = 0
 anchors_preset = 0
+mouse_filter = 2
 script = ExtResource("6_lxr6y")
 hover_sound = ExtResource("16_6gim1")
 hover_sound_volume = -15.0
@@ -524,6 +529,7 @@ metadata/_custom_type_script = "uid://dku0u3p6r0e0h"
 [node name="ButtonEffectManager2" type="Control" parent="PauseMenu/ResetSaveButton" unique_id=1942268920]
 physics_interpolation_mode = 0
 anchors_preset = 0
+mouse_filter = 2
 script = ExtResource("6_lxr6y")
 hover_sound = ExtResource("16_6gim1")
 hover_sound_volume = -15.0
@@ -658,6 +664,7 @@ metadata/_custom_type_script = "uid://dxmcvmej7jj70"
 [node name="ButtonEffectManager2" type="Control" parent="PauseMenu/CustomisationPanel/VBoxContainer/PickPattern" unique_id=373755166]
 physics_interpolation_mode = 0
 anchors_preset = 0
+mouse_filter = 2
 script = ExtResource("6_lxr6y")
 hover_sound = ExtResource("16_6gim1")
 hover_sound_volume = -15.0

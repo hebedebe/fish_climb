@@ -9,6 +9,10 @@ static func dot_separated_string(...arguments: Array) -> String:
 	return string
 
 static func load_image_texture(path: String, generate_mipmaps: bool = true) -> ImageTexture:
+	if not FileAccess.file_exists(path):
+		push_error("File at path '%s' does not exist" % path)
+		return null
+	
 	var loaded_image := Image.new()
 	var error := loaded_image.load(path)
 	
@@ -39,3 +43,24 @@ static func format_time(time: float) -> String:
 
 static func small_hash(string: String) -> String:
 	return string.sha1_text().substr(0,5)
+
+## use to replace testing loads/preloads (where possible) to mitigate errors in export
+static func editor_load(path: String, 
+		allow_in_editor: bool = true, allow_embedded: bool = true) -> Variant:
+	if ((Engine.is_editor_hint() and allow_in_editor) or 
+			(Engine.is_embedded_in_editor() and allow_embedded)):
+		return load(path)
+	return generate_empty_resource()
+
+static var empty_resource_count: int = 0
+static func generate_empty_resource() -> Resource:
+	empty_resource_count+=1
+	var resource := Resource.new()
+	resource.resource_name = "Empty Resource #%s" % empty_resource_count
+	print("Generated empty resource (%s)" % resource)
+	return resource
+
+static func is_web_export() -> bool:
+	return OS.has_feature("web")
+	
+	

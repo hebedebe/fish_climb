@@ -2,6 +2,17 @@ extends CheckBox
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if Utilities.is_web_export():
+		print("Disabling antialiasing option in web export")
+		var disabled_label := Label.new()
+		disabled_label.name = "DISABLED"
+		disabled_label.text = "Disabled in web build."
+		disabled_label.add_theme_color_override("font_color", Color.RED)
+		disabled_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		get_parent().add_child.call_deferred(disabled_label)
+		print(disabled_label)
+		queue_free()
+		return
 	pressed.connect(on_pressed)
 	on_pressed()
 	
