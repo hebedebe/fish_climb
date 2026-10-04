@@ -31,6 +31,7 @@ func switch_scene(scene: Node) -> void:
 	free_contained_scene()
 	contained_scene = scene
 	add_child(scene)
+	GameplayEvents.broadcast(&"scene_changed")
 
 func has_contained_scene() -> bool:
 	return contained_scene != null

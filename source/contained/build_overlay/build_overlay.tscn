@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://mir3qg4jicfq" path="res://source/contained/build_overlay/scripts/fps_label.gd" id="2_4ufww"]
 
 [node name="BuildOverlay" type="CanvasLayer" unique_id=1933529950]
+process_mode = 3
 
 [node name="Control" type="Control" parent="." unique_id=505810575]
 modulate = Color(1, 1, 1, 0.5372549)

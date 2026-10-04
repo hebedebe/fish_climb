@@ -82,8 +82,9 @@ script/source = "extends SquishButton
 
 func _on_pressed() -> void:
 	SaveManager.clear_data(SaveManager.SaveMode.Game)
-	GameplayEvents.broadcast(&\"save_reset\")
+	SaveManager.save_game(SaveManager.SaveMode.Settings) # in case the player changed settings right before
 	GameplayEvents.broadcast(&\"reload_current_scene\")
+	#GameplayEvents.broadcast(&\"save_reset\")
 	#SaveManager.load_game(SaveManager.SaveMode.Game)
 	#get_tree().reload_current_scene()
 "
