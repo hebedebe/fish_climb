@@ -22,8 +22,8 @@ var save_data: Dictionary
 func _ready() -> void:
 	event_listener = EventTrigger.new()
 	add_child(event_listener)
-	event_listener.add_callback(&"save_game", "save_game")
-	event_listener.add_callback(&"load_game", "load_game")
+	event_listener.add_callback(&"save_game", save_game)
+	event_listener.add_callback(&"load_game", load_all)
 	
 	print("Save manager initialised")
 	
@@ -31,13 +31,18 @@ func _ready() -> void:
 	validate_save_file(SaveMode.Settings)
 	
 	if auto_load:
-		get_tree().scene_changed.connect(load_save)
-		await load_save()
+		#get_tree().scene_changed.connect(load_all)
+		event_listener.add_callback(&"scene_changed", load_all)
+		await load_all()
 	autosave_loop()
 	
-func load_save():
-	call_deferred("load_game", SaveMode.Game)
-	call_deferred("load_game", SaveMode.Settings)
+func save_all():
+	save_game(SaveMode.Game)
+	save_game(SaveMode.Settings)
+	
+func load_all():
+	load_game(SaveMode.Game)
+	load_game(SaveMode.Settings)
 
 func autosave_loop() -> void:
 	await get_tree().create_timer(autosave_interval).timeout

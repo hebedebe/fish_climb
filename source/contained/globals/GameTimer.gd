@@ -9,8 +9,8 @@ var saver: SaverNode
 func _ready() -> void:
 	broadcast_notify = EventTrigger.new()
 	add_child(broadcast_notify)
-	broadcast_notify.add_callback(&"pause_timer", "pause_timer")
-	broadcast_notify.add_callback(&"save_reset", "reset_timer")
+	broadcast_notify.add_callback(&"pause_timer", pause_timer)
+	broadcast_notify.add_callback(&"save_reset", reset_timer)
 	
 	#SaveManager.bind_save_function(save_timer)
 	#SaveManager.bind_load_function(load_timer)

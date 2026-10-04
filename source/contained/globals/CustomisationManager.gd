@@ -38,8 +38,4 @@ func _ready() -> void:
 	
 	event_trigger = EventTrigger.new()
 	add_child(event_trigger)
-	event_trigger.add_callback(&"scene_changed", "emit_customisation_updated")
-
-
-func emit_customisation_updated() -> void:
-	customisation_updated.emit()
+	event_trigger.add_callback(&"scene_changed", customisation_updated.emit)

@@ -31,5 +31,8 @@ func handle_event(event_name: StringName) -> void:
 		_processed_trigger_callbacks[event_name].call()
 		#print("%s executed callback %s from %s" % [get_parent(), _processed_trigger_callbacks[event_name], event_name])
 
-func add_callback(broadcast_name: StringName, method_name: String) -> void:
+func add_callback_by_name(broadcast_name: StringName, method_name: String) -> void:
 	process_callback(broadcast_name, method_name)
+
+func add_callback(broadcast_name: StringName, callback: Callable) -> void:
+	_processed_trigger_callbacks[broadcast_name] = callback
