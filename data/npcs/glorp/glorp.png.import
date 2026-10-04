@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3mtx32p0cxlt"
-path="res://.godot/imported/glorp_npc.png-9a5b6d09e8cb72b80dee4468c9e774d6.ctex"
+uid="uid://dwqiaryk168nj"
+path="res://.godot/imported/glorp.png-c781653b65c73c83b835a79cc7988c52.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/npcs/glorp/glorp_npc.png"
-dest_files=["res://.godot/imported/glorp_npc.png-9a5b6d09e8cb72b80dee4468c9e774d6.ctex"]
+source_file="res://data/npcs/glorp/glorp.png"
+dest_files=["res://.godot/imported/glorp.png-c781653b65c73c83b835a79cc7988c52.ctex"]
 
 [params]
 
