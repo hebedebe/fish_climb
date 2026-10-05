@@ -3,27 +3,26 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3mskbmvnpwux"
-path.s3tc="res://.godot/imported/target.png-878c5e8d057c8a9a4c2322d4ab88e9ef.s3tc.ctex"
+path="res://.godot/imported/target.png-878c5e8d057c8a9a4c2322d4ab88e9ef.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://addons/phantom_camera/examples/textures/3D/target.png"
-dest_files=["res://.godot/imported/target.png-878c5e8d057c8a9a4c2322d4ab88e9ef.s3tc.ctex"]
+dest_files=["res://.godot/imported/target.png-878c5e8d057c8a9a4c2322d4ab88e9ef.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
-compress/channel_pack=0
+compress/channel_pack=1
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0

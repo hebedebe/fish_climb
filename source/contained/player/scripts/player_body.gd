@@ -10,7 +10,7 @@ var stable_center_node: Node2D
 
 func _ready():
 	stable_center_node = get_center_body().rigidbody
-	CustomisationManager.customisation_updated.connect(update_customisation)
+	CustomisationManager.customisation_updated.connect(update_customisation.call_deferred)
 
 func get_center_global_position() -> Vector2:
 	return stable_center_node.global_position
@@ -28,10 +28,10 @@ func update_customisation() -> void:
 	if (not CustomisationManager.player_pattern_path.is_empty()
 			and FileAccess.file_exists(CustomisationManager.player_pattern_path)):
 		var image := Utilities.load_image_texture(CustomisationManager.player_pattern_path, true)
-		shader_material.set_shader_parameter("pattern", image)
-	shader_material.set_shader_parameter("pattern_tint", CustomisationManager.player_pattern_tint)
-	shader_material.set_shader_parameter("base_tint", CustomisationManager.player_base_tint)
-	shader_material.set_shader_parameter("pattern_strength", CustomisationManager.player_pattern_strength)
+		shader_material.set_shader_parameter(&"pattern", image)
+	shader_material.set_shader_parameter(&"pattern_tint", CustomisationManager.player_pattern_tint)
+	shader_material.set_shader_parameter(&"base_tint", CustomisationManager.player_base_tint)
+	shader_material.set_shader_parameter(&"pattern_strength", CustomisationManager.player_pattern_strength)
 
 func get_bone(idx: int) -> Bone2D:
 	var skeleton_2d: Skeleton2D = %Skeleton2D
