@@ -6,3 +6,6 @@ func _ready() -> void:
 	
 func on_text_changed(new_text: String) -> void:
 	LeaderboardManager.player_name = new_text
+
+func refresh_player_name() -> void:
+	on_text_changed(text)

@@ -727,6 +727,13 @@ save_mode = 1
 properties_to_save = Array[StringName]([&"text"])
 metadata/_custom_type_script = "uid://dxmcvmej7jj70"
 
+[node name="EventTrigger" type="Node" parent="PauseMenu/LeaderboardPanel/VBoxContainer/HBoxContainer/PlayerName" unique_id=800134587]
+script = ExtResource("2_jtk1q")
+trigger_callbacks = Dictionary[StringName, String]({
+&"refresh_player_name": "refresh_player_name"
+})
+metadata/_custom_type_script = "uid://ctj52ol5st0sb"
+
 [node name="ScrollContainer" type="ScrollContainer" parent="PauseMenu/LeaderboardPanel/VBoxContainer" unique_id=1917698907]
 layout_mode = 2
 size_flags_vertical = 3

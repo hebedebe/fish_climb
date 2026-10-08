@@ -39,7 +39,7 @@ func get_bone(idx: int) -> Bone2D:
 		push_error("No Skeleton2D found in player body")
 		return null
 	return skeleton_2d.get_bone(idx)
-	
+
 ## Returns the local transform of the bone
 func get_bone_transform(idx: int) -> Transform2D:
 	return get_bone(idx).transform

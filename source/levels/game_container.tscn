@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://d2u8se3rej7y8" path="res://source/contained/game_container/scripts/game_container.gd" id="1_dc7mo"]
 [ext_resource type="Script" uid="uid://ctj52ol5st0sb" path="res://source/contained/events/scripts/event_trigger.gd" id="3_0rsgp"]
 [ext_resource type="PackedScene" uid="uid://baaaiwjrjaeti" path="res://source/contained/pause_menu/pause_menu.tscn" id="4_g24e7"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="5_g24e7"]
 [ext_resource type="PackedScene" uid="uid://ci5spsld76qi" path="res://source/contained/build_overlay/build_overlay.tscn" id="5_he51d"]
 
 [node name="GameContainer" type="Node" unique_id=568520627]
@@ -20,3 +21,16 @@ metadata/_custom_type_script = "uid://ctj52ol5st0sb"
 [node name="PauseCanvasLayer" parent="." unique_id=945801933 instance=ExtResource("4_g24e7")]
 
 [node name="BuildOverlay" parent="." unique_id=1933529950 instance=ExtResource("5_he51d")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1681996133]
+top_level = true
+position = Vector2(0, -200)
+zoom = Vector2(0.3, 0.3)
+editor_draw_limits = true
+
+[node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=1001259395]
+process_priority = 300
+process_physics_priority = 300
+script = ExtResource("5_g24e7")
+interpolation_mode = 1
+metadata/_custom_type_script = "uid://bd046eokvcnu2"

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bxkgx408l3anp" path="res://source/contained/props/hanging_platform/scripts/hanging_platform.gd" id="1_yr1xt"]
 [ext_resource type="Script" uid="uid://b5go11q4fwls4" path="res://source/contained/curved_terrain/scripts/curved_terrain.gd" id="2_g2ov5"]
-[ext_resource type="Texture2D" uid="uid://bcgo2een4wlxq" path="res://source/common/textures/GRYDIRT2.JPG" id="3_admx5"]
+[ext_resource type="Texture2D" uid="uid://bcgo2een4wlxq" path="res://source/common/textures/rock.JPG" id="3_admx5"]
 [ext_resource type="Script" uid="uid://dxmcvmej7jj70" path="res://source/contained/saving/scripts/saver_node.gd" id="4_5no1j"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cs72l"]

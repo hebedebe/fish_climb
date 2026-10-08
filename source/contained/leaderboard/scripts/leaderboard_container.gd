@@ -14,7 +14,7 @@ func clear_entries() -> void:
 		child.queue_free()
 
 func generate_entries() -> void:
-	var scores = await LeaderboardManager.get_scores()
+	var scores = await LeaderboardManager.get_low_scores()
 	clear_entries()
 	for score in scores:
 		add_entry(score.player_name, score.score)

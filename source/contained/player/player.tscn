@@ -9,7 +9,6 @@
 [ext_resource type="Script" uid="uid://dukgiw3swnxfg" path="res://source/contained/player/scripts/player_body.gd" id="7_fhjrr"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="7_ka6av"]
 [ext_resource type="Script" uid="uid://dimvdouy8g0sv" path="res://addons/phantom_camera/scripts/resources/phantom_camera_noise_2d.gd" id="8_5ffni"]
-[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="9_bypms"]
 [ext_resource type="Script" uid="uid://dve0c2jexg740" path="res://source/contained/interaction_area/scripts/interactor_area.gd" id="12_72fmy"]
 [ext_resource type="Texture2D" uid="uid://dy2gmuttxx04" path="res://source/contained/player/textures/up_indicator.png" id="13_li2ga"]
 [ext_resource type="Script" uid="uid://ch815cyoukk8r" path="res://source/contained/player/scripts/player_interaction_indicator.gd" id="14_f4mop"]
@@ -91,20 +90,6 @@ dead_zone_height = 0.15
 draw_limits = true
 noise = SubResource("Resource_4eph7")
 metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=656171891]
-top_level = true
-position = Vector2(0, -200)
-offset = Vector2(0.66004246, 0.39290085)
-zoom = Vector2(0.3, 0.3)
-editor_draw_limits = true
-
-[node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=1337692131]
-process_priority = 300
-process_physics_priority = 300
-script = ExtResource("9_bypms")
-interpolation_mode = 1
-metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
 [node name="PlayerBody" parent="." unique_id=1218513241 instance=ExtResource("2_rp4kk")]
 position = Vector2(-343, -95)

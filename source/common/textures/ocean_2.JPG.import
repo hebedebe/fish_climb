@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ciya18p0r3686"
-path="res://.godot/imported/OPOCEAN2.JPG-e3cf814cf139e257738b3bb66e167904.ctex"
+uid="uid://bako5rr78molg"
+path="res://.godot/imported/ocean_2.JPG-b5643d766b636a9d70bf43217ded77a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://source/common/textures/OPOCEAN2.JPG"
-dest_files=["res://.godot/imported/OPOCEAN2.JPG-e3cf814cf139e257738b3bb66e167904.ctex"]
+source_file="res://source/common/textures/ocean_2.JPG"
+dest_files=["res://.godot/imported/ocean_2.JPG-b5643d766b636a9d70bf43217ded77a9.ctex"]
 
 [params]
 

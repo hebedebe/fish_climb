@@ -63,4 +63,9 @@ static func generate_empty_resource() -> Resource:
 static func is_web_export() -> bool:
 	return OS.has_feature("web")
 	
-	
+
+static func try_queue_free(node: Node) -> bool:
+	if node != null:
+		node.queue_free()
+		return true
+	return false

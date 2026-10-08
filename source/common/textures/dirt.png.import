@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcgo2een4wlxq"
-path="res://.godot/imported/GRYDIRT2.JPG-08863aab4141f7bd2ca8aec224c07e56.ctex"
+uid="uid://c07240xp5nha8"
+path="res://.godot/imported/dirt.png-27ba0dea56976cc695c3b3c16d21f4fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://source/common/textures/GRYDIRT2.JPG"
-dest_files=["res://.godot/imported/GRYDIRT2.JPG-08863aab4141f7bd2ca8aec224c07e56.ctex"]
+source_file="res://source/common/textures/dirt.png"
+dest_files=["res://.godot/imported/dirt.png-27ba0dea56976cc695c3b3c16d21f4fe.ctex"]
 
 [params]
 
@@ -22,7 +22,7 @@ compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
-compress/channel_pack=0
+compress/channel_pack=1
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0

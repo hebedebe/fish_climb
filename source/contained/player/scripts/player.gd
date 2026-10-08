@@ -30,7 +30,7 @@ func _unhandled_input(event: InputEvent) -> void:
 func charge_pressed() -> void:
 	if charging:
 		stop_charging()
-		print("Cancelled charge")
+		#print("Cancelled charge")
 	else:
 		charging = true
 
