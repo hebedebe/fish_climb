@@ -17,7 +17,7 @@ extends BoundedPath2D
 		if Engine.is_editor_hint():
 			rebuild_path()
 
-var instances: Array[InteractiveGrass]
+var instances: Array[Node]
 
 func _ready() -> void:
 	rebuild_path()
@@ -44,3 +44,25 @@ func clear_instances() -> void:
 	for instance in instances:
 		instance.free()
 	instances.clear()
+
+
+func get_rect() -> Rect2:
+	var rect := super.get_rect()
+	
+	var top_left: Vector2 = rect.position
+	var bottom_right: Vector2 = rect.end
+	
+	for instance: Node2D in instances:
+		if instance.has_method("get_rect"):
+			var inst_rect: Rect2 = instance.get_rect()
+			var relative_position := instance.position + inst_rect.position
+			var relative_end := relative_position + inst_rect.size
+			top_left.x = min(top_left.x, relative_position.x)
+			top_left.y = min(top_left.y, relative_position.y)
+			bottom_right.x = max(bottom_right.x, relative_end.x)
+			bottom_right.y = max(bottom_right.y, relative_end.y)
+	
+	rect.position = top_left
+	rect.size = bottom_right - top_left
+	
+	return rect

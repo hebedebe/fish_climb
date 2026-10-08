@@ -1,3 +1,4 @@
+@tool
 @icon("res://addons/at-icons/node2d/grass.svg")
 class_name InteractiveGrass
 extends Area2D
@@ -11,6 +12,9 @@ extends Area2D
 var animate_grass: bool = true
 
 func _ready() -> void:
+	if Engine.is_editor_hint():
+		return
+		
 	body_entered.connect(_on_body_entered)
 	SettingsManager.graphics_settings_changed.connect(on_graphics_settings_changed)
 	#process_thread_group = Node.PROCESS_THREAD_GROUP_SUB_THREAD
@@ -39,6 +43,9 @@ func _on_body_entered(body: Node2D) -> void:
 		).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_ELASTIC)
 	
 func on_graphics_settings_changed() -> void:
+	if Engine.is_editor_hint():
+		return
+		
 	match SettingsManager.grass_quality_level:
 		SettingsManager.QualityLevel.LOW:
 			visible = false
@@ -58,3 +65,6 @@ func on_graphics_settings_changed() -> void:
 			sprite_2d.use_parent_material = false
 			monitoring = true
 			return
+
+func get_rect() -> Rect2:
+	return sprite_2d.get_rect()

@@ -2,7 +2,7 @@
 @icon("res://addons/at-icons/node2d/jigsaw_piece.svg")
 class_name LevelSegment extends VisibleOnScreenNotifier2D
 
-const SAVE_PATH = "res://data/level_segments/"
+const SAVE_PATH = "user://data/level_segments/"
 
 #@export_group("Tool Buttons")
 #@export_tool_button("Pack contained scene") var pack_action = pack_contents
@@ -66,9 +66,8 @@ func update_contained_scene_node() -> void:
 	else:
 		contained_scene_node = get_child(0)
 
-func get_id():
-	assert(not segment_data.resource_scene_unique_id.is_empty(), "Segment data has no unique id.")
-	return segment_data.resource_scene_unique_id
+func get_id() -> String:
+	return ("%s"%get_path()).sha1_text()
 
 func generate_packed_scene() -> PackedScene:
 	assert(contained_scene_node, "Contained scene node is invalid")
@@ -115,6 +114,9 @@ func pack_contents() -> void:
 func save_packed_scene(packed_scene: PackedScene) -> String:
 	var path := get_save_path()
 	print("Saving level segment packed scene to path ", path)
+	var dir_access := DirAccess.open("user://")
+	if not dir_access.dir_exists(SAVE_PATH):
+		dir_access.make_dir_recursive(SAVE_PATH)
 	var error = ResourceSaver.save(packed_scene, path)
 	if error != OK:
 		push_error("An error occurred while saving the scene to disk")
