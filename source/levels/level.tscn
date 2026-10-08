@@ -1232,4 +1232,4 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 [node name="GameOverlay" parent="." unique_id=657389411 instance=ExtResource("25_kloy6")]
 
 [node name="Player" parent="." unique_id=1896629207 instance=ExtResource("26_uvro3")]
-position = Vector2(-6372, -25563)
+position = Vector2(17, 81)
