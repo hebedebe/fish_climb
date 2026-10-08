@@ -1,0 +1,21 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://source/contained/curved_terrain/scripts/curved_terrain.gd" id="1_5kbln"]
+[ext_resource type="Texture2D" path="res://source/common/textures/dirt.png" id="2_qw23d"]
+
+[sub_resource type="Curve2D" id="Curve2D_o5yuq"]
+bake_interval = 300.0
+_data = {
+"points": PackedVector2Array(-376.08087, -107.451675, 376.08087, 107.451675, 2293.637, -3548.9092, 17.908613, -340.26364, -17.908613, 340.26364, 3056.637, -2833.9092, 313.40073, -268.6292, -313.40073, 268.6292, 1888.6368, -1987.9089, 188.04044, -232.81197, -188.04044, 232.81197, 899.6368, -1044.9089, 0, 0, 0, 0, 304.63684, 491.091, 68.12167, -433.27295, -68.12167, 433.27295, -544.3632, 2155.0908, 249.09003, -458.85007, -249.09003, 458.85007, 415.63684, 4717.091, 498.18005, 288.42004, -498.18005, -288.42004, -3276.363, 5781.091, -79.60112, 820.5351, 79.60112, -820.5351, -3669.363, 1586.0911, -286.5378, 376.08087, 286.5378, -376.08087, -2287.363, -1524.9089, -537.2584, -116.40598, 537.2584, 116.40598, 918.6313, -3789.9084)
+}
+point_count = 11
+
+[node name="CurvedTerrain11" type="Path2D" unique_id=535777028]
+texture_filter = 4
+position = Vector2(-0.00027188388, -2.2194603e-05)
+curve = SubResource("Curve2D_o5yuq")
+script = ExtResource("1_5kbln")
+fill_texture = ExtResource("2_qw23d")
+fill_texture_scale = Vector2(0.4, 0.4)
+bake_interval = 300.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"

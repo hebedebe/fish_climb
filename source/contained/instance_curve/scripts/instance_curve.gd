@@ -1,6 +1,9 @@
 @tool
 class_name InstanceCurve
-extends Path2D
+extends BoundedPath2D
+
+@warning_ignore("unused_private_class_variable")
+@export_tool_button("Update Node Location") var _update_node_location_action = update_node_location
 
 @export var scene: PackedScene:
 	set(value):
@@ -31,7 +34,7 @@ func rebuild_path() -> void:
 	
 	for point in points:
 		var instance: Node2D = scene.instantiate()
-		add_child(instance)
+		add_child(instance, false, INTERNAL_MODE_BACK)
 		instance.transform = curve.sample_baked_with_rotation(curve.get_closest_offset(point))
 		instances.append(instance)
 	

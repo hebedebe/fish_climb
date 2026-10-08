@@ -1,0 +1,51 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://source/contained/interactive_grass/scripts/interactive_grass_curve.gd" id="1_fx5r3"]
+[ext_resource type="PackedScene" path="res://source/contained/interactive_grass/interactive_grass.tscn" id="2_0deu5"]
+
+[sub_resource type="Curve2D" id="Curve2D_hy0rb"]
+bake_interval = 500.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 4623, -3012, -370.77405, 0, 370.77405, 0, 5762, -3025, -598.4043, -9.980204, 598.4043, 9.980204, 6754, -2996, -22.784996, -53.164986, 22.784996, 53.164986, 7328, -2886)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_ta7ci"]
+bake_interval = 600.0
+_data = {
+"points": PackedVector2Array(-72.49772, 20.713633, 72.49772, -20.713633, -1058.75, 265.25, -82.85453, 24.165905, 82.85453, -24.165905, -119.75, 199.25, -65.59317, 41.427265, 65.59317, -41.427265, 508.25, -145.75, -238.20679, 255.46814, 238.20679, -255.46814, 670.25, -318.75)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_3ca7f"]
+bake_interval = 600.0
+_data = {
+"points": PackedVector2Array(-311.39496, -102.532486, 311.39496, 102.532486, -2011.333, 187.66675, -588.61237, 18.987497, 588.61237, -18.987497, -1107.333, 179.66675, 87.34248, -18.987497, -87.34248, 18.987497, -17.333008, 145.66675, 0, 0, 0, 0, 361.667, 118.66675, -497.4724, 349.36993, 497.4724, -349.36993, 1117.667, -78.33325, 0, 0, 0, 0, 1656.667, -553.33325)
+}
+point_count = 6
+
+[node name="RootContainer(automatic)" type="Node2D" unique_id=486891532]
+position = Vector2(-5103.2705, 1500.4792)
+
+[node name="InstanceCurve" type="Path2D" parent="." unique_id=2144010310]
+curve = SubResource("Curve2D_hy0rb")
+script = ExtResource("1_fx5r3")
+scene = ExtResource("2_0deu5")
+bake_interval = 500.0
+metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
+
+[node name="GrassCurve4" type="Path2D" parent="." unique_id=338499821]
+position = Vector2(11444.75, -3561.25)
+curve = SubResource("Curve2D_ta7ci")
+script = ExtResource("1_fx5r3")
+scene = ExtResource("2_0deu5")
+bake_interval = 600.0
+metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
+
+[node name="GrassCurve8" type="Path2D" parent="." unique_id=3124458]
+position = Vector2(8968.333, -2440.6667)
+curve = SubResource("Curve2D_3ca7f")
+script = ExtResource("1_fx5r3")
+scene = ExtResource("2_0deu5")
+bake_interval = 600.0
+metadata/_custom_type_script = "uid://ogq6jh0v4dn7"

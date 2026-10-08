@@ -1,0 +1,20 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://source/contained/curved_terrain/scripts/curved_terrain.gd" id="1_sokky"]
+[ext_resource type="Texture2D" path="res://source/common/textures/rock.JPG" id="2_wsvdw"]
+
+[sub_resource type="Curve2D" id="Curve2D_x7oem"]
+bake_interval = 200.0
+_data = {
+"points": PackedVector2Array(2376.0566, 797.8747, -2376.0566, -797.8747, -1734.3336, -4441.8257, -333.12515, -1173.8695, 333.12515, 1173.8695, -5954.334, -3855.8257, -428.30374, -586.93475, 428.30374, 586.93475, -2019.9967, 46.953545, -917.7001, -943.92017, 917.7001, 943.92017, -1337.3336, 3747.1743, -812.82007, 170.43002, 812.82007, -170.43002, 2700.6663, 6028.1743, 65.55001, 865.26013, -65.55001, -865.26013, 5558.666, 1046.1742, 1618.0364, 602.79785, -1618.0364, -602.79785, 2786.6663, -2570.8247)
+}
+point_count = 7
+
+[node name="CurvedTerrain18" type="Path2D" unique_id=1133387938]
+texture_filter = 4
+position = Vector2(-6.975446e-05, 0)
+curve = SubResource("Curve2D_x7oem")
+script = ExtResource("1_sokky")
+fill_texture = ExtResource("2_wsvdw")
+bake_interval = 200.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"

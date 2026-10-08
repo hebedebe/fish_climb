@@ -1,0 +1,119 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://source/contained/curved_terrain/scripts/curved_terrain.gd" id="1_4xjo5"]
+[ext_resource type="Texture2D" path="res://source/common/textures/rock.JPG" id="2_blnv4"]
+[ext_resource type="Texture2D" path="res://source/common/textures/dirt.png" id="3_tepm8"]
+
+[sub_resource type="Curve2D" id="Curve2D_4n8tn"]
+bake_interval = 150.0
+_data = {
+"points": PackedVector2Array(63.1266, -57.098827, -63.1266, 57.098827, 282.45453, -625.2727, 48.56889, -161.44235, -48.56889, 161.44235, -166.54547, -280.27277, 0, 0, 0, 0, -370.54547, 105.72724, 0, 0, 0, 0, -546.5455, 155.72725, 0, 0, 0, 0, -913.5455, 172.72725, 0, 0, 0, 0, -1986.5455, 801.7273, 0, 0, 0, 0, -394.54547, 1165.7273, -146.20374, -29.24075, 146.20374, 29.24075, 540.4545, -65.27276, -91.8995, 41.7725, 91.8995, -41.7725, 1414.4545, -220.27275, 37.59525, 133.672, -37.59525, -133.672, 1503.4545, -561.2727, 250.635, -54.30425, -250.635, 54.30425, 637.4548, -649.2727)
+}
+point_count = 11
+
+[sub_resource type="Curve2D" id="Curve2D_ly3hx"]
+bake_interval = 150.0
+_data = {
+"points": PackedVector2Array(181.96101, -35.381306, -181.96101, 35.381306, -438.00003, -209.75, -70.76261, -50.544724, 70.76261, 50.544724, -236.00003, 159.25, -121.30734, 35.381306, 121.30734, -35.381306, 116.99997, 169.25, 121.30734, 20.21789, -121.30734, -20.21789, 557.0001, -118.75)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_wkb0e"]
+bake_interval = 150.0
+_data = {
+"points": PackedVector2Array(30.379995, -220.25496, -30.379995, 220.25496, -1077.0001, -692.3336, -110.12748, 3.7974994, 110.12748, -3.7974994, 103.99984, 981.6664, 140.50748, 121.51998, -140.50748, -121.51998, 973.0003, -289.33264)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_paa45"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(-101.08945, 298.67334, 101.08945, -298.67334, -230.75006, 512.3333, -119.46934, 27.569847, 119.46934, -27.569847, -75.75004, -71.66667, -55.139694, 18.379898, 55.139694, -18.379898, 398.24994, 201.33333, 9.189949, 41.35477, -9.189949, -41.35477, 592.24994, -201.66667, 4.5949745, 36.759796, -4.5949745, -36.759796, 87.24996, -397.66666, -82.70954, 27.569847, 82.70954, -27.569847, 213.24994, -871.6667, -41.35477, 50.54472, 41.35477, -50.54472, 716.24994, -878.6667, 50.54472, 36.759796, -50.54472, -36.759796, 664.24994, -1181.6667, 64.32964, -22.974873, -64.32964, 22.974873, -371.75006, -1233.6667, -13.784924, -45.949745, 13.784924, 45.949745, -1526.75, 1363.3333, -91.89949, 0, 91.89949, 0, -467.75006, 2096.3333, 137.84924, 170.01405, -137.84924, -170.01405, 1.2504654, 663.3339)
+}
+point_count = 12
+
+[sub_resource type="Curve2D" id="Curve2D_axl34"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(-59.73467, -73.51959, 59.73467, 73.51959, -699.28577, 476.14282, -243.53365, 78.11456, 243.53365, -78.11456, 179.71426, 553.14276, 68.92462, 367.59796, -68.92462, -367.59796, 1161.7142, 126.14282, 68.92462, -4.5949745, -68.92462, 4.5949745, 394.7143, -686.85724, 298.67334, -78.11456, -298.67334, 78.11456, -175.28574, -369.85718, -9.189949, -128.65929, 9.189949, 128.65929, -626.28577, -234.85718, 22.974873, -179.20401, -22.974873, 179.20401, -235.28552, 136.14313)
+}
+point_count = 7
+
+[sub_resource type="Curve2D" id="Curve2D_8hjdj"]
+bake_interval = 150.0
+_data = {
+"points": PackedVector2Array(41.35477, -147.03918, -41.35477, 147.03918, -944.5, -594, -137.84924, -82.70954, 137.84924, 82.70954, -319.5, 527, -257.31857, 101.08943, 257.31857, -101.08943, 287.5, 532, 0, 197.58391, 0, -197.58391, 976.5, -465)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_0vv12"]
+bake_interval = 150.0
+_data = {
+"points": PackedVector2Array(38.919437, -33.35952, -38.919437, 33.35952, -931.5714, -373.28574, 38.919437, -88.95872, -38.919437, 88.95872, -597.5714, 163.71426, 22.23968, -55.599197, -22.23968, 55.599197, -1037.5714, 391.71426, -122.31824, -66.71904, 122.31824, 66.71904, -223.57141, 758.7143, -61.15912, 77.838875, 61.15912, -77.838875, 1120.4286, 456.71426, 38.919437, 77.838875, -38.919437, -77.838875, 989.4286, -617.2857, 0, 0, 0, 0, 680.4286, -780.2857)
+}
+point_count = 7
+
+[node name="RootContainer(automatic)" type="Node2D" unique_id=295188772]
+position = Vector2(1846.5433, 4958.2295)
+
+[node name="CurvedTerrain4" type="Path2D" parent="." unique_id=474500437]
+texture_filter = 4
+position = Vector2(-1168.4545, -4002.7273)
+curve = SubResource("Curve2D_4n8tn")
+script = ExtResource("1_4xjo5")
+fill_texture = ExtResource("2_blnv4")
+bake_interval = 150.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain5" type="Path2D" parent="." unique_id=112629446]
+texture_filter = 4
+position = Vector2(-2211, -4634.25)
+curve = SubResource("Curve2D_ly3hx")
+script = ExtResource("1_4xjo5")
+fill_texture = ExtResource("2_blnv4")
+bake_interval = 150.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain6" type="Path2D" parent="." unique_id=1929418860]
+texture_filter = 4
+position = Vector2(-3923.9998, -4761.6665)
+curve = SubResource("Curve2D_wkb0e")
+script = ExtResource("1_4xjo5")
+fill_texture = ExtResource("3_tepm8")
+fill_texture_scale = Vector2(0.4, 0.4)
+bake_interval = 150.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain7" type="Path2D" parent="." unique_id=1707136756]
+texture_filter = 4
+position = Vector2(-4921.25, -6099.3335)
+curve = SubResource("Curve2D_paa45")
+script = ExtResource("1_4xjo5")
+fill_texture = ExtResource("2_blnv4")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain8" type="Path2D" parent="." unique_id=257689536]
+texture_filter = 4
+position = Vector2(-3273.7144, -6403.1426)
+curve = SubResource("Curve2D_axl34")
+script = ExtResource("1_4xjo5")
+fill_texture = ExtResource("2_blnv4")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain9" type="Path2D" parent="." unique_id=89483601]
+texture_filter = 4
+position = Vector2(-983.5, -6657)
+curve = SubResource("Curve2D_8hjdj")
+script = ExtResource("1_4xjo5")
+fill_texture = ExtResource("2_blnv4")
+bake_interval = 150.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
+
+[node name="CurvedTerrain10" type="Path2D" parent="." unique_id=2017458858]
+texture_filter = 4
+position = Vector2(1709.5714, -7107.7144)
+curve = SubResource("Curve2D_0vv12")
+script = ExtResource("1_4xjo5")
+fill_texture = ExtResource("2_blnv4")
+bake_interval = 150.0
+metadata/_custom_type_script = "uid://b5go11q4fwls4"

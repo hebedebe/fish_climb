@@ -9,6 +9,8 @@ const SAVE_PATH = "res://data/level_segments/"
 #@export_tool_button("Unpack contained scene") var unpack_action = unpack_contents
 #@export_tool_button("Generate bounds") var generate_bounds_action = update_rect
 #@export_tool_button("Update child nodes") var update_child_nodes_action := update_contained_scene_node
+@export_tool_button("Visualise bounds") var visualise_bounds_action := visualise_bounds
+@export_tool_button("Update position") var update_position_action := update_position
 
 @export_group("Data")
 @export var segment_data: LevelSegmentData: 
@@ -31,8 +33,16 @@ func _ready() -> void:
 			print("collapsing off-screen scene node at ready time")
 			pack_contents()
 			clear_contents()
-		screen_entered.connect(unpack_contents)
-		screen_exited.connect(clear_contents)
+		screen_entered.connect(enter_screen)
+		screen_exited.connect(exit_screen)
+
+func enter_screen() -> void:
+	unpack_contents()
+	print("Entered screen")
+	
+func exit_screen() -> void:
+	clear_contents()
+	print("Exited screen")
 
 func clear_contents() -> void:
 	contained_scene_node.queue_free()
@@ -113,6 +123,7 @@ func save_packed_scene(packed_scene: PackedScene) -> String:
 
 func update_rect() -> void:
 	#update_contained_scene_node()
+	update_position()
 	var top_left_corner: Vector2 = global_position
 	var bottom_right_corner: Vector2 = global_position
 	for child in Utilities.get_children_recursive(self):
@@ -127,3 +138,24 @@ func update_rect() -> void:
 	rect.position = top_left_corner - global_position
 	rect.size = bottom_right_corner - top_left_corner
 	rect = rect.grow(padding)
+
+func visualise_bounds() -> void:
+	update_contained_scene_node()
+	update_rect()
+
+func update_position() -> void:
+	var position_total := Vector2.ZERO
+	
+	var children := Utilities.get_children_recursive(self)
+	for child in children:
+		if child is Node2D:
+			position_total += child.global_position
+	
+	var position_average = position_total / children.size()
+	
+	var offset = global_position - position_average
+	
+	global_position = position_average
+	
+	for child in get_children():
+		child.position += offset

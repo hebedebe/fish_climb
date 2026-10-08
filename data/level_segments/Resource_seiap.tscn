@@ -1,0 +1,17 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://source/contained/interactive_grass/scripts/interactive_grass_curve.gd" id="1_wpd6w"]
+[ext_resource type="PackedScene" path="res://source/contained/interactive_grass/interactive_grass.tscn" id="2_j36mt"]
+
+[sub_resource type="Curve2D" id="Curve2D_0qmeg"]
+bake_interval = 300.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -951, -183.5, -75.322296, -40.79958, 75.322296, 40.79958, 951, 183.5)
+}
+point_count = 2
+
+[node name="GrassCurve3" type="Path2D" unique_id=2032009890]
+curve = SubResource("Curve2D_0qmeg")
+script = ExtResource("1_wpd6w")
+scene = ExtResource("2_j36mt")
+metadata/_custom_type_script = "uid://ogq6jh0v4dn7"

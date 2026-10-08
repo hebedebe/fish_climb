@@ -18,15 +18,14 @@ point_count = 4
 [node name="Node2D" type="Node2D" unique_id=1522196570]
 
 [node name="LevelSegment" type="VisibleOnScreenNotifier2D" parent="." unique_id=95389593]
-position = Vector2(121, 87)
-rect = Rect2(-10, -2690.9998, 3154, 2700.9998)
+position = Vector2(3427, -1870)
+rect = Rect2(-1113, -1258.4998, 2953, 2462.9998)
 script = ExtResource("1_exox0")
 segment_data = SubResource("Resource_g2wh0")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
 
 [node name="CurvedTerrain" type="Path2D" parent="LevelSegment" unique_id=859508302]
 texture_filter = 4
-position = Vector2(1304, -1432.5)
 curve = SubResource("Curve2D_i4sxj")
 script = ExtResource("4_qd3vh")
 metadata/_custom_type_script = "uid://b5go11q4fwls4"

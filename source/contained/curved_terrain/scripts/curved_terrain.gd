@@ -1,7 +1,7 @@
 @icon("res://addons/at-icons/node2d/itinerary.svg")
 @tool
 class_name CurvedTerrain
-extends Path2D
+extends BoundedPath2D
 
 @warning_ignore("unused_private_class_variable")
 @export_tool_button("Update Node Location") var _update_node_location_action = update_node_location
@@ -164,15 +164,4 @@ func update_node_location() -> void:
 
 func get_rect() -> Rect2:
 	update_node_location()
-	var top_left: Vector2 = Vector2.ZERO
-	var bottom_right: Vector2 = Vector2.ZERO
-	for idx in curve.point_count:
-		var pos := curve.get_point_position(idx)
-		top_left.x = min(top_left.x, pos.x)
-		top_left.y = min(top_left.y, pos.y)
-		bottom_right.x = max(bottom_right.x, pos.x)
-		bottom_right.y = max(bottom_right.y, pos.y)
-	var rect: Rect2
-	rect.position = top_left
-	rect.size = bottom_right - top_left
-	return rect
+	return super.get_rect()
