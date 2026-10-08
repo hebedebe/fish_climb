@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bb503w3i5y4ew"]
+
+[ext_resource type="Script" uid="uid://b5go11q4fwls4" path="res://source/contained/curved_terrain/scripts/curved_terrain.gd" id="1_i4sxj"]
+
+[sub_resource type="Curve2D" id="Curve2D_i4sxj"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -1103, 279.49988, 0, 0, 0, 0, 214.99991, 1194.5, 0, 0, 0, 0, 1830, -225.50012, 0, 0, 0, 0, -941.9999, -1248.4998)
+}
+point_count = 4
+
+[node name="CurvedTerrain" type="Path2D" unique_id=859508302]
+texture_filter = 4
+position = Vector2(1304, -1432.5)
+curve = SubResource("Curve2D_i4sxj")
+script = ExtResource("1_i4sxj")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"

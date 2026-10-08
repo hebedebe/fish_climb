@@ -76,17 +76,17 @@ func _ready() -> void:
 func create_child_nodes() -> void:
 	polygon2d = Polygon2D.new()
 	polygon2d.texture_repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
-	add_child(polygon2d)
+	add_child(polygon2d, false, InternalMode.INTERNAL_MODE_BACK)
 	
 	line2d = Line2D.new()
 	line2d.texture_repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
 	line2d.texture_mode = Line2D.LINE_TEXTURE_TILE
-	add_child(line2d)
+	add_child(line2d, false, InternalMode.INTERNAL_MODE_BACK)
 	
 	static_body = StaticBody2D.new()
-	add_child(static_body)
+	add_child(static_body, false, InternalMode.INTERNAL_MODE_BACK)
 	collision_polygon2d = CollisionPolygon2D.new()
-	static_body.add_child(collision_polygon2d)
+	static_body.add_child(collision_polygon2d, false, InternalMode.INTERNAL_MODE_BACK)
 
 func editor_generate_terrain() -> void:
 	if not Engine.is_editor_hint():
@@ -155,9 +155,24 @@ func get_average_point_location() -> Vector2:
 
 func update_node_location() -> void:
 	var points_average := get_average_point_location()
-	print(points_average)
+	#print(points_average)
 	position += points_average
 	
 	for idx in curve.point_count:
 		curve.set_point_position(idx, curve.get_closest_point(curve.sample(idx,0)) - points_average)
 	
+
+func get_rect() -> Rect2:
+	update_node_location()
+	var top_left: Vector2 = Vector2.ZERO
+	var bottom_right: Vector2 = Vector2.ZERO
+	for idx in curve.point_count:
+		var pos := curve.get_point_position(idx)
+		top_left.x = min(top_left.x, pos.x)
+		top_left.y = min(top_left.y, pos.y)
+		bottom_right.x = max(bottom_right.x, pos.x)
+		bottom_right.y = max(bottom_right.y, pos.y)
+	var rect: Rect2
+	rect.position = top_left
+	rect.size = bottom_right - top_left
+	return rect

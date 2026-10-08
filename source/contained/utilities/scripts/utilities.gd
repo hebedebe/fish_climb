@@ -1,3 +1,4 @@
+@tool
 class_name Utilities
 
 static func dot_separated_string(...arguments: Array) -> String:
@@ -62,10 +63,30 @@ static func generate_empty_resource() -> Resource:
 
 static func is_web_export() -> bool:
 	return OS.has_feature("web")
-	
 
 static func try_queue_free(node: Node) -> bool:
 	if node != null:
 		node.queue_free()
 		return true
 	return false
+
+static func set_owner_recursive(target: Node, new_owner: Node, include_internal: bool = false) -> void:
+	for child in target.get_children(include_internal):
+		set_owner_recursive(child, new_owner, include_internal)
+	target.owner = new_owner
+
+static func get_children_recursive(node: Node, include_internal: bool = false) -> Array[Node]:
+	var children: Array[Node] = node.get_children(include_internal)
+	var children_recursive: Array[Node]
+	for child in children:
+		children_recursive.append_array(get_children_recursive(child, include_internal))
+	children.append_array(children_recursive)
+	return children
+	
+	
+	
+	
+	
+	
+	
+	

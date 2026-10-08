@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://btwocsfoml8l4"]
+
+[ext_resource type="Script" uid="uid://dppqx3q6ytet7" path="res://source/contained/level_loading/scripts/level_segment.gd" id="1_exox0"]
+[ext_resource type="Script" uid="uid://br3ktr3l4xl6m" path="res://source/contained/level_loading/scripts/level_segment_data.gd" id="2_ejxyn"]
+[ext_resource type="Script" uid="uid://b5go11q4fwls4" path="res://source/contained/curved_terrain/scripts/curved_terrain.gd" id="4_qd3vh"]
+
+[sub_resource type="Resource" id="Resource_g2wh0"]
+script = ExtResource("2_ejxyn")
+packed_scene_path = "res://data/level_segments/Resource_g2wh0.tscn"
+
+[sub_resource type="Curve2D" id="Curve2D_i4sxj"]
+bake_interval = 100.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -1103, 279.49988, 0, 0, 0, 0, 214.99991, 1194.5, 0, 0, 0, 0, 1830, -225.50012, 0, 0, 0, 0, -941.9999, -1248.4998)
+}
+point_count = 4
+
+[node name="Node2D" type="Node2D" unique_id=1522196570]
+
+[node name="LevelSegment" type="VisibleOnScreenNotifier2D" parent="." unique_id=95389593]
+position = Vector2(121, 87)
+rect = Rect2(-10, -2690.9998, 3154, 2700.9998)
+script = ExtResource("1_exox0")
+segment_data = SubResource("Resource_g2wh0")
+metadata/_custom_type_script = "uid://dppqx3q6ytet7"
+
+[node name="CurvedTerrain" type="Path2D" parent="LevelSegment" unique_id=859508302]
+texture_filter = 4
+position = Vector2(1304, -1432.5)
+curve = SubResource("Curve2D_i4sxj")
+script = ExtResource("4_qd3vh")
+metadata/_custom_type_script = "uid://b5go11q4fwls4"
