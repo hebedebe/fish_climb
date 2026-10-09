@@ -1,6 +1,12 @@
 @icon("uid://cpkbt8vxhxfjc")
 class_name Player extends Node2D
 
+enum MouseFlip {
+	NONE,
+	LEFT,
+	RIGHT
+}
+
 @export var player_body: PlayerBody
 
 @export_group("Movement")
@@ -16,14 +22,23 @@ func _process(delta: float) -> void:
 		charge = clamp(charge + flip_strength * delta/flip_charge_time, 0, flip_strength)
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("flip_left"):
+	
+	var mouse_flip := MouseFlip.NONE
+	if event.is_action_pressed("mouse_flip"):
+		if event is InputEventMouse:
+			if event.position.x > get_viewport_rect().size.x/2:
+				mouse_flip = MouseFlip.RIGHT
+			else:
+				mouse_flip = MouseFlip.LEFT
+	
+	if event.is_action_pressed("flip_left") or mouse_flip == MouseFlip.LEFT:
 		charge_pressed()
 		flip_direction = PlayerBody.FlipDirection.LEFT
-	if event.is_action_pressed("flip_right"):
+	if event.is_action_pressed("flip_right") or mouse_flip == MouseFlip.RIGHT:
 		charge_pressed()
 		flip_direction = PlayerBody.FlipDirection.RIGHT
 	
-	if event.is_action_released("flip_left") or event.is_action_released("flip_right"):
+	if event.is_action_released("flip_left") or event.is_action_released("flip_right") or event.is_action_released("mouse_flip"):
 		player_body.flip(charge, flip_direction)
 		stop_charging()
 
