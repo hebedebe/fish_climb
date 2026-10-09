@@ -305,21 +305,21 @@ script = ExtResource("22_x0ggs")
 [sub_resource type="Curve2D" id="Curve2D_werwd"]
 bake_interval = 150.0
 _data = {
-"points": PackedVector2Array(-689.4816, 241.76628, 689.4816, -241.76628, 420.24988, 970.75, 691.54114, 237.02051, -691.54114, -237.02051, 1009.2499, -610.25, 260.03308, -184.19011, -260.03308, 184.19011, -891.7501, -714.25, 292.53723, -563.405, -292.53723, 563.405, -537.74963, 353.74985)
+"points": PackedVector2Array(-689.4816, 241.76628, 689.4816, -241.76628, 420.24988, 970.75006, 691.54114, 237.02051, -691.54114, -237.02051, 1009.2499, -610.24994, 260.03308, -184.19011, -260.03308, 184.19011, -891.7501, -714.24994, 292.53723, -563.405, -292.53723, 563.405, -537.74963, 353.74982)
 }
 point_count = 4
 
 [sub_resource type="Curve2D" id="Curve2D_80cyg"]
 bake_interval = 200.0
 _data = {
-"points": PackedVector2Array(214.5273, 274.11823, -214.5273, -274.11823, 2112.1228, 709.3779, 33.35952, 144.55792, -33.35952, -144.55792, 1064.1227, 76.37793, 88.958725, 111.198395, -88.958725, -111.198395, 1817.1227, -1217.6221, 61.15912, -105.63847, -61.15912, 105.63847, 493.1227, -1252.6221, 211.27695, -61.15912, -211.27695, 61.15912, 219.89517, -216.40137, 119.18183, 71.5091, -119.18183, -71.5091, -740.8773, -630.6221, 250.28185, 143.0182, -250.28185, -143.0182, -1062.8773, -1965.6221, 238.36366, -119.18183, -238.36366, 119.18183, -2349.8772, -1953.6221, -214.5273, -166.85457, 214.5273, 166.85457, -2909.8772, 2957.378, -214.5273, 71.5091, 214.5273, -71.5091, 1357.1227, 3493.378)
+"points": PackedVector2Array(214.5273, 274.11823, -214.5273, -274.11823, 2112.1228, 709.3779, 33.35952, 144.55792, -33.35952, -144.55792, 1064.1228, 76.37793, 88.958725, 111.198395, -88.958725, -111.198395, 1817.1228, -1217.6221, 61.15912, -105.63847, -61.15912, 105.63847, 493.1228, -1252.6221, 211.27695, -61.15912, -211.27695, 61.15912, 219.89526, -216.40137, 119.18183, 71.5091, -119.18183, -71.5091, -740.87726, -630.6221, 250.28185, 143.0182, -250.28185, -143.0182, -1062.8772, -1965.6221, 238.36366, -119.18183, -238.36366, 119.18183, -2349.8772, -1953.6221, -214.5273, -166.85457, 214.5273, 166.85457, -2909.8772, 2957.378, -214.5273, 71.5091, 214.5273, -71.5091, 1357.1211, 3493.3782)
 }
 point_count = 10
 
 [sub_resource type="Curve2D" id="Curve2D_of21v"]
 bake_interval = 150.0
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -133.4444, 367.44452, -37.090527, 42.79676, 37.090527, -42.79676, 806.55554, 389.44452, 28.531174, 39.943645, -28.531174, -39.943645, 784.55554, 101.4445, 31.384293, 19.971823, -31.384293, -19.971823, 251.5556, 101.4445, 14.265587, 25.678057, -14.265587, -25.678057, 236.5556, -172.5555, 25.678057, 19.971823, -25.678057, -19.971823, -162.4444, -179.5555, 28.531174, 25.678057, -28.531174, -25.678057, -207.4444, -498.55548, 25.678057, -19.971823, -25.678057, 19.971823, -791.44446, -461.55548, -48.503, -51.356113, 48.503, 51.356113, -784.4446, 352.44388)
+"points": PackedVector2Array(0, 0, 0, 0, -133.44444, 367.44452, -37.090527, 42.79676, 37.090527, -42.79676, 806.5555, 389.44452, 28.531174, 39.943645, -28.531174, -39.943645, 784.5555, 101.4445, 31.384293, 19.971823, -31.384293, -19.971823, 251.55556, 101.4445, 14.265587, 25.678057, -14.265587, -25.678057, 236.55556, -172.5555, 25.678057, 19.971823, -25.678057, -19.971823, -162.44444, -179.5555, 28.531174, 25.678057, -28.531174, -25.678057, -207.44444, -498.55548, 25.678057, -19.971823, -25.678057, 19.971823, -791.4445, -461.55548, -48.503, -51.356113, 48.503, 51.356113, -784.4447, 352.44342)
 }
 point_count = 9
 
@@ -387,7 +387,7 @@ script = ExtResource("22_x0ggs")
 [sub_resource type="Curve2D" id="Curve2D_4n8tn"]
 bake_interval = 150.0
 _data = {
-"points": PackedVector2Array(63.1266, -57.098827, -63.1266, 57.098827, 282.45453, -625.2727, 48.56889, -161.44235, -48.56889, 161.44235, -166.54547, -280.27277, 0, 0, 0, 0, -370.54547, 105.72725, 0, 0, 0, 0, -546.5455, 155.72726, 0, 0, 0, 0, -913.5455, 172.72726, 0, 0, 0, 0, -1986.5455, 801.7273, 0, 0, 0, 0, -394.54547, 1165.7273, -146.20374, -29.24075, 146.20374, 29.24075, 540.4545, -65.27275, -91.8995, 41.7725, 91.8995, -41.7725, 1414.4545, -220.27274, 37.59525, 133.672, -37.59525, -133.672, 1503.4545, -561.2727, 250.635, -54.30425, -250.635, 54.30425, 637.4548, -649.2727)
+"points": PackedVector2Array(63.1266, -57.098827, -63.1266, 57.098827, 282.45453, -625.2727, 48.56889, -161.44235, -48.56889, 161.44235, -166.54547, -280.27277, 0, 0, 0, 0, -370.54547, 105.72724, 0, 0, 0, 0, -546.5455, 155.72725, 0, 0, 0, 0, -913.5455, 172.72725, 0, 0, 0, 0, -1986.5455, 801.7273, 0, 0, 0, 0, -394.54547, 1165.7273, -146.20374, -29.24075, 146.20374, 29.24075, 540.4545, -65.27276, -91.8995, 41.7725, 91.8995, -41.7725, 1414.4545, -220.27275, 37.59525, 133.672, -37.59525, -133.672, 1503.4545, -561.2727, 250.635, -54.30425, -250.635, 54.30425, 637.4548, -649.2727)
 }
 point_count = 11
 
@@ -401,21 +401,21 @@ point_count = 4
 [sub_resource type="Curve2D" id="Curve2D_wkb0e"]
 bake_interval = 150.0
 _data = {
-"points": PackedVector2Array(30.379995, -220.25496, -30.379995, 220.25496, -1077.0001, -692.3335, -110.12748, 3.7974994, 110.12748, -3.7974994, 103.99984, 981.6665, 140.50748, 121.51998, -140.50748, -121.51998, 973.0003, -289.33282)
+"points": PackedVector2Array(30.379995, -220.25496, -30.379995, 220.25496, -1077.0001, -692.33356, -110.12748, 3.7974994, 110.12748, -3.7974994, 103.99984, 981.66644, 140.50748, 121.51998, -140.50748, -121.51998, 973.0003, -289.33273)
 }
 point_count = 3
 
 [sub_resource type="Curve2D" id="Curve2D_paa45"]
 bake_interval = 100.0
 _data = {
-"points": PackedVector2Array(-101.08945, 298.67334, 101.08945, -298.67334, -230.75005, 512.3333, -119.46934, 27.569847, 119.46934, -27.569847, -75.75003, -71.666695, -55.139694, 18.379898, 55.139694, -18.379898, 398.24997, 201.33331, 9.189949, 41.35477, -9.189949, -41.35477, 592.24994, -201.66669, 4.5949745, 36.759796, -4.5949745, -36.759796, 87.24997, -397.6667, -82.70954, 27.569847, 82.70954, -27.569847, 213.24995, -871.6667, -41.35477, 50.54472, 41.35477, -50.54472, 716.24994, -878.6667, 50.54472, 36.759796, -50.54472, -36.759796, 664.24994, -1181.6667, 64.32964, -22.974873, -64.32964, 22.974873, -371.75003, -1233.6667, -13.784924, -45.949745, 13.784924, 45.949745, -1526.75, 1363.3333, -91.89949, 0, 91.89949, 0, -467.75003, 2096.3333, 137.84924, 170.01405, -137.84924, -170.01405, 1.2504752, 663.33386)
+"points": PackedVector2Array(-101.08945, 298.67334, 101.08945, -298.67334, -230.75006, 512.33325, -119.46934, 27.569847, 119.46934, -27.569847, -75.750046, -71.666725, -55.139694, 18.379898, 55.139694, -18.379898, 398.24994, 201.33328, 9.189949, 41.35477, -9.189949, -41.35477, 592.24994, -201.66672, 4.5949745, 36.759796, -4.5949745, -36.759796, 87.249954, -397.66672, -82.70954, 27.569847, 82.70954, -27.569847, 213.24994, -871.66675, -41.35477, 50.54472, 41.35477, -50.54472, 716.24994, -878.66675, 50.54472, 36.759796, -50.54472, -36.759796, 664.24994, -1181.6667, 64.32964, -22.974873, -64.32964, 22.974873, -371.75006, -1233.6667, -13.784924, -45.949745, 13.784924, 45.949745, -1526.75, 1363.3333, -91.89949, 0, 91.89949, 0, -467.75006, 2096.3333, 137.84924, 170.01405, -137.84924, -170.01405, 1.2504582, 663.33386)
 }
 point_count = 12
 
 [sub_resource type="Curve2D" id="Curve2D_axl34"]
 bake_interval = 100.0
 _data = {
-"points": PackedVector2Array(-59.73467, -73.51959, 59.73467, 73.51959, -699.28577, 476.1428, -243.53365, 78.11456, 243.53365, -78.11456, 179.71426, 553.14276, 68.92462, 367.59796, -68.92462, -367.59796, 1161.7142, 126.14279, 68.92462, -4.5949745, -68.92462, 4.5949745, 394.7143, -686.85724, 298.67334, -78.11456, -298.67334, 78.11456, -175.28574, -369.8572, -9.189949, -128.65929, 9.189949, 128.65929, -626.28577, -234.85721, 22.974873, -179.20401, -22.974873, 179.20401, -235.28549, 136.14322)
+"points": PackedVector2Array(-59.73467, -73.51959, 59.73467, 73.51959, -699.28577, 476.1428, -243.53365, 78.11456, 243.53365, -78.11456, 179.71428, 553.14276, 68.92462, 367.59796, -68.92462, -367.59796, 1161.7142, 126.14281, 68.92462, -4.5949745, -68.92462, 4.5949745, 394.7143, -686.85724, 298.67334, -78.11456, -298.67334, 78.11456, -175.28572, -369.8572, -9.189949, -128.65929, 9.189949, 128.65929, -626.28577, -234.8572, 22.974873, -179.20401, -22.974873, 179.20401, -235.28549, 136.14317)
 }
 point_count = 7
 
@@ -429,7 +429,7 @@ point_count = 4
 [sub_resource type="Curve2D" id="Curve2D_0vv12"]
 bake_interval = 150.0
 _data = {
-"points": PackedVector2Array(38.919437, -33.35952, -38.919437, 33.35952, -931.5714, -373.28574, 38.919437, -88.95872, -38.919437, 88.95872, -597.5714, 163.71426, 22.23968, -55.599197, -22.23968, 55.599197, -1037.5714, 391.71426, -122.31824, -66.71904, 122.31824, 66.71904, -223.57141, 758.7143, -61.15912, 77.838875, 61.15912, -77.838875, 1120.4286, 456.71426, 38.919437, 77.838875, -38.919437, -77.838875, 989.4286, -617.2857, 0, 0, 0, 0, 680.4286, -780.2857)
+"points": PackedVector2Array(38.919437, -33.35952, -38.919437, 33.35952, -931.5714, -373.2857, 38.919437, -88.95872, -38.919437, 88.95872, -597.5714, 163.71428, 22.23968, -55.599197, -22.23968, 55.599197, -1037.5714, 391.7143, -122.31824, -66.71904, 122.31824, 66.71904, -223.57143, 758.7143, -61.15912, 77.838875, 61.15912, -77.838875, 1120.4286, 456.7143, 38.919437, 77.838875, -38.919437, -77.838875, 989.4286, -617.2857, 0, 0, 0, 0, 680.4286, -780.2857)
 }
 point_count = 7
 
@@ -742,6 +742,7 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 z_index = -2
 
 [node name="LevelSegment3" type="VisibleOnScreenNotifier2D" parent="Background/Grass" unique_id=727689517]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_oiyxd")
 padding = 50.0
@@ -771,6 +772,7 @@ bake_interval = 600.0
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
 [node name="LevelSegment" type="VisibleOnScreenNotifier2D" parent="Background/Grass" unique_id=1705790052]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_x0ggs")
 padding = 50.0
@@ -791,6 +793,7 @@ scene = ExtResource("7_ogdwf")
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
 [node name="LevelSegment2" type="VisibleOnScreenNotifier2D" parent="Background/Grass" unique_id=717183901]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_yu8j2")
 padding = 50.0
@@ -804,6 +807,7 @@ scene = ExtResource("7_ogdwf")
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
 [node name="LevelSegment4" type="VisibleOnScreenNotifier2D" parent="Background/Grass" unique_id=1335035165]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_sllqb")
 padding = 50.0
@@ -817,6 +821,7 @@ scene = ExtResource("7_ogdwf")
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
 [node name="LevelSegment5" type="VisibleOnScreenNotifier2D" parent="Background/Grass" unique_id=971642629]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_f1a0d")
 padding = 50.0
@@ -831,6 +836,7 @@ bake_interval = 450.0
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
 [node name="LevelSegment6" type="VisibleOnScreenNotifier2D" parent="Background/Grass" unique_id=2047777777]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_1dme8")
 padding = 50.0
@@ -846,6 +852,7 @@ metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 [node name="LevelSegment7" type="VisibleOnScreenNotifier2D" parent="Background/Grass" unique_id=1775220044]
 position = Vector2(-10254.25, -10960)
 rect = Rect2(-1793.75, -1101, 4443, 2798)
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_ogdwf")
 padding = 50.0
@@ -868,6 +875,7 @@ bake_interval = 500.0
 metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 
 [node name="LevelSegment8" type="VisibleOnScreenNotifier2D" parent="Background/Grass" unique_id=1881756557]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_c45us")
 padding = 50.0
@@ -884,6 +892,7 @@ metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 [node name="LevelSegment9" type="VisibleOnScreenNotifier2D" parent="Background/Grass" unique_id=1829833369]
 position = Vector2(5086.3335, -17624.334)
 rect = Rect2(-1788.8335, -487.66602, 3610, 985)
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_iho4b")
 padding = 50.0
@@ -899,6 +908,7 @@ metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 [node name="LevelSegment10" type="VisibleOnScreenNotifier2D" parent="Background/Grass" unique_id=1628242292]
 position = Vector2(16516.666, -24104)
 rect = Rect2(-901.166, -488, 1806, 1008)
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_746x1")
 padding = 50.0
@@ -913,6 +923,7 @@ metadata/_custom_type_script = "uid://ogq6jh0v4dn7"
 [node name="LevelSegment11" type="VisibleOnScreenNotifier2D" parent="Background/Grass" unique_id=1360249544]
 position = Vector2(10184, -26455.25)
 rect = Rect2(-2081.5, -651.75, 3574, 1145)
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_bjd5f")
 padding = 50.0
@@ -1021,39 +1032,40 @@ texture = SubResource("CanvasTexture_pgbyh")
 [node name="Level" type="Node2D" parent="." unique_id=280688644]
 
 [node name="LevelSegment10" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=2088504579]
-position = Vector2(-9266.331, -11418.8125)
-rect = Rect2(-3357.669, -3095.1875, 8034, 8061)
+position = Vector2(-9266.332, -11418.8125)
+rect = Rect2(-3357.668, -3095.1875, 8034, 8061)
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_3i1lg")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
 
 [node name="Rock" parent="Level/LevelSegment10" unique_id=640060634 instance=ExtResource("20_su2an")]
-position = Vector2(-1200.669, 746.8125)
+position = Vector2(-1200.668, 746.8125)
 
 [node name="Rock2" parent="Level/LevelSegment10" unique_id=1420708160 instance=ExtResource("20_su2an")]
-position = Vector2(-539.66895, 1168.8125)
+position = Vector2(-539.66797, 1168.8125)
 
 [node name="Rock4" parent="Level/LevelSegment10" unique_id=93741914 instance=ExtResource("20_su2an")]
-position = Vector2(842.33105, 1774.8125)
+position = Vector2(842.33203, 1774.8125)
 
 [node name="Rock5" parent="Level/LevelSegment10" unique_id=1669988160 instance=ExtResource("20_su2an")]
-position = Vector2(1612.331, 2073.8125)
+position = Vector2(1612.332, 2073.8125)
 
 [node name="Rock21" parent="Level/LevelSegment10" unique_id=594118854 instance=ExtResource("20_su2an")]
-position = Vector2(2173.331, 1704.8125)
+position = Vector2(2173.332, 1704.8125)
 
 [node name="Rock22" parent="Level/LevelSegment10" unique_id=730120991 instance=ExtResource("20_su2an")]
-position = Vector2(2769.331, 1269.8125)
+position = Vector2(2769.332, 1269.8125)
 
 [node name="Rock6" parent="Level/LevelSegment10" unique_id=765575699 instance=ExtResource("20_su2an")]
-position = Vector2(-153.66895, 259.8125)
+position = Vector2(-153.66797, 259.8125)
 
 [node name="Rock7" parent="Level/LevelSegment10" unique_id=1112409120 instance=ExtResource("20_su2an")]
-position = Vector2(-1463.669, -348.1875)
+position = Vector2(-1463.668, -348.1875)
 
 [node name="CurvedTerrain24" type="Path2D" parent="Level/LevelSegment10" unique_id=161349149]
 texture_filter = 4
-position = Vector2(3657.081, 870.0625)
+position = Vector2(3657.082, 870.06244)
 curve = SubResource("Curve2D_werwd")
 script = ExtResource("3_yu8j2")
 fill_texture = ExtResource("4_sllqb")
@@ -1062,7 +1074,7 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="CurvedTerrain26" type="Path2D" parent="Level/LevelSegment10" unique_id=1746834857]
 texture_filter = 4
-position = Vector2(-437.792, 1462.4346)
+position = Vector2(-437.7911, 1462.4346)
 curve = SubResource("Curve2D_80cyg")
 script = ExtResource("3_yu8j2")
 fill_texture = ExtResource("1_oiyxd")
@@ -1071,7 +1083,7 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="CurvedTerrain25" type="Path2D" parent="Level/LevelSegment10" unique_id=1717303497]
 texture_filter = 4
-position = Vector2(669.7754, -140.63184)
+position = Vector2(669.7764, -140.63184)
 curve = SubResource("Curve2D_of21v")
 script = ExtResource("3_yu8j2")
 fill_texture = ExtResource("4_sllqb")
@@ -1079,24 +1091,25 @@ bake_interval = 150.0
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="Rock3" parent="Level/LevelSegment10" unique_id=1054101782 instance=ExtResource("20_su2an")]
-position = Vector2(151.33105, 1425.8125)
+position = Vector2(151.33203, 1425.8125)
 
 [node name="Rock8" parent="Level/LevelSegment10" unique_id=1680437797 instance=ExtResource("20_su2an")]
-position = Vector2(-2711.669, -1355.1875)
+position = Vector2(-2711.668, -1355.1875)
 
 [node name="Rock9" parent="Level/LevelSegment10" unique_id=805655316 instance=ExtResource("20_su2an")]
-position = Vector2(-1617.669, -1940.1875)
+position = Vector2(-1617.668, -1940.1875)
 
 [node name="Rock10" parent="Level/LevelSegment10" unique_id=1903611997 instance=ExtResource("20_su2an")]
-position = Vector2(-1216.669, -2081.1875)
+position = Vector2(-1216.668, -2081.1875)
 
 [node name="Rock11" parent="Level/LevelSegment10" unique_id=296839020 instance=ExtResource("20_su2an")]
-position = Vector2(-176.66895, -2601.1875)
+position = Vector2(-176.66797, -2601.1875)
 
 [node name="Rock12" parent="Level/LevelSegment10" unique_id=88673991 instance=ExtResource("20_su2an")]
-position = Vector2(235.33105, -2829.1875)
+position = Vector2(235.33203, -2829.1875)
 
 [node name="LevelSegment4" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=451960490]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_a7654")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1121,6 +1134,7 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 [node name="LevelSegment" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=523558051]
 position = Vector2(375.12793, -1536.916)
 rect = Rect2(-6808.1284, -5149.0845, 11626, 9917)
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_anmhs")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1162,6 +1176,7 @@ fill_texture = ExtResource("5_f1a0d")
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="LevelSegment9" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=718892214]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_q5vq3")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1175,13 +1190,16 @@ fill_texture = ExtResource("4_sllqb")
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="LevelSegment2" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=438424187]
+position = Vector2(-2110.3352, -5666.548)
+rect = Rect2(-4347.665, -2231.4521, 9298, 5071)
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_mecd5")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
 
 [node name="CurvedTerrain4" type="Path2D" parent="Level/LevelSegment2" unique_id=474500437]
 texture_filter = 4
-position = Vector2(-1168.4545, -4002.7273)
+position = Vector2(941.88074, 1663.8206)
 curve = SubResource("Curve2D_4n8tn")
 script = ExtResource("3_yu8j2")
 fill_texture = ExtResource("4_sllqb")
@@ -1190,7 +1208,7 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="CurvedTerrain5" type="Path2D" parent="Level/LevelSegment2" unique_id=112629446]
 texture_filter = 4
-position = Vector2(-2211, -4634.25)
+position = Vector2(-100.664795, 1032.2979)
 curve = SubResource("Curve2D_ly3hx")
 script = ExtResource("3_yu8j2")
 fill_texture = ExtResource("4_sllqb")
@@ -1199,7 +1217,7 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="CurvedTerrain6" type="Path2D" parent="Level/LevelSegment2" unique_id=1929418860]
 texture_filter = 4
-position = Vector2(-3923.9998, -4761.6665)
+position = Vector2(-1813.6646, 904.8814)
 curve = SubResource("Curve2D_wkb0e")
 script = ExtResource("3_yu8j2")
 fill_texture = ExtResource("1_oiyxd")
@@ -1209,7 +1227,7 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="CurvedTerrain7" type="Path2D" parent="Level/LevelSegment2" unique_id=1707136756]
 texture_filter = 4
-position = Vector2(-4921.25, -6099.3335)
+position = Vector2(-2810.9148, -432.7856)
 curve = SubResource("Curve2D_paa45")
 script = ExtResource("3_yu8j2")
 fill_texture = ExtResource("4_sllqb")
@@ -1217,7 +1235,7 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="CurvedTerrain8" type="Path2D" parent="Level/LevelSegment2" unique_id=257689536]
 texture_filter = 4
-position = Vector2(-3273.7144, -6403.1426)
+position = Vector2(-1163.3792, -736.5947)
 curve = SubResource("Curve2D_axl34")
 script = ExtResource("3_yu8j2")
 fill_texture = ExtResource("4_sllqb")
@@ -1225,7 +1243,7 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="CurvedTerrain9" type="Path2D" parent="Level/LevelSegment2" unique_id=89483601]
 texture_filter = 4
-position = Vector2(-983.5, -6657)
+position = Vector2(1126.8352, -990.45215)
 curve = SubResource("Curve2D_8hjdj")
 script = ExtResource("3_yu8j2")
 fill_texture = ExtResource("4_sllqb")
@@ -1234,7 +1252,7 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="CurvedTerrain10" type="Path2D" parent="Level/LevelSegment2" unique_id=2017458858]
 texture_filter = 4
-position = Vector2(1709.5714, -7107.7144)
+position = Vector2(3819.9067, -1441.1665)
 curve = SubResource("Curve2D_0vv12")
 script = ExtResource("3_yu8j2")
 fill_texture = ExtResource("4_sllqb")
@@ -1242,6 +1260,7 @@ bake_interval = 150.0
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="LevelSegment8" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=925859660]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_roi8u")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1257,6 +1276,7 @@ bake_interval = 300.0
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="LevelSegment11" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=1710903031]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_seiap")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1277,6 +1297,7 @@ position = Vector2(19666, -22791)
 position = Vector2(21358, -20735)
 
 [node name="LevelSegment5" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=1092745452]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_6l0fh")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1317,6 +1338,7 @@ bake_interval = 150.0
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="LevelSegment12" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=368555480]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_jx5an")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1340,6 +1362,7 @@ bake_interval = 300.0
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="LevelSegment6" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=2093913679]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_xju5q")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1354,6 +1377,7 @@ bake_interval = 200.0
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="LevelSegment3" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=1653165206]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_kwawq")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1369,6 +1393,7 @@ bake_interval = 200.0
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="LevelSegment7" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=474165672]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_7uprc")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1387,6 +1412,7 @@ metadata/_custom_type_script = "uid://b5go11q4fwls4"
 position = Vector2(9174, -17182)
 
 [node name="LevelSegment13" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=1559248423]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_su2an")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1402,6 +1428,7 @@ bake_interval = 150.0
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="LevelSegment14" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=1407761024]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_grxpw")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1416,6 +1443,7 @@ bake_interval = 150.0
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="LevelSegment15" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=1225184091]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_m5nn3")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1429,6 +1457,7 @@ fill_texture = ExtResource("5_f1a0d")
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="LevelSegment16" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=1232772370]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_hon24")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1443,6 +1472,7 @@ bake_interval = 200.0
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="LevelSegment18" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=1025111760]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_w23gn")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1472,6 +1502,7 @@ fill_texture = ExtResource("4_sllqb")
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="LevelSegment17" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=1312307764]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_kloy6")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1489,6 +1520,7 @@ position = Vector2(451, -26211)
 position = Vector2(-1690, -26014)
 
 [node name="LevelSegment19" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=1718626011]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_uvro3")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"
@@ -1502,6 +1534,7 @@ fill_texture = ExtResource("4_sllqb")
 metadata/_custom_type_script = "uid://b5go11q4fwls4"
 
 [node name="LevelSegment20" type="VisibleOnScreenNotifier2D" parent="Level" unique_id=334138711]
+show_rect = false
 script = ExtResource("21_oiyxd")
 segment_data = SubResource("Resource_qfjj5")
 metadata/_custom_type_script = "uid://dppqx3q6ytet7"

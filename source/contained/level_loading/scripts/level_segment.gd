@@ -38,11 +38,11 @@ func _ready() -> void:
 
 func enter_screen() -> void:
 	unpack_contents()
-	print("Entered screen")
+	#print("Entered screen")
 	
 func exit_screen() -> void:
 	clear_contents()
-	print("Exited screen")
+	#print("Exited screen")
 
 func clear_contents() -> void:
 	contained_scene_node.queue_free()
@@ -142,7 +142,7 @@ func update_rect() -> void:
 	rect = rect.grow(padding)
 
 func visualise_bounds() -> void:
-	update_contained_scene_node()
+	#update_contained_scene_node()
 	update_rect()
 
 func update_position() -> void:

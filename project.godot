@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Fish Climb"
-config/version="main.116.0"
+config/version="main.117.0"
 run/main_scene="uid://bo6jn8toptxc"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="uid://cxwvbsaib3hsw"
@@ -115,5 +115,6 @@ common/physics_interpolation=true
 
 [rendering]
 
+driver/threads/thread_model=2
 textures/webp_compression/compression_method=4
 2d/shadow_atlas/size=128
