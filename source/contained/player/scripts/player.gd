@@ -38,7 +38,9 @@ func _unhandled_input(event: InputEvent) -> void:
 		charge_pressed()
 		flip_direction = PlayerBody.FlipDirection.RIGHT
 	
-	if event.is_action_released("flip_left") or event.is_action_released("flip_right") or event.is_action_released("mouse_flip"):
+	if (event.is_action_released("flip_left") 
+			or event.is_action_released("flip_right") 
+			or event.is_action_released("mouse_flip")):
 		player_body.flip(charge, flip_direction)
 		stop_charging()
 

@@ -137,6 +137,12 @@ func update_rect() -> void:
 			top_left_corner.y = min(rect_position.y, top_left_corner.y)
 			bottom_right_corner.x = max(rect_end.x, bottom_right_corner.x)
 			bottom_right_corner.y = max(rect_end.y, bottom_right_corner.y)
+		elif child is Node2D:
+			top_left_corner.x = min(child.global_position.x, top_left_corner.x)
+			top_left_corner.y = min(child.global_position.y, top_left_corner.y)
+			bottom_right_corner.x = max(child.global_position.x, bottom_right_corner.x)
+			bottom_right_corner.y = max(child.global_position.y, bottom_right_corner.y)
+			
 	rect.position = top_left_corner - global_position
 	rect.size = bottom_right_corner - top_left_corner
 	rect = rect.grow(padding)
