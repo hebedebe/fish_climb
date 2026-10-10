@@ -3,12 +3,11 @@ class_name BoundedPath2D extends Path2D
 func get_rect() -> Rect2:
 	var top_left: Vector2 = Vector2.ZERO
 	var bottom_right: Vector2 = Vector2.ZERO
-	for idx in curve.point_count:
-		var pos := curve.get_point_position(idx)
-		top_left.x = min(top_left.x, pos.x)
-		top_left.y = min(top_left.y, pos.y)
-		bottom_right.x = max(bottom_right.x, pos.x)
-		bottom_right.y = max(bottom_right.y, pos.y)
+	for point: Vector2 in curve.get_baked_points():
+		top_left.x = min(top_left.x, point.x)
+		top_left.y = min(top_left.y, point.y)
+		bottom_right.x = max(bottom_right.x, point.x)
+		bottom_right.y = max(bottom_right.y, point.y)
 	var rect: Rect2
 	rect.position = top_left
 	rect.size = bottom_right - top_left
