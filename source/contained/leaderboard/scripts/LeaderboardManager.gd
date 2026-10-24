@@ -50,7 +50,7 @@ func filter_scores(score) -> bool:
 func get_low_scores(count: int = 10):
 	var sw_result: Dictionary = await SilentWolf.Scores.get_scores(count).sw_get_scores_complete
 	var scores: Array = sw_result.scores
-	scores = scores.filter(filter_scores)
+	#scores = scores.filter(filter_scores)
 	scores.sort_custom(sort_scores)
 	return scores
 
