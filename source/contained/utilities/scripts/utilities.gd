@@ -83,10 +83,13 @@ static func get_children_recursive(node: Node, include_internal: bool = false) -
 	children.append_array(children_recursive)
 	return children
 	
-	
-	
-	
-	
-	
-	
-	
+static func get_unique_array_entries(array: Array) -> Array:
+	var temp_dict: Dictionary
+	for entry in array:
+		#if temp_dict.has(entry):
+			#print("Ignored duplicate entry ", entry)
+		temp_dict.set(entry, null)
+	return temp_dict.keys()
+		
+		
+		

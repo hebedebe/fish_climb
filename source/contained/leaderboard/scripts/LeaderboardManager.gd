@@ -50,8 +50,15 @@ func filter_scores(score) -> bool:
 func get_low_scores(count: int = 10):
 	var sw_result: Dictionary = await SilentWolf.Scores.get_scores(count).sw_get_scores_complete
 	var scores: Array = sw_result.scores
-	#scores = scores.filter(filter_scores)
+	
+	# Remove scores with duplicate names and times.
+	for i in range(scores.size()):
+		scores[i] = {"player_name": scores[i].player_name, "score": scores[i].score}
+	scores = Utilities.get_unique_array_entries(scores)
+	
+	# sort score array from smallest to largest.
 	scores.sort_custom(sort_scores)
+	
 	return scores
 
 func save_score() -> void:
