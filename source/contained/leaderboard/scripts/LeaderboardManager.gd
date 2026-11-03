@@ -43,18 +43,28 @@ func sort_scores(a, b):
 	return false
 
 func filter_scores(score) -> bool:
-	if !score.has("metadata"):
+	if score == null:
+		print("Filtered null score.")
 		return false
-	return score.metadata.version == ProjectSettings.get_setting("application/config/version")
+	else:
+		return true
+	#if !score.has("metadata"):
+		#return false
+	#return score.metadata.version == ProjectSettings.get_setting("application/config/version")
 
-func get_low_scores(count: int = 10):
+func get_low_scores(count: int = 1000) -> Array:
 	var sw_result: Dictionary = await SilentWolf.Scores.get_scores(count).sw_get_scores_complete
 	var scores: Array = sw_result.scores
 	
-	# Remove scores with duplicate names and times.
+	# Simplify scores for hash consistency
 	for i in range(scores.size()):
 		scores[i] = {"player_name": scores[i].player_name, "score": scores[i].score}
+		
+	# Remove scores with duplicate names and times.
 	scores = Utilities.get_unique_array_entries(scores)
+	
+	# Remove invalid or null scores
+	scores = scores.filter(filter_scores)
 	
 	# sort score array from smallest to largest.
 	scores.sort_custom(sort_scores)

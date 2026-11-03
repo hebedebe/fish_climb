@@ -14,9 +14,13 @@ func clear_entries() -> void:
 		child.queue_free()
 
 func generate_entries() -> void:
-	var scores = await LeaderboardManager.get_low_scores()
+	var scores := await LeaderboardManager.get_low_scores()
+	scores.resize(min(scores.size(), 50)) #only show the 50 fastest times
 	clear_entries()
 	for score in scores:
+		if not score: 
+			printerr("Invalid score entry, skipping...")
+			continue
 		add_entry(score.player_name, score.score)
 
 func add_entry(entry_name, entry_score) -> void:
